@@ -8,13 +8,13 @@
     <loc>/posts/diagram-support/</loc>
     <lastmod>2021-03-31T13:11:22+08:00</lastmod>
   </url><url>
-    <loc>/</loc>
-    <lastmod>2021-03-31T13:11:22+08:00</lastmod>
-  </url><url>
     <loc>/authors/example-author/</loc>
     <lastmod>2021-03-31T13:11:22+08:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
+    <lastmod>2021-03-31T13:11:22+08:00</lastmod>
+  </url><url>
+    <loc>/</loc>
     <lastmod>2021-03-31T13:11:22+08:00</lastmod>
   </url><url>
     <loc>/posts/math-support/</loc>
@@ -94,5 +94,7 @@
   </url><url>
     <loc>/posts/emoji-support/</loc>
     <lastmod>2019-03-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/authors/upyesp/</loc>
   </url>
 </urlset>
