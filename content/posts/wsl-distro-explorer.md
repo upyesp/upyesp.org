@@ -4,8 +4,6 @@ description: How to use Explorer to work with files contained in a WSL distro.
 date: 2021-07-20T11:37:01+01:00
 draft: false
 toc: true
-authors:
-  - upyesp
 tags:
   - WSL 
   - Explorer

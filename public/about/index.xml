@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors on upyesp</title>
-    <link>/authors/</link>
-    <description>Recent content in Authors on upyesp</description>
+    <title>Abouts on upyesp</title>
+    <link>/about/</link>
+    <description>Recent content in Abouts on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="/about/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>upyesp</title>
-      <link>/authors/upyesp/</link>
+      <link>/about/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/authors/upyesp/</guid>
+      <guid>/about/about/</guid>
       <description>About This is a personal blog site, providing technical how-to guides I wrote up during my own learning. Content varies, the main focus is computer science related topics. Interested in&amp;hellip;
  software development programmings languages documentation user experience, accessibility operating systems  </description>
     </item>
