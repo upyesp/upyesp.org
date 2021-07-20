@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>upyesp</title>
-    <link>/authors/upyesp/</link>
-    <description>Recent content on upyesp</description>
+    <title>WSL on upyesp</title>
+    <link>/tags/wsl/</link>
+    <description>Recent content in WSL on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Jul 2021 11:37:01 +0100</lastBuildDate><atom:link href="/authors/upyesp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Jul 2021 11:37:01 +0100</lastBuildDate><atom:link href="/tags/wsl/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Browsing A WSL Distro In Explorer</title>
       <link>/posts/wsl-distro-explorer/</link>

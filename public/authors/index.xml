@@ -6,7 +6,17 @@
     <description>Recent content in Authors on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 31 Mar 2021 13:11:22 +0800</lastBuildDate><atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Jul 2021 11:37:01 +0100</lastBuildDate><atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>upyesp</title>
+      <link>/authors/upyesp/</link>
+      <pubDate>Tue, 20 Jul 2021 11:37:01 +0100</pubDate>
+      
+      <guid>/authors/upyesp/</guid>
+      <description>About This is a personal blog site, providing technical how-to guides I wrote up during my own learning. Content varies, the main focus is computer science related topics. Interested in&amp;hellip;
+ software development programmings languages documentation user experience, accessibility operating systems  </description>
+    </item>
+    
     <item>
       <title>Example Author</title>
       <link>/authors/example-author/</link>
@@ -22,15 +32,6 @@
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/authors/hugo-authors/</guid>
-      <description>Vestibulum vel arcu Donec interdum justo sed posuere imperdiet. Quisque nec mauris eu erat mattis egestas in vitae nisl. Sed nisl augue, congue sed quam quis, tempor tempus nibh. Pellentesque accumsan in quam a interdum. Morbi iaculis venenatis lacinia. Mauris quis nisl vitae nisi mollis placerat id vel ligula. Integer vitae arcu ac leo iaculis rhoncus id vitae dolor. Fusce quis nisl tincidunt, vulputate dolor quis, mollis massa. Donec congue velit at risus cursus, eu auctor dolor rhoncus.</description>
-    </item>
-    
-    <item>
-      <title>Upyesp</title>
-      <link>/authors/upyesp/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/authors/upyesp/</guid>
       <description></description>
     </item>
     
