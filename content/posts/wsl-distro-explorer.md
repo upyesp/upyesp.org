@@ -7,9 +7,11 @@ toc: true
 authors:
   - upyesp
 tags:
-  - WSL, Explorer, Windows, Linux
+  - WSL 
+  - Explorer
 categories:
-  - themes
+  - Windows
+  - Linux
 series:
   - Windows Subsystem for Linux
 ---
