@@ -23,7 +23,7 @@ The symbolic reference looks and behaves similar to a folder. You can give it a 
 
 For example, the paths below point to the *same location*:
 
-```
+```Batchfile
 C:\Users\pete\OneDrive - The University of Quahog\...
 
 C:\Users\pete\uni\...

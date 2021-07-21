@@ -27,6 +27,8 @@ markup:
     codeFences: true
     noClasses: true
     lineNos: false
+    style: solarized-dark
+    tabWidth: 4
   
   
   tableOfContents:

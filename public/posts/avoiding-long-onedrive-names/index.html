@@ -14,38 +14,11 @@
   href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
   as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/atom-one-dark-reasonable.min.css"
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css"
    media="print"
   onload="this.media='all';this.onload=null" crossorigin>
 <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"
    crossorigin></script>
-
-  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/bash.min.js"
-     crossorigin></script>
-
-  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/dos.min.js"
-     crossorigin></script>
-
-  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/java.min.js"
-     crossorigin></script>
-
-  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/javascript.min.js"
-     crossorigin></script>
-
-  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/powershell.min.js"
-     crossorigin></script>
-
-  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/python.min.js"
-     crossorigin></script>
-
-  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/rust.min.js"
-     crossorigin></script>
-
-  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/sql.min.js"
-     crossorigin></script>
-
-  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/typescript.min.js"
-     crossorigin></script>
 
 <script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js"
    integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo="  crossorigin></script>
@@ -109,7 +82,7 @@
     },
     "headline": "How To Avoid Long OneDrive Folder Names | upyesp","datePublished": "2021-07-20T14:13:00+01:00",
     "dateModified": "2021-07-20T14:13:00+01:00",
-    "wordCount":  463 ,
+    "wordCount":  458 ,
     "publisher": {
         "@type": "Person",
         "name": "upyesp",
@@ -268,10 +241,10 @@
 <p>It is possible to rename the OneDrive folder, but the renaming method is very hacky, <strong>high risk</strong> and involves numerous changes within the Windows registry.  It is not recommended.</p>
 <p>An alternative is to keep the long folder name unchanged and to simply avoid using it by creating a symbolic reference to it and using the symbolic reference instead.  The specific type of symbolic reference being used here is a <a href="https://docs.microsoft.com/en-gb/windows/win32/fileio/symbolic-links">Junction Point</a>.</p>
 <p>The symbolic reference looks and behaves similar to a folder. You can give it a simple &amp; short name, for example, &ldquo;uni&rdquo;.</p>
-<p>For example, the paths below point to the <em>same file</em>, in the <em>same location</em>:</p>
-<pre><code class="language-dos" data-lang="dos">C:\Users\pete\OneDrive - The University of Quahog\CampusMap.pdf
+<p>For example, the paths below point to the <em>same location</em>:</p>
+<pre><code>C:\Users\pete\OneDrive - The University of Quahog\...
 
-C:\Users\pete\uni\CampusMap.pdf
+C:\Users\pete\uni\...
 </code></pre><p>In the example above, the OneDrive folder called &ldquo;OneDrive - The University of Quahog&rdquo; exists, it remains unaffected and can continue to be used as normal.  Also, the much short folder, &ldquo;uni&rdquo;, can be used in place of the long OnrDrive folder.</p>
 <p>Firstly, make a note of the following 3 things:</p>
 <ol>
@@ -281,19 +254,19 @@ C:\Users\pete\uni\CampusMap.pdf
 </ol>
 <h2 id="method-1-using-a-commandcmd-prompt">Method 1, Using a Command/CMD Prompt</h2>
 <ul>
-<li>open a CMD prompt as an Administrator, so press the Windows key, type <code>cmd</code>, right-click on the top search result (Command Prompt App) and select &ldquo;Run as administrator&rdquo;</li>
+<li>open a CMD prompt as an Administrator, so press <kbd>Windows</kbd> and type <code>cmd</code>, right-click on the top search result (Command Prompt App) and select &ldquo;Run as administrator&rdquo;</li>
 <li>navigate to the parent folder you noted above and create your new &ldquo;folder&rdquo; with a short name, using the <code>mklink</code> command with the <code>/J</code> parameter, for example:</li>
 </ul>
-<pre><code class="language-dos" data-lang="dos">cd C:\Users\pete
-</code></pre><p>then:</p>
-<pre><code class="language-dos" data-lang="dos">mklink /J uni &quot;OneDrive - The University of Quahog&quot;
-</code></pre><p>You&rsquo;re done, you can now close the cmd terminal and use <em>uni</em>, or whatever name you created, as an alternative folder to your long OneDrive folder.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Batchfile" data-lang="Batchfile"><span style="color:#66d9ef">cd</span> C:\Users\pete
+</code></pre></div><p>then:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Batchfile" data-lang="Batchfile"><span style="color:#66d9ef">mklink</span> /J uni <span style="color:#e6db74">&#34;OneDrive - The University of Quahog&#34;</span>
+</code></pre></div><p>You&rsquo;re done, you can now close the cmd terminal and use <em>uni</em>, or whatever name you created, as an alternative folder to your long OneDrive folder.</p>
 <p><strong>Tip:</strong> add it to you Quick access shortcuts in Explorer, so in Explorer navigate to your new folder, for example, C: &gt; Users &gt; uni, right-click on <em>uni</em> and select &ldquo;Pin to Quick access&rdquo;.</p>
 <h2 id="method-2-for-more-experienced-windows-users">Method 2, for More Experienced Windows Users</h2>
 <ul>
 <li>open a PowerShell terminal as an administrator and enter the following command, remembering to use the 3 values you noted above:</li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">New-Item</span> <span class="n">-ItemType</span> <span class="n">Junction</span> <span class="n">-Path</span> <span class="s1">&#39;C:\Users\pete\&#39;</span> <span class="n">-Name</span> <span class="s1">&#39;uni&#39;</span> <span class="n">-Target</span> <span class="s1">&#39;C:\Users\pete\OneDrive - The University of Quahog&#39;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">New-Item -ItemType Junction -Path <span style="color:#e6db74">&#39;C:\Users\pete\&#39;</span> -Name <span style="color:#e6db74">&#39;uni&#39;</span> -Target <span style="color:#e6db74">&#39;C:\Users\pete\OneDrive - The University of Quahog&#39;</span>
 </code></pre></div>
         </div>
         
@@ -315,6 +288,9 @@ C:\Users\pete\uni\CampusMap.pdf
         
 <div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
     <div>
+        
+        <span class="block font-bold">Previous</span>
+        <a href="/posts/wsl-launching-windows-apps/" class="block">Launching Windows Apps From Within WSL</a>
         
     </div>
     <div class="md:text-right mt-4 md:mt-0">

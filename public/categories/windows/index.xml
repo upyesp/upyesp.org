@@ -6,7 +6,25 @@
     <description>Recent content in Windows on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Jul 2021 14:13:00 +0100</lastBuildDate><atom:link href="/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 21 Jul 2021 12:03:00 +0100</lastBuildDate><atom:link href="/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Edge Browser as a PDF Viewer &amp; Markup</title>
+      <link>/posts/edge-pdf/</link>
+      <pubDate>Wed, 21 Jul 2021 12:03:00 +0100</pubDate>
+      
+      <guid>/posts/edge-pdf/</guid>
+      <description>&lt;p&gt;Microsoft&amp;rsquo;s Edge browser supports viewing PDF files.  It enables marking up PDFs with your own comments, highlights and drawings. Several keyboard shortcuts make for efficient navigation through a PDF.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Launching Windows Apps From Within WSL</title>
+      <link>/posts/wsl-launching-windows-apps/</link>
+      <pubDate>Wed, 21 Jul 2021 10:29:00 +0100</pubDate>
+      
+      <guid>/posts/wsl-launching-windows-apps/</guid>
+      <description>&lt;p&gt;The interoperability provided by WSL enables calling or running Windows applications directly from within the Linux command line.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>How To Avoid Long OneDrive Folder Names</title>
       <link>/posts/avoiding-long-onedrive-names/</link>

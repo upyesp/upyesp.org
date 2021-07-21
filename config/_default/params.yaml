@@ -9,7 +9,7 @@ dateFormat:
 titleSeparator:
 
 # Options: auto, light and dark. Default is auto.
-colorScheme:
+colorScheme: dark
 
 # E.g. Person, Organization, LocalBusiness, Project, EducationalOrganization
 siteType: Person
@@ -37,7 +37,7 @@ publisherLogo:
 #       - sql
 #       - typescript
 #     # See https://github.com/highlightjs/cdn-release/tree/master/build/styles for available styles.
-#     style: atom-one-dark-reasonable
+#     style: monokai
 
 math:
   handler: katex
