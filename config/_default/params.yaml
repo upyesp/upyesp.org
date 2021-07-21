@@ -17,24 +17,27 @@ siteType: Person
 publisherName: upyesp
 publisherLogo:
 
-highlight:
-  handler: highlightjs
+# Pete commented out this section to use Hugo's
+# default syntax highlighter.
 
-  highlightjs:
-    # highlight.js doesn't bundle every language. So please specify additional languages you want here.
-    # See https://github.com/highlightjs/cdn-release/tree/master/build/languages for available languages.
-    languages:
-      - bash
-      - dos
-      - java
-      - javascript
-      - powershell
-      - python
-      - rust
-      - sql
-      - typescript
-    # See https://github.com/highlightjs/cdn-release/tree/master/build/styles for available styles.
-    style: atom-one-dark-reasonable
+# highlight:
+#   handler: highlightjs
+
+#   highlightjs:
+#     # highlight.js doesn't bundle every language. So please specify additional languages you want here.
+#     # See https://github.com/highlightjs/cdn-release/tree/master/build/languages for available languages.
+#     languages:
+#       - bash
+#       - dos
+#       - java
+#       - javascript
+#       - powershell
+#       - python
+#       - rust
+#       - sql
+#       - typescript
+#     # See https://github.com/highlightjs/cdn-release/tree/master/build/styles for available styles.
+#     style: atom-one-dark-reasonable
 
 math:
   handler: katex

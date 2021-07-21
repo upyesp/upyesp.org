@@ -21,8 +21,8 @@ If you have installed WSL and one or more linux distributions, it is possible to
 ![screenshot of Windows Explorer, highlighting the address bar, pin to quick access button and the list of quick access short cuts](/images/wsl-explorer-quickaccess.png "Browsing WSL Distros in Explorer")
 
 - start WSL
-- start Explorer (for example, press Windows + e)
-- in the address bar, type `\\wsl$\`, press ENTER
+- start Explorer (for example, <kbd>Windows</kbd> + <kbd>e</kbd>)
+- in the address bar, type `\\wsl$\` + <kbd>Enter</kbd>
 - the folder content pane shows each WSL distro installed
 - double-click on a distro to access it's file system
 

@@ -109,7 +109,7 @@
     },
     "headline": "How To Avoid Long OneDrive Folder Names | upyesp","datePublished": "2021-07-20T14:13:00+01:00",
     "dateModified": "2021-07-20T14:13:00+01:00",
-    "wordCount":  264 ,
+    "wordCount":  463 ,
     "publisher": {
         "@type": "Person",
         "name": "upyesp",
@@ -245,7 +245,7 @@
     </div>
     <div class="mr-6 my-2">
         <i class="fas fa-clock mr-1"></i>
-        <span>2 min read</span>
+        <span>3 min read</span>
     </div>
     
     
@@ -264,22 +264,37 @@
         
 
         <div class="content">
-            <p>If your employer or university provides you with Microsoft OneDrive, it is so useful right? But the long folder name can get in the way, like in the prompt of an IDE, terminal session or when browsing files in Explorer. One simple command, <code>mklink</code>, can fix that.</p>
-<p>It is possible to rename this folder, but the renaming method is very hacky, <strong>high risk</strong> and involves numerous changes within the Windows registry.  It is not recommended.</p>
-<p>An alternative is to keep the long folder name unchanged and to simply avoid using it by creating a symbolic reference to it and using the reference instead.  The specific type of symbolic reference being used here is a <a href="https://docs.microsoft.com/en-gb/windows/win32/fileio/symbolic-links">Junction Point</a>.</p>
+            <p>If your employer or university provides you with Microsoft OneDrive, you&rsquo;ll know how useful it can be right? The OneDrive folder name tends to be very long though, like &ldquo;OneDrive - The University of Quahog&rdquo;.  The long name can get in the way, like in the prompt of an IDE, in a terminal session or when browsing files in Explorer. One simple command, <code>mklink</code>, can fix that.</p>
+<p>It is possible to rename the OneDrive folder, but the renaming method is very hacky, <strong>high risk</strong> and involves numerous changes within the Windows registry.  It is not recommended.</p>
+<p>An alternative is to keep the long folder name unchanged and to simply avoid using it by creating a symbolic reference to it and using the symbolic reference instead.  The specific type of symbolic reference being used here is a <a href="https://docs.microsoft.com/en-gb/windows/win32/fileio/symbolic-links">Junction Point</a>.</p>
+<p>The symbolic reference looks and behaves similar to a folder. You can give it a simple &amp; short name, for example, &ldquo;uni&rdquo;.</p>
 <p>For example, the paths below point to the <em>same file</em>, in the <em>same location</em>:</p>
-<pre><code class="language-dos">C:\Users\pete\OneDrive - The University of Quahog\CS\misc\CampusMap.pdf
+<pre><code class="language-dos" data-lang="dos">C:\Users\pete\OneDrive - The University of Quahog\CampusMap.pdf
 
-C:\Users\pete\uni\CS\misc\CampusMap.pdf
-</code></pre>
-<h2 id="tldr">tl;dr</h2>
+C:\Users\pete\uni\CampusMap.pdf
+</code></pre><p>In the example above, the OneDrive folder called &ldquo;OneDrive - The University of Quahog&rdquo; exists, it remains unaffected and can continue to be used as normal.  Also, the much short folder, &ldquo;uni&rdquo;, can be used in place of the long OnrDrive folder.</p>
+<p>Firstly, make a note of the following 3 things:</p>
 <ol>
-<li>press the Windows key, type <code>cmd</code>, right-click on the top search result (Command Prompt App) and select &ldquo;Run as administrator&rdquo;</li>
-<li>navigate to the parent folder of the OneDrive folder - <em>hint</em>, it is usually in the <em>user</em> folder of the current Windows user, for example: <code>cd C:\Users\pete</code></li>
-<li>create a Junction Point using the <code>mklink</code> command with the <code>/J</code> parameter, for example if you want to call your symbolic reference <em>uni</em>, use: <code>mklink /J uni &quot;OneDrive - The University of Quahog&quot; </code></li>
-<li><strong>done</strong>, you can now close the cmd terminal and use <em>uni</em>, or whatever name you created, as an alternative route to your long OneDrive folder</li>
-<li>for extra convenience, in Explorer, navigate to your link, (in <code>C:\Users\pete</code>), right click on <em>uni</em> and select &ldquo;Pin to Quick access&rdquo;</li>
+<li>The long name of the OneDrive folder, for example &ldquo;OneDrive - The University of Quahog&rdquo;.</li>
+<li>The <strong>parent folder</strong> of the OneDrive folder - <em>hint</em>, the parent folder is usually the <em>user</em> folder of the current Windows user, for example, &ldquo;C:\Users\pete&rdquo;.</li>
+<li>The name of the new folder you want to use, for example something short like, &ldquo;uni&rdquo;.</li>
 </ol>
+<h2 id="method-1-using-a-commandcmd-prompt">Method 1, Using a Command/CMD Prompt</h2>
+<ul>
+<li>open a CMD prompt as an Administrator, so press the Windows key, type <code>cmd</code>, right-click on the top search result (Command Prompt App) and select &ldquo;Run as administrator&rdquo;</li>
+<li>navigate to the parent folder you noted above and create your new &ldquo;folder&rdquo; with a short name, using the <code>mklink</code> command with the <code>/J</code> parameter, for example:</li>
+</ul>
+<pre><code class="language-dos" data-lang="dos">cd C:\Users\pete
+</code></pre><p>then:</p>
+<pre><code class="language-dos" data-lang="dos">mklink /J uni &quot;OneDrive - The University of Quahog&quot;
+</code></pre><p>You&rsquo;re done, you can now close the cmd terminal and use <em>uni</em>, or whatever name you created, as an alternative folder to your long OneDrive folder.</p>
+<p><strong>Tip:</strong> add it to you Quick access shortcuts in Explorer, so in Explorer navigate to your new folder, for example, C: &gt; Users &gt; uni, right-click on <em>uni</em> and select &ldquo;Pin to Quick access&rdquo;.</p>
+<h2 id="method-2-for-more-experienced-windows-users">Method 2, for More Experienced Windows Users</h2>
+<ul>
+<li>open a PowerShell terminal as an administrator and enter the following command, remembering to use the 3 values you noted above:</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">New-Item</span> <span class="n">-ItemType</span> <span class="n">Junction</span> <span class="n">-Path</span> <span class="s1">&#39;C:\Users\pete\&#39;</span> <span class="n">-Name</span> <span class="s1">&#39;uni&#39;</span> <span class="n">-Target</span> <span class="s1">&#39;C:\Users\pete\OneDrive - The University of Quahog&#39;</span>
+</code></pre></div>
         </div>
         
         <div class="my-4">

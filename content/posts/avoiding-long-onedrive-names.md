@@ -21,12 +21,12 @@ An alternative is to keep the long folder name unchanged and to simply avoid usi
 
 The symbolic reference looks and behaves similar to a folder. You can give it a simple & short name, for example, "uni".
 
-For example, the paths below point to the *same file*, in the *same location*:
+For example, the paths below point to the *same location*:
 
-```dos
-C:\Users\pete\OneDrive - The University of Quahog\CampusMap.pdf
+```
+C:\Users\pete\OneDrive - The University of Quahog\...
 
-C:\Users\pete\uni\CampusMap.pdf
+C:\Users\pete\uni\...
 ```
 
 In the example above, the OneDrive folder called "OneDrive - The University of Quahog" exists, it remains unaffected and can continue to be used as normal.  Also, the much short folder, "uni", can be used in place of the long OnrDrive folder.
@@ -37,14 +37,16 @@ Firstly, make a note of the following 3 things:
 1. The name of the new folder you want to use, for example something short like, "uni".
 
 ## Method 1, Using a Command/CMD Prompt
-- open a CMD prompt as an Administrator, so press the Windows key, type `cmd`, right-click on the top search result (Command Prompt App) and select "Run as administrator"
+- open a CMD prompt as an Administrator, so press <kbd>Windows</kbd> and type `cmd`, right-click on the top search result (Command Prompt App) and select "Run as administrator"
 - navigate to the parent folder you noted above and create your new "folder" with a short name, using the `mklink` command with the `/J` parameter, for example:
 
-```dos
+```Batchfile
 cd C:\Users\pete
 ```
+
 then:
-```dos
+
+```Batchfile
 mklink /J uni "OneDrive - The University of Quahog"
 ```
 
@@ -55,6 +57,6 @@ You're done, you can now close the cmd terminal and use *uni*, or whatever name 
 ## Method 2, for More Experienced Windows Users
 - open a PowerShell terminal as an administrator and enter the following command, remembering to use the 3 values you noted above:
 
-```powershell
+```PowerShell
 New-Item -ItemType Junction -Path 'C:\Users\pete\' -Name 'uni' -Target 'C:\Users\pete\OneDrive - The University of Quahog'
 ```
