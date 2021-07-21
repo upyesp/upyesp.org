@@ -11,7 +11,7 @@ categories:
   - Windows
 ---
 
-Microsoft's Edge browser supports viewing PDF files.  It enables marking up PDFs with highlights and drawings. Several keyboard shortcuts make for efficient navigation through a PDF.
+Microsoft's Edge browser supports viewing PDF files.  It enables marking up PDFs with your own comments, highlights and drawings. Several keyboard shortcuts make for efficient navigation through a PDF.
 
 <!--more-->
 
@@ -23,6 +23,15 @@ While Edge displays a PDF, a toolbar is available across the top of the pane. Fu
 
 - Table of Contents - toggle the side pane view of the PDF's table of contents. Headings in the ToC are clickable links.
 - Draw, Highlight & Erase - you can annotate the PDF with highlights and free-hand drawing.
+
+## Adding Comments / Notes
+
+To add comments to a PDF:
+
+1. Highlight the text you want to add a comment to.
+1. Right-click the text, to display the pop-up context menu, select "add comment".
+1. Enter text in the comment box.
+1. The text you added the comment to remains highlighted and a Comment Tag is displayed with it. 
 
 Some other functions I use are detailed in the list of shortcuts below.
 

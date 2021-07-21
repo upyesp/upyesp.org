@@ -34,6 +34,6 @@ explorer.exe .
 Launches the Windows Explorer, defaulting to the current location in the linux file system.
 
 ```Bash
-vscode.exe .
+code.exe .
 ```
 Opens the Windows app VSCode, in "remote WSL" mode, allowing VSCode to support the development of native Linux apps.
