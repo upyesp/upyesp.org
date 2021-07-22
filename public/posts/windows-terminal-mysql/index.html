@@ -82,7 +82,7 @@
     },
     "headline": "MySQL and Windows Terminal | upyesp","datePublished": "2021-07-22T06:00:00+01:00",
     "dateModified": "2021-07-22T06:00:00+01:00",
-    "wordCount":  164 ,
+    "wordCount":  239 ,
     "publisher": {
         "@type": "Person",
         "name": "upyesp",
@@ -227,7 +227,7 @@
     </div>
     <div class="mr-6 my-2">
         <i class="fas fa-clock mr-1"></i>
-        <span>1 min read</span>
+        <span>2 min read</span>
     </div>
     
     
@@ -254,9 +254,37 @@
 
         <div class="content">
             <p>MySQL has it&rsquo;s own terminal emulator, providing a command-line interface (CLI) for the direct input and execution of SQL commands and scripts.</p>
-<p>The MySQL terminal can be called from PowerShell, CMD or added to the Windows Terminal.</p>
+<p>The MySQL terminal emulator can be called from PowerShell, CMD or added to the Windows Terminal.</p>
 <p><img src="/images/MySQL-Terminal-In-Windows-Terminal.png" alt="screenshot of Windows Terminal running a MySQL terminal, with some SQL commands" title="MySQL in Windows Terminal"></p>
 <h2 id="starting-a-mysql-terminal-session-from-inside-an-active-powershell-or-cmd-session">Starting A MySQL Terminal Session From Inside an Active PowerShell or CMD Session</h2>
+<p>The MySQL terminal is launched by calling program &lsquo;mysql.exe&rsquo;.  A number of parameters can be passed, the full list is available at <a href="https://dev.mysql.com/doc/refman/8.0/en/mysql-command-options.html">4.5.1.1 mysql Client Options</a>.</p>
+<p>The parameters I typically use are detailed below:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&ndash;port</td>
+<td>Default=3306 - TCP/IP port number for connection.</td>
+</tr>
+<tr>
+<td>&ndash;host</td>
+<td>Default=127.0.0.1 - Host on which MySQL server is located</td>
+</tr>
+<tr>
+<td>&ndash;user</td>
+<td>Default=root - MySQL user name when connecting to the server.</td>
+</tr>
+<tr>
+<td>-p</td>
+<td>Password to use when connecting to the server.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="powershell">PowerShell</h3>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">&amp; <span style="color:#2aa198">&#39;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#39;</span> --port=3306 --host=127.0.0.1 --user=root -p
 </code></pre></div><h3 id="cmd">CMD</h3>

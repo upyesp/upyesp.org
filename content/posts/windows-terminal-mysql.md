@@ -18,11 +18,24 @@ MySQL has it's own terminal emulator, providing a command-line interface (CLI) f
 
 <!--more-->
 
-The MySQL terminal can be called from PowerShell, CMD or added to the Windows Terminal.
+The MySQL terminal emulator can be called from PowerShell, CMD or added to the Windows Terminal.
 
 ![screenshot of Windows Terminal running a MySQL terminal, with some SQL commands](/images/MySQL-Terminal-In-Windows-Terminal.png "MySQL in Windows Terminal")
 
 ## Starting A MySQL Terminal Session From Inside an Active PowerShell or CMD Session
+
+The MySQL terminal is launched by calling program 'mysql.exe'.  A number of parameters can be passed, the full list is available at [4.5.1.1 mysql Client Options](https://dev.mysql.com/doc/refman/8.0/en/mysql-command-options.html).  
+
+The parameters I typically use are detailed below: 
+
+| Parameter | Details                                                       |
+|-----------|---------------------------------------------------------------|
+| --port    | Default=3306 - TCP/IP port number for connection.             |
+| --host    | Default=127.0.0.1 - Host on which MySQL server is located     |
+| --user    | Default=root - MySQL user name when connecting to the server. |
+| -p        | Password to use when connecting to the server.                |
+
+Here are examples of calling mysql.exe with these parameters:
 
 ### PowerShell
 
@@ -36,14 +49,26 @@ The MySQL terminal can be called from PowerShell, CMD or added to the Windows Te
 "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" --port=3306 --host=127.0.0.1 --user=root -p
 ```
 
-### Some Useful SQL Commands
+### Example SQL Commands
 
 ```SQL
-show databases;
-use employeeschema;
-show tables;
-describe employee;
-select * from employee;
+SHOW databases;
+USE employeeschema;
+SHOW TABLES;
+CREATE TABLE itemType (
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    description VARCHAR(100) NOT NULL,
+    loanDuration INT NOT NULL,
+    created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (id)
+    );
+INSERT INTO itemType(description, loanDuration)
+    VALUES
+    ('Raspberry Pi Kits', 28),
+    ('Raspberry Pi Hats & Microcontrollers', 28),
+    ('Raspberry Pi Books', 56)
+    ;
+SELECT * FROM itemType;
 ```
 
 ## Windows Terminal - Adding A Dedicated MySQL Terminal
