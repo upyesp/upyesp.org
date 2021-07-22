@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en' ><meta charset="utf-8">
+<html lang='en' class="dark" ><meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 
 
@@ -53,7 +53,7 @@
 
 
 <meta name="description"
-  content="While using a Linux in Windows it is possible to run Windows applications..">
+  content="While using a Linux in Windows it is possible to run Windows applications.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -82,12 +82,12 @@
     },
     "headline": "Launching Windows Apps From Within WSL | upyesp","datePublished": "2021-07-21T10:29:00+01:00",
     "dateModified": "2021-07-21T10:29:00+01:00",
-    "wordCount":  96 ,
+    "wordCount":  166 ,
     "publisher": {
         "@type": "Person",
         "name": "upyesp",
         },
-    "description": "While using a Linux in Windows it is possible to run Windows applications.."
+    "description": "While using a Linux in Windows it is possible to run Windows applications."
 }
 </script><meta property="og:title" content="Launching Windows Apps From Within WSL | upyesp" />
 <meta property="og:type" content="article" />
@@ -98,7 +98,7 @@
 
 
 
-<meta property="og:description" content="While using a Linux in Windows it is possible to run Windows applications.." />
+<meta property="og:description" content="While using a Linux in Windows it is possible to run Windows applications." />
 
 
 
@@ -148,8 +148,8 @@
   <header class="fixed flex items-center w-full min-h-16 pl-scrollbar z-50 bg-secondary-bg shadow-sm">
     <div class="w-full max-w-screen-xl mx-auto"><script>
     let storageColorScheme = localStorage.getItem("lightDarkMode")
-    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
-        document.getElementsByTagName('html')[0].classList.add('dark')
+    if ((storageColorScheme == 'Auto' && window.matchMedia("(prefers-color-scheme: light)").matches) || storageColorScheme == "Light") {
+        document.getElementsByTagName('html')[0].classList.remove('dark')
     }
 </script>
 <nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
@@ -168,7 +168,7 @@
         <div class="flex">
             <div class="relative pt-4 md:pt-0">
                 <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
-                    <i class="fas fa-adjust"></i>
+                    <i class="fas fa-moon"></i>
                 </div>
                 <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
                 </div>
@@ -189,18 +189,17 @@
 <script>
     
     let element = document.getElementById('lightDarkMode')
-    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+    if (storageColorScheme == 'Auto') {
+        element.firstElementChild.classList.remove('fa-moon')
+        element.firstElementChild.setAttribute("data-icon", 'adjust')
+        element.firstElementChild.classList.add('fa-adjust')
         document.addEventListener('DOMContentLoaded', () => {
             window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
         })
     } else if (storageColorScheme == "Light") {
-        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.classList.remove('fa-moon')
         element.firstElementChild.setAttribute("data-icon", 'sun')
         element.firstElementChild.classList.add('fa-sun')
-    } else if (storageColorScheme == "Dark") {
-        element.firstElementChild.classList.remove('fa-adjust')
-        element.firstElementChild.setAttribute("data-icon", 'moon')
-        element.firstElementChild.classList.add('fa-moon')
     }
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -259,12 +258,15 @@
             <p>The interoperability provided by WSL enables calling or running Windows applications directly from within the Linux command line.</p>
 <p>From within the WSL shell, type the name of the Windows executable, with &ldquo;.exe&rdquo; appended, followed by any arguments you want to include.</p>
 <p>Some examples:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">notepad.exe .bashrc
-</code></pre></div><p>Will launch the Windows program Notepad, opening the linux hidden file, &ldquo;.bashrc&rdquo; for editing.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">explorer.exe .
-</code></pre></div><p>Launches the Windows Explorer, defaulting to the current location in the linux file system.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">code.exe .
-</code></pre></div><p>Opens the Windows app VSCode, in &ldquo;remote WSL&rdquo; mode, allowing VSCode to support the development of native Linux apps.</p>
+<h2 id="notepad">NotePad</h2>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">notepad.exe .bashrc
+</code></pre></div><p>Will launch the Windows program, Notepad.  A file name can be included as a parameter.  In the above example, a file name has been passed, &ldquo;.bashrc&rdquo;, which happens to be a hidden file in linux. When Notepad starts in Windows, the linux file &ldquo;.bashrc&rdquo; will be open for editing/saving.</p>
+<h2 id="explorer">Explorer</h2>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">explorer.exe .
+</code></pre></div><p>Launches the Windows Explorer. The &ldquo;.&rdquo; parameter specifies Explorer to start the current location in the linux file system. So Explorer launches in Windows, browsing linux files.</p>
+<h2 id="vscode">VSCode</h2>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Bash" data-lang="Bash">code.exe .
+</code></pre></div><p>Opens the Windows app VSCode, in &ldquo;remote WSL&rdquo; mode, allowing VSCode to support the development of native Linux apps. As with Explorer above, the &ldquo;.&rdquo; parameter specifies to work with the current location in the linux file system.</p>
         </div>
         
         <div class="my-4">
@@ -322,6 +324,24 @@
     </div>
 </div>
         
+        
+        <div class="sticky top-16 z-10 hidden lg:block px-6 py-4  bg-primary-bg ">
+    <span class="text-lg font-semibold">On This Page</span>
+</div>
+<div class="sticky-toc hidden lg:block px-6 pb-6 ">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#notepad">NotePad</a></li>
+    <li><a href="#explorer">Explorer</a></li>
+    <li><a href="#vscode">VSCode</a></li>
+  </ul>
+</nav>
+</div>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        enableStickyToc();
+    });
+</script>
         
     </div>
     

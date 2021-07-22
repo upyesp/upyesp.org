@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Windows Terminal on upyesp</title>
+    <link>/series/windows-terminal/</link>
+    <description>Recent content in Windows Terminal on upyesp</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 22 Jul 2021 06:00:00 +0100</lastBuildDate><atom:link href="/series/windows-terminal/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL and Windows Terminal</title>
+      <link>/posts/windows-terminal-mysql/</link>
+      <pubDate>Thu, 22 Jul 2021 06:00:00 +0100</pubDate>
+      
+      <guid>/posts/windows-terminal-mysql/</guid>
+      <description>&lt;p&gt;MySQL has it&amp;rsquo;s own terminal emulator, providing a command-line interface (CLI) for the direct input and execution of SQL commands and scripts.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

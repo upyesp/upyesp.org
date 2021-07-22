@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width">
 
 
-<title>Posts | upyesp</title>
+<title>MySQL and Windows Terminal | upyesp</title>
 
 <meta name="generator" content="Hugo Eureka 0.8.2" />
 <link rel="stylesheet" href="/css/eureka.min.css">
@@ -53,50 +53,52 @@
 
 
 <meta name="description"
-  content="Some tech info and tips I find handy to know.">
-
+  content="Some notes on configuring Windows Terminal to work with MySQL.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"Posts",
+      "item":"/posts/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"MySQL and Windows Terminal",
+      "item":"/posts/windows-terminal-mysql/"}]
+}
+</script>
 
 
 
 <script type="application/ld+json">
 {
-    "@context":"https://schema.org",
-    "@type":"ItemList",
-    "itemListElement":[{
-            "@type":"ListItem",
-            "position":  1 ,
-            "name": "MySQL and Windows Terminal",
-            "description": "Some notes on configuring Windows Terminal to work with MySQL.",
-            "url": "/posts/windows-terminal-mysql/"
-        },{
-            "@type":"ListItem",
-            "position":  2 ,
-            "name": "Edge Browser as a PDF Viewer \u0026 Markup",
-            "description": "Edge makes for a great PDF experience.",
-            "url": "/posts/edge-pdf/"
-        },{
-            "@type":"ListItem",
-            "position":  3 ,
-            "name": "Launching Windows Apps From Within WSL",
-            "description": "While using a Linux in Windows it is possible to run Windows applications.",
-            "url": "/posts/wsl-launching-windows-apps/"
-        }
-    ]
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/posts/windows-terminal-mysql/"
+    },
+    "headline": "MySQL and Windows Terminal | upyesp","datePublished": "2021-07-22T06:00:00+01:00",
+    "dateModified": "2021-07-22T06:00:00+01:00",
+    "wordCount":  162 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "upyesp",
+        },
+    "description": "Some notes on configuring Windows Terminal to work with MySQL."
 }
-</script><meta property="og:title" content="Posts | upyesp" />
-<meta property="og:type" content="website" />
+</script><meta property="og:title" content="MySQL and Windows Terminal | upyesp" />
+<meta property="og:type" content="article" />
 
 
 
-<meta property="og:url" content="/posts/" />
+<meta property="og:url" content="/posts/windows-terminal-mysql/" />
 
 
 
-
-
-<meta property="og:description" content="Some tech info and tips I find handy to know." />
-
-
+<meta property="og:description" content="Some notes on configuring Windows Terminal to work with MySQL." />
 
 
 
@@ -112,14 +114,29 @@
 
 
 
-<meta property="og:updated_time" content="2021-07-22T06:00:00&#43;01:00" />
+<meta property="article:published_time" content="2021-07-22T06:00:00&#43;01:00" />
+
+
+<meta property="article:modified_time" content="2021-07-22T06:00:00&#43;01:00" />
 
 
 
 <meta property="article:section" content="posts" />
 
 
-<link rel="alternate" type="application/rss+xml" href="/posts/index.xml" title="upyesp" />
+<meta property="article:tag" content="MySQL" />
+
+
+
+
+
+
+
+
+
+
+
+
 
 <body class="flex flex-col min-h-screen">
   <header class="fixed flex items-center w-full min-h-16 pl-scrollbar z-50 bg-secondary-bg shadow-sm">
@@ -189,26 +206,13 @@
   <main class="flex-grow pt-16">
     <div class="pl-scrollbar">
       <div class="w-full max-w-screen-xl lg:px-4 xl:px-8 mx-auto">
-<article class="mx-6 my-8">
-    <h1 class="font-bold text-3xl text-primary-text">Posts</h1>
-    
-</article>
-<div class="bg-secondary-bg rounded px-6">
-    <div class="overflow-hidden divide-y">
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="mb-4">
-  <a href="/posts/windows-terminal-mysql/" class="font-bold text-xl hover:text-eureka">MySQL and Windows Terminal</a>
-</div>
-<div class="content">
-  MySQL has it’s own terminal emulator, providing a command-line interface (CLI) for the direct input and execution of SQL commands and scripts.
 
-</div>
 
-<div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
+<div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
+    <div
+        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
+        <h1 class="font-bold text-3xl text-primary-text">MySQL and Windows Terminal</h1>
+        <div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
     <div class="mr-6 my-2">
         <i class="fas fa-calendar mr-1"></i>
         <span>2021-07-22</span>
@@ -236,129 +240,135 @@
     </div>
     
 </div>
-
-  </div>
-
-  
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="mb-4">
-  <a href="/posts/edge-pdf/" class="font-bold text-xl hover:text-eureka">Edge Browser as a PDF Viewer &amp; Markup</a>
-</div>
-<div class="content">
-  Microsoft’s Edge browser supports viewing PDF files. It enables marking up PDFs with your own comments, highlights and drawings. Several keyboard shortcuts make for efficient navigation through a PDF.
-
-</div>
-
-<div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
-    <div class="mr-6 my-2">
-        <i class="fas fa-calendar mr-1"></i>
-        <span>2021-07-21</span>
-    </div>
-    <div class="mr-6 my-2">
-        <i class="fas fa-clock mr-1"></i>
-        <span>2 min read</span>
-    </div>
-    
-    
-    <div class="mr-6 my-2">
-        <i class="fas fa-folder mr-1"></i>
-        
-        <a href="/categories/windows/" class="hover:text-eureka">Windows</a>
-        
-    </div>
-    
-
-    
-</div>
-
-  </div>
-
-  
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="mb-4">
-  <a href="/posts/wsl-launching-windows-apps/" class="font-bold text-xl hover:text-eureka">Launching Windows Apps From Within WSL</a>
-</div>
-<div class="content">
-  The interoperability provided by WSL enables calling or running Windows applications directly from within the Linux command line.
-
-</div>
-
-<div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
-    <div class="mr-6 my-2">
-        <i class="fas fa-calendar mr-1"></i>
-        <span>2021-07-21</span>
-    </div>
-    <div class="mr-6 my-2">
-        <i class="fas fa-clock mr-1"></i>
-        <span>1 min read</span>
-    </div>
-    
-    
-    <div class="mr-6 my-2">
-        <i class="fas fa-folder mr-1"></i>
-        
-        <a href="/categories/windows/" class="hover:text-eureka">Windows</a>
         
         
-        <span>, </span>
-        <a href="/categories/linux/" class="hover:text-eureka">Linux</a>
+        
+
+        <div class="content">
+            <p>MySQL has it&rsquo;s own terminal emulator, providing a command-line interface (CLI) for the direct input and execution of SQL commands and scripts.</p>
+<p>The MySQL terminal can be called from PowerShell, CMD or added to the Windows Terminal.</p>
+<h2 id="starting-a-mysql-terminal-session-from-inside-an-active-powershell-or-cmd-session">Starting A MySQL Terminal Session From Inside an Active PowerShell or CMD Session</h2>
+<h3 id="powershell">PowerShell</h3>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">&amp; <span style="color:#2aa198">&#39;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#39;</span> --port=3306 --host=127.0.0.1 --user=root -p
+</code></pre></div><h3 id="cmd">CMD</h3>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Batchfile" data-lang="Batchfile"><span style="color:#2aa198">&#34;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#34;</span> --port=3306 --host=127.0.0.1 --user=root -p
+</code></pre></div><h3 id="some-useful-sql-commands">Some Useful SQL Commands</h3>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL"><span style="color:#719e07">show</span> databases;
+use employeeschema;
+<span style="color:#719e07">show</span> tables;
+<span style="color:#719e07">describe</span> employee;
+<span style="color:#719e07">select</span> <span style="color:#719e07">*</span> <span style="color:#719e07">from</span> employee;
+</code></pre></div><h2 id="windows-terminal---adding-a-dedicated-mysql-terminal">Windows Terminal - Adding A Dedicated MySQL Terminal</h2>
+<ol>
+<li>
+<p>Start Windows Terminal</p>
+</li>
+<li>
+<p>Open Settings <code>Ctrl+,</code></p>
+</li>
+<li>
+<p>Click <code>+ Add new</code> (bottom left corner)</p>
+</li>
+<li>
+<p>Enter the values for your installation, for example:</p>
+<ul>
+<li>Name: <code>MySQL</code></li>
+<li>Command Line: <code>C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe -h localhost -u root -p</code> (yours might be different)</li>
+<li>Starting directory: I&rsquo;ve left this empty
+<ul>
+<li>I&rsquo;ve ticked &ldquo;Use parent process directory&rdquo;</li>
+</ul>
+</li>
+<li>Icon:  I just used an emoji (press <code>Windows + .</code>).  I&rsquo;m using this one&hellip; 🐬</li>
+<li>Tab Title: <code>MySQL</code></li>
+</ul>
+<p>Done.</p>
+</li>
+</ol>
+        </div>
+        
+        <div class="my-4">
+    
+    <a href="/tags/mysql/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#MySQL</a>
+    
+</div>
+        
+        
+        
+
+
+        
+        
+        
+        
+<div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
+    <div>
         
     </div>
-    
-
-    
-    <div class="mr-6 my-2">
-        <i class="fas fa-th-list mr-1"></i>
+    <div class="md:text-right mt-4 md:mt-0">
         
-        <a href="/series/windows-subsystem-for-linux/" class="hover:text-eureka">Windows Subsystem for Linux</a>
+        <span class="block font-bold">Next</span>
+        <a href="/posts/edge-pdf/" class="block">Edge Browser as a PDF Viewer &amp; Markup</a>
+        
+    </div>
+</div>
+
+        
+
+
+
+    </div>
+    
+    <div class="col-span-2">
+        
+        
+<div class="bg-secondary-bg rounded p-6">
+    <h3 class="text-lg font-semibold mb-4">Series of Posts</h3>
+    <div class="content">
+        
+        
+        <a href="/posts/windows-terminal-mysql/">MySQL and Windows Terminal</a>
+        <br />
+        
+        
+    </div>
+</div>
+        
+        
+        <div class="sticky top-16 z-10 hidden lg:block px-6 py-4  bg-primary-bg ">
+    <span class="text-lg font-semibold">On This Page</span>
+</div>
+<div class="sticky-toc hidden lg:block px-6 pb-6 ">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#starting-a-mysql-terminal-session-from-inside-an-active-powershell-or-cmd-session">Starting A MySQL Terminal Session From Inside an Active PowerShell or CMD Session</a>
+      <ul>
+        <li><a href="#powershell">PowerShell</a></li>
+        <li><a href="#cmd">CMD</a></li>
+        <li><a href="#some-useful-sql-commands">Some Useful SQL Commands</a></li>
+      </ul>
+    </li>
+    <li><a href="#windows-terminal---adding-a-dedicated-mysql-terminal">Windows Terminal - Adding A Dedicated MySQL Terminal</a></li>
+  </ul>
+</nav>
+</div>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        enableStickyToc();
+    });
+</script>
         
     </div>
     
+
+    
+    
 </div>
-
-  </div>
-
-  
-</div>
-  </div>
-  
-</div>
-
-
-</div>
-
-    <ul class="pagination pagination-default">
-      <li class="page-item disabled">
-        <a href="#" aria-disabled="true" aria-label="First" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;&laquo;</span></a>
-      </li>
-      <li class="page-item disabled">
-        <a href="#" aria-disabled="true" aria-label="Previous" class="page-link" role="button" tabindex="-1"><span aria-hidden="true">&laquo;</span></a>
-      </li>
-      <li class="page-item active">
-        <a href="#" aria-current="page" aria-label="Page 1" class="page-link" role="button">1</a>
-      </li>
-      <li class="page-item">
-        <a href="/posts/page/2/" aria-label="Page 2" class="page-link" role="button">2</a>
-      </li>
-      <li class="page-item">
-        <a href="/posts/page/2/" aria-label="Next" class="page-link" role="button"><span aria-hidden="true">&raquo;</span></a>
-      </li>
-      <li class="page-item">
-        <a href="/posts/page/2/" aria-label="Last" class="page-link" role="button"><span aria-hidden="true">&raquo;&raquo;</span></a>
-      </li>
-    </ul>
+<script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+        hljs.initHighlightingOnLoad();
+    })
+</script>
 
       </div>
     </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang='en' ><meta charset="utf-8">
+<html lang='en' class="dark" ><meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 
 
@@ -80,21 +80,21 @@
     "itemListElement":[{
             "@type":"ListItem",
             "position":  1 ,
+            "name": "MySQL and Windows Terminal",
+            "description": "Some notes on configuring Windows Terminal to work with MySQL.",
+            "url": "/posts/windows-terminal-mysql/"
+        },{
+            "@type":"ListItem",
+            "position":  2 ,
             "name": "Edge Browser as a PDF Viewer \u0026 Markup",
             "description": "Edge makes for a great PDF experience.",
             "url": "/posts/edge-pdf/"
         },{
             "@type":"ListItem",
-            "position":  2 ,
-            "name": "Launching Windows Apps From Within WSL",
-            "description": "While using a Linux in Windows it is possible to run Windows applications..",
-            "url": "/posts/wsl-launching-windows-apps/"
-        },{
-            "@type":"ListItem",
             "position":  3 ,
-            "name": "How To Avoid Long OneDrive Folder Names",
-            "description": "OneDrive from Microsoft is excellent, but those long folder names get in the way.",
-            "url": "/posts/avoiding-long-onedrive-names/"
+            "name": "Launching Windows Apps From Within WSL",
+            "description": "While using a Linux in Windows it is possible to run Windows applications.",
+            "url": "/posts/wsl-launching-windows-apps/"
         }
     ]
 }
@@ -127,7 +127,7 @@
 
 
 
-<meta property="og:updated_time" content="2021-07-21T12:03:00&#43;01:00" />
+<meta property="og:updated_time" content="2021-07-22T06:00:00&#43;01:00" />
 
 
 
@@ -140,8 +140,8 @@
   <header class="fixed flex items-center w-full min-h-16 pl-scrollbar z-50 bg-secondary-bg shadow-sm">
     <div class="w-full max-w-screen-xl mx-auto"><script>
     let storageColorScheme = localStorage.getItem("lightDarkMode")
-    if (((storageColorScheme == 'Auto' || storageColorScheme == null) && window.matchMedia("(prefers-color-scheme: dark)").matches) || storageColorScheme == "Dark") {
-        document.getElementsByTagName('html')[0].classList.add('dark')
+    if ((storageColorScheme == 'Auto' && window.matchMedia("(prefers-color-scheme: light)").matches) || storageColorScheme == "Light") {
+        document.getElementsByTagName('html')[0].classList.remove('dark')
     }
 </script>
 <nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
@@ -160,7 +160,7 @@
         <div class="flex">
             <div class="relative pt-4 md:pt-0">
                 <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
-                    <i class="fas fa-adjust"></i>
+                    <i class="fas fa-moon"></i>
                 </div>
                 <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
                 </div>
@@ -181,18 +181,17 @@
 <script>
     
     let element = document.getElementById('lightDarkMode')
-    if (storageColorScheme == null || storageColorScheme == 'Auto') {
+    if (storageColorScheme == 'Auto') {
+        element.firstElementChild.classList.remove('fa-moon')
+        element.firstElementChild.setAttribute("data-icon", 'adjust')
+        element.firstElementChild.classList.add('fa-adjust')
         document.addEventListener('DOMContentLoaded', () => {
             window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
         })
     } else if (storageColorScheme == "Light") {
-        element.firstElementChild.classList.remove('fa-adjust')
+        element.firstElementChild.classList.remove('fa-moon')
         element.firstElementChild.setAttribute("data-icon", 'sun')
         element.firstElementChild.classList.add('fa-sun')
-    } else if (storageColorScheme == "Dark") {
-        element.firstElementChild.classList.remove('fa-adjust')
-        element.firstElementChild.setAttribute("data-icon", 'moon')
-        element.firstElementChild.classList.add('fa-moon')
     }
 
     document.addEventListener('DOMContentLoaded', () => {
@@ -211,6 +210,53 @@
 </article>
 <div class="bg-secondary-bg rounded px-6">
     <div class="overflow-hidden divide-y">
+  
+  <div class="py-6">
+    <div class="flex flex-col-reverse lg:flex-row justify-between">
+  
+  <div class="w-full ">
+    <div class="mb-4">
+  <a href="/posts/windows-terminal-mysql/" class="font-bold text-xl hover:text-eureka">MySQL and Windows Terminal</a>
+</div>
+<div class="content">
+  MySQL has it’s own terminal emulator, providing a command-line interface (CLI) for the direct input and execution of SQL commands and scripts.
+
+</div>
+
+<div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>2021-07-22</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>1 min read</span>
+    </div>
+    
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="/categories/windows/" class="hover:text-eureka">Windows</a>
+        
+    </div>
+    
+
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-th-list mr-1"></i>
+        
+        <a href="/series/windows-terminal/" class="hover:text-eureka">Windows Terminal</a>
+        
+    </div>
+    
+</div>
+
+  </div>
+
+  
+</div>
+  </div>
   
   <div class="py-6">
     <div class="flex flex-col-reverse lg:flex-row justify-between">
@@ -294,46 +340,6 @@
         <a href="/series/windows-subsystem-for-linux/" class="hover:text-eureka">Windows Subsystem for Linux</a>
         
     </div>
-    
-</div>
-
-  </div>
-
-  
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="mb-4">
-  <a href="/posts/avoiding-long-onedrive-names/" class="font-bold text-xl hover:text-eureka">How To Avoid Long OneDrive Folder Names</a>
-</div>
-<div class="content">
-  If your employer or university provides you with Microsoft OneDrive, you’ll know how useful it can be right? The OneDrive folder name tends to be very long though, like “OneDrive - The University of Quahog”. The long name can get in the way, like in the prompt of an IDE, in a terminal session or when browsing files in Explorer. One simple command, mklink, can fix that.
-
-</div>
-
-<div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
-    <div class="mr-6 my-2">
-        <i class="fas fa-calendar mr-1"></i>
-        <span>2021-07-20</span>
-    </div>
-    <div class="mr-6 my-2">
-        <i class="fas fa-clock mr-1"></i>
-        <span>3 min read</span>
-    </div>
-    
-    
-    <div class="mr-6 my-2">
-        <i class="fas fa-folder mr-1"></i>
-        
-        <a href="/categories/windows/" class="hover:text-eureka">Windows</a>
-        
-    </div>
-    
-
     
 </div>
 
