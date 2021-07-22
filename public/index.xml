@@ -6,7 +6,16 @@
     <description>Recent content on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 22 Jul 2021 06:00:00 +0100</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Jul 2021 08:34:00 +0100</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding Colour &amp; Icons to File Listings in a Terminal</title>
+      <link>/posts/windows-terminal-colour-icons/</link>
+      <pubDate>Thu, 22 Jul 2021 08:34:00 +0100</pubDate>
+      
+      <guid>/posts/windows-terminal-colour-icons/</guid>
+      <description>&lt;p&gt;Adding icons and colour to folders and files is fun and improves the user experience in PowerShell.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>MySQL and Windows Terminal</title>
       <link>/posts/windows-terminal-mysql/</link>

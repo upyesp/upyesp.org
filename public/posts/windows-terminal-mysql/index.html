@@ -82,7 +82,7 @@
     },
     "headline": "MySQL and Windows Terminal | upyesp","datePublished": "2021-07-22T06:00:00+01:00",
     "dateModified": "2021-07-22T06:00:00+01:00",
-    "wordCount":  162 ,
+    "wordCount":  164 ,
     "publisher": {
         "@type": "Person",
         "name": "upyesp",
@@ -126,11 +126,19 @@
 
 <meta property="article:tag" content="MySQL" />
 
+<meta property="article:tag" content="PowerShell" />
+
+<meta property="article:tag" content="SQL" />
 
 
 
 
 
+
+
+
+
+<meta property="og:see_also" content="/posts/windows-terminal-colour-icons/" />
 
 
 
@@ -247,6 +255,7 @@
         <div class="content">
             <p>MySQL has it&rsquo;s own terminal emulator, providing a command-line interface (CLI) for the direct input and execution of SQL commands and scripts.</p>
 <p>The MySQL terminal can be called from PowerShell, CMD or added to the Windows Terminal.</p>
+<p><img src="/images/MySQL-Terminal-In-Windows-Terminal.png" alt="screenshot of Windows Terminal running a MySQL terminal, with some SQL commands" title="MySQL in Windows Terminal"></p>
 <h2 id="starting-a-mysql-terminal-session-from-inside-an-active-powershell-or-cmd-session">Starting A MySQL Terminal Session From Inside an Active PowerShell or CMD Session</h2>
 <h3 id="powershell">PowerShell</h3>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">&amp; <span style="color:#2aa198">&#39;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#39;</span> --port=3306 --host=127.0.0.1 --user=root -p
@@ -264,7 +273,7 @@ use employeeschema;
 <p>Start Windows Terminal</p>
 </li>
 <li>
-<p>Open Settings <code>Ctrl+,</code></p>
+<p>Open Settings <kbd>Ctrl</kbd> + <kbd>,</kbd></p>
 </li>
 <li>
 <p>Click <code>+ Add new</code> (bottom left corner)</p>
@@ -279,7 +288,7 @@ use employeeschema;
 <li>I&rsquo;ve ticked &ldquo;Use parent process directory&rdquo;</li>
 </ul>
 </li>
-<li>Icon:  I just used an emoji (press <code>Windows + .</code>).  I&rsquo;m using this one&hellip; 🐬</li>
+<li>Icon:  I just used an emoji (press <kbd>Windows</kbd> + <kbd>.</kbd>).  I&rsquo;m using this one&hellip; 🐬</li>
 <li>Tab Title: <code>MySQL</code></li>
 </ul>
 <p>Done.</p>
@@ -290,6 +299,10 @@ use employeeschema;
         <div class="my-4">
     
     <a href="/tags/mysql/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#MySQL</a>
+    
+    <a href="/tags/powershell/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#PowerShell</a>
+    
+    <a href="/tags/sql/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#SQL</a>
     
 </div>
         
@@ -303,6 +316,9 @@ use employeeschema;
         
 <div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
     <div>
+        
+        <span class="block font-bold">Previous</span>
+        <a href="/posts/windows-terminal-colour-icons/" class="block">Adding Colour &amp; Icons to File Listings in a Terminal</a>
         
     </div>
     <div class="md:text-right mt-4 md:mt-0">
@@ -326,6 +342,9 @@ use employeeschema;
     <h3 class="text-lg font-semibold mb-4">Series of Posts</h3>
     <div class="content">
         
+        
+        <a href="/posts/windows-terminal-colour-icons/">Adding Colour &amp; Icons to File Listings in a Terminal</a>
+        <br />
         
         <a href="/posts/windows-terminal-mysql/">MySQL and Windows Terminal</a>
         <br />

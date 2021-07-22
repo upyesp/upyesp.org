@@ -24,16 +24,16 @@ The symbolic reference looks and behaves similar to a folder. You can give it a 
 For example, the paths below point to the *same location*:
 
 ```Batchfile
-C:\Users\pete\OneDrive - The University of Quahog\...
+C:\Users\fred\OneDrive - The University of Quahog\...
 
-C:\Users\pete\uni\...
+C:\Users\fred\uni\...
 ```
 
 In the example above, the OneDrive folder called "OneDrive - The University of Quahog" exists, it remains unaffected and can continue to be used as normal.  Also, the much short folder, "uni", can be used in place of the long OnrDrive folder.
 
 Firstly, make a note of the following 3 things:
 1. The long name of the OneDrive folder, for example "OneDrive - The University of Quahog".
-1. The **parent folder** of the OneDrive folder - *hint*, the parent folder is usually the *user* folder of the current Windows user, for example, "C:\Users\pete".
+1. The **parent folder** of the OneDrive folder - *hint*, the parent folder is usually the *user* folder of the current Windows user, for example, "C:\Users\fred".
 1. The name of the new folder you want to use, for example something short like, "uni".
 
 ## Method 1, Using a Command/CMD Prompt
@@ -41,7 +41,7 @@ Firstly, make a note of the following 3 things:
 - navigate to the parent folder you noted above and create your new "folder" with a short name, using the `mklink` command with the `/J` parameter, for example:
 
 ```Batchfile
-cd C:\Users\pete
+cd C:\Users\fred
 ```
 
 then:
@@ -52,11 +52,11 @@ mklink /J uni "OneDrive - The University of Quahog"
 
 You're done, you can now close the cmd terminal and use *uni*, or whatever name you created, as an alternative folder to your long OneDrive folder.
 
-**Tip:** add it to you Quick access shortcuts in Explorer, so in Explorer navigate to your new folder, for example, C: > Users > uni, right-click on *uni* and select "Pin to Quick access".
+**Tip:** add it to you Quick access shortcuts in Explorer, so in Explorer navigate to your new folder, for example, C: > Users > fred > uni, right-click on *uni* and select "Pin to Quick access".
 
 ## Method 2, for More Experienced Windows Users
 - open a PowerShell terminal as an administrator and enter the following command, remembering to use the 3 values you noted above:
 
 ```PowerShell
-New-Item -ItemType Junction -Path 'C:\Users\pete\' -Name 'uni' -Target 'C:\Users\pete\OneDrive - The University of Quahog'
+New-Item -ItemType Junction -Path 'C:\Users\fred\' -Name 'uni' -Target 'C:\Users\fred\OneDrive - The University of Quahog'
 ```

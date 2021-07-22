@@ -6,6 +6,8 @@ draft: false
 toc: true
 tags:
   - MySQL
+  - PowerShell
+  - SQL
 categories:
   - Windows
 series:
