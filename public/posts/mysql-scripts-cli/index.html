@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width">
 
 
-<title>MySQL, Running SQL Scripts From the Command Line | upyesp</title>
+<title>MySQL: Running SQL Scripts From the Command Line | upyesp</title>
 
 <meta name="generator" content="Hugo Eureka 0.8.2" />
 <link rel="stylesheet" href="/css/eureka.min.css">
@@ -52,6 +52,7 @@
 
 
 
+
 <meta name="description"
   content="How to run .sql scripts from the command line.">
 <script type="application/ld+json">
@@ -65,7 +66,7 @@
       "item":"/posts/"},{
       "@type": "ListItem",
       "position": 2 ,
-      "name":"MySQL, Running SQL Scripts From the Command Line",
+      "name":"MySQL: Running SQL Scripts From the Command Line",
       "item":"/posts/mysql-scripts-cli/"}]
 }
 </script>
@@ -80,16 +81,16 @@
         "@type": "WebPage",
         "@id": "/posts/mysql-scripts-cli/"
     },
-    "headline": "MySQL, Running SQL Scripts From the Command Line | upyesp","datePublished": "2021-07-23T08:00:00+01:00",
+    "headline": "MySQL: Running SQL Scripts From the Command Line | upyesp","datePublished": "2021-07-23T08:00:00+01:00",
     "dateModified": "2021-07-23T08:00:00+01:00",
-    "wordCount":  579 ,
+    "wordCount":  583 ,
     "publisher": {
         "@type": "Person",
         "name": "upyesp",
         },
     "description": "How to run .sql scripts from the command line."
 }
-</script><meta property="og:title" content="MySQL, Running SQL Scripts From the Command Line | upyesp" />
+</script><meta property="og:title" content="MySQL: Running SQL Scripts From the Command Line | upyesp" />
 <meta property="og:type" content="article" />
 
 
@@ -209,11 +210,11 @@
 <div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
     <div
         class="col-span-2  lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
-        <h1 class="font-bold text-3xl text-primary-text">MySQL, Running SQL Scripts From the Command Line</h1>
+        <h1 class="font-bold text-3xl text-primary-text">MySQL: Running SQL Scripts From the Command Line</h1>
         <div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
     <div class="mr-6 my-2">
         <i class="fas fa-calendar mr-1"></i>
-        <span>2021-07-23</span>
+        <span>Friday, July 23, 2021</span>
     </div>
     <div class="mr-6 my-2">
         <i class="fas fa-clock mr-1"></i>
@@ -240,6 +241,46 @@
 <p>When the server for MySQL is installed on a system, a client application program is also installed. On Windows this is mysql.exe.</p>
 <p>The client app, mysql.exe, is a terminal emulator, enabling interactive input of SQL statements <a href="https://upyesp.org/posts/mysql-windows-terminal/">MySQL and Windows Terminal</a>.</p>
 <p>The same app also provides the ability for it to be called and execute a SQL script, straight from the command line or in a script.</p>
+<h2 id="executing-sql-scripts-from-the-command-line">Executing SQL Scripts from the Command Line</h2>
+<h3 id="powershell">PowerShell</h3>
+<p>Example of running an SQL script in MySQL from PowerShell:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell"><span style="color:#b58900">Get-Content</span> myScript.sql | &amp; <span style="color:#2aa198">&#39;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#39;</span> --verbose --force --table --port=3306 --host=127.0.0.1 --user=root -pdigimark &gt; myScriptResults.txt
+</code></pre></div><h3 id="cmd">CMD</h3>
+<p>Example of running an SQL script in MySQL from CMD:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Batchfile" data-lang="Batchfile"><span style="color:#2aa198">&#34;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#34;</span> --verbose --table --force --port=3306 --host=127.0.0.1 --user=root -pdigimark &lt; myScript.sql &gt; myScriptResults.txt
+</code></pre></div><h2 id="explanation-of-command-line-parameters">Explanation of Command Line Parameters</h2>
+<p>When calling mysql.exe, several parameters are available, see <a href="https://dev.mysql.com/doc/refman/8.0/en/mysql-command-options.html">4.5.1.1 mysql Client Options</a>.</p>
+<h3 id="mysql-password">MySQL Password</h3>
+<p>In addition to the parameters discussed in <a href="https://upyesp.org/posts/mysql-windows-terminal/">MySQL and Windows Terminal</a>, consideration needs to be given to the password required for the MySQL service.  For an interactive MySQL terminal, the user can enter the password.  To enable a fully automated execution of a script, where the user may not be present, interactive input of the password may not be practical.</p>
+<p>It is possible to include password as a parameter, using &lsquo;-p&rsquo;. For example, if the password is digimark, the syntax would be &lsquo;-pdigimark&rsquo;. Clearly there are security implications with this method, you may want to consider if this is a suitable option in your use case.</p>
+<h3 id="redirecting-the-results-of-the-sql-script-to-a-text-file-or-log-file">Redirecting the Results of the SQL Script To a Text File or Log File</h3>
+<p>Appending the &lsquo;&gt;&rsquo; symbol along with a file name will direct the results of the SQL script to that file name, for example &lsquo;&gt; myScriptResults.txt&rsquo;.</p>
+<h3 id="including-the-sql-script-as-a-parameter">Including the SQL Script as a Parameter</h3>
+<p>This varies depending on if you are using PowerShell or CMD.  For CMD,  pipe the SQL script as input with &lsquo;&lt;&rsquo; <a href="https://ss64.com/nt/syntax-redirection.html">How-to: Redirection</a>, along with the name of the script, such as, &lsquo;&lt; myScript.sql&rsquo;. For PowerShell, use the <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-content?view=powershell-7.1">Get-Content</a> command, for example &lsquo;Get-Content myScript.sql |&rsquo;.</p>
+<h3 id="other-parameters">Other Parameters</h3>
+<p>These are some optional parameters I use:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&ndash;verbose</td>
+<td>Verbose mode</td>
+</tr>
+<tr>
+<td>&ndash;force</td>
+<td>Continue even if an SQL error occurs</td>
+</tr>
+<tr>
+<td>&ndash;table</td>
+<td>Display output in tabular format</td>
+</tr>
+</tbody>
+</table>
 <h2 id="example-sql-script">Example SQL Script</h2>
 <p>Here&rsquo;s an example SQL script.  To create it:</p>
 <ol>
@@ -291,47 +332,6 @@ USE exampleDB;
 
 <span style="color:#719e07">SELECT</span> <span style="color:#719e07">*</span> <span style="color:#719e07">FROM</span> itemType;
 <span style="color:#719e07">#######################################################</span>
-</code></pre></div><h2 id="command-line-parameters">Command Line Parameters</h2>
-<p>When calling mysql.exe, several parameters are available, see <a href="https://dev.mysql.com/doc/refman/8.0/en/mysql-command-options.html">4.5.1.1 mysql Client Options</a>.</p>
-<h3 id="mysql-password">MySQL Password</h3>
-<p>In addition to the parameters discussed in <a href="https://upyesp.org/posts/mysql-windows-terminal/">MySQL and Windows Terminal</a>, consideration needs to be given to the password required for the MySQL service.  For an interactive MySQL terminal, the user can enter the password.  To enable a fully automated execution of a script, where the user may not be present, interactive input of the password may not be practical.</p>
-<p>It is possible to include password as a parameter, using &lsquo;-p&rsquo;. For example, if the password is digimark, the syntax would be &lsquo;-pdigimark&rsquo;. Clearly there are security implications with this method, you may want to consider if this is a suitable option in your use case.</p>
-<h3 id="directing-the-results-of-the-sql-script-to-a-text-file-or-log">Directing the Results of the SQL Script To a Text File or Log</h3>
-<p>Appending the &lsquo;&gt;&rsquo; symbol along with a file name will direct the results of the SQL script to that file name, for example &lsquo;&gt; createDB_results.txt&rsquo;.</p>
-<h3 id="including-the-sql-script-as-a-parameter">Including the SQL Script as a Parameter</h3>
-<p>This varies depending on if you are using PowerShell or CMD.  For CMD,  pipe the SQL script as input <a href="https://ss64.com/nt/syntax-redirection.html">&lt;</a>, along with the name of the script, such as, &lsquo;&lt; myScript.sql&rsquo;. For PowerShell, use the <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-content?view=powershell-7.1">Get-Content</a> command, for example &lsquo;Get-Content myScript.sql |&rsquo;.</p>
-<p>The parameters I typically use are detailed below:</p>
-<table>
-<thead>
-<tr>
-<th>Parameter</th>
-<th>Details</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>&ndash;port</td>
-<td>Default=3306 - TCP/IP port number for connection.</td>
-</tr>
-<tr>
-<td>&ndash;host</td>
-<td>Default=127.0.0.1 - Host on which MySQL server is located</td>
-</tr>
-<tr>
-<td>&ndash;user</td>
-<td>Default=root - MySQL user name when connecting to the server.</td>
-</tr>
-<tr>
-<td>-p</td>
-<td>Password to use when connecting to the server.</td>
-</tr>
-</tbody>
-</table>
-<p>Here are examples of calling mysql.exe with these parameters:</p>
-<h3 id="powershell">PowerShell</h3>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell"><span style="color:#b58900">Get-Content</span> myScript.sql | &amp; <span style="color:#2aa198">&#39;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#39;</span> --verbose --force --table --port=3306 --host=127.0.0.1 --user=root -pdigimark &gt; createDB_results.txt
-</code></pre></div><h3 id="cmd">CMD</h3>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Batchfile" data-lang="Batchfile"><span style="color:#2aa198">&#34;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#34;</span> --verbose --table --force --port=3306 --host=127.0.0.1 --user=root -pdigimark &lt; myScript.sql &gt; createDB_results.txt
 </code></pre></div>
         </div>
         
@@ -378,16 +378,21 @@ USE exampleDB;
 <div class="sticky-toc hidden lg:block px-6 pb-6 ">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#example-sql-script">Example SQL Script</a></li>
-    <li><a href="#command-line-parameters">Command Line Parameters</a>
+    <li><a href="#executing-sql-scripts-from-the-command-line">Executing SQL Scripts from the Command Line</a>
       <ul>
-        <li><a href="#mysql-password">MySQL Password</a></li>
-        <li><a href="#directing-the-results-of-the-sql-script-to-a-text-file-or-log">Directing the Results of the SQL Script To a Text File or Log</a></li>
-        <li><a href="#including-the-sql-script-as-a-parameter">Including the SQL Script as a Parameter</a></li>
         <li><a href="#powershell">PowerShell</a></li>
         <li><a href="#cmd">CMD</a></li>
       </ul>
     </li>
+    <li><a href="#explanation-of-command-line-parameters">Explanation of Command Line Parameters</a>
+      <ul>
+        <li><a href="#mysql-password">MySQL Password</a></li>
+        <li><a href="#redirecting-the-results-of-the-sql-script-to-a-text-file-or-log-file">Redirecting the Results of the SQL Script To a Text File or Log File</a></li>
+        <li><a href="#including-the-sql-script-as-a-parameter">Including the SQL Script as a Parameter</a></li>
+        <li><a href="#other-parameters">Other Parameters</a></li>
+      </ul>
+    </li>
+    <li><a href="#example-sql-script">Example SQL Script</a></li>
   </ul>
 </nav>
 </div>

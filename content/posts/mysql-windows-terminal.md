@@ -4,15 +4,10 @@ description: Some notes on configuring Windows Terminal to work with MySQL.
 date: 2021-07-22T06:00:00+01:00
 draft: false
 toc: true
-tags:
-  - MySQL
-  - PowerShell
-  - SQL
-categories:
-  - Windows
-  - MySQL
-series:
-  - Windows Terminal
+featuredImage: ''
+tags: [MySQL, PowerShell, SQL]
+categories: [Windows, MySQL]
+series: [Windows Terminal]
 ---
 
 MySQL has it's own terminal emulator, providing a command-line interface (CLI) for the direct input and execution of SQL commands and scripts. 

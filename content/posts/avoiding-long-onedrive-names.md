@@ -4,11 +4,9 @@ description: OneDrive from Microsoft is excellent, but those long folder names g
 date: 2021-07-20T14:13:00+01:00
 draft: false
 toc: false
-tags:
-  - OneDrive
-  - Explorer
-categories:
-  - Windows
+featuredImage: ''
+tags: [OneDrive, Explorer]
+categories: [Windows]
 ---
 
 If your employer or university provides you with Microsoft OneDrive, you'll know how useful it can be right? The OneDrive folder name tends to be very long though, like "OneDrive - The University of Quahog".  The long name can get in the way, like in the prompt of an IDE, in a terminal session or when browsing files in Explorer. One simple command, `mklink`, can fix that.

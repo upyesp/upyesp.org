@@ -4,11 +4,9 @@ description: How to run .sql scripts from the command line.
 date: 2021-07-23T08:00:00+01:00
 draft: false
 toc: true
-tags:
-  - MySQL
-  - SQL
-categories:
-  - MySQL
+featuredImage: ''
+tags: [MySQL, SQL]
+categories: [MySQL]
 ---
 
 MySQL can be accessed from the command line interface (CLI).  Here's how to run SQL scripts from the CLI. 

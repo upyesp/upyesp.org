@@ -4,14 +4,10 @@ description: How to use Explorer to work with files contained in a WSL distro.
 date: 2021-07-20T11:37:01+01:00
 draft: false
 toc: true
-tags:
-  - WSL 
-  - Explorer
-categories:
-  - Windows
-  - Linux
-series:
-  - Windows Subsystem for Linux
+featuredImage: ''
+tags: [WSL, Explorer]
+categories: [Windows, Linux]
+series: [Windows Subsystem for Linux]
 ---
 
 If you have installed WSL and one or more linux distributions, it is possible to work with the contents of their file systems from within Windows Explorer.

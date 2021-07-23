@@ -3,13 +3,11 @@ title: "Adding Colour & Icons to File Listings in a Terminal"
 description: Add colour to file listings in PowerShell. 
 date: 2021-07-22T08:34:00+01:00
 draft: false
-tags:
-  - PowerShell
-  - NerdFonts
-categories:
-  - Windows
-series:
-  - Windows Terminal
+toc: true
+featuredImage: ''
+tags: [PowerShell, NerdFonts]
+categories: [Windows]
+series: [Windows Terminal]
 ---
 
 Adding icons and colour to folders and files improves the user experience in PowerShell.

@@ -4,11 +4,9 @@ description: Edge makes for a great PDF experience.
 date: 2021-07-21T12:03:00+01:00
 draft: false
 toc: true
-tags:
-  - Edge
-  - PDF
-categories:
-  - Windows
+featuredImage: ''
+tags: [Edge, PDF]
+categories: [Windows]
 ---
 
 Microsoft's Edge browser supports viewing PDF files.  It enables marking up PDFs with your own comments, highlights and drawings. Several keyboard shortcuts make for efficient navigation through a PDF.

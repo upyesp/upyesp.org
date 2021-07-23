@@ -4,14 +4,10 @@ description: While using a Linux in Windows it is possible to run Windows applic
 date: 2021-07-21T10:29:00+01:00
 draft: false
 toc: true
-tags:
-  - WSL 
-  - VSCode
-categories:
-  - Windows
-  - Linux
-series:
-  - Windows Subsystem for Linux
+featuredImage: ''
+tags: [WSL, VSCode]
+categories: [Windows, Linux]
+series: [Windows Subsystem for Linux]
 ---
 
 The interoperability provided by WSL enables calling or running Windows applications directly from within the Linux command line.
