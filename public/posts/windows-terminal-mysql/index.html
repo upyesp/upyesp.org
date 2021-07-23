@@ -82,7 +82,7 @@
     },
     "headline": "MySQL and Windows Terminal | upyesp","datePublished": "2021-07-22T06:00:00+01:00",
     "dateModified": "2021-07-22T06:00:00+01:00",
-    "wordCount":  239 ,
+    "wordCount":  291 ,
     "publisher": {
         "@type": "Person",
         "name": "upyesp",
@@ -285,16 +285,29 @@
 </tr>
 </tbody>
 </table>
+<p>Here are examples of calling mysql.exe with these parameters:</p>
 <h3 id="powershell">PowerShell</h3>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">&amp; <span style="color:#2aa198">&#39;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#39;</span> --port=3306 --host=127.0.0.1 --user=root -p
 </code></pre></div><h3 id="cmd">CMD</h3>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Batchfile" data-lang="Batchfile"><span style="color:#2aa198">&#34;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#34;</span> --port=3306 --host=127.0.0.1 --user=root -p
-</code></pre></div><h3 id="some-useful-sql-commands">Some Useful SQL Commands</h3>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL"><span style="color:#719e07">show</span> databases;
-use employeeschema;
-<span style="color:#719e07">show</span> tables;
-<span style="color:#719e07">describe</span> employee;
-<span style="color:#719e07">select</span> <span style="color:#719e07">*</span> <span style="color:#719e07">from</span> employee;
+</code></pre></div><h3 id="example-sql-commands">Example SQL Commands</h3>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL"><span style="color:#719e07">SHOW</span> databases;
+USE employeeschema;
+<span style="color:#719e07">SHOW</span> TABLES;
+<span style="color:#719e07">CREATE</span> <span style="color:#719e07">TABLE</span> itemType (
+    id <span style="color:#b58900">INT</span> UNSIGNED <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span> AUTO_INCREMENT,
+    description <span style="color:#b58900">VARCHAR</span>(<span style="color:#2aa198">100</span>) <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span>,
+    loanDuration <span style="color:#b58900">INT</span> <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span>,
+    created <span style="color:#719e07">TIMESTAMP</span> <span style="color:#719e07">DEFAULT</span> <span style="color:#719e07">CURRENT_TIMESTAMP</span>,
+    <span style="color:#719e07">PRIMARY</span> <span style="color:#719e07">KEY</span> (id)
+    );
+<span style="color:#719e07">INSERT</span> <span style="color:#719e07">INTO</span> itemType(description, loanDuration)
+    <span style="color:#719e07">VALUES</span>
+    (<span style="color:#2aa198">&#39;Raspberry Pi Kits&#39;</span>, <span style="color:#2aa198">28</span>),
+    (<span style="color:#2aa198">&#39;Raspberry Pi Hats &amp; Microcontrollers&#39;</span>, <span style="color:#2aa198">28</span>),
+    (<span style="color:#2aa198">&#39;Raspberry Pi Books&#39;</span>, <span style="color:#2aa198">56</span>)
+    ;
+<span style="color:#719e07">SELECT</span> <span style="color:#719e07">*</span> <span style="color:#719e07">FROM</span> itemType;
 </code></pre></div><h2 id="windows-terminal---adding-a-dedicated-mysql-terminal">Windows Terminal - Adding A Dedicated MySQL Terminal</h2>
 <ol>
 <li>
@@ -392,7 +405,7 @@ use employeeschema;
       <ul>
         <li><a href="#powershell">PowerShell</a></li>
         <li><a href="#cmd">CMD</a></li>
-        <li><a href="#some-useful-sql-commands">Some Useful SQL Commands</a></li>
+        <li><a href="#example-sql-commands">Example SQL Commands</a></li>
       </ul>
     </li>
     <li><a href="#windows-terminal---adding-a-dedicated-mysql-terminal">Windows Terminal - Adding A Dedicated MySQL Terminal</a></li>
