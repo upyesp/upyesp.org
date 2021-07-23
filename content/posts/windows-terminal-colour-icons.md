@@ -12,7 +12,7 @@ series:
   - Windows Terminal
 ---
 
-Adding icons and colour to folders and files is fun and improves the user experience in PowerShell.
+Adding icons and colour to folders and files improves the user experience in PowerShell.
 
 <!--more-->
 
@@ -26,7 +26,7 @@ For the PowerShell terminal session to include icons with filenames, the session
 
 The [Nerd Fonts](https://www.nerdfonts.com/) project is an excellent source for such fonts.  There are many, for example "Caskaydia Cove Nerd Font". 
 
-Download a font, install it - choosing FOR ALL USERS and configure PowerShell to use it.
+Download a font, install it - choosing "INSTALL FOR ALL USERS" and configure PowerShell to use it.
 
 ## Install Terminal-Icons
 
@@ -36,7 +36,7 @@ Start a PowerShell terminal session. Enter the following:
 Install-Module -Name Terminal-Icons -Repository PSGallery
 ```
 
-To ensure the module runs every time you open a PowerShell session, add an import of the module to your PowerShell pro file. Edit $PROFILE (`notepad $profile`) and add this line:
+To ensure the module runs every time you open a PowerShell session, add an import of the module to your PowerShell profile. So, edit $PROFILE (`notepad $profile`) and add this line:
 
 ```PowerShell
 Import-Module Terminal-Icons
