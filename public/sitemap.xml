@@ -2,16 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2021-07-23T08:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/tags/mysql/</loc>
+    <lastmod>2021-07-23T08:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/categories/mysql/</loc>
+    <lastmod>2021-07-23T08:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/posts/mysql-scripts-cli/</loc>
+    <lastmod>2021-07-23T08:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2021-07-23T08:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/tags/sql/</loc>
+    <lastmod>2021-07-23T08:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2021-07-23T08:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2021-07-23T08:00:00+01:00</lastmod>
+  </url><url>
     <loc>/posts/windows-terminal-colour-icons/</loc>
     <lastmod>2021-07-22T08:34:00+01:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2021-07-22T08:34:00+01:00</lastmod>
-  </url><url>
     <loc>/tags/nerdfonts/</loc>
-    <lastmod>2021-07-22T08:34:00+01:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
     <lastmod>2021-07-22T08:34:00+01:00</lastmod>
   </url><url>
     <loc>/tags/powershell/</loc>
@@ -20,25 +38,13 @@
     <loc>/series/</loc>
     <lastmod>2021-07-22T08:34:00+01:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2021-07-22T08:34:00+01:00</lastmod>
-  </url><url>
-    <loc>/</loc>
-    <lastmod>2021-07-22T08:34:00+01:00</lastmod>
-  </url><url>
     <loc>/categories/windows/</loc>
     <lastmod>2021-07-22T08:34:00+01:00</lastmod>
   </url><url>
     <loc>/series/windows-terminal/</loc>
     <lastmod>2021-07-22T08:34:00+01:00</lastmod>
   </url><url>
-    <loc>/tags/mysql/</loc>
-    <lastmod>2021-07-22T06:00:00+01:00</lastmod>
-  </url><url>
-    <loc>/posts/windows-terminal-mysql/</loc>
-    <lastmod>2021-07-22T06:00:00+01:00</lastmod>
-  </url><url>
-    <loc>/tags/sql/</loc>
+    <loc>/posts/mysql-windows-terminal/</loc>
     <lastmod>2021-07-22T06:00:00+01:00</lastmod>
   </url><url>
     <loc>/tags/edge/</loc>

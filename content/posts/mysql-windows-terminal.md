@@ -10,6 +10,7 @@ tags:
   - SQL
 categories:
   - Windows
+  - MySQL
 series:
   - Windows Terminal
 ---

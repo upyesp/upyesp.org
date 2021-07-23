@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang='en' class="dark" ><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+<title>MySQL, Running SQL Scripts From the Command Line | upyesp</title>
+
+<meta name="generator" content="Hugo Eureka 0.8.2" />
+<link rel="stylesheet" href="/css/eureka.min.css">
+<script defer src="/js/eureka.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"
+   crossorigin></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js"
+   integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo="  crossorigin></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+   integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"  media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" 
+  integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+   integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"  crossorigin></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+    });
+  });
+</script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js" 
+  integrity="sha256-Zmpaaj&#43;GXFsPF5WdPArSrnW3b30dovldeKsW00xBVwE="  crossorigin></script>
+
+
+
+<meta name="description"
+  content="How to run .sql scripts from the command line.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"Posts",
+      "item":"/posts/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"MySQL, Running SQL Scripts From the Command Line",
+      "item":"/posts/mysql-scripts-cli/"}]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/posts/mysql-scripts-cli/"
+    },
+    "headline": "MySQL, Running SQL Scripts From the Command Line | upyesp","datePublished": "2021-07-23T08:00:00+01:00",
+    "dateModified": "2021-07-23T08:00:00+01:00",
+    "wordCount":  579 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "upyesp",
+        },
+    "description": "How to run .sql scripts from the command line."
+}
+</script><meta property="og:title" content="MySQL, Running SQL Scripts From the Command Line | upyesp" />
+<meta property="og:type" content="article" />
+
+
+
+<meta property="og:url" content="/posts/mysql-scripts-cli/" />
+
+
+
+<meta property="og:description" content="How to run .sql scripts from the command line." />
+
+
+
+<meta property="og:locale" content="en" />
+
+
+
+
+<meta property="og:site_name" content="upyesp" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2021-07-23T08:00:00&#43;01:00" />
+
+
+<meta property="article:modified_time" content="2021-07-23T08:00:00&#43;01:00" />
+
+
+
+<meta property="article:section" content="posts" />
+
+
+<meta property="article:tag" content="MySQL" />
+
+<meta property="article:tag" content="SQL" />
+
+
+
+
+
+<meta property="og:see_also" content="/posts/mysql-windows-terminal/" />
+
+
+
+<body class="flex flex-col min-h-screen">
+  <header class="fixed flex items-center w-full min-h-16 pl-scrollbar z-50 bg-secondary-bg shadow-sm">
+    <div class="w-full max-w-screen-xl mx-auto"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if ((storageColorScheme == 'Auto' && window.matchMedia("(prefers-color-scheme: light)").matches) || storageColorScheme == "Light") {
+        document.getElementsByTagName('html')[0].classList.remove('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
+    <a href="/" class="mr-6 text-primary-text text-xl font-bold">upyesp</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="md:flex md:h-16 text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  mr-4">Posts</a>
+            <a href="/authors/upyesp" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">About</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka" name="Light">Light</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Dark">Dark</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Auto">Auto</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == 'Auto') {
+        element.firstElementChild.classList.remove('fa-moon')
+        element.firstElementChild.setAttribute("data-icon", 'adjust')
+        element.firstElementChild.classList.add('fa-adjust')
+        document.addEventListener('DOMContentLoaded', () => {
+            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-moon')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script>
+</div>
+  </header>
+  <main class="flex-grow pt-16">
+    <div class="pl-scrollbar">
+      <div class="w-full max-w-screen-xl lg:px-4 xl:px-8 mx-auto">
+
+
+<div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
+    <div
+        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
+        <h1 class="font-bold text-3xl text-primary-text">MySQL, Running SQL Scripts From the Command Line</h1>
+        <div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>2021-07-23</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>3 min read</span>
+    </div>
+    
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="/categories/mysql/" class="hover:text-eureka">MySQL</a>
+        
+    </div>
+    
+
+    
+</div>
+        
+        
+        
+
+        <div class="content">
+            <p>MySQL can be accessed from the command line interface (CLI).  Here&rsquo;s how to run SQL scripts from the CLI.</p>
+<p>When the server for MySQL is installed on a system, a client application program is also installed. On Windows this is mysql.exe.</p>
+<p>The client app, mysql.exe, is a terminal emulator, enabling interactive input of SQL statements <a href="https://upyesp.org/posts/mysql-windows-terminal/">MySQL and Windows Terminal</a>.</p>
+<p>The same app also provides the ability for it to be called and execute a SQL script, straight from the command line or in a script.</p>
+<h2 id="example-sql-script">Example SQL Script</h2>
+<p>Here&rsquo;s an example SQL script.  To create it:</p>
+<ol>
+<li>Open VSCode, any IDE or text editor (such as Notepad).</li>
+<li>Copy the code below and paste it into the editor.</li>
+<li>Save the file, with a &ldquo;.sql&rdquo; extension, for example &ldquo;myScript.sql&rdquo;</li>
+</ol>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL"><span style="color:#719e07">#######################################################</span>
+<span style="color:#719e07">#</span>
+<span style="color:#719e07">#</span> This <span style="color:#719e07">SQL</span> script prepares <span style="color:#719e07">database</span> exampleDB <span style="color:#719e07">for</span> use.
+<span style="color:#719e07">#</span> The <span style="color:#719e07">existing</span> <span style="color:#719e07">database</span> <span style="color:#719e07">is</span> dropped, a <span style="color:#719e07">new</span> db <span style="color:#719e07">is</span>
+<span style="color:#719e07">#</span> created, tables <span style="color:#719e07">are</span> <span style="color:#719e07">then</span> added <span style="color:#719e07">and</span> populated <span style="color:#719e07">with</span>
+<span style="color:#719e07">#</span> <span style="color:#719e07">data</span>.
+<span style="color:#719e07">#</span>
+<span style="color:#719e07">#######################################################</span>
+
+<span style="color:#719e07">#</span> <span style="color:#719e07">Output</span> the <span style="color:#b58900">date</span> <span style="color:#719e07">and</span> time the script was run.
+<span style="color:#719e07">select</span> <span style="color:#2aa198">&#34;Output from script, run at: &#34;</span> <span style="color:#719e07">as</span> <span style="color:#2aa198">&#39;Script Information&#39;</span>,
+    NOW() <span style="color:#719e07">as</span> <span style="color:#2aa198">&#39;Date and Time Executed&#39;</span>;
+
+<span style="color:#719e07">#</span> <span style="color:#719e07">First</span>, <span style="color:#719e07">drop</span> the <span style="color:#719e07">database</span> (<span style="color:#719e07">if</span> it <span style="color:#719e07">exists</span>).
+<span style="color:#719e07">DROP</span> <span style="color:#719e07">DATABASE</span> exampleDB;
+
+<span style="color:#719e07">#</span> <span style="color:#719e07">Create</span> a <span style="color:#719e07">new</span>, empty <span style="color:#719e07">database</span>.
+<span style="color:#719e07">CREATE</span> <span style="color:#719e07">DATABASE</span> exampleDB;
+
+<span style="color:#719e07">#</span> Use the <span style="color:#719e07">new</span> <span style="color:#719e07">database</span>.
+USE exampleDB;
+
+<span style="color:#719e07">#######################################################</span>
+<span style="color:#719e07">#</span> <span style="color:#719e07">Create</span> <span style="color:#719e07">table</span>: itemType
+<span style="color:#719e07">#######################################################</span>
+
+<span style="color:#719e07">CREATE</span> <span style="color:#719e07">TABLE</span> itemType (
+    id <span style="color:#b58900">INT</span> UNSIGNED <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span> AUTO_INCREMENT,
+    description <span style="color:#b58900">VARCHAR</span>(<span style="color:#2aa198">100</span>) <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span>,
+    loanDuration <span style="color:#b58900">INT</span> <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span>,
+    created <span style="color:#719e07">TIMESTAMP</span> <span style="color:#719e07">DEFAULT</span> <span style="color:#719e07">CURRENT_TIMESTAMP</span>,
+    <span style="color:#719e07">PRIMARY</span> <span style="color:#719e07">KEY</span> (id)
+    );
+
+<span style="color:#719e07">#</span> <span style="color:#719e07">Add</span> <span style="color:#719e07">some</span> item types <span style="color:#719e07">to</span> <span style="color:#719e07">table</span>: itemType
+<span style="color:#719e07">INSERT</span> <span style="color:#719e07">INTO</span> itemType(description, loanDuration)
+    <span style="color:#719e07">VALUES</span>
+    (<span style="color:#2aa198">&#39;Raspberry Pi Kits&#39;</span>, <span style="color:#2aa198">28</span>),
+    (<span style="color:#2aa198">&#39;Raspberry Pi Hats &amp; Microcontrollers&#39;</span>, <span style="color:#2aa198">28</span>),
+    (<span style="color:#2aa198">&#39;Raspberry Pi Books&#39;</span>, <span style="color:#2aa198">56</span>)
+    ;
+
+<span style="color:#719e07">SELECT</span> <span style="color:#719e07">*</span> <span style="color:#719e07">FROM</span> itemType;
+<span style="color:#719e07">#######################################################</span>
+</code></pre></div><h2 id="command-line-parameters">Command Line Parameters</h2>
+<p>When calling mysql.exe, several parameters are available, see <a href="https://dev.mysql.com/doc/refman/8.0/en/mysql-command-options.html">4.5.1.1 mysql Client Options</a>.</p>
+<h3 id="mysql-password">MySQL Password</h3>
+<p>In addition to the parameters discussed in <a href="https://upyesp.org/posts/mysql-windows-terminal/">MySQL and Windows Terminal</a>, consideration needs to be given to the password required for the MySQL service.  For an interactive MySQL terminal, the user can enter the password.  To enable a fully automated execution of a script, where the user may not be present, interactive input of the password may not be practical.</p>
+<p>It is possible to include password as a parameter, using &lsquo;-p&rsquo;. For example, if the password is digimark, the syntax would be &lsquo;-pdigimark&rsquo;. Clearly there are security implications with this method, you may want to consider if this is a suitable option in your use case.</p>
+<h3 id="directing-the-results-of-the-sql-script-to-a-text-file-or-log">Directing the Results of the SQL Script To a Text File or Log</h3>
+<p>Appending the &lsquo;&gt;&rsquo; symbol along with a file name will direct the results of the SQL script to that file name, for example &lsquo;&gt; createDB_results.txt&rsquo;.</p>
+<h3 id="including-the-sql-script-as-a-parameter">Including the SQL Script as a Parameter</h3>
+<p>This varies depending on if you are using PowerShell or CMD.  For CMD,  pipe the SQL script as input <a href="https://ss64.com/nt/syntax-redirection.html">&lt;</a>, along with the name of the script, such as, &lsquo;&lt; myScript.sql&rsquo;. For PowerShell, use the <a href="https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-content?view=powershell-7.1">Get-Content</a> command, for example &lsquo;Get-Content myScript.sql |&rsquo;.</p>
+<p>The parameters I typically use are detailed below:</p>
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&ndash;port</td>
+<td>Default=3306 - TCP/IP port number for connection.</td>
+</tr>
+<tr>
+<td>&ndash;host</td>
+<td>Default=127.0.0.1 - Host on which MySQL server is located</td>
+</tr>
+<tr>
+<td>&ndash;user</td>
+<td>Default=root - MySQL user name when connecting to the server.</td>
+</tr>
+<tr>
+<td>-p</td>
+<td>Password to use when connecting to the server.</td>
+</tr>
+</tbody>
+</table>
+<p>Here are examples of calling mysql.exe with these parameters:</p>
+<h3 id="powershell">PowerShell</h3>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell"><span style="color:#b58900">Get-Content</span> myScript.sql | &amp; <span style="color:#2aa198">&#39;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#39;</span> --verbose --force --table --port=3306 --host=127.0.0.1 --user=root -pdigimark &gt; createDB_results.txt
+</code></pre></div><h3 id="cmd">CMD</h3>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Batchfile" data-lang="Batchfile"><span style="color:#2aa198">&#34;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#34;</span> --verbose --table --force --port=3306 --host=127.0.0.1 --user=root -pdigimark &lt; myScript.sql &gt; createDB_results.txt
+</code></pre></div>
+        </div>
+        
+        <div class="my-4">
+    
+    <a href="/tags/mysql/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#MySQL</a>
+    
+    <a href="/tags/sql/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#SQL</a>
+    
+</div>
+        
+        
+        
+
+
+        
+        
+        
+        
+<div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
+    <div>
+        
+    </div>
+    <div class="md:text-right mt-4 md:mt-0">
+        
+        <span class="block font-bold">Next</span>
+        <a href="/posts/windows-terminal-colour-icons/" class="block">Adding Colour &amp; Icons to File Listings in a Terminal</a>
+        
+    </div>
+</div>
+
+        
+
+
+
+    </div>
+    
+    <div class="col-span-2">
+        
+        
+        <div class="sticky top-16 z-10 hidden lg:block px-6 py-4  bg-primary-bg ">
+    <span class="text-lg font-semibold">On This Page</span>
+</div>
+<div class="sticky-toc hidden lg:block px-6 pb-6 ">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#example-sql-script">Example SQL Script</a></li>
+    <li><a href="#command-line-parameters">Command Line Parameters</a>
+      <ul>
+        <li><a href="#mysql-password">MySQL Password</a></li>
+        <li><a href="#directing-the-results-of-the-sql-script-to-a-text-file-or-log">Directing the Results of the SQL Script To a Text File or Log</a></li>
+        <li><a href="#including-the-sql-script-as-a-parameter">Including the SQL Script as a Parameter</a></li>
+        <li><a href="#powershell">PowerShell</a></li>
+        <li><a href="#cmd">CMD</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        enableStickyToc();
+    });
+</script>
+        
+    </div>
+    
+
+    
+    
+    <div
+        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded p-6">
+        <h2 class="text-lg font-semibold mb-4">See Also</h2>
+        <div class="content">
+            
+            <a href="/posts/mysql-windows-terminal/">MySQL and Windows Terminal</a>
+            <br />
+            
+        </div>
+    </div>
+    
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+        hljs.initHighlightingOnLoad();
+    })
+</script>
+
+      </div>
+    </div>
+    
+  </main>
+  <footer class="pl-scrollbar">
+    <div class="w-full max-w-screen-xl mx-auto"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text"> Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div></div>
+  </footer>
+</body>
+
+</html>

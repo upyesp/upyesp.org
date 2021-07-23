@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width">
 
 
-<title>Edge Browser as a PDF Viewer &amp; Markup | upyesp</title>
+<title>MySQL and Windows Terminal | upyesp</title>
 
 <meta name="generator" content="Hugo Eureka 0.8.2" />
 <link rel="stylesheet" href="/css/eureka.min.css">
@@ -53,7 +53,7 @@
 
 
 <meta name="description"
-  content="Edge makes for a great PDF experience.">
+  content="Some notes on configuring Windows Terminal to work with MySQL.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -65,8 +65,8 @@
       "item":"/posts/"},{
       "@type": "ListItem",
       "position": 2 ,
-      "name":"Edge Browser as a PDF Viewer \u0026 Markup",
-      "item":"/posts/edge-pdf/"}]
+      "name":"MySQL and Windows Terminal",
+      "item":"/posts/mysql-windows-terminal/"}]
 }
 </script>
 
@@ -78,27 +78,27 @@
     "@type": "Article",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/posts/edge-pdf/"
+        "@id": "/posts/mysql-windows-terminal/"
     },
-    "headline": "Edge Browser as a PDF Viewer \u0026 Markup | upyesp","datePublished": "2021-07-21T12:03:00+01:00",
-    "dateModified": "2021-07-21T12:03:00+01:00",
-    "wordCount":  245 ,
+    "headline": "MySQL and Windows Terminal | upyesp","datePublished": "2021-07-22T06:00:00+01:00",
+    "dateModified": "2021-07-22T06:00:00+01:00",
+    "wordCount":  291 ,
     "publisher": {
         "@type": "Person",
         "name": "upyesp",
         },
-    "description": "Edge makes for a great PDF experience."
+    "description": "Some notes on configuring Windows Terminal to work with MySQL."
 }
-</script><meta property="og:title" content="Edge Browser as a PDF Viewer &amp; Markup | upyesp" />
+</script><meta property="og:title" content="MySQL and Windows Terminal | upyesp" />
 <meta property="og:type" content="article" />
 
 
 
-<meta property="og:url" content="/posts/edge-pdf/" />
+<meta property="og:url" content="/posts/mysql-windows-terminal/" />
 
 
 
-<meta property="og:description" content="Edge makes for a great PDF experience." />
+<meta property="og:description" content="Some notes on configuring Windows Terminal to work with MySQL." />
 
 
 
@@ -114,19 +114,33 @@
 
 
 
-<meta property="article:published_time" content="2021-07-21T12:03:00&#43;01:00" />
+<meta property="article:published_time" content="2021-07-22T06:00:00&#43;01:00" />
 
 
-<meta property="article:modified_time" content="2021-07-21T12:03:00&#43;01:00" />
+<meta property="article:modified_time" content="2021-07-22T06:00:00&#43;01:00" />
 
 
 
 <meta property="article:section" content="posts" />
 
 
-<meta property="article:tag" content="Edge" />
+<meta property="article:tag" content="MySQL" />
 
-<meta property="article:tag" content="PDF" />
+<meta property="article:tag" content="PowerShell" />
+
+<meta property="article:tag" content="SQL" />
+
+
+
+
+
+
+
+
+
+<meta property="og:see_also" content="/posts/windows-terminal-colour-icons/" />
+
+
 
 
 
@@ -205,11 +219,11 @@
 <div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
     <div
         class="col-span-2  lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
-        <h1 class="font-bold text-3xl text-primary-text">Edge Browser as a PDF Viewer &amp; Markup</h1>
+        <h1 class="font-bold text-3xl text-primary-text">MySQL and Windows Terminal</h1>
         <div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
     <div class="mr-6 my-2">
         <i class="fas fa-calendar mr-1"></i>
-        <span>2021-07-21</span>
+        <span>2021-07-22</span>
     </div>
     <div class="mr-6 my-2">
         <i class="fas fa-clock mr-1"></i>
@@ -226,95 +240,110 @@
     
 
     
+    <div class="mr-6 my-2">
+        <i class="fas fa-th-list mr-1"></i>
+        
+        <a href="/series/windows-terminal/" class="hover:text-eureka">Windows Terminal</a>
+        
+    </div>
+    
 </div>
         
         
         
 
         <div class="content">
-            <p>Microsoft&rsquo;s Edge browser supports viewing PDF files.  It enables marking up PDFs with your own comments, highlights and drawings. Several keyboard shortcuts make for efficient navigation through a PDF.</p>
-<h2 id="edges-pdf-toolbar">Edge&rsquo;s PDF Toolbar</h2>
-<p><img src="/images/edge-pdf_toolbar.png" alt="screenshot of Edge browser&rsquo;s PDF toolbar, with three buttons circled" title="Edge's PDF Toolbar"></p>
-<p>While Edge displays a PDF, a toolbar is available across the top of the pane. Functions include:</p>
-<ul>
-<li>Table of Contents - toggle the side pane view of the PDF&rsquo;s table of contents. Headings in the ToC are clickable links.</li>
-<li>Draw, Highlight &amp; Erase - you can annotate the PDF with highlights and free-hand drawing.</li>
-</ul>
-<h2 id="adding-comments--notes">Adding Comments / Notes</h2>
-<p>To add comments to a PDF:</p>
-<ol>
-<li>Highlight the text you want to add a comment to.</li>
-<li>Right-click the text, to display the pop-up context menu, select &ldquo;add comment&rdquo;.</li>
-<li>Enter text in the comment box.</li>
-<li>The text you added the comment to remains highlighted and a Comment Tag is displayed with it.</li>
-</ol>
-<p>Some other functions I use are detailed in the list of shortcuts below.</p>
-<h2 id="shortcuts-when-viewing-pdfs">Shortcuts When Viewing PDFs</h2>
+            <p>MySQL has it&rsquo;s own terminal emulator, providing a command-line interface (CLI) for the direct input and execution of SQL commands and scripts.</p>
+<p>The MySQL terminal emulator can be called from PowerShell, CMD or added to the Windows Terminal.</p>
+<p><img src="/images/MySQL-Terminal-In-Windows-Terminal.png" alt="screenshot of Windows Terminal running a MySQL terminal, with some SQL commands" title="MySQL in Windows Terminal"></p>
+<h2 id="starting-a-mysql-terminal-session-from-inside-an-active-powershell-or-cmd-session">Starting A MySQL Terminal Session From Inside an Active PowerShell or CMD Session</h2>
+<p>The MySQL terminal is launched by calling program &lsquo;mysql.exe&rsquo;.  A number of parameters can be passed, the full list is available at <a href="https://dev.mysql.com/doc/refman/8.0/en/mysql-command-options.html">4.5.1.1 mysql Client Options</a>.</p>
+<p>The parameters I typically use are detailed below:</p>
 <table>
 <thead>
 <tr>
-<th>Shortcut</th>
-<th>Function</th>
+<th>Parameter</th>
+<th>Details</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>u</kbd></td>
-<td>Read Aloud: text selection or entire PDF</td>
+<td>&ndash;port</td>
+<td>Default=3306 - TCP/IP port number for connection.</td>
 </tr>
 <tr>
-<td><kbd>F7</kbd></td>
-<td>Toggle between caret browsing (cursor keyboard navigation) on / off</td>
+<td>&ndash;host</td>
+<td>Default=127.0.0.1 - Host on which MySQL server is located</td>
 </tr>
 <tr>
-<td><kbd>Ctrl</kbd> + <kbd>\</kbd></td>
-<td>Toggle PDF between &ldquo;fit to page&rdquo; / &ldquo;fit to width&rdquo;</td>
+<td>&ndash;user</td>
+<td>Default=root - MySQL user name when connecting to the server.</td>
 </tr>
 <tr>
-<td><kbd>Ctrl</kbd> + <kbd>=</kbd></td>
-<td>Zoom in</td>
-</tr>
-<tr>
-<td><kbd>Ctrl</kbd> + <kbd>-</kbd></td>
-<td>Zoom out</td>
-</tr>
-<tr>
-<td><kbd>Ctrl</kbd> + <kbd>]</kbd></td>
-<td>Rotate PDF clockwise 90°</td>
-</tr>
-<tr>
-<td><kbd>Ctrl</kbd> + <kbd>[</kbd></td>
-<td>Rotate PDF counter-clockwise 90°</td>
-</tr>
-<tr>
-<td><kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>g</kbd></td>
-<td>Skip to page number</td>
-</tr>
-<tr>
-<td><kbd>Ctrl</kbd> + <kbd>f</kbd></td>
-<td>Find</td>
-</tr>
-<tr>
-<td><kbd>Ctrl</kbd> + <kbd>s</kbd></td>
-<td>Save</td>
-</tr>
-<tr>
-<td><kbd>Ctrl</kbd> + <kbd>p</kbd></td>
-<td>Print</td>
-</tr>
-<tr>
-<td><kbd>Ctrl</kbd> + <kbd>w</kbd></td>
-<td>Close</td>
+<td>-p</td>
+<td>Password to use when connecting to the server.</td>
 </tr>
 </tbody>
 </table>
+<p>Here are examples of calling mysql.exe with these parameters:</p>
+<h3 id="powershell">PowerShell</h3>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">&amp; <span style="color:#2aa198">&#39;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#39;</span> --port=3306 --host=127.0.0.1 --user=root -p
+</code></pre></div><h3 id="cmd">CMD</h3>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Batchfile" data-lang="Batchfile"><span style="color:#2aa198">&#34;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#34;</span> --port=3306 --host=127.0.0.1 --user=root -p
+</code></pre></div><h3 id="example-sql-commands">Example SQL Commands</h3>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL"><span style="color:#719e07">SHOW</span> databases;
+USE employeeschema;
+<span style="color:#719e07">SHOW</span> TABLES;
+<span style="color:#719e07">CREATE</span> <span style="color:#719e07">TABLE</span> itemType (
+    id <span style="color:#b58900">INT</span> UNSIGNED <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span> AUTO_INCREMENT,
+    description <span style="color:#b58900">VARCHAR</span>(<span style="color:#2aa198">100</span>) <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span>,
+    loanDuration <span style="color:#b58900">INT</span> <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span>,
+    created <span style="color:#719e07">TIMESTAMP</span> <span style="color:#719e07">DEFAULT</span> <span style="color:#719e07">CURRENT_TIMESTAMP</span>,
+    <span style="color:#719e07">PRIMARY</span> <span style="color:#719e07">KEY</span> (id)
+    );
+<span style="color:#719e07">INSERT</span> <span style="color:#719e07">INTO</span> itemType(description, loanDuration)
+    <span style="color:#719e07">VALUES</span>
+    (<span style="color:#2aa198">&#39;Raspberry Pi Kits&#39;</span>, <span style="color:#2aa198">28</span>),
+    (<span style="color:#2aa198">&#39;Raspberry Pi Hats &amp; Microcontrollers&#39;</span>, <span style="color:#2aa198">28</span>),
+    (<span style="color:#2aa198">&#39;Raspberry Pi Books&#39;</span>, <span style="color:#2aa198">56</span>)
+    ;
+<span style="color:#719e07">SELECT</span> <span style="color:#719e07">*</span> <span style="color:#719e07">FROM</span> itemType;
+</code></pre></div><h2 id="windows-terminal---adding-a-dedicated-mysql-terminal">Windows Terminal - Adding A Dedicated MySQL Terminal</h2>
+<ol>
+<li>
+<p>Start Windows Terminal</p>
+</li>
+<li>
+<p>Open Settings <kbd>Ctrl</kbd> + <kbd>,</kbd></p>
+</li>
+<li>
+<p>Click <code>+ Add new</code> (bottom left corner)</p>
+</li>
+<li>
+<p>Enter the values for your installation, for example:</p>
+<ul>
+<li>Name: <code>MySQL</code></li>
+<li>Command Line: <code>C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe -h localhost -u root -p</code> (yours might be different)</li>
+<li>Starting directory: I&rsquo;ve left this empty
+<ul>
+<li>I&rsquo;ve ticked &ldquo;Use parent process directory&rdquo;</li>
+</ul>
+</li>
+<li>Icon:  I just used an emoji (press <kbd>Windows</kbd> + <kbd>.</kbd>).  I&rsquo;m using this one&hellip; 🐬</li>
+<li>Tab Title: <code>MySQL</code></li>
+</ul>
+<p>Done.</p>
+</li>
+</ol>
         </div>
         
         <div class="my-4">
     
-    <a href="/tags/edge/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#Edge</a>
+    <a href="/tags/mysql/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#MySQL</a>
     
-    <a href="/tags/pdf/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#PDF</a>
+    <a href="/tags/powershell/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#PowerShell</a>
+    
+    <a href="/tags/sql/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#SQL</a>
     
 </div>
         
@@ -330,13 +359,13 @@
     <div>
         
         <span class="block font-bold">Previous</span>
-        <a href="/posts/mysql-windows-terminal/" class="block">MySQL and Windows Terminal</a>
+        <a href="/posts/windows-terminal-colour-icons/" class="block">Adding Colour &amp; Icons to File Listings in a Terminal</a>
         
     </div>
     <div class="md:text-right mt-4 md:mt-0">
         
         <span class="block font-bold">Next</span>
-        <a href="/posts/wsl-launching-windows-apps/" class="block">Launching Windows Apps From Within WSL</a>
+        <a href="/posts/edge-pdf/" class="block">Edge Browser as a PDF Viewer &amp; Markup</a>
         
     </div>
 </div>
@@ -350,15 +379,36 @@
     <div class="col-span-2">
         
         
+<div class="bg-secondary-bg rounded p-6">
+    <h3 class="text-lg font-semibold mb-4">Series of Posts</h3>
+    <div class="content">
+        
+        
+        <a href="/posts/windows-terminal-colour-icons/">Adding Colour &amp; Icons to File Listings in a Terminal</a>
+        <br />
+        
+        <a href="/posts/mysql-windows-terminal/">MySQL and Windows Terminal</a>
+        <br />
+        
+        
+    </div>
+</div>
+        
+        
         <div class="sticky top-16 z-10 hidden lg:block px-6 py-4  bg-primary-bg ">
     <span class="text-lg font-semibold">On This Page</span>
 </div>
 <div class="sticky-toc hidden lg:block px-6 pb-6 ">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#edges-pdf-toolbar">Edge&rsquo;s PDF Toolbar</a></li>
-    <li><a href="#adding-comments--notes">Adding Comments / Notes</a></li>
-    <li><a href="#shortcuts-when-viewing-pdfs">Shortcuts When Viewing PDFs</a></li>
+    <li><a href="#starting-a-mysql-terminal-session-from-inside-an-active-powershell-or-cmd-session">Starting A MySQL Terminal Session From Inside an Active PowerShell or CMD Session</a>
+      <ul>
+        <li><a href="#powershell">PowerShell</a></li>
+        <li><a href="#cmd">CMD</a></li>
+        <li><a href="#example-sql-commands">Example SQL Commands</a></li>
+      </ul>
+    </li>
+    <li><a href="#windows-terminal---adding-a-dedicated-mysql-terminal">Windows Terminal - Adding A Dedicated MySQL Terminal</a></li>
   </ul>
 </nav>
 </div>
