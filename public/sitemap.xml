@@ -3,7 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/categories/</loc>
-    <lastmod>2021-07-23T08:00:00+01:00</lastmod>
+    <lastmod>2021-07-24T10:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/posts/makrdown-getting-started/</loc>
+    <lastmod>2021-07-24T10:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/categories/linux/</loc>
+    <lastmod>2021-07-24T10:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/tags/markdown/</loc>
+    <lastmod>2021-07-24T10:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/series/markdown/</loc>
+    <lastmod>2021-07-24T10:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2021-07-24T10:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/series/</loc>
+    <lastmod>2021-07-24T10:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2021-07-24T10:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2021-07-24T10:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/tags/vscode/</loc>
+    <lastmod>2021-07-24T10:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/categories/windows/</loc>
+    <lastmod>2021-07-24T10:00:00+01:00</lastmod>
   </url><url>
     <loc>/tags/mysql/</loc>
     <lastmod>2021-07-23T08:00:00+01:00</lastmod>
@@ -14,16 +44,7 @@
     <loc>/posts/mysql-scripts-cli/</loc>
     <lastmod>2021-07-23T08:00:00+01:00</lastmod>
   </url><url>
-    <loc>/posts/</loc>
-    <lastmod>2021-07-23T08:00:00+01:00</lastmod>
-  </url><url>
     <loc>/tags/sql/</loc>
-    <lastmod>2021-07-23T08:00:00+01:00</lastmod>
-  </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2021-07-23T08:00:00+01:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2021-07-23T08:00:00+01:00</lastmod>
   </url><url>
     <loc>/posts/windows-terminal-colour-icons/</loc>
@@ -33,12 +54,6 @@
     <lastmod>2021-07-22T08:34:00+01:00</lastmod>
   </url><url>
     <loc>/tags/powershell/</loc>
-    <lastmod>2021-07-22T08:34:00+01:00</lastmod>
-  </url><url>
-    <loc>/series/</loc>
-    <lastmod>2021-07-22T08:34:00+01:00</lastmod>
-  </url><url>
-    <loc>/categories/windows/</loc>
     <lastmod>2021-07-22T08:34:00+01:00</lastmod>
   </url><url>
     <loc>/series/windows-terminal/</loc>
@@ -57,12 +72,6 @@
     <lastmod>2021-07-21T12:03:00+01:00</lastmod>
   </url><url>
     <loc>/posts/wsl-launching-windows-apps/</loc>
-    <lastmod>2021-07-21T10:29:00+01:00</lastmod>
-  </url><url>
-    <loc>/categories/linux/</loc>
-    <lastmod>2021-07-21T10:29:00+01:00</lastmod>
-  </url><url>
-    <loc>/tags/vscode/</loc>
     <lastmod>2021-07-21T10:29:00+01:00</lastmod>
   </url><url>
     <loc>/series/windows-subsystem-for-linux/</loc>

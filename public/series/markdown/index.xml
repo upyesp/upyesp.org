@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>VSCode on upyesp</title>
-    <link>/tags/vscode/</link>
-    <description>Recent content in VSCode on upyesp</description>
+    <title>Markdown on upyesp</title>
+    <link>/series/markdown/</link>
+    <description>Recent content in Markdown on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 24 Jul 2021 10:00:00 +0100</lastBuildDate><atom:link href="/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Jul 2021 10:00:00 +0100</lastBuildDate><atom:link href="/series/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting Started With Markdown</title>
       <link>/posts/makrdown-getting-started/</link>
@@ -14,15 +14,6 @@
       
       <guid>/posts/makrdown-getting-started/</guid>
       <description>&lt;p&gt;Markdown is a plain text format for writing structured documents.  Writing Markdown is a great way to take notes, the author spends less time distracted by formatting and more time focusing on content.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Launching Windows Apps From Within WSL</title>
-      <link>/posts/wsl-launching-windows-apps/</link>
-      <pubDate>Wed, 21 Jul 2021 10:29:00 +0100</pubDate>
-      
-      <guid>/posts/wsl-launching-windows-apps/</guid>
-      <description>&lt;p&gt;The interoperability provided by WSL enables calling or running Windows applications directly from within the Linux command line.&lt;/p&gt;</description>
     </item>
     
   </channel>

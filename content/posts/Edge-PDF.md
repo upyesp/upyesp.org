@@ -37,7 +37,7 @@ Some other functions I use are detailed in the list of shortcuts below.
 
 | Shortcut  | Function                                      |
 |-----------|-----------------------------------------------|
-|<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>u</kbd>| Read Aloud: text selection or entire PDF |
+|<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd>| Read Aloud: text selection or entire PDF |
 |<kbd>F7</kbd>| Toggle between caret browsing (cursor keyboard navigation) on / off |
 |<kbd>Ctrl</kbd> + <kbd>\\</kbd>| Toggle PDF between "fit to page" / "fit to width" |
 |<kbd>Ctrl</kbd> + <kbd>=</kbd>| Zoom in |
@@ -45,8 +45,8 @@ Some other functions I use are detailed in the list of shortcuts below.
 |<kbd>Ctrl</kbd> + <kbd>\]</kbd>| Rotate PDF clockwise 90° |
 |<kbd>Ctrl</kbd> + <kbd>\[</kbd>| Rotate PDF counter-clockwise 90° |
 |<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>g</kbd>| Skip to page number |
-|<kbd>Ctrl</kbd> + <kbd>f</kbd>| Find |
-|<kbd>Ctrl</kbd> + <kbd>s</kbd>| Save |
-|<kbd>Ctrl</kbd> + <kbd>p</kbd>| Print |
-|<kbd>Ctrl</kbd> + <kbd>w</kbd>| Close |
+|<kbd>Ctrl</kbd> + <kbd>F</kbd>| Find |
+|<kbd>Ctrl</kbd> + <kbd>S</kbd>| Save |
+|<kbd>Ctrl</kbd> + <kbd>O</kbd>| Print |
+|<kbd>Ctrl</kbd> + <kbd>W</kbd>| Close |
 
