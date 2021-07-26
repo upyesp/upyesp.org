@@ -52,23 +52,23 @@ Tables are also supported:
 | Cow    | moo   |
 ```
 
-## Online Tutorial
-
-The [60 Second Tutorial](https://commonmark.org/help/) is a great place to start.
-
 ## Code Blocks and Syntax Highlighting
 
 Code blocks begin and end with three backticks, like this:
 
-\```
+\` \` \`
 
-\```
+\` \` \`
 
-To add syntax highlighting, include the name of the language to the start of the code block, such as:
+To add syntax highlighting, include the name of the language at the start of the code block, such as:
 
-\```Rust
+\` \` \` Rust
 
-\```
+\` \` \`
+
+## Online Tutorial
+
+The [60 Second Tutorial](https://commonmark.org/help/) is a great place to start.
 
 ## Resources of Interest
 

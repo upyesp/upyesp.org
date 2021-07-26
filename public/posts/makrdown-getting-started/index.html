@@ -82,7 +82,7 @@
     },
     "headline": "Getting Started With Markdown | upyesp","datePublished": "2021-07-24T10:00:00+01:00",
     "dateModified": "2021-07-24T10:00:00+01:00",
-    "wordCount":  375 ,
+    "wordCount":  467 ,
     "publisher": {
         "@type": "Person",
         "name": "upyesp",
@@ -133,6 +133,10 @@
 
 
 
+
+
+
+<meta property="og:see_also" content="/posts/makrdown-vscode-math-formula/" />
 
 
 
@@ -221,7 +225,7 @@
     </div>
     <div class="mr-6 my-2">
         <i class="fas fa-clock mr-1"></i>
-        <span>2 min read</span>
+        <span>3 min read</span>
     </div>
     
     
@@ -264,24 +268,39 @@
 This is plan text. Here is a word in <span style="font-weight:bold">**bold**</span>. An example of <span style="font-style:italic">*italic*</span>.
 
 <span style="color:#268bd2">## A Level 2 Heading
-</span><span style="color:#268bd2"></span>
+</span><span style="color:#268bd2"></span>Some text here with a link to [<span style="color:#268bd2">this site</span>](https://example.com).
+
 <span style="color:#268bd2">### A Level 3 Heading
 </span><span style="color:#268bd2"></span>
-Here&#39;s a table:
+Numbered lists are supported:
+
+<span style="color:#719e07">1.</span> this is the first item
+<span style="color:#719e07">1.</span> here&#39;s the second
+<span style="color:#719e07">1.</span> and the third
+
+Tables are also supported:
 
 | Animal | Sound |
 |--------|-------|
 | Dog    | woof  |
 | Cow    | moo   |
-</code></pre></div><h2 id="online-tutorial">Online Tutorial</h2>
+</code></pre></div><h2 id="code-blocks-and-syntax-highlighting">Code Blocks and Syntax Highlighting</h2>
+<p>Code blocks begin and end with three backticks, like this:</p>
+<p>` ` `</p>
+<p>` ` `</p>
+<p>To add syntax highlighting, include the name of the language at the start of the code block, such as:</p>
+<p>` ` ` Rust</p>
+<p>` ` `</p>
+<h2 id="online-tutorial">Online Tutorial</h2>
 <p>The <a href="https://commonmark.org/help/">60 Second Tutorial</a> is a great place to start.</p>
 <h2 id="resources-of-interest">Resources of Interest</h2>
 <ol>
+<li><a href="https://highlightjs.org/static/demo/">highlight.js</a> for a list of languages available to add to code blocks.</li>
 <li><a href="https://www.tablesgenerator.com/markdown_tables">Tables Generator</a> is a fast way of creating tables and supports pasting data copied from spreadsheets, docs and other sources.</li>
 <li><a href="https://code.visualstudio.com/">VSCode</a> is free, open source and widely used.  Great for editing Markdown, also languages such as Python, Rust, C++. The <a href="https://code.visualstudio.com/docs/languages/markdown#_markdown-preview">preview pane</a> provides instant feedback on how your document looks. Shortcut to enable preview: <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>.</li>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">Code Spell Checker</a>, is a general spell checker extension for VSCode. Great for spell checking source code comments and Markdown documents.</li>
-<li><a href="https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf">Markdown PDF</a>, which generates PDF and HTML versions of the currently edited file.</li>
-<li><a href="https://pandoc.org/">Pandoc</a> is a open-source utility that converts docs in various formats to many other formats.  Great for converting Markdown to .epub format, .docx and many other formats.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">Code Spell Checker</a>, extension for VSCode, is a general spell checker. Great for spell checking source code comments and Markdown documents.</li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf">Markdown PDF</a>, extension for VSCode,  generates PDF and HTML versions of the currently edited Markdown file.</li>
+<li><a href="https://pandoc.org/">Pandoc</a> is a super powerful open-source utility that converts docs in various formats to many other formats.  Excellent for converting Markdown to .epub format, .docx and many other formats.</li>
 </ol>
         </div>
         
@@ -303,6 +322,9 @@ Here&#39;s a table:
         
 <div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
     <div>
+        
+        <span class="block font-bold">Previous</span>
+        <a href="/posts/makrdown-vscode-math-formula/" class="block">Markdown, Mathematical Formulae and VSCode</a>
         
     </div>
     <div class="md:text-right mt-4 md:mt-0">
@@ -327,6 +349,9 @@ Here&#39;s a table:
     <div class="content">
         
         
+        <a href="/posts/makrdown-vscode-math-formula/">Markdown, Mathematical Formulae and VSCode</a>
+        <br />
+        
         <a href="/posts/makrdown-getting-started/">Getting Started With Markdown</a>
         <br />
         
@@ -343,6 +368,7 @@ Here&#39;s a table:
   <ul>
     <li><a href="#commonmark">CommonMark</a></li>
     <li><a href="#markdown-tutorial">Markdown Tutorial</a></li>
+    <li><a href="#code-blocks-and-syntax-highlighting">Code Blocks and Syntax Highlighting</a></li>
     <li><a href="#online-tutorial">Online Tutorial</a></li>
     <li><a href="#resources-of-interest">Resources of Interest</a></li>
   </ul>
