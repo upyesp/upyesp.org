@@ -12,7 +12,7 @@ series: [Markdown]
 
 The double backSlash, \\\\, when specified in math formula in LaTeX and KaTeX might not render correctly. This is due to the \\ character being used as an escape character in some rendering frameworks.
 
-Within the context of KaTex (which is math specific) and when specifying math formula in LaTeX, a possible workaround is to use \cr as a replaced for \\\\. 
+Within the context of KaTeX (which is math specific) and when specifying math formula in LaTeX, a possible workaround is to use \cr as a replaced for \\\\. 
 
 <!--more-->
 
