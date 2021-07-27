@@ -1,5 +1,5 @@
 ---
-title: "LaTex & Katex Math Rendering, the Double Backslash \\\\ in Markdown"
+title: "LaTex & KaTeX Math Rendering, the Double Backslash \\\\ in Markdown"
 description: Avoiding Double BackSlash Being Escaped in Katex and Latex  
 date: 2021-07-27T08:00:00+01:00
 draft: false
