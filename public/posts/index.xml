@@ -17,6 +17,15 @@
     </item>
     
     <item>
+      <title>Markdown, the Double Backslash \ in LaTex &amp; Katex Math Rendering</title>
+      <link>/posts/makrdown-latex-katex-doublebackslash/</link>
+      <pubDate>Sun, 25 Jul 2021 10:00:00 +0100</pubDate>
+      
+      <guid>/posts/makrdown-latex-katex-doublebackslash/</guid>
+      <description>&lt;p&gt;Markdown documents can include elegant representations of algebraic formulae, using KaTeX.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Getting Started With Markdown</title>
       <link>/posts/makrdown-getting-started/</link>
       <pubDate>Sat, 24 Jul 2021 10:00:00 +0100</pubDate>

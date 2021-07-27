@@ -82,7 +82,7 @@
     },
     "headline": "Markdown, Mathematical Formulae and VSCode | upyesp","datePublished": "2021-07-25T10:00:00+01:00",
     "dateModified": "2021-07-25T10:00:00+01:00",
-    "wordCount":  61 ,
+    "wordCount":  191 ,
     "publisher": {
         "@type": "Person",
         "name": "upyesp",
@@ -137,6 +137,10 @@
 
 
 
+
+
+
+<meta property="og:see_also" content="/posts/makrdown-latex-katex-doublebackslash/" />
 
 
 
@@ -259,11 +263,65 @@
         <div class="content">
             <p>Markdown documents can include elegant representations of algebraic formulae, using KaTeX.</p>
 <p>The <a href="https://commonmark.org/">CommonMark</a> specification of Markdown does not include scope for representing formulae or equations.  Fortunately, there is <a href="https://katex.org/">KaTeX</a>, an excellent typesetting library, which can be embedded in Markdown. KaTeX is supported extensively.</p>
-<p>Inline math equations are wrapped in single dollar signs. For example, $x^2$</p>
-<p>becomes $x^2$</p>
-<p>asdasdf</p>
-<p>$$
+<p>VSCode supports KaTex in Markdown, equations are rendered in the VSCode preview pane, <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>.</p>
+<p>Inline math equations are wrapped in single dollar signs. For example, <code>$x^2$</code> becomes $x^2$.</p>
+<p>KaTeX blocks begin and end with two dollar signs:</p>
+<pre><code class="language-Katex" data-lang="Katex">$$
 x^2
+$$
+</code></pre><p>produces
+$$
+x^2
+$$</p>
+<h3 id="pythagoras-theorem-530-bc">Pythagora’s theorem (530 BC)</h3>
+<pre><code class="language-Katex" data-lang="Katex">$$
+a^2 + b^2 = c^2
+$$
+</code></pre><p>$$
+a^2 + b^2 = c^2
+$$</p>
+<h3 id="einsteins-theory-of-special-relativity-1905">Einstein&rsquo;s Theory of Special Relativity (1905)</h3>
+<pre><code class="language-Katex" data-lang="Katex">$$
+e=mc^2
+$$
+</code></pre><p>$$
+e=mc^2
+$$</p>
+<h3 id="matrices">Matrices</h3>
+<pre><code class="language-Katex" data-lang="Katex">$$
+\begin{pmatrix}
+a &amp; b \cr
+c &amp; d
+\end{pmatrix}
++
+\begin{pmatrix}
+e &amp; f \cr
+g &amp; h
+\end{pmatrix}
+$$
+</code></pre><p>$$
+\begin{pmatrix}
+a &amp; b \cr
+c &amp; d
+\end{pmatrix}
++
+\begin{pmatrix}
+e &amp; f \cr
+g &amp; h
+\end{pmatrix}
+$$</p>
+<h3 id="special-cases">Special Cases</h3>
+<pre><code class="language-Katex" data-lang="Katex">$$
+\begin{dcases}
+   a &amp;\text{if } b \cr
+   c &amp;\text{if } d
+\end{dcases}
+$$
+</code></pre><p>$$
+\begin{dcases}
+a &amp;\text{if } b \cr
+c &amp;\text{if } d
+\end{dcases}
 $$</p>
         </div>
         
@@ -292,7 +350,7 @@ $$</p>
     <div class="md:text-right mt-4 md:mt-0">
         
         <span class="block font-bold">Next</span>
-        <a href="/posts/makrdown-getting-started/" class="block">Getting Started With Markdown</a>
+        <a href="/posts/makrdown-latex-katex-doublebackslash/" class="block">Markdown, the Double Backslash \ in LaTex &amp; Katex Math Rendering</a>
         
     </div>
 </div>
@@ -314,6 +372,9 @@ $$</p>
         <a href="/posts/makrdown-vscode-math-formula/">Markdown, Mathematical Formulae and VSCode</a>
         <br />
         
+        <a href="/posts/makrdown-latex-katex-doublebackslash/">Markdown, the Double Backslash \ in LaTex &amp; Katex Math Rendering</a>
+        <br />
+        
         <a href="/posts/makrdown-getting-started/">Getting Started With Markdown</a>
         <br />
         
@@ -331,6 +392,9 @@ $$</p>
         class="col-span-2  lg:col-span-6 bg-secondary-bg rounded p-6">
         <h2 class="text-lg font-semibold mb-4">See Also</h2>
         <div class="content">
+            
+            <a href="/posts/makrdown-latex-katex-doublebackslash/">Markdown, the Double Backslash \ in LaTex &amp; Katex Math Rendering</a>
+            <br />
             
             <a href="/posts/makrdown-getting-started/">Getting Started With Markdown</a>
             <br />
