@@ -16,7 +16,7 @@ Within the context of KaTeX (which is math specific) and when specifying math fo
 
 <!--more-->
 
-For example:
+$\KaTeX$ example:
 
 ```Katex
 $$
@@ -58,3 +58,6 @@ c & d
 $$
 
 
+$$
+\sum_{\mathclap{1\le i\le n}} x_{i}
+$$
