@@ -57,7 +57,3 @@ c & d
 \end{pmatrix}
 $$
 
-
-$$
-\sum_{\mathclap{1\le i\le n}} x_{i}
-$$
