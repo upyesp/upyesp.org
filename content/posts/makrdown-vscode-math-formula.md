@@ -16,11 +16,11 @@ Markdown documents can include elegant representations of algebraic formulae, us
 
 The [CommonMark](https://commonmark.org/) specification of Markdown does not include scope for representing formulae or equations.  Fortunately, there is [KaTeX](https://katex.org/), an excellent typesetting library, which can be embedded in Markdown. KaTeX is supported extensively.
 
-VSCode supports $/KaTeX$ in Markdown, equations are rendered in the VSCode preview pane, <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>.
+VSCode supports $KaTeX$ in Markdown, equations are rendered in the VSCode preview pane, <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>.
 
 Inline math equations are wrapped in single dollar signs. For example, `$x^2$` becomes $x^2$.
 
-$\KaTeX$ blocks begin and end with two dollar signs:
+$KaTeX$ blocks begin and end with two dollar signs:
 
 ```Katex
 $$
