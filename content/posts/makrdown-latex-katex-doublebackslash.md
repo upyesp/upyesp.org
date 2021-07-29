@@ -1,6 +1,6 @@
 ---
 title: "LaTeX & KaTeX Math Rendering: The Double Backslash \\\\ in Markdown"
-description: Avoiding Double BackSlash Being Escaped in Katex and Latex  
+description: Avoiding Double Backslash Being Escaped in Katex and Latex  
 date: 2021-07-29T08:00:00+01:00
 draft: false
 toc: false
@@ -10,7 +10,7 @@ categories: [Windows, Linux]
 series: [Markdown]
 ---
 
-The double backSlash, '\\\\', when specified in math formula in LaTeX and KaTeX might not render correctly. Here's how to avoid that.
+The double backslash, '\\\\', when specified in math formula in LaTeX and KaTeX might not render correctly. Here's how to avoid that.
 
 <!--more-->
 
@@ -63,7 +63,7 @@ $$
 
 ### Aligned Expressions
 
-The double backSlash, '\\\\', in the aligned expressions below:
+The double backslash, '\\\\', in the aligned expressions below:
 
 ```Katex
 $$
