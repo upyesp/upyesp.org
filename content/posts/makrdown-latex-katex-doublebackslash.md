@@ -1,7 +1,7 @@
 ---
 title: "LaTeX & KaTeX Math Rendering: The Double Backslash \\\\ in Markdown"
 description: Avoiding Double BackSlash Being Escaped in Katex and Latex  
-date: 2021-07-27T08:00:00+01:00
+date: 2021-07-29T08:00:00+01:00
 draft: false
 toc: false
 featuredImage: ''
@@ -10,15 +10,19 @@ categories: [Windows, Linux]
 series: [Markdown]
 ---
 
-The double backSlash, \\\\, when specified in math formula in LaTeX and KaTeX might not render correctly. Here's how to avoid that.
+The double backSlash, '\\\\', when specified in math formula in LaTeX and KaTeX might not render correctly. Here's how to avoid that.
 
 <!--more-->
 
-This is due to the \\ character being used as an escape character in some rendering frameworks.
+This is due to the '\\' character being used as an escape character in some rendering frameworks.
 
-Within the context of KaTeX (which is math specific) and when specifying math formula in LaTeX, a possible workaround is to use \cr as a replacement for \\\\. 
+Within the context of KaTeX (which is math specific) and when specifying math formula in LaTeX, a possible workaround is to use '\cr' as a replacement for '\\\\'. 
 
-$\KaTeX$ example:
+## $\KaTeX$ Examples
+
+### Matrices
+
+The double backSlash, '\\\\', in the matrix below:
 
 ```Katex
 $$
@@ -37,7 +41,7 @@ c & d
 \end{pmatrix}
 $$
 
-Where as:
+Where as changing '\\\\' to '\cr', like this:
 
 ```Katex
 $$
@@ -50,8 +54,6 @@ $$
 
 Renders as:
 
-
-
 $$
 \begin{pmatrix}
 a & b \cr
@@ -59,3 +61,46 @@ c & d
 \end{pmatrix}
 $$
 
+### Aligned Expressions
+
+The double backSlash, '\\\\', in the aligned expressions below:
+
+```Katex
+$$
+\begin{alignedat}{2}
+10&x+ &3&y = 2 \\
+3&x+&13&y = 4
+\end{alignedat}
+$$
+```
+
+Might render as:
+
+$$
+\begin{alignedat}{2}
+10&x+ &3&y = 2 \\
+3&x+&13&y = 4
+\end{alignedat}
+$$
+
+Where as:
+
+```Katex
+$$
+\begin{alignedat}{2}
+10&x+ &3&y = 2 \cr
+3&x+&13&y = 4
+\end{alignedat}
+$$
+```
+
+Renders as:
+
+$$
+\begin{alignedat}{2}
+10&x+ &3&y = 2 \cr
+3&x+&13&y = 4
+\end{alignedat}
+$$
+
+So when using $\KaTeX$ in Markdown, consider using '\cr' rather than '\\\\'.
