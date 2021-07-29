@@ -22,7 +22,7 @@ Within the context of KaTeX (which is math specific) and when specifying math fo
 
 ### Matrices
 
-The double backSlash, '\\\\', in the matrix below:
+The double backslash, '\\\\', in the matrix below:
 
 ```Katex
 $$
