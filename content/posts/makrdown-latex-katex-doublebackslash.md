@@ -10,11 +10,13 @@ categories: [Windows, Linux]
 series: [Markdown]
 ---
 
-The double backSlash, \\\\, when specified in math formula in LaTeX and KaTeX might not render correctly. This is due to the \\ character being used as an escape character in some rendering frameworks.
-
-Within the context of KaTeX (which is math specific) and when specifying math formula in LaTeX, a possible workaround is to use \cr as a replacement for \\\\. 
+The double backSlash, \\\\, when specified in math formula in LaTeX and KaTeX might not render correctly. Here's how to avoid that.
 
 <!--more-->
+
+This is due to the \\ character being used as an escape character in some rendering frameworks.
+
+Within the context of KaTeX (which is math specific) and when specifying math formula in LaTeX, a possible workaround is to use \cr as a replacement for \\\\. 
 
 $\KaTeX$ example:
 
