@@ -5,7 +5,7 @@ date: 2021-07-29T08:00:00+01:00
 draft: false
 toc: false
 featuredImage: ''
-tags: [Latex, KaTex, Markdown]
+tags: [Latex, KaTeX, Markdown]
 categories: [Windows, Linux]
 series: [Markdown]
 ---
@@ -103,4 +103,4 @@ $$
 \end{alignedat}
 $$
 
-So when using $\KaTeX$ in Markdown, consider using '\cr' rather than '\\\\'.
+So when using $KaTeX$ in Markdown, consider using '\cr' rather than '\\\\'.

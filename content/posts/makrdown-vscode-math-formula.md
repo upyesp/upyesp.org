@@ -5,7 +5,7 @@ date: 2021-07-27T10:00:00+01:00
 draft: false
 toc: false
 featuredImage: ''
-tags: [Markdown, VSCode, KaTex]
+tags: [Markdown, VSCode, KaTeX]
 categories: [Windows, Linux]
 series: [Markdown]
 ---

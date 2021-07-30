@@ -3,43 +3,46 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/categories/</loc>
-    <lastmod>2021-07-25T10:00:00+01:00</lastmod>
+    <lastmod>2021-07-29T08:00:00+01:00</lastmod>
   </url><url>
     <loc>/tags/katex/</loc>
-    <lastmod>2021-07-25T10:00:00+01:00</lastmod>
+    <lastmod>2021-07-29T08:00:00+01:00</lastmod>
   </url><url>
-    <loc>/categories/linux/</loc>
-    <lastmod>2021-07-25T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>/tags/markdown/</loc>
-    <lastmod>2021-07-25T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>/series/markdown/</loc>
-    <lastmod>2021-07-25T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>/posts/makrdown-vscode-math-formula/</loc>
-    <lastmod>2021-07-25T10:00:00+01:00</lastmod>
+    <loc>/tags/latex/</loc>
+    <lastmod>2021-07-29T08:00:00+01:00</lastmod>
   </url><url>
     <loc>/posts/makrdown-latex-katex-doublebackslash/</loc>
-    <lastmod>2021-07-25T10:00:00+01:00</lastmod>
+    <lastmod>2021-07-29T08:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/categories/linux/</loc>
+    <lastmod>2021-07-29T08:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/tags/markdown/</loc>
+    <lastmod>2021-07-29T08:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/series/markdown/</loc>
+    <lastmod>2021-07-29T08:00:00+01:00</lastmod>
   </url><url>
     <loc>/posts/</loc>
-    <lastmod>2021-07-25T10:00:00+01:00</lastmod>
+    <lastmod>2021-07-29T08:00:00+01:00</lastmod>
   </url><url>
     <loc>/series/</loc>
-    <lastmod>2021-07-25T10:00:00+01:00</lastmod>
+    <lastmod>2021-07-29T08:00:00+01:00</lastmod>
   </url><url>
     <loc>/tags/</loc>
-    <lastmod>2021-07-25T10:00:00+01:00</lastmod>
+    <lastmod>2021-07-29T08:00:00+01:00</lastmod>
   </url><url>
     <loc>/</loc>
-    <lastmod>2021-07-25T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>/tags/vscode/</loc>
-    <lastmod>2021-07-25T10:00:00+01:00</lastmod>
+    <lastmod>2021-07-29T08:00:00+01:00</lastmod>
   </url><url>
     <loc>/categories/windows/</loc>
-    <lastmod>2021-07-25T10:00:00+01:00</lastmod>
+    <lastmod>2021-07-29T08:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/posts/makrdown-vscode-math-formula/</loc>
+    <lastmod>2021-07-27T10:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/tags/vscode/</loc>
+    <lastmod>2021-07-27T10:00:00+01:00</lastmod>
   </url><url>
     <loc>/posts/makrdown-getting-started/</loc>
     <lastmod>2021-07-24T10:00:00+01:00</lastmod>

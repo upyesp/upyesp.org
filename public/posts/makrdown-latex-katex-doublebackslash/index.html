@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width">
 
 
-<title>Markdown, the Double Backslash \ in LaTex &amp; Katex Math Rendering | upyesp</title>
+<title>LaTeX &amp; KaTeX Math Rendering: The Double Backslash \\ in Markdown | upyesp</title>
 
 <meta name="generator" content="Hugo Eureka 0.8.2" />
 <link rel="stylesheet" href="/css/eureka.min.css">
@@ -53,7 +53,7 @@
 
 
 <meta name="description"
-  content="Avoiding Double BackSlash Being Escaped in Katex and Latex">
+  content="Avoiding Double Backslash Being Escaped in Katex and Latex">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -65,7 +65,7 @@
       "item":"/posts/"},{
       "@type": "ListItem",
       "position": 2 ,
-      "name":"Markdown, the Double Backslash \\ in LaTex \u0026 Katex Math Rendering",
+      "name":"LaTeX \u0026 KaTeX Math Rendering: The Double Backslash \\\\ in Markdown",
       "item":"/posts/makrdown-latex-katex-doublebackslash/"}]
 }
 </script>
@@ -80,16 +80,16 @@
         "@type": "WebPage",
         "@id": "/posts/makrdown-latex-katex-doublebackslash/"
     },
-    "headline": "Markdown, the Double Backslash \\ in LaTex \u0026 Katex Math Rendering | upyesp","datePublished": "2021-07-25T10:00:00+01:00",
-    "dateModified": "2021-07-25T10:00:00+01:00",
-    "wordCount":  191 ,
+    "headline": "LaTeX \u0026 KaTeX Math Rendering: The Double Backslash \\\\ in Markdown | upyesp","datePublished": "2021-07-29T08:00:00+01:00",
+    "dateModified": "2021-07-29T08:00:00+01:00",
+    "wordCount":  212 ,
     "publisher": {
         "@type": "Person",
         "name": "upyesp",
         },
-    "description": "Avoiding Double BackSlash Being Escaped in Katex and Latex"
+    "description": "Avoiding Double Backslash Being Escaped in Katex and Latex"
 }
-</script><meta property="og:title" content="Markdown, the Double Backslash \ in LaTex &amp; Katex Math Rendering | upyesp" />
+</script><meta property="og:title" content="LaTeX &amp; KaTeX Math Rendering: The Double Backslash \\ in Markdown | upyesp" />
 <meta property="og:type" content="article" />
 
 
@@ -98,7 +98,7 @@
 
 
 
-<meta property="og:description" content="Avoiding Double BackSlash Being Escaped in Katex and Latex" />
+<meta property="og:description" content="Avoiding Double Backslash Being Escaped in Katex and Latex" />
 
 
 
@@ -114,21 +114,23 @@
 
 
 
-<meta property="article:published_time" content="2021-07-25T10:00:00&#43;01:00" />
+<meta property="article:published_time" content="2021-07-29T08:00:00&#43;01:00" />
 
 
-<meta property="article:modified_time" content="2021-07-25T10:00:00&#43;01:00" />
+<meta property="article:modified_time" content="2021-07-29T08:00:00&#43;01:00" />
 
 
 
 <meta property="article:section" content="posts" />
 
 
-<meta property="article:tag" content="Markdown" />
-
-<meta property="article:tag" content="VSCode" />
+<meta property="article:tag" content="Latex" />
 
 <meta property="article:tag" content="KaTex" />
+
+<meta property="article:tag" content="Markdown" />
+
+
 
 
 
@@ -139,8 +141,6 @@
 
 
 <meta property="og:see_also" content="/posts/makrdown-vscode-math-formula/" />
-
-
 
 
 
@@ -223,11 +223,11 @@
 <div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
     <div
         class="col-span-2  lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
-        <h1 class="font-bold text-3xl text-primary-text">Markdown, the Double Backslash \ in LaTex &amp; Katex Math Rendering</h1>
+        <h1 class="font-bold text-3xl text-primary-text">LaTeX &amp; KaTeX Math Rendering: The Double Backslash \\ in Markdown</h1>
         <div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
     <div class="mr-6 my-2">
         <i class="fas fa-calendar mr-1"></i>
-        <span>Sunday, July 25, 2021</span>
+        <span>Thursday, July 29, 2021</span>
     </div>
     <div class="mr-6 my-2">
         <i class="fas fa-clock mr-1"></i>
@@ -261,77 +261,77 @@
         
 
         <div class="content">
-            <p>Markdown documents can include elegant representations of algebraic formulae, using KaTeX.</p>
-<p>The <a href="https://commonmark.org/">CommonMark</a> specification of Markdown does not include scope for representing formulae or equations.  Fortunately, there is <a href="https://katex.org/">KaTeX</a>, an excellent typesetting library, which can be embedded in Markdown. KaTeX is supported extensively.</p>
-<p>VSCode supports KaTex in Markdown, equations are rendered in the VSCode preview pane, <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>.</p>
-<p>Inline math equations are wrapped in single dollar signs. For example, <code>$x^2$</code> becomes $x^2$.</p>
-<p>KaTeX blocks begin and end with two dollar signs:</p>
-<pre><code class="language-Katex" data-lang="Katex">$$
-x^2
-$$
-</code></pre><p>produces
-$$
-x^2
-$$</p>
-<h3 id="pythagoras-theorem-530-bc">Pythagora’s theorem (530 BC)</h3>
-<pre><code class="language-Katex" data-lang="Katex">$$
-a^2 + b^2 = c^2
-$$
-</code></pre><p>$$
-a^2 + b^2 = c^2
-$$</p>
-<h3 id="einsteins-theory-of-special-relativity-1905">Einstein&rsquo;s Theory of Special Relativity (1905)</h3>
-<pre><code class="language-Katex" data-lang="Katex">$$
-e=mc^2
-$$
-</code></pre><p>$$
-e=mc^2
-$$</p>
+            <p>The double backslash, &lsquo;\\&rsquo;, when specified in math formula in LaTeX and KaTeX might not render correctly. Here&rsquo;s how to avoid that.</p>
+<p>This is due to the &lsquo;\&rsquo; character being used as an escape character in some rendering frameworks.</p>
+<p>Within the context of KaTeX (which is math specific) and when specifying math formula in LaTeX, a possible workaround is to use &lsquo;\cr&rsquo; as a replacement for &lsquo;\\&rsquo;.</p>
+<h2 id="katex-examples">$\KaTeX$ Examples</h2>
 <h3 id="matrices">Matrices</h3>
+<p>The double backslash, &lsquo;\\&rsquo;, in the matrix below:</p>
+<pre><code class="language-Katex" data-lang="Katex">$$
+\begin{pmatrix}
+a &amp; b \\
+c &amp; d
+\end{pmatrix}
+$$
+</code></pre><p>Might render as:</p>
+<p>\begin{pmatrix}
+a &amp; b \<br>
+c &amp; d
+\end{pmatrix}
+$$</p>
+<p>Where as changing &lsquo;\\&rsquo; to &lsquo;\cr&rsquo;, like this:</p>
 <pre><code class="language-Katex" data-lang="Katex">$$
 \begin{pmatrix}
 a &amp; b \cr
 c &amp; d
 \end{pmatrix}
-+
-\begin{pmatrix}
-e &amp; f \cr
-g &amp; h
-\end{pmatrix}
 $$
-</code></pre><p>$$
+</code></pre><p>Renders as:</p>
+<p>$$
 \begin{pmatrix}
 a &amp; b \cr
 c &amp; d
 \end{pmatrix}
-+
-\begin{pmatrix}
-e &amp; f \cr
-g &amp; h
-\end{pmatrix}
 $$</p>
-<h3 id="special-cases">Special Cases</h3>
+<h3 id="aligned-expressions">Aligned Expressions</h3>
+<p>The double backslash, &lsquo;\\&rsquo;, in the aligned expressions below:</p>
 <pre><code class="language-Katex" data-lang="Katex">$$
-\begin{dcases}
-   a &amp;\text{if } b \cr
-   c &amp;\text{if } d
-\end{dcases}
+\begin{alignedat}{2}
+10&amp;x+ &amp;3&amp;y = 2 \\
+3&amp;x+&amp;13&amp;y = 4
+\end{alignedat}
 $$
-</code></pre><p>$$
-\begin{dcases}
-a &amp;\text{if } b \cr
-c &amp;\text{if } d
-\end{dcases}
+</code></pre><p>Might render as:</p>
+<p>$$
+\begin{alignedat}{2}
+10&amp;x+ &amp;3&amp;y = 2 \<br>
+3&amp;x+&amp;13&amp;y = 4
+\end{alignedat}
 $$</p>
+<p>Where as:</p>
+<pre><code class="language-Katex" data-lang="Katex">$$
+\begin{alignedat}{2}
+10&amp;x+ &amp;3&amp;y = 2 \cr
+3&amp;x+&amp;13&amp;y = 4
+\end{alignedat}
+$$
+</code></pre><p>Renders as:</p>
+<p>$$
+\begin{alignedat}{2}
+10&amp;x+ &amp;3&amp;y = 2 \cr
+3&amp;x+&amp;13&amp;y = 4
+\end{alignedat}
+$$</p>
+<p>So when using $\KaTeX$ in Markdown, consider using &lsquo;\cr&rsquo; rather than &lsquo;\\&rsquo;.</p>
         </div>
         
         <div class="my-4">
     
-    <a href="/tags/markdown/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#Markdown</a>
-    
-    <a href="/tags/vscode/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#VSCode</a>
+    <a href="/tags/latex/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#Latex</a>
     
     <a href="/tags/katex/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#KaTex</a>
+    
+    <a href="/tags/markdown/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#Markdown</a>
     
 </div>
         
@@ -346,14 +346,11 @@ $$</p>
 <div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
     <div>
         
-        <span class="block font-bold">Previous</span>
-        <a href="/posts/makrdown-vscode-math-formula/" class="block">Markdown, Mathematical Formulae and VSCode</a>
-        
     </div>
     <div class="md:text-right mt-4 md:mt-0">
         
         <span class="block font-bold">Next</span>
-        <a href="/posts/makrdown-getting-started/" class="block">Getting Started With Markdown</a>
+        <a href="/posts/makrdown-vscode-math-formula/" class="block">Markdown, Mathematical Formulae and VSCode</a>
         
     </div>
 </div>
@@ -372,10 +369,10 @@ $$</p>
     <div class="content">
         
         
-        <a href="/posts/makrdown-vscode-math-formula/">Markdown, Mathematical Formulae and VSCode</a>
+        <a href="/posts/makrdown-latex-katex-doublebackslash/">LaTeX &amp; KaTeX Math Rendering: The Double Backslash \\ in Markdown</a>
         <br />
         
-        <a href="/posts/makrdown-latex-katex-doublebackslash/">Markdown, the Double Backslash \ in LaTex &amp; Katex Math Rendering</a>
+        <a href="/posts/makrdown-vscode-math-formula/">Markdown, Mathematical Formulae and VSCode</a>
         <br />
         
         <a href="/posts/makrdown-getting-started/">Getting Started With Markdown</a>
@@ -400,9 +397,6 @@ $$</p>
             <br />
             
             <a href="/posts/makrdown-getting-started/">Getting Started With Markdown</a>
-            <br />
-            
-            <a href="/posts/wsl-launching-windows-apps/">Launching Windows Apps From Within WSL</a>
             <br />
             
         </div>

@@ -6,22 +6,13 @@
     <description>Recent content in VSCode on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 25 Jul 2021 10:00:00 +0100</lastBuildDate><atom:link href="/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 27 Jul 2021 10:00:00 +0100</lastBuildDate><atom:link href="/tags/vscode/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Markdown, Mathematical Formulae and VSCode</title>
       <link>/posts/makrdown-vscode-math-formula/</link>
-      <pubDate>Sun, 25 Jul 2021 10:00:00 +0100</pubDate>
+      <pubDate>Tue, 27 Jul 2021 10:00:00 +0100</pubDate>
       
       <guid>/posts/makrdown-vscode-math-formula/</guid>
-      <description>&lt;p&gt;Markdown documents can include elegant representations of algebraic formulae, using KaTeX.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Markdown, the Double Backslash \ in LaTex &amp; Katex Math Rendering</title>
-      <link>/posts/makrdown-latex-katex-doublebackslash/</link>
-      <pubDate>Sun, 25 Jul 2021 10:00:00 +0100</pubDate>
-      
-      <guid>/posts/makrdown-latex-katex-doublebackslash/</guid>
       <description>&lt;p&gt;Markdown documents can include elegant representations of algebraic formulae, using KaTeX.&lt;/p&gt;</description>
     </item>
     
