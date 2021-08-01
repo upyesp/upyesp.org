@@ -3,7 +3,7 @@ mainSections:
 description: Some tech info and tips I find handy to know.
 repoEditURL:
 dateFormat: "Monday, January 2, 2006"
-images: ["images/bash.png"]
+images: ["/images/bash.png"]
 
 titleSeparator:
 
