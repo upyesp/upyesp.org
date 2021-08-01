@@ -12,7 +12,6 @@ paginate: 8
 #   href="https://www.ruiqima.com/">R. Ma</a>
 enableEmoji: true
 enableGitInfo: false
-twitter_cards: true
 summaryLength: 75
 
 defaultContentLanguage: en

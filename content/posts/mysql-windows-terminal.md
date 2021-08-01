@@ -5,8 +5,8 @@ date: 2021-08-01T14:00:00+01:00
 draft: false
 toc: true
 featuredImage: ''
-thumbnail: '/images/bash.png'
-images: ['/images/bash.png']
+thumbnail: "/images/bash.png"
+images: ["/images/bash.png"]
 tags: [MySQL, PowerShell, SQL]
 categories: [Windows, MySQL]
 series: [Windows Terminal]
