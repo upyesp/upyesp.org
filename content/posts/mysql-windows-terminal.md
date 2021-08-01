@@ -4,8 +4,7 @@ description: Some notes on configuring Windows Terminal to work with MySQL.
 date: 2021-08-01T14:00:00+01:00
 draft: false
 toc: true
-featuredImage: ''
-thumbnail: "/images/bash.png"
+featuredImage: "/images/bash.png"
 images: ["/images/bash.png"]
 tags: [MySQL, PowerShell, SQL]
 categories: [Windows, MySQL]
