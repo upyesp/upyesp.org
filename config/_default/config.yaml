@@ -1,4 +1,4 @@
-baseURL: /
+baseURL: upyesp.org
 title: upyesp
 
 # Comment when installing using Hugo Modules
@@ -12,6 +12,7 @@ paginate: 8
 #   href="https://www.ruiqima.com/">R. Ma</a>
 enableEmoji: true
 enableGitInfo: false
+twitter_cards: true
 summaryLength: 75
 
 defaultContentLanguage: en
