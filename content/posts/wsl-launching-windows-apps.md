@@ -20,21 +20,21 @@ Some examples:
 
 ## NotePad
 
-```Bash
+```dos
 notepad.exe .bashrc
 ```
 Will launch the Windows program, Notepad.  A file name can be included as a parameter.  In the above example, a file name has been passed, ".bashrc", which happens to be a hidden file in linux. When Notepad starts in Windows, the linux file ".bashrc" will be open for editing/saving.
 
 ## Explorer
 
-```Bash
+```dos
 explorer.exe .
 ```
 Launches the Windows Explorer. The "." parameter specifies Explorer to start the current location in the linux file system. So Explorer launches in Windows, browsing linux files.
 
 ## VSCode
 
-```Bash
+```dos
 code.exe .
 ```
 Opens the Windows app VSCode, in "remote WSL" mode, allowing VSCode to support the development of native Linux apps. As with Explorer above, the "." parameter specifies to work with the current location in the linux file system.

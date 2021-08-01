@@ -28,7 +28,7 @@ The [CommonMark](https://commonmark.org/) project describes itself as being "A s
 
 Here's an example of a Markdown document:
 
-```Markdown
+```markdown
 # This is a Level 1 Heading
 
 This is plan text. Here is a word in **bold**. An example of *italic*.

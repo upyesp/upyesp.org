@@ -1,10 +1,11 @@
 ---
 title: "MySQL and Windows Terminal"
 description: Some notes on configuring Windows Terminal to work with MySQL. 
-date: 2021-07-22T06:00:00+01:00
+date: 2021-08-01T06:00:00+01:00
 draft: false
 toc: true
 featuredImage: ''
+images: ["images/bash.png"]
 tags: [MySQL, PowerShell, SQL]
 categories: [Windows, MySQL]
 series: [Windows Terminal]
@@ -35,19 +36,19 @@ Here are examples of calling mysql.exe with these parameters:
 
 ### PowerShell
 
-```PowerShell
+```powershell
 & 'C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe' --port=3306 --host=127.0.0.1 --user=root -p
 ```
 
 ### CMD
 
-```Batchfile
+```batchfile
 "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" --port=3306 --host=127.0.0.1 --user=root -p
 ```
 
 ### Example SQL Commands
 
-```SQL
+```sql
 SHOW databases;
 USE employeeschema;
 SHOW TABLES;

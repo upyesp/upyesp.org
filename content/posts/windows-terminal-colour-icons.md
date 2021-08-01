@@ -30,13 +30,13 @@ Download a font, install it - choosing "INSTALL FOR ALL USERS" and configure Pow
 
 Start a PowerShell terminal session. Enter the following:
 
-```PowerShell
+```powershell
 Install-Module -Name Terminal-Icons -Repository PSGallery
 ```
 
 To ensure the module runs every time you open a PowerShell session, add an import of the module to your PowerShell profile. So, edit $PROFILE (`notepad $profile`) and add this line:
 
-```PowerShell
+```powershell
 Import-Module Terminal-Icons
 ```
 
@@ -44,6 +44,6 @@ Save the profile.
 
 To see the change, restart PowerShell or reload the profile, with:
 
-```PowerShell
+```powershell
 & $profile
 ```

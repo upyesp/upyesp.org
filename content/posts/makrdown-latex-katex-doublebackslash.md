@@ -1,7 +1,8 @@
 ---
 title: "LaTeX & KaTeX Math Rendering: The Double Backslash \\\\ in Markdown"
-description: Avoiding Double Backslash Being Escaped in Katex and Latex  
-date: 2021-07-29T08:00:00+01:00
+description: Avoiding Double Backslash Being Escaped in KaTeX and LaTeX  
+date: 2021-08-01T08:00:00+01:00
+images: ["android-chrome-512x512.png"]
 draft: false
 toc: false
 featuredImage: ''
@@ -16,7 +17,7 @@ The double backslash, '\\\\', when specified in math formula in LaTeX and KaTeX 
 
 This is due to the '\\' character being used as an escape character in some rendering frameworks.
 
-Within the context of KaTeX (which is math specific) and when specifying math formula in LaTeX, a possible workaround is to use '\cr' as a replacement for '\\\\'. 
+Within the context of $\KaTeX$ (which is math specific) and when specifying math formula in $\LaTeX$, a possible workaround is to use '\cr' as a replacement for '\\\\'. 
 
 ## $\KaTeX$ Examples
 
@@ -24,7 +25,7 @@ Within the context of KaTeX (which is math specific) and when specifying math fo
 
 The double backslash, '\\\\', in the matrix below:
 
-```Katex
+```latex
 $$
 \begin{pmatrix}
 a & b \\
@@ -43,7 +44,7 @@ $$
 
 Where as changing '\\\\' to '\cr', like this:
 
-```Katex
+```latex
 $$
 \begin{pmatrix}
 a & b \cr
@@ -65,7 +66,7 @@ $$
 
 The double backslash, '\\\\', in the aligned expressions below:
 
-```Katex
+```latex
 $$
 \begin{alignedat}{2}
 10&x+ &3&y = 2 \\
@@ -85,7 +86,7 @@ $$
 
 Where as:
 
-```Katex
+```latex
 $$
 \begin{alignedat}{2}
 10&x+ &3&y = 2 \cr

@@ -1,10 +1,10 @@
 mainSections:
   - posts
 description: Some tech info and tips I find handy to know.
-
 repoEditURL:
-
 dateFormat: "Monday, January 2, 2006"
+twitter_cards: true
+images: ["images/bash.png"]
 
 titleSeparator:
 
@@ -20,24 +20,25 @@ publisherLogo:
 # Pete commented out this section to use Hugo's
 # default syntax highlighter.
 
-# highlight:
-#   handler: highlightjs
+highlight:
+  handler: highlightjs
 
-#   highlightjs:
-#     # highlight.js doesn't bundle every language. So please specify additional languages you want here.
-#     # See https://github.com/highlightjs/cdn-release/tree/master/build/languages for available languages.
-#     languages:
-#       - bash
-#       - dos
-#       - java
-#       - javascript
-#       - powershell
-#       - python
-#       - rust
-#       - sql
-#       - typescript
-#     # See https://github.com/highlightjs/cdn-release/tree/master/build/styles for available styles.
-#     style: monokai
+  highlightjs:
+    # highlight.js doesn't bundle every language. So please specify additional languages you want here.
+    # See https://github.com/highlightjs/cdn-release/tree/master/build/languages for available languages.
+    languages:
+      - bash
+      - dos
+      - java
+      - javascript
+      - latex
+      - powershell
+      - python
+      - rust
+      - sql
+      - typescript
+    # See https://github.com/highlightjs/cdn-release/tree/master/build/styles for available styles.
+    style: monokai
 
 math:
   handler: katex

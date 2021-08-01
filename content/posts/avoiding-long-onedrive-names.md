@@ -21,7 +21,7 @@ The symbolic reference looks and behaves similar to a folder. You can give it a 
 
 For example, the paths below point to the *same location*:
 
-```Batchfile
+```bash
 C:\Users\fred\OneDrive - The University of Quahog\...
 
 C:\Users\fred\uni\...
@@ -38,13 +38,13 @@ Firstly, make a note of the following 3 things:
 - open a CMD prompt as an Administrator, so press <kbd>Windows</kbd> and type `cmd`, right-click on the top search result (Command Prompt App) and select "Run as administrator"
 - navigate to the parent folder you noted above and create your new "folder" with a short name, using the `mklink` command with the `/J` parameter, for example:
 
-```Batchfile
+```bash
 cd C:\Users\fred
 ```
 
 then:
 
-```Batchfile
+```bash
 mklink /J uni "OneDrive - The University of Quahog"
 ```
 
@@ -55,6 +55,6 @@ You're done, you can now close the cmd terminal and use *uni*, or whatever name 
 ## Method 2, for More Experienced Windows Users
 - open a PowerShell terminal as an administrator and enter the following command, remembering to use the 3 values you noted above:
 
-```PowerShell
+```powershell
 New-Item -ItemType Junction -Path 'C:\Users\fred\' -Name 'uni' -Target 'C:\Users\fred\OneDrive - The University of Quahog'
 ```

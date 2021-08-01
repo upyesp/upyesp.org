@@ -25,7 +25,7 @@ The same app also provides the ability for it to be called and execute a SQL scr
 
 Example of running an SQL script in MySQL from PowerShell:
 
-```PowerShell
+```powershell
 Get-Content myScript.sql | & 'C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe' --verbose --force --table --port=3306 --host=127.0.0.1 --user=root -pdigimark > myScriptResults.txt
 ```
 
@@ -33,7 +33,7 @@ Get-Content myScript.sql | & 'C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.
 
 Example of running an SQL script in MySQL from CMD:
 
-```Batchfile
+```dos
 "C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" --verbose --table --force --port=3306 --host=127.0.0.1 --user=root -pdigimark < myScript.sql > myScriptResults.txt
 ```
 
@@ -73,7 +73,7 @@ Here's an example SQL script.  To create it:
 1. Copy the code below and paste it into the editor.
 1. Save the file, with a ".sql" extension, for example "myScript.sql"
 
-```SQL
+```sql
 #######################################################
 #
 # This SQL script prepares database exampleDB for use.
