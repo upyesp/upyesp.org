@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width">
 
 
-<title>Markdown, Mathematical Formulae and VSCode | upyesp</title>
+<title>Markdown, Mathematical Expressions and VSCode | upyesp</title>
 
 <meta name="generator" content="Hugo Eureka 0.8.2" />
 <link rel="stylesheet" href="/css/eureka.min.css">
@@ -14,11 +14,41 @@
   href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
   as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css"
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/monokai.min.css"
    media="print"
   onload="this.media='all';this.onload=null" crossorigin>
 <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"
    crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/bash.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/dos.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/java.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/javascript.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/latex.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/powershell.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/python.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/rust.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/sql.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/typescript.min.js"
+     crossorigin></script>
 
 <script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js"
    integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo="  crossorigin></script>
@@ -53,7 +83,7 @@
 
 
 <meta name="description"
-  content="Math formula can be represented in Markdown.">
+  content="Math expressions can be represented in Markdown.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -65,7 +95,7 @@
       "item":"/posts/"},{
       "@type": "ListItem",
       "position": 2 ,
-      "name":"Markdown, Mathematical Formulae and VSCode",
+      "name":"Markdown, Mathematical Expressions and VSCode",
       "item":"/posts/makrdown-vscode-math-formula/"}]
 }
 </script>
@@ -80,16 +110,16 @@
         "@type": "WebPage",
         "@id": "/posts/makrdown-vscode-math-formula/"
     },
-    "headline": "Markdown, Mathematical Formulae and VSCode | upyesp","datePublished": "2021-07-27T10:00:00+01:00",
+    "headline": "Markdown, Mathematical Expressions and VSCode | upyesp","datePublished": "2021-07-27T10:00:00+01:00",
     "dateModified": "2021-07-27T10:00:00+01:00",
-    "wordCount":  188 ,
+    "wordCount":  172 ,
     "publisher": {
         "@type": "Person",
         "name": "upyesp",
         },
-    "description": "Math formula can be represented in Markdown."
+    "description": "Math expressions can be represented in Markdown."
 }
-</script><meta property="og:title" content="Markdown, Mathematical Formulae and VSCode | upyesp" />
+</script><meta property="og:title" content="Markdown, Mathematical Expressions and VSCode | upyesp" />
 <meta property="og:type" content="article" />
 
 
@@ -98,7 +128,7 @@
 
 
 
-<meta property="og:description" content="Math formula can be represented in Markdown." />
+<meta property="og:description" content="Math expressions can be represented in Markdown." />
 
 
 
@@ -223,7 +253,7 @@
 <div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
     <div
         class="col-span-2  lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
-        <h1 class="font-bold text-3xl text-primary-text">Markdown, Mathematical Formulae and VSCode</h1>
+        <h1 class="font-bold text-3xl text-primary-text">Markdown, Mathematical Expressions and VSCode</h1>
         <div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
     <div class="mr-6 my-2">
         <i class="fas fa-calendar mr-1"></i>
@@ -263,43 +293,43 @@
         <div class="content">
             <p>Markdown documents can include elegant representations of algebraic formulae, using KaTeX.</p>
 <p>The <a href="https://commonmark.org/">CommonMark</a> specification of Markdown does not include scope for representing formulae or equations.  Fortunately, there is <a href="https://katex.org/">KaTeX</a>, an excellent typesetting library, which can be embedded in Markdown. KaTeX is supported extensively.</p>
-<p>VSCode supports $KaTeX$ in Markdown, equations are rendered in the VSCode preview pane, <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>.</p>
+<p>VSCode supports $\KaTeX$ in Markdown, equations are rendered in the VSCode preview pane, <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>.</p>
 <p>Inline math equations are wrapped in single dollar signs. For example, <code>$x^2$</code> becomes $x^2$.</p>
-<p>$KaTeX$ blocks begin and end with two dollar signs:</p>
-<pre><code class="language-Katex" data-lang="Katex">$$
-x^2
-$$
-</code></pre><p>produces
+<p>$\KaTeX$ blocks begin and end with two dollar signs:</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#586e75">$$</span><span style="color:#b58900">
+</span><span style="color:#b58900">x^</span><span style="color:#2aa198">2</span><span style="color:#b58900">
+</span><span style="color:#b58900"></span><span style="color:#2aa198">$$</span>
+</code></pre></div><p>produces
 $$
 x^2
 $$</p>
 <h3 id="pythagoras-theorem">Pythagora’s Theorem</h3>
-<pre><code class="language-Katex" data-lang="Katex">$$
-a^2 + b^2 = c^2
-$$
-</code></pre><p>$$
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#586e75">$$</span><span style="color:#b58900">
+</span><span style="color:#b58900">a^</span><span style="color:#2aa198">2</span><span style="color:#b58900"> </span><span style="color:#719e07">+</span><span style="color:#b58900"> b^</span><span style="color:#2aa198">2</span><span style="color:#b58900"> </span><span style="color:#719e07">=</span><span style="color:#b58900"> c^</span><span style="color:#2aa198">2</span><span style="color:#b58900">
+</span><span style="color:#b58900"></span><span style="color:#2aa198">$$</span>
+</code></pre></div><p>$$
 a^2 + b^2 = c^2
 $$</p>
 <h3 id="einsteins-theory-of-special-relativity">Einstein&rsquo;s Theory of Special Relativity</h3>
-<pre><code class="language-Katex" data-lang="Katex">$$
-e=mc^2
-$$
-</code></pre><p>$$
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#586e75">$$</span><span style="color:#b58900">
+</span><span style="color:#b58900">e</span><span style="color:#719e07">=</span><span style="color:#b58900">mc^</span><span style="color:#2aa198">2</span><span style="color:#b58900">
+</span><span style="color:#b58900"></span><span style="color:#2aa198">$$</span>
+</code></pre></div><p>$$
 e=mc^2
 $$</p>
 <h3 id="matrices">Matrices</h3>
-<pre><code class="language-Katex" data-lang="Katex">$$
-\begin{pmatrix}
-a &amp; b \cr
-c &amp; d
-\end{pmatrix}
-+
-\begin{pmatrix}
-e &amp; f \cr
-g &amp; h
-\end{pmatrix}
-$$
-</code></pre><p>$$
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#586e75">$$</span><span style="color:#b58900">
+</span><span style="color:#b58900"></span><span style="color:#268bd2">\begin</span><span style="color:#b58900">{pmatrix}
+</span><span style="color:#b58900">a &amp; b </span><span style="color:#268bd2">\cr</span><span style="color:#b58900">
+</span><span style="color:#b58900">c &amp; d
+</span><span style="color:#b58900"></span><span style="color:#268bd2">\end</span><span style="color:#b58900">{pmatrix}
+</span><span style="color:#b58900"></span><span style="color:#719e07">+</span><span style="color:#b58900">
+</span><span style="color:#b58900"></span><span style="color:#268bd2">\begin</span><span style="color:#b58900">{pmatrix}
+</span><span style="color:#b58900">e &amp; f </span><span style="color:#268bd2">\cr</span><span style="color:#b58900">
+</span><span style="color:#b58900">g &amp; h
+</span><span style="color:#b58900"></span><span style="color:#268bd2">\end</span><span style="color:#b58900">{pmatrix}
+</span><span style="color:#b58900"></span><span style="color:#2aa198">$$</span>
+</code></pre></div><p>$$
 \begin{pmatrix}
 a &amp; b \cr
 c &amp; d
@@ -311,13 +341,13 @@ g &amp; h
 \end{pmatrix}
 $$</p>
 <h3 id="special-cases">Special Cases</h3>
-<pre><code class="language-Katex" data-lang="Katex">$$
-\begin{dcases}
-   a &amp;\text{if } b \cr
-   c &amp;\text{if } d
-\end{dcases}
-$$
-</code></pre><p>$$
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#586e75">$$</span><span style="color:#b58900">
+</span><span style="color:#b58900"></span><span style="color:#268bd2">\begin</span><span style="color:#b58900">{dcases}
+</span><span style="color:#b58900">   a &amp;</span><span style="color:#268bd2">\text</span><span style="color:#b58900">{if } b </span><span style="color:#268bd2">\cr</span><span style="color:#b58900">
+</span><span style="color:#b58900">   c &amp;</span><span style="color:#268bd2">\text</span><span style="color:#b58900">{if } d
+</span><span style="color:#b58900"></span><span style="color:#268bd2">\end</span><span style="color:#b58900">{dcases}
+</span><span style="color:#b58900"></span><span style="color:#2aa198">$$</span>
+</code></pre></div><p>$$
 \begin{dcases}
 a &amp;\text{if } b \cr
 c &amp;\text{if } d
@@ -375,7 +405,7 @@ $$</p>
         <a href="/posts/makrdown-latex-katex-doublebackslash/">LaTeX &amp; KaTeX Math Rendering: The Double Backslash \\ in Markdown</a>
         <br />
         
-        <a href="/posts/makrdown-vscode-math-formula/">Markdown, Mathematical Formulae and VSCode</a>
+        <a href="/posts/makrdown-vscode-math-formula/">Markdown, Mathematical Expressions and VSCode</a>
         <br />
         
         <a href="/posts/makrdown-getting-started/">Getting Started With Markdown</a>

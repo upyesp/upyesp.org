@@ -14,11 +14,41 @@
   href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
   as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css"
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/monokai.min.css"
    media="print"
   onload="this.media='all';this.onload=null" crossorigin>
 <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"
    crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/bash.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/dos.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/java.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/javascript.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/latex.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/powershell.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/python.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/rust.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/sql.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/typescript.min.js"
+     crossorigin></script>
 
 <script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js"
    integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo="  crossorigin></script>
@@ -132,10 +162,6 @@
 
 
 
-<meta property="og:see_also" content="/posts/mysql-windows-terminal/" />
-
-
-
 <body class="flex flex-col min-h-screen">
   <header class="fixed flex items-center w-full min-h-16 pl-scrollbar z-50 bg-secondary-bg shadow-sm">
     <div class="w-full max-w-screen-xl mx-auto"><script>
@@ -243,11 +269,11 @@
 <h2 id="executing-sql-scripts-from-the-command-line">Executing SQL Scripts from the Command Line</h2>
 <h3 id="powershell">PowerShell</h3>
 <p>Example of running an SQL script in MySQL from PowerShell:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell"><span style="color:#b58900">Get-Content</span> myScript.sql | &amp; <span style="color:#2aa198">&#39;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#39;</span> --verbose --force --table --port=3306 --host=127.0.0.1 --user=root -pdigimark &gt; myScriptResults.txt
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#b58900">Get-Content</span> myScript.sql | &amp; <span style="color:#2aa198">&#39;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#39;</span> --verbose --force --table --port=3306 --host=127.0.0.1 --user=root -pdigimark &gt; myScriptResults.txt
 </code></pre></div><h3 id="cmd">CMD</h3>
 <p>Example of running an SQL script in MySQL from CMD:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Batchfile" data-lang="Batchfile"><span style="color:#2aa198">&#34;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#34;</span> --verbose --table --force --port=3306 --host=127.0.0.1 --user=root -pdigimark &lt; myScript.sql &gt; myScriptResults.txt
-</code></pre></div><h2 id="explanation-of-command-line-parameters">Explanation of Command Line Parameters</h2>
+<pre><code class="language-dos" data-lang="dos">&quot;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&quot; --verbose --table --force --port=3306 --host=127.0.0.1 --user=root -pdigimark &lt; myScript.sql &gt; myScriptResults.txt
+</code></pre><h2 id="explanation-of-command-line-parameters">Explanation of Command Line Parameters</h2>
 <p>When calling mysql.exe, several parameters are available, see <a href="https://dev.mysql.com/doc/refman/8.0/en/mysql-command-options.html">4.5.1.1 mysql Client Options</a>.</p>
 <h3 id="mysql-password">MySQL Password</h3>
 <p>In addition to the parameters discussed in <a href="https://upyesp.org/posts/mysql-windows-terminal/">MySQL and Windows Terminal</a>, consideration needs to be given to the password required for the MySQL service.  For an interactive MySQL terminal, the user can enter the password.  To enable a fully automated execution of a script, where the user may not be present, interactive input of the password may not be practical.</p>
@@ -287,7 +313,7 @@
 <li>Copy the code below and paste it into the editor.</li>
 <li>Save the file, with a &ldquo;.sql&rdquo; extension, for example &ldquo;myScript.sql&rdquo;</li>
 </ol>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-SQL" data-lang="SQL"><span style="color:#719e07">#######################################################</span>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#719e07">#######################################################</span>
 <span style="color:#719e07">#</span>
 <span style="color:#719e07">#</span> This <span style="color:#719e07">SQL</span> script prepares <span style="color:#719e07">database</span> exampleDB <span style="color:#719e07">for</span> use.
 <span style="color:#719e07">#</span> The <span style="color:#719e07">existing</span> <span style="color:#719e07">database</span> <span style="color:#719e07">is</span> dropped, a <span style="color:#719e07">new</span> db <span style="color:#719e07">is</span>
@@ -408,17 +434,6 @@ USE exampleDB;
     
 
     
-    
-    <div
-        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded p-6">
-        <h2 class="text-lg font-semibold mb-4">See Also</h2>
-        <div class="content">
-            
-            <a href="/posts/mysql-windows-terminal/">MySQL and Windows Terminal</a>
-            <br />
-            
-        </div>
-    </div>
     
 </div>
 <script>

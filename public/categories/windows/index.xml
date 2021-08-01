@@ -6,18 +6,27 @@
     <description>Recent content in Windows on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 29 Jul 2021 08:00:00 +0100</lastBuildDate><atom:link href="/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Aug 2021 14:00:00 +0100</lastBuildDate><atom:link href="/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL and Windows Terminal</title>
+      <link>/posts/mysql-windows-terminal/</link>
+      <pubDate>Sun, 01 Aug 2021 14:00:00 +0100</pubDate>
+      
+      <guid>/posts/mysql-windows-terminal/</guid>
+      <description>&lt;p&gt;MySQL has it&amp;rsquo;s own terminal emulator, providing a command-line interface (CLI) for the direct input and execution of SQL commands and scripts.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>LaTeX &amp; KaTeX Math Rendering: The Double Backslash \\ in Markdown</title>
       <link>/posts/makrdown-latex-katex-doublebackslash/</link>
-      <pubDate>Thu, 29 Jul 2021 08:00:00 +0100</pubDate>
+      <pubDate>Sun, 01 Aug 2021 08:00:00 +0100</pubDate>
       
       <guid>/posts/makrdown-latex-katex-doublebackslash/</guid>
       <description>&lt;p&gt;The double backslash, &amp;lsquo;\\&amp;rsquo;, when specified in math formula in LaTeX and KaTeX might not render correctly. Here&amp;rsquo;s how to avoid that.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Markdown, Mathematical Formulae and VSCode</title>
+      <title>Markdown, Mathematical Expressions and VSCode</title>
       <link>/posts/makrdown-vscode-math-formula/</link>
       <pubDate>Tue, 27 Jul 2021 10:00:00 +0100</pubDate>
       
@@ -41,15 +50,6 @@
       
       <guid>/posts/windows-terminal-colour-icons/</guid>
       <description>&lt;p&gt;Adding icons and colour to folders and files improves the user experience in PowerShell.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>MySQL and Windows Terminal</title>
-      <link>/posts/mysql-windows-terminal/</link>
-      <pubDate>Thu, 22 Jul 2021 06:00:00 +0100</pubDate>
-      
-      <guid>/posts/mysql-windows-terminal/</guid>
-      <description>&lt;p&gt;MySQL has it&amp;rsquo;s own terminal emulator, providing a command-line interface (CLI) for the direct input and execution of SQL commands and scripts.&lt;/p&gt;</description>
     </item>
     
     <item>

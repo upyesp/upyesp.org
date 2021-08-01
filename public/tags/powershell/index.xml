@@ -6,7 +6,16 @@
     <description>Recent content in PowerShell on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 22 Jul 2021 08:34:00 +0100</lastBuildDate><atom:link href="/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Aug 2021 14:00:00 +0100</lastBuildDate><atom:link href="/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL and Windows Terminal</title>
+      <link>/posts/mysql-windows-terminal/</link>
+      <pubDate>Sun, 01 Aug 2021 14:00:00 +0100</pubDate>
+      
+      <guid>/posts/mysql-windows-terminal/</guid>
+      <description>&lt;p&gt;MySQL has it&amp;rsquo;s own terminal emulator, providing a command-line interface (CLI) for the direct input and execution of SQL commands and scripts.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Adding Colour &amp; Icons to File Listings in a Terminal</title>
       <link>/posts/windows-terminal-colour-icons/</link>
@@ -14,15 +23,6 @@
       
       <guid>/posts/windows-terminal-colour-icons/</guid>
       <description>&lt;p&gt;Adding icons and colour to folders and files improves the user experience in PowerShell.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>MySQL and Windows Terminal</title>
-      <link>/posts/mysql-windows-terminal/</link>
-      <pubDate>Thu, 22 Jul 2021 06:00:00 +0100</pubDate>
-      
-      <guid>/posts/mysql-windows-terminal/</guid>
-      <description>&lt;p&gt;MySQL has it&amp;rsquo;s own terminal emulator, providing a command-line interface (CLI) for the direct input and execution of SQL commands and scripts.&lt;/p&gt;</description>
     </item>
     
   </channel>

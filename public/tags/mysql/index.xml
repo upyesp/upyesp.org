@@ -6,7 +6,16 @@
     <description>Recent content in MySQL on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 23 Jul 2021 08:00:00 +0100</lastBuildDate><atom:link href="/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 01 Aug 2021 14:00:00 +0100</lastBuildDate><atom:link href="/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL and Windows Terminal</title>
+      <link>/posts/mysql-windows-terminal/</link>
+      <pubDate>Sun, 01 Aug 2021 14:00:00 +0100</pubDate>
+      
+      <guid>/posts/mysql-windows-terminal/</guid>
+      <description>&lt;p&gt;MySQL has it&amp;rsquo;s own terminal emulator, providing a command-line interface (CLI) for the direct input and execution of SQL commands and scripts.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>MySQL: Running SQL Scripts From the Command Line</title>
       <link>/posts/mysql-scripts-cli/</link>
@@ -14,15 +23,6 @@
       
       <guid>/posts/mysql-scripts-cli/</guid>
       <description>&lt;p&gt;MySQL can be accessed from the command line interface (CLI).  Here&amp;rsquo;s how to run SQL scripts from the CLI.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>MySQL and Windows Terminal</title>
-      <link>/posts/mysql-windows-terminal/</link>
-      <pubDate>Thu, 22 Jul 2021 06:00:00 +0100</pubDate>
-      
-      <guid>/posts/mysql-windows-terminal/</guid>
-      <description>&lt;p&gt;MySQL has it&amp;rsquo;s own terminal emulator, providing a command-line interface (CLI) for the direct input and execution of SQL commands and scripts.&lt;/p&gt;</description>
     </item>
     
   </channel>

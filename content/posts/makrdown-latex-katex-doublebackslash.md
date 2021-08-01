@@ -36,6 +36,7 @@ $$
 
 Might render as:
 
+$$
 \begin{pmatrix}
 a & b \\
 c & d

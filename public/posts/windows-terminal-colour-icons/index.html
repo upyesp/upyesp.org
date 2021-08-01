@@ -14,11 +14,41 @@
   href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
   as="style" onload="this.onload=null;this.rel='stylesheet'">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/solarized-light.min.css"
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/monokai.min.css"
    media="print"
   onload="this.media='all';this.onload=null" crossorigin>
 <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"
    crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/bash.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/dos.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/java.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/javascript.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/latex.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/powershell.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/python.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/rust.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/sql.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/typescript.min.js"
+     crossorigin></script>
 
 <script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js"
    integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo="  crossorigin></script>
@@ -136,9 +166,9 @@
 
 
 
-
-
 <meta property="og:see_also" content="/posts/mysql-windows-terminal/" />
+
+
 
 
 
@@ -260,12 +290,12 @@
 <p>Download a font, install it - choosing &ldquo;INSTALL FOR ALL USERS&rdquo; and configure PowerShell to use it.</p>
 <h2 id="install-terminal-icons">Install Terminal-Icons</h2>
 <p>Start a PowerShell terminal session. Enter the following:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell"><span style="color:#b58900">Install-Module</span> -Name <span style="color:#b58900">Terminal-Icons</span> -Repository PSGallery
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#b58900">Install-Module</span> -Name <span style="color:#b58900">Terminal-Icons</span> -Repository PSGallery
 </code></pre></div><p>To ensure the module runs every time you open a PowerShell session, add an import of the module to your PowerShell profile. So, edit $PROFILE (<code>notepad $profile</code>) and add this line:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell"><span style="color:#b58900">Import-Module</span> <span style="color:#b58900">Terminal-Icons</span>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#b58900">Import-Module</span> <span style="color:#b58900">Terminal-Icons</span>
 </code></pre></div><p>Save the profile.</p>
 <p>To see the change, restart PowerShell or reload the profile, with:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-PowerShell" data-lang="PowerShell">&amp; <span style="color:#268bd2">$profile</span>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">&amp; <span style="color:#268bd2">$profile</span>
 </code></pre></div>
         </div>
         
@@ -295,7 +325,7 @@
     <div class="md:text-right mt-4 md:mt-0">
         
         <span class="block font-bold">Next</span>
-        <a href="/posts/mysql-windows-terminal/" class="block">MySQL and Windows Terminal</a>
+        <a href="/posts/edge-pdf/" class="block">Edge Browser as a PDF Viewer &amp; Markup</a>
         
     </div>
 </div>
@@ -314,10 +344,10 @@
     <div class="content">
         
         
-        <a href="/posts/windows-terminal-colour-icons/">Adding Colour &amp; Icons to File Listings in a Terminal</a>
+        <a href="/posts/mysql-windows-terminal/">MySQL and Windows Terminal</a>
         <br />
         
-        <a href="/posts/mysql-windows-terminal/">MySQL and Windows Terminal</a>
+        <a href="/posts/windows-terminal-colour-icons/">Adding Colour &amp; Icons to File Listings in a Terminal</a>
         <br />
         
         
@@ -346,17 +376,6 @@
     
 
     
-    
-    <div
-        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded p-6">
-        <h2 class="text-lg font-semibold mb-4">See Also</h2>
-        <div class="content">
-            
-            <a href="/posts/mysql-windows-terminal/">MySQL and Windows Terminal</a>
-            <br />
-            
-        </div>
-    </div>
     
 </div>
 <script>
