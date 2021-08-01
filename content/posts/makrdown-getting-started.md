@@ -6,7 +6,7 @@ draft: false
 toc: true
 featuredImage: ''
 tags: [Markdown, VSCode]
-categories: [Windows, Linux]
+categories: [Documentation]
 series: [Markdown]
 ---
 

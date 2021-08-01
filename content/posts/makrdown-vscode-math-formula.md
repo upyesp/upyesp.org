@@ -6,7 +6,7 @@ draft: false
 toc: false
 featuredImage: ''
 tags: [Markdown, VSCode, KaTeX]
-categories: [Windows, Linux]
+categories: [Documentation, Windows, Mac, Linux]
 series: [Markdown]
 ---
 
