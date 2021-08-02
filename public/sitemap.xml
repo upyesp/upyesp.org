@@ -11,7 +11,7 @@
     <loc>/tags/diagrams/</loc>
     <lastmod>2021-08-01T16:00:00+01:00</lastmod>
   </url><url>
-    <loc>/categories/linux/</loc>
+    <loc>/categories/documentation/</loc>
     <lastmod>2021-08-01T16:00:00+01:00</lastmod>
   </url><url>
     <loc>/tags/markdown/</loc>
@@ -35,9 +35,6 @@
     <loc>/</loc>
     <lastmod>2021-08-01T16:00:00+01:00</lastmod>
   </url><url>
-    <loc>/categories/windows/</loc>
-    <lastmod>2021-08-01T16:00:00+01:00</lastmod>
-  </url><url>
     <loc>/tags/mysql/</loc>
     <lastmod>2021-08-01T14:00:00+01:00</lastmod>
   </url><url>
@@ -53,6 +50,9 @@
     <loc>/tags/sql/</loc>
     <lastmod>2021-08-01T14:00:00+01:00</lastmod>
   </url><url>
+    <loc>/categories/windows/</loc>
+    <lastmod>2021-08-01T14:00:00+01:00</lastmod>
+  </url><url>
     <loc>/series/windows-terminal/</loc>
     <lastmod>2021-08-01T14:00:00+01:00</lastmod>
   </url><url>
@@ -64,6 +64,12 @@
   </url><url>
     <loc>/posts/makrdown-latex-katex-doublebackslash/</loc>
     <lastmod>2021-08-01T08:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/categories/linux/</loc>
+    <lastmod>2021-07-27T10:00:00+01:00</lastmod>
+  </url><url>
+    <loc>/categories/mac/</loc>
+    <lastmod>2021-07-27T10:00:00+01:00</lastmod>
   </url><url>
     <loc>/posts/makrdown-vscode-math-formula/</loc>
     <lastmod>2021-07-27T10:00:00+01:00</lastmod>
