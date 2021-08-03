@@ -1,10 +1,10 @@
 mainSections:
   - posts
 description: Some tech info and tips I find handy to know.
+images: [android-chrome-512x512.png]
 repoEditURL:
 dateFormat: "Monday, January 2, 2006"
 twitter_cards: true
-images: ["/images/"]
 
 titleSeparator:
 
