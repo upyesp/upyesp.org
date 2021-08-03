@@ -32,7 +32,7 @@ $$
 x^2
 $$
 
-### Pythagora’s Theorem
+### Pythagorean Theorem
 
 ```latex
 $$

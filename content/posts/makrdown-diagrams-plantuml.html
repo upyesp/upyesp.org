@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>makrdown-diagrams-plantuml.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<p>Mermaid provides a markup language to describe diagrams. Describing diagrams in text brings many advantages.</p>
+<!--more-->
+<img src="http://www.plantuml.com/plantuml/svg/SoWkIImgAStDuNBAJrBGZLOkIas9jLDmpCbCJbMmKiX8pSd9vuBmW986GE3c5gjh1r9ifP2VpUMGcfS2r0q0" alt="uml diagram">
+<p>In the same way that LaTeX and KaTeX provides a text-based language to enable elegant math expressions to be drawn in documents, Mermaid provides a language to describe the layout of diagrams.</p>
+<p>The <a href="https://mermaid-js.github.io/mermaid/#/">Mermaid</a> project is open source, hosted on GitHub.</p>
+<h2 id="example-flowchart">Example Flowchart</h2>
+<p><img src="/images/mermaid-flowchart.png" alt="a flowchart diagram showing START, several process boxes, a branch and END" title="Flowchart generated by Mermaid"></p>
+<p>The above flowchart was generated by this Mermaid code:</p>
+<pre class="hljs"><code><div>&lt;div class=&quot;mermaid&quot;&gt;
+  graph TB
+    id1([START])
+    id1--&gt;id10[[reset order values to defaults]]
+    id10--&gt;id20[/user inputs order details/]
+    id20--&gt;id30{order valid?}
+    id30 --&gt;|Yes| id40[calculate total price]
+    id30 --&gt;|No| id50[/display error/]--&gt;id20
+    id40--&gt;id60[/display order summary/]
+    id60--&gt;id70[(save order)]
+    id70--&gt;id9999([END])
+&lt;/div&gt;
+</div></code></pre>
+<h2 id="including-mermaid-diagrams-in-markdown">Including Mermaid Diagrams in Markdown</h2>
+<p>Mermaid code is normally included in a code block.  The start and end of the block may vary according to the tools you are using to edit your Markdown document and the tools you use to convert your Markdown to other formats, such as PDF or HTML.</p>
+<p>Some tools (<a href="https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid">VSCode Extension: Markdown Preview Mermaid Support</a>, <a href="https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf">VSCode Extension: Markdown PDF</a>) require that the Mermaid code block begins and ends with HTML <code>div</code> tags, like this:</p>
+<pre class="hljs"><code><div>    &lt;div class=&quot;mermaid&quot;&gt;
+      Mermaid code here
+    &lt;\div&gt;
+</div></code></pre>
+<p>Where-as there are other tools that require the Mermaid code block to simply begin with 'Mermaid' added as the language of the block, like this:</p>
+<pre class="hljs"><code><div>    ```Mermaid
+    Mermaid code here
+    ```
+</div></code></pre>
+<h2 id="diagram-types-supported">Diagram Types Supported</h2>
+<ul>
+<li><a href="https://mermaid-js.github.io/mermaid/#/flowchart">flowchart</a></li>
+<li><a href="https://mermaid-js.github.io/mermaid/#/sequenceDiagram">sequence</a></li>
+<li><a href="https://mermaid-js.github.io/mermaid/#/classDiagram">class</a></li>
+<li><a href="https://mermaid-js.github.io/mermaid/#/stateDiagram">state</a></li>
+<li><a href="https://mermaid-js.github.io/mermaid/#/entityRelationshipDiagram">entity relationship</a></li>
+<li><a href="https://mermaid-js.github.io/mermaid/#/user-journey">user journey</a></li>
+<li><a href="https://mermaid-js.github.io/mermaid/#/requirementDiagram">requirement</a></li>
+<li><a href="https://mermaid-js.github.io/mermaid/#/gantt">gantt chart</a></li>
+<li><a href="https://mermaid-js.github.io/mermaid/#/pie">pie chart</a></li>
+<li><a href="https://mermaid-js.github.io/mermaid/#/?id=git-graph-exclamation-experimental">git graph (experimental)</a></li>
+</ul>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid">VSCode Extension: Markdown Preview Mermaid Support</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf">VSCode Extension: Markdown PDF</a></li>
+<li><a href="https://mermaid-js.github.io/mermaid-live-editor/">Live Editor</a></li>
+<li><a href="https://mermaid-js.github.io/mermaid/#/./integrations">plus many, many others</a></li>
+</ul>
+
+</body>
+</html>
