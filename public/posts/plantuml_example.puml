@@ -1,0 +1,37 @@
+@startuml example_class_diagram
+!theme sandstone
+hide circle
+skinparam classAttributeIconSize 0
+
+class Pet {
+  -name: String
+  -weight: int
+  -canFly: boolean
+  +getName()
+  +setName()
+  +eat()
+}
+
+class Cat {
+  -scratches: boolean
+  +getScratches()
+  +setScratches()
+}
+
+class Dog {
+  -catChaser: boolean
+  +isCatChaser()
+}
+
+class Goldfish {
+  -color: String
+  +getColor()
+  +setColor()
+}
+
+Pet <|-- Cat
+Pet <|-- Dog
+Pet <|-- Goldfish
+
+@enduml
+

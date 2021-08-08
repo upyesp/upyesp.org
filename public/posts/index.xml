@@ -6,7 +6,16 @@
     <description>Recent content in Posts on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Aug 2021 16:00:00 +0100</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Aug 2021 10:00:00 +0100</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Add UML Diagrams To Markdown With PlantUML</title>
+      <link>/posts/makrdown-diagrams-plantuml/</link>
+      <pubDate>Sun, 08 Aug 2021 10:00:00 +0100</pubDate>
+      
+      <guid>/posts/makrdown-diagrams-plantuml/</guid>
+      <description>&lt;p&gt;PlantUML provides an extensive markup language to describe diagrams. The resulting diagrams can be exported to many formats, including graphics files such as .png, .svg and formats such as .pdf and .html.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Add Diagrams To Markdown Using Mermaid</title>
       <link>/posts/makrdown-diagrams-mermaid/</link>
