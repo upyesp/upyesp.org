@@ -1,6 +1,6 @@
 @startmindmap example_mindmap
 ' set the theme
-!theme hacker
+!theme mimeograph
 
 * Summer Learning
   ** Markdown

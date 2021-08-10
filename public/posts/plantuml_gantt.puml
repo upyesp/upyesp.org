@@ -1,0 +1,20 @@
+@startuml example_gantt_chart
+' set the theme
+!theme blueprint
+
+hide footbox
+saturday are closed
+sunday are closed
+project starts on 1 october 2021
+printscale daily zoom 2
+
+title New Idea Development
+
+[workshop ideas] as [task01] lasts 3 days
+[feasibility testing] as [task02] lasts 5 days
+[review for approval] as [task03] lasts 5 days
+[task01]->[task02]
+[task02]->[task03]
+[approved] happens at [task03]'s end
+
+@enduml
