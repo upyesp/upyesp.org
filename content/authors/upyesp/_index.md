@@ -26,7 +26,7 @@ social:
 
 ## About
 
-This is a personal blog site, providing technical how-to guides I wrote up during my own learning.  Content varies, the main focus is computer science related topics.  Interested in...
+This is a personal blog site, providing technical how-to guides I've written up during my own learning.  Content varies, the main focus relates to computer science.  Current personal interests...
 
 - software development
 - programmings languages
