@@ -21,7 +21,7 @@ The symbolic reference looks and behaves similar to a folder. You can give it a 
 
 For example, the paths below point to the *same location*:
 
-```bash
+```text
 C:\Users\fred\OneDrive - The University of Quahog\...
 
 C:\Users\fred\uni\...
@@ -38,13 +38,13 @@ Firstly, make a note of the following 3 things:
 - open a CMD prompt as an Administrator, so press <kbd>Windows</kbd> and type `cmd`, right-click on the top search result (Command Prompt App) and select "Run as administrator"
 - navigate to the parent folder you noted above and create your new "folder" with a short name, using the `mklink` command with the `/J` parameter, for example:
 
-```bash
+```text
 cd C:\Users\fred
 ```
 
 then:
 
-```bash
+```text
 mklink /J uni "OneDrive - The University of Quahog"
 ```
 
