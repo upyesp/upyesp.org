@@ -6,14 +6,59 @@
     <description>Recent content in Posts on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 17 Oct 2021 10:00:00 +0100</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Oct 2021 07:00:00 +0100</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Make A Plan</title>
       <link>/posts/make-a-plan/</link>
-      <pubDate>Sun, 17 Oct 2021 10:00:00 +0100</pubDate>
+      <pubDate>Mon, 18 Oct 2021 07:00:00 +0100</pubDate>
       
       <guid>/posts/make-a-plan/</guid>
       <description>&lt;p&gt;Do you have something you want to achieve? Maybe something difficult, like complete a dissertation, get fit or build a table.  Give yourself a better chance by making a plan.  Here&amp;rsquo;s a quick guide on how to get started.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Browsing A WSL Distro In Explorer</title>
+      <link>/posts/wsl-distro-explorer/</link>
+      <pubDate>Fri, 01 Oct 2021 11:37:01 +0100</pubDate>
+      
+      <guid>/posts/wsl-distro-explorer/</guid>
+      <description>&lt;p&gt;If you have installed WSL and one or more linux distributions, it is possible to work with the contents of their file systems from within Windows Explorer.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How To Avoid Long OneDrive Folder Names</title>
+      <link>/posts/avoiding-long-onedrive-names/</link>
+      <pubDate>Thu, 30 Sep 2021 14:13:00 +0100</pubDate>
+      
+      <guid>/posts/avoiding-long-onedrive-names/</guid>
+      <description>&lt;p&gt;If your employer or university provides you with Microsoft OneDrive, you&amp;rsquo;ll know how useful it can be right? The OneDrive folder name tends to be very long though, like &amp;ldquo;OneDrive - The University of Quahog&amp;rdquo;.  The long name can get in the way, like in the prompt of an IDE, in a terminal session or when browsing files in Explorer. One simple command, &lt;code&gt;mklink&lt;/code&gt;, can fix that.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MySQL: Running SQL Scripts From the Command Line</title>
+      <link>/posts/mysql-scripts-cli/</link>
+      <pubDate>Wed, 22 Sep 2021 08:00:00 +0100</pubDate>
+      
+      <guid>/posts/mysql-scripts-cli/</guid>
+      <description>&lt;p&gt;MySQL can be accessed from the command line interface (CLI).  Here&amp;rsquo;s how to run SQL scripts from the CLI.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MySQL and Windows Terminal</title>
+      <link>/posts/mysql-windows-terminal/</link>
+      <pubDate>Mon, 20 Sep 2021 14:00:00 +0100</pubDate>
+      
+      <guid>/posts/mysql-windows-terminal/</guid>
+      <description>&lt;p&gt;MySQL has it&amp;rsquo;s own terminal emulator, providing a command-line interface (CLI) for the direct input and execution of SQL commands and scripts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LaTeX &amp; KaTeX Math Rendering: The Double Backslash \\ in Markdown</title>
+      <link>/posts/makrdown-latex-katex-doublebackslash/</link>
+      <pubDate>Thu, 16 Sep 2021 08:00:00 +0100</pubDate>
+      
+      <guid>/posts/makrdown-latex-katex-doublebackslash/</guid>
+      <description>&lt;p&gt;The double backslash, &amp;lsquo;\\&amp;rsquo;, when specified in math formula in LaTeX and KaTeX might not render correctly. Here&amp;rsquo;s how to avoid that.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -35,24 +80,6 @@
     </item>
     
     <item>
-      <title>MySQL and Windows Terminal</title>
-      <link>/posts/mysql-windows-terminal/</link>
-      <pubDate>Sun, 01 Aug 2021 14:00:00 +0100</pubDate>
-      
-      <guid>/posts/mysql-windows-terminal/</guid>
-      <description>&lt;p&gt;MySQL has it&amp;rsquo;s own terminal emulator, providing a command-line interface (CLI) for the direct input and execution of SQL commands and scripts.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>LaTeX &amp; KaTeX Math Rendering: The Double Backslash \\ in Markdown</title>
-      <link>/posts/makrdown-latex-katex-doublebackslash/</link>
-      <pubDate>Sun, 01 Aug 2021 08:00:00 +0100</pubDate>
-      
-      <guid>/posts/makrdown-latex-katex-doublebackslash/</guid>
-      <description>&lt;p&gt;The double backslash, &amp;lsquo;\\&amp;rsquo;, when specified in math formula in LaTeX and KaTeX might not render correctly. Here&amp;rsquo;s how to avoid that.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>Markdown, Mathematical Expressions and VSCode</title>
       <link>/posts/makrdown-vscode-math-formula/</link>
       <pubDate>Tue, 27 Jul 2021 10:00:00 +0100</pubDate>
@@ -68,15 +95,6 @@
       
       <guid>/posts/makrdown-getting-started/</guid>
       <description>&lt;p&gt;Markdown is a plain text format for writing structured documents.  Writing Markdown is a great way to take notes, the author spends less time distracted by formatting and more time focusing on content.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>MySQL: Running SQL Scripts From the Command Line</title>
-      <link>/posts/mysql-scripts-cli/</link>
-      <pubDate>Fri, 23 Jul 2021 08:00:00 +0100</pubDate>
-      
-      <guid>/posts/mysql-scripts-cli/</guid>
-      <description>&lt;p&gt;MySQL can be accessed from the command line interface (CLI).  Here&amp;rsquo;s how to run SQL scripts from the CLI.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -104,24 +122,6 @@
       
       <guid>/posts/wsl-launching-windows-apps/</guid>
       <description>&lt;p&gt;The interoperability provided by WSL enables calling or running Windows applications directly from within the Linux command line.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>How To Avoid Long OneDrive Folder Names</title>
-      <link>/posts/avoiding-long-onedrive-names/</link>
-      <pubDate>Tue, 20 Jul 2021 14:13:00 +0100</pubDate>
-      
-      <guid>/posts/avoiding-long-onedrive-names/</guid>
-      <description>&lt;p&gt;If your employer or university provides you with Microsoft OneDrive, you&amp;rsquo;ll know how useful it can be right? The OneDrive folder name tends to be very long though, like &amp;ldquo;OneDrive - The University of Quahog&amp;rdquo;.  The long name can get in the way, like in the prompt of an IDE, in a terminal session or when browsing files in Explorer. One simple command, &lt;code&gt;mklink&lt;/code&gt;, can fix that.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Browsing A WSL Distro In Explorer</title>
-      <link>/posts/wsl-distro-explorer/</link>
-      <pubDate>Tue, 20 Jul 2021 11:37:01 +0100</pubDate>
-      
-      <guid>/posts/wsl-distro-explorer/</guid>
-      <description>&lt;p&gt;If you have installed WSL and one or more linux distributions, it is possible to work with the contents of their file systems from within Windows Explorer.&lt;/p&gt;</description>
     </item>
     
   </channel>

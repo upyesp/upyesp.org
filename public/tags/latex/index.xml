@@ -6,11 +6,11 @@
     <description>Recent content in Latex on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Aug 2021 08:00:00 +0100</lastBuildDate><atom:link href="/tags/latex/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Sep 2021 08:00:00 +0100</lastBuildDate><atom:link href="/tags/latex/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LaTeX &amp; KaTeX Math Rendering: The Double Backslash \\ in Markdown</title>
       <link>/posts/makrdown-latex-katex-doublebackslash/</link>
-      <pubDate>Sun, 01 Aug 2021 08:00:00 +0100</pubDate>
+      <pubDate>Thu, 16 Sep 2021 08:00:00 +0100</pubDate>
       
       <guid>/posts/makrdown-latex-katex-doublebackslash/</guid>
       <description>&lt;p&gt;The double backslash, &amp;lsquo;\\&amp;rsquo;, when specified in math formula in LaTeX and KaTeX might not render correctly. Here&amp;rsquo;s how to avoid that.&lt;/p&gt;</description>

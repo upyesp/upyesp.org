@@ -1,7 +1,7 @@
 ---
 title: "MySQL: Running SQL Scripts From the Command Line"
 description: How to run .sql scripts from the command line. 
-date: 2021-07-23T08:00:00+01:00
+date: 2021-09-22T08:00:00+01:00
 draft: false
 toc: true
 featuredImage: ''

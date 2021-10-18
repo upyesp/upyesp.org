@@ -1,7 +1,7 @@
 ---
 title: "LaTeX & KaTeX Math Rendering: The Double Backslash \\\\ in Markdown"
 description: Avoiding Double Backslash Being Escaped in KaTeX and LaTeX  
-date: 2021-08-01T08:00:00+01:00
+date: 2021-09-16T08:00:00+01:00
 draft: false
 toc: false
 featuredImage: ''

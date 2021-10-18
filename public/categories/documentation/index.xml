@@ -6,14 +6,23 @@
     <description>Recent content in Documentation on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 17 Oct 2021 10:00:00 +0100</lastBuildDate><atom:link href="/categories/documentation/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 18 Oct 2021 07:00:00 +0100</lastBuildDate><atom:link href="/categories/documentation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Make A Plan</title>
       <link>/posts/make-a-plan/</link>
-      <pubDate>Sun, 17 Oct 2021 10:00:00 +0100</pubDate>
+      <pubDate>Mon, 18 Oct 2021 07:00:00 +0100</pubDate>
       
       <guid>/posts/make-a-plan/</guid>
       <description>&lt;p&gt;Do you have something you want to achieve? Maybe something difficult, like complete a dissertation, get fit or build a table.  Give yourself a better chance by making a plan.  Here&amp;rsquo;s a quick guide on how to get started.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>LaTeX &amp; KaTeX Math Rendering: The Double Backslash \\ in Markdown</title>
+      <link>/posts/makrdown-latex-katex-doublebackslash/</link>
+      <pubDate>Thu, 16 Sep 2021 08:00:00 +0100</pubDate>
+      
+      <guid>/posts/makrdown-latex-katex-doublebackslash/</guid>
+      <description>&lt;p&gt;The double backslash, &amp;lsquo;\\&amp;rsquo;, when specified in math formula in LaTeX and KaTeX might not render correctly. Here&amp;rsquo;s how to avoid that.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -32,15 +41,6 @@
       
       <guid>/posts/makrdown-diagrams-mermaid/</guid>
       <description>&lt;p&gt;Mermaid provides a markup language to describe diagrams. Describing diagrams in text brings many advantages.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>LaTeX &amp; KaTeX Math Rendering: The Double Backslash \\ in Markdown</title>
-      <link>/posts/makrdown-latex-katex-doublebackslash/</link>
-      <pubDate>Sun, 01 Aug 2021 08:00:00 +0100</pubDate>
-      
-      <guid>/posts/makrdown-latex-katex-doublebackslash/</guid>
-      <description>&lt;p&gt;The double backslash, &amp;lsquo;\\&amp;rsquo;, when specified in math formula in LaTeX and KaTeX might not render correctly. Here&amp;rsquo;s how to avoid that.&lt;/p&gt;</description>
     </item>
     
     <item>

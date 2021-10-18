@@ -2,7 +2,13 @@ main:
   - name: Posts
     url: /posts/
     weight: 1
+  - name: Categories
+    url: /categories/
+    weight: 2
+  - name: Series
+    url: /series/
+    weight: 3
   - name: About
     url: /authors/upyesp
-    weight: 2
+    weight: 10
   

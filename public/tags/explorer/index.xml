@@ -6,23 +6,23 @@
     <description>Recent content in Explorer on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 20 Jul 2021 14:13:00 +0100</lastBuildDate><atom:link href="/tags/explorer/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How To Avoid Long OneDrive Folder Names</title>
-      <link>/posts/avoiding-long-onedrive-names/</link>
-      <pubDate>Tue, 20 Jul 2021 14:13:00 +0100</pubDate>
-      
-      <guid>/posts/avoiding-long-onedrive-names/</guid>
-      <description>&lt;p&gt;If your employer or university provides you with Microsoft OneDrive, you&amp;rsquo;ll know how useful it can be right? The OneDrive folder name tends to be very long though, like &amp;ldquo;OneDrive - The University of Quahog&amp;rdquo;.  The long name can get in the way, like in the prompt of an IDE, in a terminal session or when browsing files in Explorer. One simple command, &lt;code&gt;mklink&lt;/code&gt;, can fix that.&lt;/p&gt;</description>
-    </item>
-    
+    <lastBuildDate>Fri, 01 Oct 2021 11:37:01 +0100</lastBuildDate><atom:link href="/tags/explorer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Browsing A WSL Distro In Explorer</title>
       <link>/posts/wsl-distro-explorer/</link>
-      <pubDate>Tue, 20 Jul 2021 11:37:01 +0100</pubDate>
+      <pubDate>Fri, 01 Oct 2021 11:37:01 +0100</pubDate>
       
       <guid>/posts/wsl-distro-explorer/</guid>
       <description>&lt;p&gt;If you have installed WSL and one or more linux distributions, it is possible to work with the contents of their file systems from within Windows Explorer.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>How To Avoid Long OneDrive Folder Names</title>
+      <link>/posts/avoiding-long-onedrive-names/</link>
+      <pubDate>Thu, 30 Sep 2021 14:13:00 +0100</pubDate>
+      
+      <guid>/posts/avoiding-long-onedrive-names/</guid>
+      <description>&lt;p&gt;If your employer or university provides you with Microsoft OneDrive, you&amp;rsquo;ll know how useful it can be right? The OneDrive folder name tends to be very long though, like &amp;ldquo;OneDrive - The University of Quahog&amp;rdquo;.  The long name can get in the way, like in the prompt of an IDE, in a terminal session or when browsing files in Explorer. One simple command, &lt;code&gt;mklink&lt;/code&gt;, can fix that.&lt;/p&gt;</description>
     </item>
     
   </channel>

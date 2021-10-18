@@ -6,7 +6,16 @@
     <description>Recent content in WSL on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 21 Jul 2021 10:29:00 +0100</lastBuildDate><atom:link href="/tags/wsl/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 Oct 2021 11:37:01 +0100</lastBuildDate><atom:link href="/tags/wsl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Browsing A WSL Distro In Explorer</title>
+      <link>/posts/wsl-distro-explorer/</link>
+      <pubDate>Fri, 01 Oct 2021 11:37:01 +0100</pubDate>
+      
+      <guid>/posts/wsl-distro-explorer/</guid>
+      <description>&lt;p&gt;If you have installed WSL and one or more linux distributions, it is possible to work with the contents of their file systems from within Windows Explorer.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Launching Windows Apps From Within WSL</title>
       <link>/posts/wsl-launching-windows-apps/</link>
@@ -14,15 +23,6 @@
       
       <guid>/posts/wsl-launching-windows-apps/</guid>
       <description>&lt;p&gt;The interoperability provided by WSL enables calling or running Windows applications directly from within the Linux command line.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Browsing A WSL Distro In Explorer</title>
-      <link>/posts/wsl-distro-explorer/</link>
-      <pubDate>Tue, 20 Jul 2021 11:37:01 +0100</pubDate>
-      
-      <guid>/posts/wsl-distro-explorer/</guid>
-      <description>&lt;p&gt;If you have installed WSL and one or more linux distributions, it is possible to work with the contents of their file systems from within Windows Explorer.&lt;/p&gt;</description>
     </item>
     
   </channel>

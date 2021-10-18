@@ -1,7 +1,7 @@
 ---
 title: "How To Avoid Long OneDrive Folder Names"
 description: OneDrive from Microsoft is excellent, but those long folder names get in the way.  
-date: 2021-07-20T14:13:00+01:00
+date: 2021-09-30T14:13:00+01:00
 draft: false
 toc: false
 featuredImage: ''
