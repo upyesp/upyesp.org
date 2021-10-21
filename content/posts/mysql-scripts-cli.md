@@ -26,7 +26,7 @@ The same app also provides the ability for it to be called and execute a SQL scr
 Example of running an SQL script in MySQL from PowerShell:
 
 ```powershell
-Get-Content myScript.sql | & 'C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe' --verbose --force --table --port=3306 --host=127.0.0.1 --user=root -pdigimark > myScriptResults.txt
+Get-Content myScript.sql | & 'C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe' --verbose --force --table --port=3306 --host=127.0.0.1 --local_infile=1 --user=root -pdigimark > myScriptResults.txt
 ```
 
 ### CMD
@@ -34,7 +34,7 @@ Get-Content myScript.sql | & 'C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.
 Example of running an SQL script in MySQL from CMD:
 
 ```dos
-"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" --verbose --table --force --port=3306 --host=127.0.0.1 --user=root -pdigimark < myScript.sql > myScriptResults.txt
+"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" --verbose --table --force --port=3306 --host=127.0.0.1 --local_infile=1 --user=root -pdigimark < myScript.sql > myScriptResults.txt
 ```
 
 ## Explanation of Command Line Parameters
@@ -60,6 +60,7 @@ These are some optional parameters I use:
  
 | Parameter | Details                              |
 |-----------|--------------------------------------|
+| --local_infile=1 | Default=0 - Allow importing of data from the local client |
 | --verbose | Verbose mode                         |
 | --force   | Continue even if an SQL error occurs |
 | --table   | Display output in tabular format     |

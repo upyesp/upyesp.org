@@ -112,7 +112,7 @@
     },
     "headline": "MySQL and Windows Terminal | upyesp","datePublished": "2021-09-20T14:00:00+01:00",
     "dateModified": "2021-09-20T14:00:00+01:00",
-    "wordCount":  291 ,
+    "wordCount":  304 ,
     "publisher": {
         "@type": "Person",
         "name": "upyesp",
@@ -312,6 +312,10 @@
 <td>Default=127.0.0.1 - Host on which MySQL server is located</td>
 </tr>
 <tr>
+<td>&ndash;local_infile=1</td>
+<td>Default=0 - Allow importing of data from the local client</td>
+</tr>
+<tr>
 <td>&ndash;user</td>
 <td>Default=root - MySQL user name when connecting to the server.</td>
 </tr>
@@ -323,9 +327,9 @@
 </table>
 <p>Here are examples of calling mysql.exe with these parameters:</p>
 <h3 id="powershell">PowerShell</h3>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">&amp; <span style="color:#2aa198">&#39;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#39;</span> --port=3306 --host=127.0.0.1 --user=root -p
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">&amp; <span style="color:#2aa198">&#39;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#39;</span> --port=3306 --host=127.0.0.1 --local_infile=1 --user=root -p
 </code></pre></div><h3 id="cmd">CMD</h3>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-batchfile" data-lang="batchfile"><span style="color:#2aa198">&#34;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#34;</span> --port=3306 --host=127.0.0.1 --user=root -p
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-batchfile" data-lang="batchfile"><span style="color:#2aa198">&#34;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#34;</span> --port=3306 --host=127.0.0.1 --local_infile=1 --user=root -p
 </code></pre></div><h3 id="example-sql-commands">Example SQL Commands</h3>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#719e07">SHOW</span> databases;
 USE employeeschema;

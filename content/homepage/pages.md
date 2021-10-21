@@ -17,7 +17,7 @@ widget:
 
   sidebar:
     # Options: left and right. Leave blank to hide.
-    position:
+    position: 
     # Options: sm, md, lg and xl. Default is md.
     scale:
 

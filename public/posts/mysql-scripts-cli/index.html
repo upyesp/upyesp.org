@@ -112,7 +112,7 @@
     },
     "headline": "MySQL: Running SQL Scripts From the Command Line | upyesp","datePublished": "2021-09-22T08:00:00+01:00",
     "dateModified": "2021-09-22T08:00:00+01:00",
-    "wordCount":  583 ,
+    "wordCount":  596 ,
     "publisher": {
         "@type": "Person",
         "name": "upyesp",
@@ -275,10 +275,10 @@
 <h2 id="executing-sql-scripts-from-the-command-line">Executing SQL Scripts from the Command Line</h2>
 <h3 id="powershell">PowerShell</h3>
 <p>Example of running an SQL script in MySQL from PowerShell:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#b58900">Get-Content</span> myScript.sql | &amp; <span style="color:#2aa198">&#39;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#39;</span> --verbose --force --table --port=3306 --host=127.0.0.1 --user=root -pdigimark &gt; myScriptResults.txt
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#b58900">Get-Content</span> myScript.sql | &amp; <span style="color:#2aa198">&#39;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#39;</span> --verbose --force --table --port=3306 --host=127.0.0.1 --local_infile=1 --user=root -pdigimark &gt; myScriptResults.txt
 </code></pre></div><h3 id="cmd">CMD</h3>
 <p>Example of running an SQL script in MySQL from CMD:</p>
-<pre><code class="language-dos" data-lang="dos">&quot;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&quot; --verbose --table --force --port=3306 --host=127.0.0.1 --user=root -pdigimark &lt; myScript.sql &gt; myScriptResults.txt
+<pre><code class="language-dos" data-lang="dos">&quot;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&quot; --verbose --table --force --port=3306 --host=127.0.0.1 --local_infile=1 --user=root -pdigimark &lt; myScript.sql &gt; myScriptResults.txt
 </code></pre><h2 id="explanation-of-command-line-parameters">Explanation of Command Line Parameters</h2>
 <p>When calling mysql.exe, several parameters are available, see <a href="https://dev.mysql.com/doc/refman/8.0/en/mysql-command-options.html">4.5.1.1 mysql Client Options</a>.</p>
 <h3 id="mysql-password">MySQL Password</h3>
@@ -298,6 +298,10 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>&ndash;local_infile=1</td>
+<td>Default=0 - Allow importing of data from the local client</td>
+</tr>
 <tr>
 <td>&ndash;verbose</td>
 <td>Verbose mode</td>

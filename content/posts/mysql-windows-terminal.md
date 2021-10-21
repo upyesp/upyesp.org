@@ -28,6 +28,7 @@ The parameters I typically use are detailed below:
 |-----------|---------------------------------------------------------------|
 | --port    | Default=3306 - TCP/IP port number for connection.             |
 | --host    | Default=127.0.0.1 - Host on which MySQL server is located     |
+| --local_infile=1 | Default=0 - Allow importing of data from the local client |
 | --user    | Default=root - MySQL user name when connecting to the server. |
 | -p        | Password to use when connecting to the server.                |
 
@@ -36,13 +37,13 @@ Here are examples of calling mysql.exe with these parameters:
 ### PowerShell
 
 ```powershell
-& 'C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe' --port=3306 --host=127.0.0.1 --user=root -p
+& 'C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe' --port=3306 --host=127.0.0.1 --local_infile=1 --user=root -p
 ```
 
 ### CMD
 
 ```batchfile
-"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" --port=3306 --host=127.0.0.1 --user=root -p
+"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe" --port=3306 --host=127.0.0.1 --local_infile=1 --user=root -p
 ```
 
 ### Example SQL Commands
