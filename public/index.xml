@@ -6,7 +6,16 @@
     <description>Recent content on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 18 Oct 2021 07:00:00 +0100</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 02 Nov 2021 08:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL: Import CSV Files</title>
+      <link>/posts/mysql-import-csv/</link>
+      <pubDate>Tue, 02 Nov 2021 08:00:00 +0000</pubDate>
+      
+      <guid>/posts/mysql-import-csv/</guid>
+      <description>&lt;p&gt;A single SQL statement can import a CSV file into a MySQL database table.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Make A Plan</title>
       <link>/posts/make-a-plan/</link>
