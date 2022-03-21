@@ -283,107 +283,107 @@
 <h3 id="create-a-plain-text-file">Create A Plain Text File</h3>
 <p>Start by opening a simple text editor, such as <code>Notepad</code> on Windows or <code>TextEdit</code> on Mac.  Create a new, plain text file and save it, call it &ldquo;my project plan.puml&rdquo;.  The file ends with <em>.puml</em> rather than <em>.txt</em> because we&rsquo;re going to make use of a free tool, called <a href="https://plantuml.com/">PlantUML</a>. Later on we&rsquo;ll use PlantUML to generate a diagram that represents our project.</p>
 <p>Copy and paste this text into your project plan:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Text" data-lang="Text">@startuml
-  
-@enduml
-</code></pre></div><p>We&rsquo;ve got the basics in place and can start adding information specific to the project. Save your project plan.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Text" data-lang="Text"><span style="display:flex;"><span>@startuml
+</span></span><span style="display:flex;"><span>  
+</span></span><span style="display:flex;"><span>@enduml
+</span></span></code></pre></div><p>We&rsquo;ve got the basics in place and can start adding information specific to the project. Save your project plan.</p>
 <h3 id="laying-out-the-plan">Laying Out The Plan</h3>
 <p>Give the plan a title and a start date:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Text" data-lang="Text">@startuml
-title Uni Dissertation
-project starts 2021/10/01
-@enduml
-</code></pre></div><p>Maybe you work, care for someone, volunteer, have gaming days or have other commitments. Let&rsquo;s add some days of the week that you can&rsquo;t work on the project.</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Text" data-lang="Text">@startuml
-title Uni Dissertation
-project starts 2021/10/01
-saturdays are closed
-sundays are closed
-@enduml
-</code></pre></div><p>Also, add specific dates that you can&rsquo;t work on the project.</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Text" data-lang="Text">@startuml
-title Uni Dissertation
-project starts 2021/10/01
-saturdays are closed
-sundays are closed
-2021/10/25 to 2021/10/29 is closed
-2021/12/24 to 2022/01/01 is closed
-2022/04/15 to 2022/04/18 is closed
-@enduml
-</code></pre></div><p>Save your project plan.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Text" data-lang="Text"><span style="display:flex;"><span>@startuml
+</span></span><span style="display:flex;"><span>title Uni Dissertation
+</span></span><span style="display:flex;"><span>project starts 2021/10/01
+</span></span><span style="display:flex;"><span>@enduml
+</span></span></code></pre></div><p>Maybe you work, care for someone, volunteer, have gaming days or have other commitments. Let&rsquo;s add some days of the week that you can&rsquo;t work on the project.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Text" data-lang="Text"><span style="display:flex;"><span>@startuml
+</span></span><span style="display:flex;"><span>title Uni Dissertation
+</span></span><span style="display:flex;"><span>project starts 2021/10/01
+</span></span><span style="display:flex;"><span>saturdays are closed
+</span></span><span style="display:flex;"><span>sundays are closed
+</span></span><span style="display:flex;"><span>@enduml
+</span></span></code></pre></div><p>Also, add specific dates that you can&rsquo;t work on the project.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Text" data-lang="Text"><span style="display:flex;"><span>@startuml
+</span></span><span style="display:flex;"><span>title Uni Dissertation
+</span></span><span style="display:flex;"><span>project starts 2021/10/01
+</span></span><span style="display:flex;"><span>saturdays are closed
+</span></span><span style="display:flex;"><span>sundays are closed
+</span></span><span style="display:flex;"><span>2021/10/25 to 2021/10/29 is closed
+</span></span><span style="display:flex;"><span>2021/12/24 to 2022/01/01 is closed
+</span></span><span style="display:flex;"><span>2022/04/15 to 2022/04/18 is closed
+</span></span><span style="display:flex;"><span>@enduml
+</span></span></code></pre></div><p>Save your project plan.</p>
 <h2 id="project-activities">Project Activities</h2>
 <h3 id="add-fixed-milestones">Add Fixed Milestones</h3>
 <p>This project has certain fixed dates by which some things must have been done by.</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Text" data-lang="Text">@startuml
-title Uni Dissertation
-project starts 2021/10/01
-saturdays are closed
-sundays are closed
-2021/10/25 to 2021/10/29 is closed
-2021/12/24 to 2022/01/01 is closed
-2022/04/15 to 2022/04/18 is closed
-
-[Submit Proposal] happens 2021/10/22
-
-[Submit Interim] happens 2022/01/14
-
-[Ethics Deadline] happens 2022/01/21
-
-[Submit Dissertation] happens 2022/04/29
-@enduml
-</code></pre></div><p>Save your plan.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Text" data-lang="Text"><span style="display:flex;"><span>@startuml
+</span></span><span style="display:flex;"><span>title Uni Dissertation
+</span></span><span style="display:flex;"><span>project starts 2021/10/01
+</span></span><span style="display:flex;"><span>saturdays are closed
+</span></span><span style="display:flex;"><span>sundays are closed
+</span></span><span style="display:flex;"><span>2021/10/25 to 2021/10/29 is closed
+</span></span><span style="display:flex;"><span>2021/12/24 to 2022/01/01 is closed
+</span></span><span style="display:flex;"><span>2022/04/15 to 2022/04/18 is closed
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[Submit Proposal] happens 2021/10/22
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[Submit Interim] happens 2022/01/14
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[Ethics Deadline] happens 2022/01/21
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[Submit Dissertation] happens 2022/04/29
+</span></span><span style="display:flex;"><span>@enduml
+</span></span></code></pre></div><p>Save your plan.</p>
 <h3 id="add-tasks-required-for-the-milestones">Add Tasks Required For The Milestones</h3>
 <p>We have some milestones, let&rsquo;s add some of the tasks required leading up to the milestones.</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Text" data-lang="Text">@startuml
-title Uni Dissertation
-project starts 2021/10/01
-saturdays are closed
-sundays are closed
-2021/10/25 to 2021/10/29 is closed
-2021/12/24 to 2022/01/01 is closed
-2022/04/15 to 2022/04/18 is closed
-
-[consider idea] lasts 5 days
-then [meet supervisor] lasts 1 day
-then [rework idea &amp; draft proposal] lasts 10 days
-then [read &amp; feedback on draft] lasts 5 days
-then [final work on Proposal] lasts 5 days
-[Submit Proposal] happens 2021/10/22
-
-[Submit Interim] happens 2022/01/14
-
-[Ethics Deadline] happens 2022/01/21
-
-[Submit Dissertation] happens 2022/04/29
-@enduml
-</code></pre></div><p>Save your plan.  In the example above, only a few tasks have been added.  Later, you might want to add more.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Text" data-lang="Text"><span style="display:flex;"><span>@startuml
+</span></span><span style="display:flex;"><span>title Uni Dissertation
+</span></span><span style="display:flex;"><span>project starts 2021/10/01
+</span></span><span style="display:flex;"><span>saturdays are closed
+</span></span><span style="display:flex;"><span>sundays are closed
+</span></span><span style="display:flex;"><span>2021/10/25 to 2021/10/29 is closed
+</span></span><span style="display:flex;"><span>2021/12/24 to 2022/01/01 is closed
+</span></span><span style="display:flex;"><span>2022/04/15 to 2022/04/18 is closed
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[consider idea] lasts 5 days
+</span></span><span style="display:flex;"><span>then [meet supervisor] lasts 1 day
+</span></span><span style="display:flex;"><span>then [rework idea &amp; draft proposal] lasts 10 days
+</span></span><span style="display:flex;"><span>then [read &amp; feedback on draft] lasts 5 days
+</span></span><span style="display:flex;"><span>then [final work on Proposal] lasts 5 days
+</span></span><span style="display:flex;"><span>[Submit Proposal] happens 2021/10/22
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[Submit Interim] happens 2022/01/14
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[Ethics Deadline] happens 2022/01/21
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[Submit Dissertation] happens 2022/04/29
+</span></span><span style="display:flex;"><span>@enduml
+</span></span></code></pre></div><p>Save your plan.  In the example above, only a few tasks have been added.  Later, you might want to add more.</p>
 <h2 id="creating-a-diagram">Creating A Diagram</h2>
 <p>Earlier this guide mentioned we can make use of a tool called PlantUML to create a diagram representing the project plan.  This can be done by visiting the PlantUML server at: <a href="http://www.plantuml.com/plantuml/uml/">http://www.plantuml.com/plantuml/uml/</a>.</p>
 <p>Delete all the example text (about &ldquo;Alice&rdquo; &amp; &ldquo;Bob&rdquo;), then copy &amp; paste the plan above.  Click the <code>Submit</code> button.  Your plan will be displayed!</p>
 <p><img src="/images/plan-too-wide.png" alt="a wide gantt chart" title="Gantt chart generated by PlantUML"></p>
 <p>Notice that the plan is too wide to fit on the page.  Currently the scale is assumed to be the default, daily.  The scale can be changed from daily to weekly, monthly, quarterly and even yearly.  Let&rsquo;s change the scale on this plan to weekly.  We can add the line anywhere. In the example below, the &ldquo;projectscale&rdquo; line has been added just below the project title.</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-Text" data-lang="Text">@startuml
-title Uni Dissertation
-projectscale weekly 
-project starts 2021/10/01
-saturdays are closed
-sundays are closed
-2021/10/25 to 2021/10/29 is closed
-2021/12/24 to 2022/01/01 is closed
-2022/04/15 to 2022/04/18 is closed
-
-[consider idea] lasts 5 days
-then [meet supervisor] lasts 1 day
-then [rework idea &amp; draft proposal] lasts 10 days
-then [read &amp; feedback on draft] lasts 5 days
-then [final work on Proposal] lasts 5 days
-[Submit Proposal] happens 2021/10/22
-
-[Submit Interim] happens 2022/01/14
-
-[Submit Dissertation] happens 2022/04/29
-@enduml
-</code></pre></div><p>Now the whole plan is visible :).</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Text" data-lang="Text"><span style="display:flex;"><span>@startuml
+</span></span><span style="display:flex;"><span>title Uni Dissertation
+</span></span><span style="display:flex;"><span>projectscale weekly 
+</span></span><span style="display:flex;"><span>project starts 2021/10/01
+</span></span><span style="display:flex;"><span>saturdays are closed
+</span></span><span style="display:flex;"><span>sundays are closed
+</span></span><span style="display:flex;"><span>2021/10/25 to 2021/10/29 is closed
+</span></span><span style="display:flex;"><span>2021/12/24 to 2022/01/01 is closed
+</span></span><span style="display:flex;"><span>2022/04/15 to 2022/04/18 is closed
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[consider idea] lasts 5 days
+</span></span><span style="display:flex;"><span>then [meet supervisor] lasts 1 day
+</span></span><span style="display:flex;"><span>then [rework idea &amp; draft proposal] lasts 10 days
+</span></span><span style="display:flex;"><span>then [read &amp; feedback on draft] lasts 5 days
+</span></span><span style="display:flex;"><span>then [final work on Proposal] lasts 5 days
+</span></span><span style="display:flex;"><span>[Submit Proposal] happens 2021/10/22
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[Submit Interim] happens 2022/01/14
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>[Submit Dissertation] happens 2022/04/29
+</span></span><span style="display:flex;"><span>@enduml
+</span></span></code></pre></div><p>Now the whole plan is visible :).</p>
 <p><img src="/images/makeaplan.png" alt="a gantt chart showing tasks milestones" title="Gantt chart generated by PlantUML"></p>
 <h3 id="project-planning">Project Planning</h3>
 <p>Notice, there&rsquo;s a problem with the tasks that lead up to the [Submit Proposal]  milestone.</p>

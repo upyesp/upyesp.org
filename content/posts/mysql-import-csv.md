@@ -24,7 +24,7 @@ LOAD DATA local INFILE 'C:/example.csv'
     IGNORE 1 ROWS;
 ```
 
-There are important security considerations when using the above statement, especially if the content of the CSV file is unknown or not from a trusted source. See [Security Considerations for LOAD DATA LOCAL](https://dev.mysql.com/doc/mysql-security-excerpt/8.0/en/load-data-local-security.html) for more information.
+> There are important security considerations when using the above statement, especially if the content of the CSV file is unknown or not from a trusted source. See [Security Considerations for LOAD DATA LOCAL](https://dev.mysql.com/doc/mysql-security-excerpt/8.0/en/load-data-local-security.html) for more information.
 
 A sequence of preparatory steps to enable the import of a CSV could be:
 

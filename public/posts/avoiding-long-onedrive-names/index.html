@@ -269,10 +269,10 @@
 <p>An alternative is to keep the long folder name unchanged and to simply avoid using it by creating a symbolic reference to it and using the symbolic reference instead.  The specific type of symbolic reference being used here is a <a href="https://docs.microsoft.com/en-gb/windows/win32/fileio/symbolic-links">Junction Point</a>.</p>
 <p>The symbolic reference looks and behaves similar to a folder. You can give it a simple &amp; short name, for example, &ldquo;uni&rdquo;.</p>
 <p>For example, the paths below point to the <em>same location</em>:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">C:\Users\fred\OneDrive - The University of Quahog\...
-
-C:\Users\fred\uni\...
-</code></pre></div><p>In the example above, the OneDrive folder called &ldquo;OneDrive - The University of Quahog&rdquo; exists, it remains unaffected and can continue to be used as normal.  Also, the much short folder, &ldquo;uni&rdquo;, can be used in place of the long OnrDrive folder.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>C:\Users\fred\OneDrive - The University of Quahog\...
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>C:\Users\fred\uni\...
+</span></span></code></pre></div><p>In the example above, the OneDrive folder called &ldquo;OneDrive - The University of Quahog&rdquo; exists, it remains unaffected and can continue to be used as normal.  Also, the much short folder, &ldquo;uni&rdquo;, can be used in place of the long OnrDrive folder.</p>
 <p>Firstly, make a note of the following 3 things:</p>
 <ol>
 <li>The long name of the OneDrive folder, for example &ldquo;OneDrive - The University of Quahog&rdquo;.</li>
@@ -284,17 +284,17 @@ C:\Users\fred\uni\...
 <li>open a CMD prompt as an Administrator, so press <kbd>Windows</kbd> and type <code>cmd</code>, right-click on the top search result (Command Prompt App) and select &ldquo;Run as administrator&rdquo;</li>
 <li>navigate to the parent folder you noted above and create your new &ldquo;folder&rdquo; with a short name, using the <code>mklink</code> command with the <code>/J</code> parameter, for example:</li>
 </ul>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">cd C:\Users\fred
-</code></pre></div><p>then:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">mklink /J uni &#34;OneDrive - The University of Quahog&#34;
-</code></pre></div><p>You&rsquo;re done, you can now close the cmd terminal and use <em>uni</em>, or whatever name you created, as an alternative folder to your long OneDrive folder.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>cd C:\Users\fred
+</span></span></code></pre></div><p>then:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>mklink /J uni &#34;OneDrive - The University of Quahog&#34;
+</span></span></code></pre></div><p>You&rsquo;re done, you can now close the cmd terminal and use <em>uni</em>, or whatever name you created, as an alternative folder to your long OneDrive folder.</p>
 <p><strong>Tip:</strong> add it to you Quick access shortcuts in Explorer, so in Explorer navigate to your new folder, for example, C: &gt; Users &gt; fred &gt; uni, right-click on <em>uni</em> and select &ldquo;Pin to Quick access&rdquo;.</p>
 <h2 id="method-2-for-more-experienced-windows-users">Method 2, for More Experienced Windows Users</h2>
 <ul>
 <li>open a PowerShell terminal as an administrator and enter the following command, remembering to use the 3 values you noted above:</li>
 </ul>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#b58900">New-Item</span> -ItemType Junction -Path <span style="color:#2aa198">&#39;C:\Users\fred\&#39;</span> -Name <span style="color:#2aa198">&#39;uni&#39;</span> -Target <span style="color:#2aa198">&#39;C:\Users\fred\OneDrive - The University of Quahog&#39;</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#b58900">New-Item</span> -ItemType Junction -Path <span style="color:#2aa198">&#39;C:\Users\fred\&#39;</span> -Name <span style="color:#2aa198">&#39;uni&#39;</span> -Target <span style="color:#2aa198">&#39;C:\Users\fred\OneDrive - The University of Quahog&#39;</span>
+</span></span></code></pre></div>
         </div>
         
         <div class="my-4">

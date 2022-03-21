@@ -274,13 +274,15 @@
         <div class="content">
             <p>A single SQL statement can import a CSV file into a MySQL database table.</p>
 <p>It is possible to import a CSV file into a MySQL table, using the <a href="https://dev.mysql.com/doc/refman/5.6/en/load-data.html">LOAD DATA</a> SQL statement, like this:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#719e07">LOAD</span> <span style="color:#719e07">DATA</span> <span style="color:#719e07">local</span> INFILE <span style="color:#2aa198">&#39;C:/example.csv&#39;</span>
-    <span style="color:#719e07">INTO</span> <span style="color:#719e07">TABLE</span> example_table
-    FIELDS TERMINATED <span style="color:#719e07">BY</span> <span style="color:#2aa198">&#39; &#39;</span>
-    ENCLOSED <span style="color:#719e07">BY</span> <span style="color:#2aa198">&#39;&#34;&#39;</span>
-    LINES TERMINATED <span style="color:#719e07">BY</span> <span style="color:#2aa198">&#39;\n&#39;</span>
-    <span style="color:#719e07">IGNORE</span> <span style="color:#2aa198">1</span> <span style="color:#719e07">ROWS</span>;
-</code></pre></div><p>There are important security considerations when using the above statement, especially if the content of the CSV file is unknown or not from a trusted source. See <a href="https://dev.mysql.com/doc/mysql-security-excerpt/8.0/en/load-data-local-security.html">Security Considerations for LOAD DATA LOCAL</a> for more information.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#719e07">LOAD</span> <span style="color:#719e07">DATA</span> <span style="color:#719e07">local</span> INFILE <span style="color:#2aa198">&#39;C:/example.csv&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#719e07">INTO</span> <span style="color:#719e07">TABLE</span> example_table
+</span></span><span style="display:flex;"><span>    FIELDS TERMINATED <span style="color:#719e07">BY</span> <span style="color:#2aa198">&#39; &#39;</span>
+</span></span><span style="display:flex;"><span>    ENCLOSED <span style="color:#719e07">BY</span> <span style="color:#2aa198">&#39;&#34;&#39;</span>
+</span></span><span style="display:flex;"><span>    LINES TERMINATED <span style="color:#719e07">BY</span> <span style="color:#2aa198">&#39;\n&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#719e07">IGNORE</span> <span style="color:#2aa198">1</span> <span style="color:#719e07">ROWS</span>;
+</span></span></code></pre></div><blockquote>
+<p>There are important security considerations when using the above statement, especially if the content of the CSV file is unknown or not from a trusted source. See <a href="https://dev.mysql.com/doc/mysql-security-excerpt/8.0/en/load-data-local-security.html">Security Considerations for LOAD DATA LOCAL</a> for more information.</p>
+</blockquote>
 <p>A sequence of preparatory steps to enable the import of a CSV could be:</p>
 <ol>
 <li>If you haven&rsquo;t already, get a copy of the CSV file you want to import.  This example will use CSV file <code>nasa_aug95.csv</code> from data.world, <a href="https://data.world/shad/nasa-website-data/workspace/file?filename=nasa_aug95.csv">https://data.world/shad/nasa-website-data/workspace/file?filename=nasa_aug95.csv</a>.</li>
@@ -290,33 +292,33 @@
 </ol>
 <h2 id="sql-statements">SQl Statements</h2>
 <p>Example statements for the MySQL terminal:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#719e07">SHOW</span> DATABASES;
-</code></pre></div><p>To create a new database:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#719e07">CREATE</span> <span style="color:#719e07">DATABASE</span> nasa;
-</code></pre></div><p>To use a database:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql">USE nasa;
-</code></pre></div><p>List tables in a database:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#719e07">SHOW</span> TABLES;
-</code></pre></div><p>Before the CSV file can be loaded into a table, a table needs to exist for the CSV to be loaded into.  So, create a table.  The columns should be the same format as the CSV:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#719e07">CREATE</span> <span style="color:#719e07">TABLE</span> nasa_aug95 (
-    requesting_host <span style="color:#b58900">VARCHAR</span>(<span style="color:#2aa198">2000</span>),
-    datetime DATETIME,
-    request <span style="color:#b58900">VARCHAR</span>(<span style="color:#2aa198">2000</span>),
-    status <span style="color:#b58900">INT</span>,
-    response_size <span style="color:#b58900">INT</span>
-    );
-</code></pre></div><p>Load <code>nasa_aug95.csv</code> into the table. Note the location of <code>C:/nasa_aug95.csv</code> - in the root of C: also note, use &lsquo;/&rsquo; in the path, not &lsquo;\&rsquo; - including on Windows devices. If you have stored your CSV file in a different location, adapt the SQL statement below.</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#719e07">LOAD</span> <span style="color:#719e07">DATA</span> <span style="color:#719e07">local</span> INFILE <span style="color:#2aa198">&#39;C:/nasa_aug95.csv&#39;</span>
-    <span style="color:#719e07">INTO</span> <span style="color:#719e07">TABLE</span> nasa_aug95
-    FIELDS TERMINATED <span style="color:#719e07">BY</span> <span style="color:#2aa198">&#39; &#39;</span>
-    ENCLOSED <span style="color:#719e07">BY</span> <span style="color:#2aa198">&#39;&#34;&#39;</span>
-    LINES TERMINATED <span style="color:#719e07">BY</span> <span style="color:#2aa198">&#39;\n&#39;</span>
-    <span style="color:#719e07">IGNORE</span> <span style="color:#2aa198">1</span> <span style="color:#719e07">ROWS</span>;
-</code></pre></div><p>The above statement might result in this error:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">ERROR 3948 (42000): Loading local data is disabled; this must be enabled on both the client and server sides
-</code></pre></div><p>This is an important security measure. If you are satisfied that the CSV file you are importing is completely safe, the following statement will enable the data to be imported:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#719e07">SET</span> <span style="color:#719e07">GLOBAL</span> local_infile<span style="color:#719e07">=</span><span style="color:#719e07">true</span>;
-</code></pre></div><p>Once your CSV file has been imported into a table, typical SQL statements can be performed on it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#719e07">SHOW</span> DATABASES;
+</span></span></code></pre></div><p>To create a new database:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#719e07">CREATE</span> <span style="color:#719e07">DATABASE</span> nasa;
+</span></span></code></pre></div><p>To use a database:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span>USE nasa;
+</span></span></code></pre></div><p>List tables in a database:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#719e07">SHOW</span> TABLES;
+</span></span></code></pre></div><p>Before the CSV file can be loaded into a table, a table needs to exist for the CSV to be loaded into.  So, create a table.  The columns should be the same format as the CSV:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#719e07">CREATE</span> <span style="color:#719e07">TABLE</span> nasa_aug95 (
+</span></span><span style="display:flex;"><span>    requesting_host <span style="color:#b58900">VARCHAR</span>(<span style="color:#2aa198">2000</span>),
+</span></span><span style="display:flex;"><span>    datetime DATETIME,
+</span></span><span style="display:flex;"><span>    request <span style="color:#b58900">VARCHAR</span>(<span style="color:#2aa198">2000</span>),
+</span></span><span style="display:flex;"><span>    status <span style="color:#b58900">INT</span>,
+</span></span><span style="display:flex;"><span>    response_size <span style="color:#b58900">INT</span>
+</span></span><span style="display:flex;"><span>    );
+</span></span></code></pre></div><p>Load <code>nasa_aug95.csv</code> into the table. Note the location of <code>C:/nasa_aug95.csv</code> - in the root of C: also note, use &lsquo;/&rsquo; in the path, not &lsquo;\&rsquo; - including on Windows devices. If you have stored your CSV file in a different location, adapt the SQL statement below.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#719e07">LOAD</span> <span style="color:#719e07">DATA</span> <span style="color:#719e07">local</span> INFILE <span style="color:#2aa198">&#39;C:/nasa_aug95.csv&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#719e07">INTO</span> <span style="color:#719e07">TABLE</span> nasa_aug95
+</span></span><span style="display:flex;"><span>    FIELDS TERMINATED <span style="color:#719e07">BY</span> <span style="color:#2aa198">&#39; &#39;</span>
+</span></span><span style="display:flex;"><span>    ENCLOSED <span style="color:#719e07">BY</span> <span style="color:#2aa198">&#39;&#34;&#39;</span>
+</span></span><span style="display:flex;"><span>    LINES TERMINATED <span style="color:#719e07">BY</span> <span style="color:#2aa198">&#39;\n&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#719e07">IGNORE</span> <span style="color:#2aa198">1</span> <span style="color:#719e07">ROWS</span>;
+</span></span></code></pre></div><p>The above statement might result in this error:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>ERROR 3948 (42000): Loading local data is disabled; this must be enabled on both the client and server sides
+</span></span></code></pre></div><p>This is an important security measure. If you are satisfied that the CSV file you are importing is completely safe, the following statement will enable the data to be imported:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#719e07">SET</span> <span style="color:#719e07">GLOBAL</span> local_infile<span style="color:#719e07">=</span><span style="color:#719e07">true</span>;
+</span></span></code></pre></div><p>Once your CSV file has been imported into a table, typical SQL statements can be performed on it.</p>
         </div>
         
         <div class="my-4">

@@ -327,28 +327,28 @@
 </table>
 <p>Here are examples of calling mysql.exe with these parameters:</p>
 <h3 id="powershell">PowerShell</h3>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell">&amp; <span style="color:#2aa198">&#39;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#39;</span> --port=3306 --host=127.0.0.1 --local_infile=1 --user=root -p
-</code></pre></div><h3 id="cmd">CMD</h3>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-batchfile" data-lang="batchfile"><span style="color:#2aa198">&#34;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#34;</span> --port=3306 --host=127.0.0.1 --local_infile=1 --user=root -p
-</code></pre></div><h3 id="example-sql-commands">Example SQL Commands</h3>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#719e07">SHOW</span> databases;
-USE employeeschema;
-<span style="color:#719e07">SHOW</span> TABLES;
-<span style="color:#719e07">CREATE</span> <span style="color:#719e07">TABLE</span> itemType (
-    id <span style="color:#b58900">INT</span> UNSIGNED <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span> AUTO_INCREMENT,
-    description <span style="color:#b58900">VARCHAR</span>(<span style="color:#2aa198">100</span>) <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span>,
-    loanDuration <span style="color:#b58900">INT</span> <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span>,
-    created <span style="color:#719e07">TIMESTAMP</span> <span style="color:#719e07">DEFAULT</span> <span style="color:#719e07">CURRENT_TIMESTAMP</span>,
-    <span style="color:#719e07">PRIMARY</span> <span style="color:#719e07">KEY</span> (id)
-    );
-<span style="color:#719e07">INSERT</span> <span style="color:#719e07">INTO</span> itemType(description, loanDuration)
-    <span style="color:#719e07">VALUES</span>
-    (<span style="color:#2aa198">&#39;Raspberry Pi Kits&#39;</span>, <span style="color:#2aa198">28</span>),
-    (<span style="color:#2aa198">&#39;Raspberry Pi Hats &amp; Microcontrollers&#39;</span>, <span style="color:#2aa198">28</span>),
-    (<span style="color:#2aa198">&#39;Raspberry Pi Books&#39;</span>, <span style="color:#2aa198">56</span>)
-    ;
-<span style="color:#719e07">SELECT</span> <span style="color:#719e07">*</span> <span style="color:#719e07">FROM</span> itemType;
-</code></pre></div><h2 id="windows-terminal---adding-a-dedicated-mysql-terminal">Windows Terminal - Adding A Dedicated MySQL Terminal</h2>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>&amp; <span style="color:#2aa198">&#39;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#39;</span> --port=3306 --host=127.0.0.1 --local_infile=1 --user=root -p
+</span></span></code></pre></div><h3 id="cmd">CMD</h3>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-batchfile" data-lang="batchfile"><span style="display:flex;"><span><span style="color:#2aa198">&#34;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#34;</span> --port=3306 --host=127.0.0.1 --local_infile=1 --user=root -p
+</span></span></code></pre></div><h3 id="example-sql-commands">Example SQL Commands</h3>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#719e07">SHOW</span> databases;
+</span></span><span style="display:flex;"><span>USE employeeschema;
+</span></span><span style="display:flex;"><span><span style="color:#719e07">SHOW</span> TABLES;
+</span></span><span style="display:flex;"><span><span style="color:#719e07">CREATE</span> <span style="color:#719e07">TABLE</span> itemType (
+</span></span><span style="display:flex;"><span>    id <span style="color:#b58900">INT</span> UNSIGNED <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span> AUTO_INCREMENT,
+</span></span><span style="display:flex;"><span>    description <span style="color:#b58900">VARCHAR</span>(<span style="color:#2aa198">100</span>) <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span>,
+</span></span><span style="display:flex;"><span>    loanDuration <span style="color:#b58900">INT</span> <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span>,
+</span></span><span style="display:flex;"><span>    created <span style="color:#719e07">TIMESTAMP</span> <span style="color:#719e07">DEFAULT</span> <span style="color:#719e07">CURRENT_TIMESTAMP</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#719e07">PRIMARY</span> <span style="color:#719e07">KEY</span> (id)
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span><span style="color:#719e07">INSERT</span> <span style="color:#719e07">INTO</span> itemType(description, loanDuration)
+</span></span><span style="display:flex;"><span>    <span style="color:#719e07">VALUES</span>
+</span></span><span style="display:flex;"><span>    (<span style="color:#2aa198">&#39;Raspberry Pi Kits&#39;</span>, <span style="color:#2aa198">28</span>),
+</span></span><span style="display:flex;"><span>    (<span style="color:#2aa198">&#39;Raspberry Pi Hats &amp; Microcontrollers&#39;</span>, <span style="color:#2aa198">28</span>),
+</span></span><span style="display:flex;"><span>    (<span style="color:#2aa198">&#39;Raspberry Pi Books&#39;</span>, <span style="color:#2aa198">56</span>)
+</span></span><span style="display:flex;"><span>    ;
+</span></span><span style="display:flex;"><span><span style="color:#719e07">SELECT</span> <span style="color:#719e07">*</span> <span style="color:#719e07">FROM</span> itemType;
+</span></span></code></pre></div><h2 id="windows-terminal---adding-a-dedicated-mysql-terminal">Windows Terminal - Adding A Dedicated MySQL Terminal</h2>
 <ol>
 <li>
 <p>Start Windows Terminal</p>

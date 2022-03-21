@@ -275,10 +275,10 @@
 <h2 id="executing-sql-scripts-from-the-command-line">Executing SQL Scripts from the Command Line</h2>
 <h3 id="powershell">PowerShell</h3>
 <p>Example of running an SQL script in MySQL from PowerShell:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-powershell" data-lang="powershell"><span style="color:#b58900">Get-Content</span> myScript.sql | &amp; <span style="color:#2aa198">&#39;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#39;</span> --verbose --force --table --port=3306 --host=127.0.0.1 --local_infile=1 --user=root -pdigimark &gt; myScriptResults.txt
-</code></pre></div><h3 id="cmd">CMD</h3>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#b58900">Get-Content</span> myScript.sql | &amp; <span style="color:#2aa198">&#39;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#39;</span> --verbose --force --table --port=3306 --host=127.0.0.1 --local_infile=1 --user=root -pdigimark &gt; myScriptResults.txt
+</span></span></code></pre></div><h3 id="cmd">CMD</h3>
 <p>Example of running an SQL script in MySQL from CMD:</p>
-<pre><code class="language-dos" data-lang="dos">&quot;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&quot; --verbose --table --force --port=3306 --host=127.0.0.1 --local_infile=1 --user=root -pdigimark &lt; myScript.sql &gt; myScriptResults.txt
+<pre tabindex="0"><code class="language-dos" data-lang="dos">&#34;C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe&#34; --verbose --table --force --port=3306 --host=127.0.0.1 --local_infile=1 --user=root -pdigimark &lt; myScript.sql &gt; myScriptResults.txt
 </code></pre><h2 id="explanation-of-command-line-parameters">Explanation of Command Line Parameters</h2>
 <p>When calling mysql.exe, several parameters are available, see <a href="https://dev.mysql.com/doc/refman/8.0/en/mysql-command-options.html">4.5.1.1 mysql Client Options</a>.</p>
 <h3 id="mysql-password">MySQL Password</h3>
@@ -323,51 +323,51 @@
 <li>Copy the code below and paste it into the editor.</li>
 <li>Save the file, with a &ldquo;.sql&rdquo; extension, for example &ldquo;myScript.sql&rdquo;</li>
 </ol>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#719e07">#######################################################</span>
-<span style="color:#719e07">#</span>
-<span style="color:#719e07">#</span> This <span style="color:#719e07">SQL</span> script prepares <span style="color:#719e07">database</span> exampleDB <span style="color:#719e07">for</span> use.
-<span style="color:#719e07">#</span> The <span style="color:#719e07">existing</span> <span style="color:#719e07">database</span> <span style="color:#719e07">is</span> dropped, a <span style="color:#719e07">new</span> db <span style="color:#719e07">is</span>
-<span style="color:#719e07">#</span> created, tables <span style="color:#719e07">are</span> <span style="color:#719e07">then</span> added <span style="color:#719e07">and</span> populated <span style="color:#719e07">with</span>
-<span style="color:#719e07">#</span> <span style="color:#719e07">data</span>.
-<span style="color:#719e07">#</span>
-<span style="color:#719e07">#######################################################</span>
-
-<span style="color:#719e07">#</span> <span style="color:#719e07">Output</span> the <span style="color:#b58900">date</span> <span style="color:#719e07">and</span> time the script was run.
-<span style="color:#719e07">select</span> <span style="color:#2aa198">&#34;Output from script, run at: &#34;</span> <span style="color:#719e07">as</span> <span style="color:#2aa198">&#39;Script Information&#39;</span>,
-    NOW() <span style="color:#719e07">as</span> <span style="color:#2aa198">&#39;Date and Time Executed&#39;</span>;
-
-<span style="color:#719e07">#</span> <span style="color:#719e07">First</span>, <span style="color:#719e07">drop</span> the <span style="color:#719e07">database</span> (<span style="color:#719e07">if</span> it <span style="color:#719e07">exists</span>).
-<span style="color:#719e07">DROP</span> <span style="color:#719e07">DATABASE</span> exampleDB;
-
-<span style="color:#719e07">#</span> <span style="color:#719e07">Create</span> a <span style="color:#719e07">new</span>, empty <span style="color:#719e07">database</span>.
-<span style="color:#719e07">CREATE</span> <span style="color:#719e07">DATABASE</span> exampleDB;
-
-<span style="color:#719e07">#</span> Use the <span style="color:#719e07">new</span> <span style="color:#719e07">database</span>.
-USE exampleDB;
-
-<span style="color:#719e07">#######################################################</span>
-<span style="color:#719e07">#</span> <span style="color:#719e07">Create</span> <span style="color:#719e07">table</span>: itemType
-<span style="color:#719e07">#######################################################</span>
-
-<span style="color:#719e07">CREATE</span> <span style="color:#719e07">TABLE</span> itemType (
-    id <span style="color:#b58900">INT</span> UNSIGNED <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span> AUTO_INCREMENT,
-    description <span style="color:#b58900">VARCHAR</span>(<span style="color:#2aa198">100</span>) <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span>,
-    loanDuration <span style="color:#b58900">INT</span> <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span>,
-    created <span style="color:#719e07">TIMESTAMP</span> <span style="color:#719e07">DEFAULT</span> <span style="color:#719e07">CURRENT_TIMESTAMP</span>,
-    <span style="color:#719e07">PRIMARY</span> <span style="color:#719e07">KEY</span> (id)
-    );
-
-<span style="color:#719e07">#</span> <span style="color:#719e07">Add</span> <span style="color:#719e07">some</span> item types <span style="color:#719e07">to</span> <span style="color:#719e07">table</span>: itemType
-<span style="color:#719e07">INSERT</span> <span style="color:#719e07">INTO</span> itemType(description, loanDuration)
-    <span style="color:#719e07">VALUES</span>
-    (<span style="color:#2aa198">&#39;Raspberry Pi Kits&#39;</span>, <span style="color:#2aa198">28</span>),
-    (<span style="color:#2aa198">&#39;Raspberry Pi Hats &amp; Microcontrollers&#39;</span>, <span style="color:#2aa198">28</span>),
-    (<span style="color:#2aa198">&#39;Raspberry Pi Books&#39;</span>, <span style="color:#2aa198">56</span>)
-    ;
-
-<span style="color:#719e07">SELECT</span> <span style="color:#719e07">*</span> <span style="color:#719e07">FROM</span> itemType;
-<span style="color:#719e07">#######################################################</span>
-</code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#719e07">#######################################################</span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">#</span> This <span style="color:#719e07">SQL</span> script prepares <span style="color:#719e07">database</span> exampleDB <span style="color:#719e07">for</span> use.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">#</span> The <span style="color:#719e07">existing</span> <span style="color:#719e07">database</span> <span style="color:#719e07">is</span> dropped, a <span style="color:#719e07">new</span> db <span style="color:#719e07">is</span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">#</span> created, tables <span style="color:#719e07">are</span> <span style="color:#719e07">then</span> added <span style="color:#719e07">and</span> populated <span style="color:#719e07">with</span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">#</span> <span style="color:#719e07">data</span>.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">#######################################################</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">#</span> <span style="color:#719e07">Output</span> the <span style="color:#b58900">date</span> <span style="color:#719e07">and</span> time the script was run.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">select</span> <span style="color:#2aa198">&#34;Output from script, run at: &#34;</span> <span style="color:#719e07">as</span> <span style="color:#2aa198">&#39;Script Information&#39;</span>,
+</span></span><span style="display:flex;"><span>    NOW() <span style="color:#719e07">as</span> <span style="color:#2aa198">&#39;Date and Time Executed&#39;</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">#</span> <span style="color:#719e07">First</span>, <span style="color:#719e07">drop</span> the <span style="color:#719e07">database</span> (<span style="color:#719e07">if</span> it <span style="color:#719e07">exists</span>).
+</span></span><span style="display:flex;"><span><span style="color:#719e07">DROP</span> <span style="color:#719e07">DATABASE</span> exampleDB;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">#</span> <span style="color:#719e07">Create</span> a <span style="color:#719e07">new</span>, empty <span style="color:#719e07">database</span>.
+</span></span><span style="display:flex;"><span><span style="color:#719e07">CREATE</span> <span style="color:#719e07">DATABASE</span> exampleDB;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">#</span> Use the <span style="color:#719e07">new</span> <span style="color:#719e07">database</span>.
+</span></span><span style="display:flex;"><span>USE exampleDB;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">#######################################################</span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">#</span> <span style="color:#719e07">Create</span> <span style="color:#719e07">table</span>: itemType
+</span></span><span style="display:flex;"><span><span style="color:#719e07">#######################################################</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">CREATE</span> <span style="color:#719e07">TABLE</span> itemType (
+</span></span><span style="display:flex;"><span>    id <span style="color:#b58900">INT</span> UNSIGNED <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span> AUTO_INCREMENT,
+</span></span><span style="display:flex;"><span>    description <span style="color:#b58900">VARCHAR</span>(<span style="color:#2aa198">100</span>) <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span>,
+</span></span><span style="display:flex;"><span>    loanDuration <span style="color:#b58900">INT</span> <span style="color:#719e07">NOT</span> <span style="color:#719e07">NULL</span>,
+</span></span><span style="display:flex;"><span>    created <span style="color:#719e07">TIMESTAMP</span> <span style="color:#719e07">DEFAULT</span> <span style="color:#719e07">CURRENT_TIMESTAMP</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#719e07">PRIMARY</span> <span style="color:#719e07">KEY</span> (id)
+</span></span><span style="display:flex;"><span>    );
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">#</span> <span style="color:#719e07">Add</span> <span style="color:#719e07">some</span> item types <span style="color:#719e07">to</span> <span style="color:#719e07">table</span>: itemType
+</span></span><span style="display:flex;"><span><span style="color:#719e07">INSERT</span> <span style="color:#719e07">INTO</span> itemType(description, loanDuration)
+</span></span><span style="display:flex;"><span>    <span style="color:#719e07">VALUES</span>
+</span></span><span style="display:flex;"><span>    (<span style="color:#2aa198">&#39;Raspberry Pi Kits&#39;</span>, <span style="color:#2aa198">28</span>),
+</span></span><span style="display:flex;"><span>    (<span style="color:#2aa198">&#39;Raspberry Pi Hats &amp; Microcontrollers&#39;</span>, <span style="color:#2aa198">28</span>),
+</span></span><span style="display:flex;"><span>    (<span style="color:#2aa198">&#39;Raspberry Pi Books&#39;</span>, <span style="color:#2aa198">56</span>)
+</span></span><span style="display:flex;"><span>    ;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#719e07">SELECT</span> <span style="color:#719e07">*</span> <span style="color:#719e07">FROM</span> itemType;
+</span></span><span style="display:flex;"><span><span style="color:#719e07">#######################################################</span>
+</span></span></code></pre></div>
         </div>
         
         <div class="my-4">

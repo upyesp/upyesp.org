@@ -303,27 +303,27 @@
 <h2 id="katex-examples">$\KaTeX$ Examples</h2>
 <h3 id="matrices">Matrices</h3>
 <p>The double backslash, &lsquo;\\&rsquo;, in the matrix below:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#586e75">$$</span><span style="color:#b58900">
-</span><span style="color:#b58900"></span><span style="color:#268bd2">\begin</span><span style="color:#b58900">{pmatrix}
-</span><span style="color:#b58900">a &amp; b </span><span style="color:#268bd2">\\</span><span style="color:#b58900">
-</span><span style="color:#b58900">c &amp; d
-</span><span style="color:#b58900"></span><span style="color:#268bd2">\end</span><span style="color:#b58900">{pmatrix}
-</span><span style="color:#b58900"></span><span style="color:#2aa198">$$</span>
-</code></pre></div><p>Might render as:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#586e75">$$</span><span style="color:#b58900">
+</span></span></span><span style="display:flex;"><span><span style="color:#b58900"></span><span style="color:#268bd2">\begin</span><span style="color:#b58900">{pmatrix}
+</span></span></span><span style="display:flex;"><span><span style="color:#b58900">a &amp; b </span><span style="color:#268bd2">\\</span><span style="color:#b58900">
+</span></span></span><span style="display:flex;"><span><span style="color:#b58900">c &amp; d
+</span></span></span><span style="display:flex;"><span><span style="color:#b58900"></span><span style="color:#268bd2">\end</span><span style="color:#b58900">{pmatrix}
+</span></span></span><span style="display:flex;"><span><span style="color:#b58900"></span><span style="color:#2aa198">$$</span>
+</span></span></code></pre></div><p>Might render as:</p>
 <p>$$
 \begin{pmatrix}
-a &amp; b \<br>
+a &amp; b \
 c &amp; d
 \end{pmatrix}
 $$</p>
 <p>Where as changing &lsquo;\\&rsquo; to &lsquo;\cr&rsquo;, like this:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#586e75">$$</span><span style="color:#b58900">
-</span><span style="color:#b58900"></span><span style="color:#268bd2">\begin</span><span style="color:#b58900">{pmatrix}
-</span><span style="color:#b58900">a &amp; b </span><span style="color:#268bd2">\cr</span><span style="color:#b58900">
-</span><span style="color:#b58900">c &amp; d
-</span><span style="color:#b58900"></span><span style="color:#268bd2">\end</span><span style="color:#b58900">{pmatrix}
-</span><span style="color:#b58900"></span><span style="color:#2aa198">$$</span>
-</code></pre></div><p>Renders as:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#586e75">$$</span><span style="color:#b58900">
+</span></span></span><span style="display:flex;"><span><span style="color:#b58900"></span><span style="color:#268bd2">\begin</span><span style="color:#b58900">{pmatrix}
+</span></span></span><span style="display:flex;"><span><span style="color:#b58900">a &amp; b </span><span style="color:#268bd2">\cr</span><span style="color:#b58900">
+</span></span></span><span style="display:flex;"><span><span style="color:#b58900">c &amp; d
+</span></span></span><span style="display:flex;"><span><span style="color:#b58900"></span><span style="color:#268bd2">\end</span><span style="color:#b58900">{pmatrix}
+</span></span></span><span style="display:flex;"><span><span style="color:#b58900"></span><span style="color:#2aa198">$$</span>
+</span></span></code></pre></div><p>Renders as:</p>
 <p>$$
 \begin{pmatrix}
 a &amp; b \cr
@@ -332,27 +332,27 @@ c &amp; d
 $$</p>
 <h3 id="aligned-expressions">Aligned Expressions</h3>
 <p>The double backslash, &lsquo;\\&rsquo;, in the aligned expressions below:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#586e75">$$</span><span style="color:#b58900">
-</span><span style="color:#b58900"></span><span style="color:#268bd2">\begin</span><span style="color:#b58900">{alignedat}{</span><span style="color:#2aa198">2</span><span style="color:#b58900">}
-</span><span style="color:#b58900"></span><span style="color:#2aa198">10</span><span style="color:#b58900">&amp;x</span><span style="color:#719e07">+</span><span style="color:#b58900"> &amp;</span><span style="color:#2aa198">3</span><span style="color:#b58900">&amp;y </span><span style="color:#719e07">=</span><span style="color:#b58900"> </span><span style="color:#2aa198">2</span><span style="color:#b58900"> </span><span style="color:#268bd2">\\</span><span style="color:#b58900">
-</span><span style="color:#b58900"></span><span style="color:#2aa198">3</span><span style="color:#b58900">&amp;x</span><span style="color:#719e07">+</span><span style="color:#b58900">&amp;</span><span style="color:#2aa198">13</span><span style="color:#b58900">&amp;y </span><span style="color:#719e07">=</span><span style="color:#b58900"> </span><span style="color:#2aa198">4</span><span style="color:#b58900">
-</span><span style="color:#b58900"></span><span style="color:#268bd2">\end</span><span style="color:#b58900">{alignedat}
-</span><span style="color:#b58900"></span><span style="color:#2aa198">$$</span>
-</code></pre></div><p>Might render as:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#586e75">$$</span><span style="color:#b58900">
+</span></span></span><span style="display:flex;"><span><span style="color:#b58900"></span><span style="color:#268bd2">\begin</span><span style="color:#b58900">{alignedat}{</span><span style="color:#2aa198">2</span><span style="color:#b58900">}
+</span></span></span><span style="display:flex;"><span><span style="color:#b58900"></span><span style="color:#2aa198">10</span><span style="color:#b58900">&amp;x</span><span style="color:#719e07">+</span><span style="color:#b58900"> &amp;</span><span style="color:#2aa198">3</span><span style="color:#b58900">&amp;y </span><span style="color:#719e07">=</span><span style="color:#b58900"> </span><span style="color:#2aa198">2</span><span style="color:#b58900"> </span><span style="color:#268bd2">\\</span><span style="color:#b58900">
+</span></span></span><span style="display:flex;"><span><span style="color:#b58900"></span><span style="color:#2aa198">3</span><span style="color:#b58900">&amp;x</span><span style="color:#719e07">+</span><span style="color:#b58900">&amp;</span><span style="color:#2aa198">13</span><span style="color:#b58900">&amp;y </span><span style="color:#719e07">=</span><span style="color:#b58900"> </span><span style="color:#2aa198">4</span><span style="color:#b58900">
+</span></span></span><span style="display:flex;"><span><span style="color:#b58900"></span><span style="color:#268bd2">\end</span><span style="color:#b58900">{alignedat}
+</span></span></span><span style="display:flex;"><span><span style="color:#b58900"></span><span style="color:#2aa198">$$</span>
+</span></span></code></pre></div><p>Might render as:</p>
 <p>$$
 \begin{alignedat}{2}
-10&amp;x+ &amp;3&amp;y = 2 \<br>
+10&amp;x+ &amp;3&amp;y = 2 \
 3&amp;x+&amp;13&amp;y = 4
 \end{alignedat}
 $$</p>
 <p>Where as:</p>
-<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-latex" data-lang="latex"><span style="color:#586e75">$$</span><span style="color:#b58900">
-</span><span style="color:#b58900"></span><span style="color:#268bd2">\begin</span><span style="color:#b58900">{alignedat}{</span><span style="color:#2aa198">2</span><span style="color:#b58900">}
-</span><span style="color:#b58900"></span><span style="color:#2aa198">10</span><span style="color:#b58900">&amp;x</span><span style="color:#719e07">+</span><span style="color:#b58900"> &amp;</span><span style="color:#2aa198">3</span><span style="color:#b58900">&amp;y </span><span style="color:#719e07">=</span><span style="color:#b58900"> </span><span style="color:#2aa198">2</span><span style="color:#b58900"> </span><span style="color:#268bd2">\cr</span><span style="color:#b58900">
-</span><span style="color:#b58900"></span><span style="color:#2aa198">3</span><span style="color:#b58900">&amp;x</span><span style="color:#719e07">+</span><span style="color:#b58900">&amp;</span><span style="color:#2aa198">13</span><span style="color:#b58900">&amp;y </span><span style="color:#719e07">=</span><span style="color:#b58900"> </span><span style="color:#2aa198">4</span><span style="color:#b58900">
-</span><span style="color:#b58900"></span><span style="color:#268bd2">\end</span><span style="color:#b58900">{alignedat}
-</span><span style="color:#b58900"></span><span style="color:#2aa198">$$</span>
-</code></pre></div><p>Renders as:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-latex" data-lang="latex"><span style="display:flex;"><span><span style="color:#586e75">$$</span><span style="color:#b58900">
+</span></span></span><span style="display:flex;"><span><span style="color:#b58900"></span><span style="color:#268bd2">\begin</span><span style="color:#b58900">{alignedat}{</span><span style="color:#2aa198">2</span><span style="color:#b58900">}
+</span></span></span><span style="display:flex;"><span><span style="color:#b58900"></span><span style="color:#2aa198">10</span><span style="color:#b58900">&amp;x</span><span style="color:#719e07">+</span><span style="color:#b58900"> &amp;</span><span style="color:#2aa198">3</span><span style="color:#b58900">&amp;y </span><span style="color:#719e07">=</span><span style="color:#b58900"> </span><span style="color:#2aa198">2</span><span style="color:#b58900"> </span><span style="color:#268bd2">\cr</span><span style="color:#b58900">
+</span></span></span><span style="display:flex;"><span><span style="color:#b58900"></span><span style="color:#2aa198">3</span><span style="color:#b58900">&amp;x</span><span style="color:#719e07">+</span><span style="color:#b58900">&amp;</span><span style="color:#2aa198">13</span><span style="color:#b58900">&amp;y </span><span style="color:#719e07">=</span><span style="color:#b58900"> </span><span style="color:#2aa198">4</span><span style="color:#b58900">
+</span></span></span><span style="display:flex;"><span><span style="color:#b58900"></span><span style="color:#268bd2">\end</span><span style="color:#b58900">{alignedat}
+</span></span></span><span style="display:flex;"><span><span style="color:#b58900"></span><span style="color:#2aa198">$$</span>
+</span></span></code></pre></div><p>Renders as:</p>
 <p>$$
 \begin{alignedat}{2}
 10&amp;x+ &amp;3&amp;y = 2 \cr
