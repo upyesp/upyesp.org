@@ -7,7 +7,6 @@ toc: true
 featuredImage: ''
 tags: [Bash, PowerShell]
 categories: [Windows, Linux]
-series: [Windows Terminal]
 ---
 
 Here's how to create Alias commands to simplify tasks on the command line.  The examples given relate to retrieving IP addresses.  The process is shown for Linux using Bash and Windows using PowerShell.
