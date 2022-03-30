@@ -17,7 +17,7 @@ It is possible to rename the OneDrive folder, but the renaming method is very ha
 
 An alternative is to keep the long folder name unchanged and to simply avoid using it by creating a symbolic reference to it and using the symbolic reference instead.  The specific type of symbolic reference being used here is a [Junction Point](https://docs.microsoft.com/en-gb/windows/win32/fileio/symbolic-links).
 
-The symbolic reference looks and behaves similar to a folder. You can give it a simple & short name, for example, "uni".
+> The symbolic reference looks and behaves similar to a folder. You can give it a simple & short name, for example, "uni".
 
 For example, the paths below point to the *same location*:
 

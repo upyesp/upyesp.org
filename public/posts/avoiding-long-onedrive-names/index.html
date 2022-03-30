@@ -267,7 +267,9 @@
             <p>If your employer or university provides you with Microsoft OneDrive, you&rsquo;ll know how useful it can be right? The OneDrive folder name tends to be very long though, like &ldquo;OneDrive - The University of Quahog&rdquo;.  The long name can get in the way, like in the prompt of an IDE, in a terminal session or when browsing files in Explorer. One simple command, <code>mklink</code>, can fix that.</p>
 <p>It is possible to rename the OneDrive folder, but the renaming method is very hacky, <strong>high risk</strong> and involves numerous changes within the Windows registry.  It is not recommended.</p>
 <p>An alternative is to keep the long folder name unchanged and to simply avoid using it by creating a symbolic reference to it and using the symbolic reference instead.  The specific type of symbolic reference being used here is a <a href="https://docs.microsoft.com/en-gb/windows/win32/fileio/symbolic-links">Junction Point</a>.</p>
+<blockquote>
 <p>The symbolic reference looks and behaves similar to a folder. You can give it a simple &amp; short name, for example, &ldquo;uni&rdquo;.</p>
+</blockquote>
 <p>For example, the paths below point to the <em>same location</em>:</p>
 <div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>C:\Users\fred\OneDrive - The University of Quahog\...
 </span></span><span style="display:flex;"><span>
