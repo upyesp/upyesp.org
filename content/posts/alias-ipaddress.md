@@ -1,5 +1,5 @@
 ---
-title: "Use An Alias To Quickly Find Your IP Address"
+title: "Use An Alias To Quickly Find Your IP Address - Windows & Linux"
 description: How to create an Alias as a quick & easy way to retrieve your IP address, in Linux and Windows.
 date: 2022-03-31T11:37:01+00:00
 draft: false
@@ -29,9 +29,9 @@ Your computer also has an IP address as seen by devices from external to the LAN
 > 1. Open a terminal.
 > 1. Edit file .bashrc by entering `sudo nano ~/.bashrc`.
 > 1. Copy/paste the lines below to the end of .bashrc.
-> 1. Exit nano by pressing <kbd>Ctrl</kbd> + <kbd>x</kbd> and press <kbd>y</kbd> to save changes.
+> 1. Exit `nano` by pressing <kbd>Ctrl</kbd> + <kbd>x</kbd> and press <kbd>y</kbd> to save changes.
 > 1. Restart Bash with `exec bash`.
-> 1. Done! - Use the newly created aliases `ipint` and `ipext` to return IP addresses.
+> 1. Done! You can now use the newly created aliases `ipint` and `ipext` to return IP addresses.
 
 ```zsh
 # Alias for IP address on the LAN.
@@ -93,6 +93,13 @@ sudo nano ~/.bashrc
 
 ![screenshot of a terminal running Linux with the Bash shell.  The editor Nano is running and the contents of .bashrc are displayed.](/images/AliasIPNano.png "Using nano to edit .bashrc")
 
+Exit `nano` by pressing <kbd>Ctrl</kbd> + <kbd>x</kbd> and press <kbd>y</kbd> to save changes.
+
+Then restart Bash with `exec bash`.
+
+That's it, done.  Use the newly created aliases `ipint` and `ipext` to return IP addresses.
+
+
 
 ## Windows: Creating Aliases In PowerShell To Return The Internal & External IP Address  {#windows}
 
@@ -102,7 +109,7 @@ sudo nano ~/.bashrc
 > 1. Copy/paste the lines below to the end of $PROFILE.
 > 1. Save and exit notepad.
 > 1. Reload the new version by entering `. $PROFILE`.
-> 1. Done! - Use the newly created aliases `ipint` and `ipext` to return IP addresses.
+> 1. Done! You can now use the newly created aliases `ipint` and `ipext` to return IP addresses in a PowerShell terminal session.
 
 ```powershell
 function Get-IP-Internal { 
@@ -122,7 +129,7 @@ Set-Alias -Name ipext -Value Get-IP-External
 
 #### Aliases & Functions
 
-So far this article has talked about Aliases.  These are supported in PowerShell, though they are implemented differently than Linux.  There is a restriction regarding [Alias parameters and passing values](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/set-alias?view=powershell-7.2) - see "Example 5". As shown in that example, this can be easily overcome by creating a [Function](https://docs.microsoft.com/en-us/powershell/scripting/learn/ps101/09-functions?view=powershell-7.2) and setting an Alias to it.
+So far this blog post has talked about Aliases.  These are supported in PowerShell, though they are implemented differently than Linux.  There is a restriction regarding [Alias parameters and passing values](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.utility/set-alias?view=powershell-7.2) - see "Example 5". As shown in that example, this can be easily overcome by creating a [Function](https://docs.microsoft.com/en-us/powershell/scripting/learn/ps101/09-functions?view=powershell-7.2) and setting an Alias to it.
 
 #### Address On The LAN, Using `Get-NetIPAddress`
 
@@ -167,6 +174,10 @@ code $PROFILE
 
 ![screenshot of the VS Code editor with the contents of the $PROFILE displayed.](/images/AliasIPVSCODE.png "Using VS Code to edit $PROFILE")
 
+Save the changes exit the editor.
 
+Force a reload the new version by entering `. $PROFILE`.
+
+That's it, done.  Use the newly created aliases `ipint` and `ipext` to return IP addresses.
 
 
