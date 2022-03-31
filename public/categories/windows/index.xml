@@ -6,11 +6,11 @@
     <description>Recent content in Windows on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 30 Mar 2022 11:37:01 +0000</lastBuildDate><atom:link href="/categories/windows/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 31 Mar 2022 11:37:01 +0000</lastBuildDate><atom:link href="/categories/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Use An Alias To Quickly Find Your IP Address</title>
       <link>/posts/alias-ipaddress/</link>
-      <pubDate>Wed, 30 Mar 2022 11:37:01 +0000</pubDate>
+      <pubDate>Thu, 31 Mar 2022 11:37:01 +0000</pubDate>
       
       <guid>/posts/alias-ipaddress/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s how to create Alias commands to simplify tasks on the command line.  The examples given relate to retrieving IP addresses.  The process is shown for Linux using Bash and Windows using PowerShell.&lt;/p&gt;</description>

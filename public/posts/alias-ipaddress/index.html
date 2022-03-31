@@ -110,9 +110,9 @@
         "@type": "WebPage",
         "@id": "/posts/alias-ipaddress/"
     },
-    "headline": "Use An Alias To Quickly Find Your IP Address | upyesp","datePublished": "2022-03-30T11:37:01+00:00",
-    "dateModified": "2022-03-30T11:37:01+00:00",
-    "wordCount":  915 ,
+    "headline": "Use An Alias To Quickly Find Your IP Address | upyesp","datePublished": "2022-03-31T11:37:01+00:00",
+    "dateModified": "2022-03-31T11:37:01+00:00",
+    "wordCount":  991 ,
     "publisher": {
         "@type": "Person",
         "name": "upyesp",
@@ -144,10 +144,10 @@
 
 
 
-<meta property="article:published_time" content="2022-03-30T11:37:01&#43;00:00" />
+<meta property="article:published_time" content="2022-03-31T11:37:01&#43;00:00" />
 
 
-<meta property="article:modified_time" content="2022-03-30T11:37:01&#43;00:00" />
+<meta property="article:modified_time" content="2022-03-31T11:37:01&#43;00:00" />
 
 
 
@@ -247,7 +247,7 @@
         <div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
     <div class="mr-6 my-2">
         <i class="fas fa-calendar mr-1"></i>
-        <span>Wednesday, March 30, 2022</span>
+        <span>Thursday, March 31, 2022</span>
     </div>
     <div class="mr-6 my-2">
         <i class="fas fa-clock mr-1"></i>
@@ -279,9 +279,18 @@
 <h2 id="definitions---internal--external-ip-address">Definitions - Internal &amp; External IP Address</h2>
 <p>Your computer has an IP address on the LAN it is connected to. This blog post will refer to that address as the <em>internal IP address</em>, typical examples being&hellip; <code>192.168.1.12/24</code> at home or <code>10.23.8.7/20</code> on a corporate network.</p>
 <p>Your computer also has an IP address as seen by devices from external to the LAN, for example by servers on the internet.  This blog post will refer to that address as the <em>external IP address</em>, for example <code>123.44.23.87</code>. If you open a browser and Google &ldquo;whats my ip&rdquo;, you will find yours.</p>
-<h2 id="linux-creating-aliases-in-bash-to-return-the-internal--external-ip-address">Linux: Creating Aliases In Bash To Return The Internal &amp; External IP Address</h2>
+<p><a href="#windows">Jump to Windows Method</a></p>
+<h2 id="linux">Linux: Creating Aliases In Bash To Return The Internal &amp; External IP Address</h2>
 <blockquote>
-<p>TL;DR: append the following lines to the .bashrc file to create aliases <code>ipint</code> and <code>ipext</code>:</p>
+<p>TL;DR</p>
+<ol>
+<li>Open a terminal.</li>
+<li>Edit file .bashrc by entering <code>sudo nano ~/.bashrc</code>.</li>
+<li>Copy/paste the lines below to the end of .bashrc.</li>
+<li>Exit nano by pressing <kbd>Ctrl</kbd> + <kbd>x</kbd> and press <kbd>y</kbd> to save changes.</li>
+<li>Restart Bash with <code>exec bash</code>.</li>
+<li>Done! - Use the newly created aliases <code>ipint</code> and <code>ipext</code> to return IP addresses.</li>
+</ol>
 </blockquote>
 <div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span><span style="color:#586e75"># Alias for IP address on the LAN.</span>
 </span></span><span style="display:flex;"><span><span style="color:#586e75"># - this version returns the address + CIDR/subnet suffix e.g. xxx.xxx.xxx.xxx/xx</span>
@@ -317,9 +326,17 @@
 <p>Aliases typically only exist in the session in which they are created.  A simple way to ensure the <code>ipint</code> and <code>ipext</code> persist in Bash sessions is to add their definition to the .bashrc file in your home directory.  This can be edited with <code>nano</code>.  Note that root privileges are required, so use <code>sudo</code>, like this:</p>
 <div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>sudo nano ~/.bashrc
 </span></span></code></pre></div><p><img src="/images/AliasIPNano.png" alt="screenshot of a terminal running Linux with the Bash shell.  The editor Nano is running and the contents of .bashrc are displayed." title="Using nano to edit .bashrc"></p>
-<h2 id="windows-creating-aliases-in-powershell-to-return-the-internal--external-ip-address">Windows: Creating Aliases In PowerShell To Return The Internal &amp; External IP Address</h2>
+<h2 id="windows">Windows: Creating Aliases In PowerShell To Return The Internal &amp; External IP Address </h2>
 <blockquote>
-<p>TL;DR: append the following lines to $PROFILE to create aliases <code>ipint</code> and <code>ipext</code>:</p>
+<p>TL;DR</p>
+<ol>
+<li>Open a PowerShell terminal.</li>
+<li>Edit file $PROFILE by entering <code>notepad $PROFILE</code>.</li>
+<li>Copy/paste the lines below to the end of $PROFILE.</li>
+<li>Save and exit notepad.</li>
+<li>Reload the new version by entering <code>. $PROFILE</code>.</li>
+<li>Done! - Use the newly created aliases <code>ipint</code> and <code>ipext</code> to return IP addresses.</li>
+</ol>
 </blockquote>
 <div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#719e07">function</span> <span style="color:#b58900">Get-IP</span>-Internal { 
 </span></span><span style="display:flex;"><span>    <span style="color:#268bd2">$myip</span> = <span style="color:#b58900">Get-NetIPAddress</span> -AddressFamily IPv4 -PrefixOrigin Dhcp
@@ -408,7 +425,7 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#definitions---internal--external-ip-address">Definitions - Internal &amp; External IP Address</a></li>
-    <li><a href="#linux-creating-aliases-in-bash-to-return-the-internal--external-ip-address">Linux: Creating Aliases In Bash To Return The Internal &amp; External IP Address</a>
+    <li><a href="#linux">Linux: Creating Aliases In Bash To Return The Internal &amp; External IP Address</a>
       <ul>
         <li><a href="#how-to-retrieve-ip-addresses-using-bash">How To Retrieve IP Addresses Using Bash</a>
           <ul>
@@ -420,7 +437,7 @@
         <li><a href="#adding-aliases-to-the-bashrc-file">Adding Aliases To The .bashrc File</a></li>
       </ul>
     </li>
-    <li><a href="#windows-creating-aliases-in-powershell-to-return-the-internal--external-ip-address">Windows: Creating Aliases In PowerShell To Return The Internal &amp; External IP Address</a>
+    <li><a href="#windows">Windows: Creating Aliases In PowerShell To Return The Internal &amp; External IP Address </a>
       <ul>
         <li><a href="#how-to-retrieve-ip-addresses-using-powershell">How To Retrieve IP Addresses Using PowerShell</a>
           <ul>

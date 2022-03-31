@@ -1,7 +1,7 @@
 ---
 title: "Use An Alias To Quickly Find Your IP Address"
 description: How to create an Alias as a quick & easy way to retrieve your IP address, in Linux and Windows.
-date: 2022-03-30T11:37:01+00:00
+date: 2022-03-31T11:37:01+00:00
 draft: false
 toc: true
 featuredImage: ''
@@ -21,9 +21,17 @@ Your computer has an IP address on the LAN it is connected to. This blog post wi
 
 Your computer also has an IP address as seen by devices from external to the LAN, for example by servers on the internet.  This blog post will refer to that address as the _external IP address_, for example `123.44.23.87`. If you open a browser and Google "whats my ip", you will find yours.
 
-## Linux: Creating Aliases In Bash To Return The Internal & External IP Address
+[Jump to Windows Method](#windows)
 
-> TL;DR: append the following lines to the .bashrc file to create aliases `ipint` and `ipext`:
+## Linux: Creating Aliases In Bash To Return The Internal & External IP Address {#linux}
+
+> TL;DR
+> 1. Open a terminal.
+> 1. Edit file .bashrc by entering `sudo nano ~/.bashrc`.
+> 1. Copy/paste the lines below to the end of .bashrc.
+> 1. Exit nano by pressing <kbd>Ctrl</kbd> + <kbd>x</kbd> and press <kbd>y</kbd> to save changes.
+> 1. Restart Bash with `exec bash`.
+> 1. Done! - Use the newly created aliases `ipint` and `ipext` to return IP addresses.
 
 ```zsh
 # Alias for IP address on the LAN.
@@ -86,9 +94,15 @@ sudo nano ~/.bashrc
 ![screenshot of a terminal running Linux with the Bash shell.  The editor Nano is running and the contents of .bashrc are displayed.](/images/AliasIPNano.png "Using nano to edit .bashrc")
 
 
-## Windows: Creating Aliases In PowerShell To Return The Internal & External IP Address
+## Windows: Creating Aliases In PowerShell To Return The Internal & External IP Address  {#windows}
 
-> TL;DR: append the following lines to $PROFILE to create aliases `ipint` and `ipext`:
+> TL;DR
+> 1. Open a PowerShell terminal.
+> 1. Edit file $PROFILE by entering `notepad $PROFILE`.
+> 1. Copy/paste the lines below to the end of $PROFILE.
+> 1. Save and exit notepad.
+> 1. Reload the new version by entering `. $PROFILE`.
+> 1. Done! - Use the newly created aliases `ipint` and `ipext` to return IP addresses.
 
 ```powershell
 function Get-IP-Internal { 
