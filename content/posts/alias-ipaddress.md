@@ -151,6 +151,17 @@ Get-NetIPAddress -AddressFamily IPv4 -PrefixOrigin Dhcp | Format-Wide -Property 
 (Get-NetIPAddress -AddressFamily IPv4 -PrefixOrigin Dhcp | Format-Wide -Property IPAddress | Out-String).Trim()
 ```
 
+This is the version I settled on.  It provides the IPv4 address, along with the CIDR suffix.  Also, the output exactly matches the Linux version above.
+
+```powershell
+function Get_IP_Internal { 
+    $myip = Get-NetIPAddress -AddressFamily IPv4 -PrefixOrigin Dhcp
+    Write-Host "$($myip.IPAddress)/$($myip.PrefixLength)"
+}
+Set-Alias -Name ipint -Value Get_IP_Internal
+```
+
+
 #### External IP Address
 
 As with Linux, in order to find the external IP address, a service beyond the LAN needs to be called, such as a server on the internet. Many services exist, this example uses `icanhazip.com`.  This can be changed to your own preferred service.
@@ -172,7 +183,7 @@ notepad $PROFILE
 code $PROFILE
 ```
 
-![screenshot of the VS Code editor with the contents of the $PROFILE displayed.](/images/AliasIPNotepad.png "Using VS Code to edit $PROFILE")
+![screenshot of the VS Code editor with the contents of the $PROFILE displayed.](/images/AliasIPVSCODE.png "Using VS Code to edit $PROFILE")
 
 Save the changes exit the editor.
 

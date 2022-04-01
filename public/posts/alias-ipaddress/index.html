@@ -112,7 +112,7 @@
     },
     "headline": "Use An Alias To Quickly Find Your IP Address - Windows \u0026 Linux | upyesp","datePublished": "2022-03-31T11:37:01+00:00",
     "dateModified": "2022-03-31T11:37:01+00:00",
-    "wordCount":  1066 ,
+    "wordCount":  1110 ,
     "publisher": {
         "@type": "Person",
         "name": "upyesp",
@@ -370,6 +370,12 @@
 </span></span><span style="display:flex;"><span><span style="color:#b58900">Get-NetIPAddress</span> -AddressFamily IPv4 -PrefixOrigin Dhcp | <span style="color:#b58900">Format-Wide</span> -Property IPAddress
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>(<span style="color:#b58900">Get-NetIPAddress</span> -AddressFamily IPv4 -PrefixOrigin Dhcp | <span style="color:#b58900">Format-Wide</span> -Property IPAddress | <span style="color:#b58900">Out-String</span>).Trim()
+</span></span></code></pre></div><p>This is the version I settled on.  It provides the IPv4 address, along with the CIDR suffix.  Also, the output exactly matches the Linux version above.</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#719e07">function</span> Get_IP_Internal { 
+</span></span><span style="display:flex;"><span>    <span style="color:#268bd2">$myip</span> = <span style="color:#b58900">Get-NetIPAddress</span> -AddressFamily IPv4 -PrefixOrigin Dhcp
+</span></span><span style="display:flex;"><span>    <span style="color:#b58900">Write-Host</span> <span style="color:#2aa198">&#34;</span>$(<span style="color:#268bd2">$myip</span>.IPAddress)<span style="color:#2aa198">/</span>$(<span style="color:#268bd2">$myip</span>.PrefixLength)<span style="color:#2aa198">&#34;</span>
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span><span style="color:#b58900">Set-Alias</span> -Name ipint -Value Get_IP_Internal
 </span></span></code></pre></div><h4 id="external-ip-address">External IP Address</h4>
 <p>As with Linux, in order to find the external IP address, a service beyond the LAN needs to be called, such as a server on the internet. Many services exist, this example uses <code>icanhazip.com</code>.  This can be changed to your own preferred service.</p>
 <div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span><span style="color:#719e07">function</span> Get_IP_External {
@@ -381,7 +387,7 @@
 <div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-powershell" data-lang="powershell"><span style="display:flex;"><span>notepad <span style="color:#268bd2">$PROFILE</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>code <span style="color:#268bd2">$PROFILE</span>
-</span></span></code></pre></div><p><img src="/images/AliasIPNotepad.png" alt="screenshot of the VS Code editor with the contents of the $PROFILE displayed." title="Using VS Code to edit $PROFILE"></p>
+</span></span></code></pre></div><p><img src="/images/AliasIPVSCODE.png" alt="screenshot of the VS Code editor with the contents of the $PROFILE displayed." title="Using VS Code to edit $PROFILE"></p>
 <p>Save the changes exit the editor.</p>
 <p>Force a reload the new version by entering <code>. $PROFILE</code>.</p>
 <p>That&rsquo;s it, done.  Use the newly created aliases <code>ipint</code> and <code>ipext</code> to return IP addresses.</p>
