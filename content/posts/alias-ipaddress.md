@@ -112,17 +112,17 @@ That's it, done.  Use the newly created aliases `ipint` and `ipext` to return IP
 > 1. Done! You can now use the newly created aliases `ipint` and `ipext` to return IP addresses in a PowerShell terminal session.
 
 ```powershell
-function Get-IP-Internal { 
+function Get_IP_Internal { 
     $myip = Get-NetIPAddress -AddressFamily IPv4 -PrefixOrigin Dhcp
     Write-Host "$($myip.IPAddress)/$($myip.PrefixLength)"
 }
-Set-Alias -Name ipint -Value Get-IP-Internal
+Set-Alias -Name ipint -Value Get_IP_Internal
 
 
-function Get-IP-External {
+function Get_IP_External {
     curl.exe icanhazip.com
 }
-Set-Alias -Name ipext -Value Get-IP-External
+Set-Alias -Name ipext -Value Get_IP_External
 ```
 
 ### How To Retrieve IP Addresses Using PowerShell
@@ -156,10 +156,10 @@ Get-NetIPAddress -AddressFamily IPv4 -PrefixOrigin Dhcp | Format-Wide -Property 
 As with Linux, in order to find the external IP address, a service beyond the LAN needs to be called, such as a server on the internet. Many services exist, this example uses `icanhazip.com`.  This can be changed to your own preferred service.
 
 ```powershell
-function Get-IP-External {
+function Get_IP_External {
     curl.exe icanhazip.com
 }
-Set-Alias -Name ipext -Value Get-IP-External
+Set-Alias -Name ipext -Value Get_IP_External
 ```
 
 ### Adding Aliases To The $PROFILE File
@@ -172,7 +172,7 @@ notepad $PROFILE
 code $PROFILE
 ```
 
-![screenshot of the VS Code editor with the contents of the $PROFILE displayed.](/images/AliasIPVSCODE.png "Using VS Code to edit $PROFILE")
+![screenshot of the VS Code editor with the contents of the $PROFILE displayed.](/images/AliasIPNotepad.png "Using VS Code to edit $PROFILE")
 
 Save the changes exit the editor.
 
