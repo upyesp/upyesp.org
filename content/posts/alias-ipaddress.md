@@ -15,7 +15,7 @@ Here's how to create Alias commands to simplify tasks on the command line.  The 
 
 ![screenshot of a terminal running Linux with the Bash shell.  The user has entered the command "ipext" and the external IP address has been returned](/images/AliasIP.png "Using an Alias to return the external IP address")
 
-## Definitions - Internal & External IP Address
+## Definitions - "Internal" & "External" IP Addresses
 
 Your computer has an IP address on the LAN it is connected to. This blog post will refer to that address as the _internal IP address_, typical examples being... `192.168.1.12/24` at home or `10.23.8.7/20` on a corporate network.
 
@@ -69,7 +69,7 @@ curl icanhazip.com
 
 ### Creating Aliases For The Bash Commands
 
-When creating an Alias for the above commands certain characters, such as `"` and `$` must be be escaped for the command string to be parsed successfully. This can be achieved by inserting a `\` character before them. So the Alias commands are:
+When creating an Alias for the above commands certain characters, such as embedded `"` and `$` must be be escaped for the `Alias` command string to be parsed successfully. This can be achieved by inserting a `\` character before, to escape them. So the Alias commands are:
 
 ```zsh
 #this version returns the address + CIDR/subnet suffix e.g. xxx.xxx.xxx.xxx/xx
@@ -112,17 +112,18 @@ That's it, done.  Use the newly created aliases `ipint` and `ipext` to return IP
 > 1. Done! You can now use the newly created aliases `ipint` and `ipext` to return IP addresses in a PowerShell terminal session.
 
 ```powershell
-function Get_IP_Internal { 
-    $myip = Get-NetIPAddress -AddressFamily IPv4 -PrefixOrigin Dhcp
-    Write-Host "$($myip.IPAddress)/$($myip.PrefixLength)"
+function Get-IPInternal { 
+    $IPAddr = Get-NetIPAddress -AddressFamily IPv4 -PrefixOrigin Dhcp
+    Write-Output "$($IPAddr.IPAddress)/$($IPAddr.PrefixLength)"
 }
-Set-Alias -Name ipint -Value Get_IP_Internal
+Set-Alias -Name ipint -Value Get-IPInternal
 
 
-function Get_IP_External {
-    curl.exe icanhazip.com
+function Get-IPExternal {
+    $Response = Invoke-WebRequest -URI icanhazip.com
+    $Response.content
 }
-Set-Alias -Name ipext -Value Get_IP_External
+Set-Alias -Name ipext -Value Get-IPExternal
 ```
 
 ### How To Retrieve IP Addresses Using PowerShell
@@ -154,11 +155,11 @@ Get-NetIPAddress -AddressFamily IPv4 -PrefixOrigin Dhcp | Format-Wide -Property 
 This is the version I settled on.  It provides the IPv4 address, along with the CIDR suffix.  Also, the output exactly matches the Linux version above.
 
 ```powershell
-function Get_IP_Internal { 
-    $myip = Get-NetIPAddress -AddressFamily IPv4 -PrefixOrigin Dhcp
-    Write-Host "$($myip.IPAddress)/$($myip.PrefixLength)"
+function Get-IPInternal { 
+    $IPAddr = Get-NetIPAddress -AddressFamily IPv4 -PrefixOrigin Dhcp
+    Write-Output "$($IPAddr.IPAddress)/$($IPAddr.PrefixLength)"
 }
-Set-Alias -Name ipint -Value Get_IP_Internal
+Set-Alias -Name ipint -Value Get-IPInternal
 ```
 
 
@@ -167,10 +168,11 @@ Set-Alias -Name ipint -Value Get_IP_Internal
 As with Linux, in order to find the external IP address, a service beyond the LAN needs to be called, such as a server on the internet. Many services exist, this example uses `icanhazip.com`.  This can be changed to your own preferred service.
 
 ```powershell
-function Get_IP_External {
-    curl.exe icanhazip.com
+function Get-IPExternal {
+    $Response = Invoke-WebRequest -URI icanhazip.com
+    $Response.content
 }
-Set-Alias -Name ipext -Value Get_IP_External
+Set-Alias -Name ipext -Value Get-IPExternal
 ```
 
 ### Adding Aliases To The $PROFILE File
