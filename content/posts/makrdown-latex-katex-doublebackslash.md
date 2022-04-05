@@ -5,7 +5,7 @@ date: 2021-09-16T08:00:00+01:00
 draft: false
 toc: false
 featuredImage: ''
-tags: [Latex, KaTeX, Markdown]
+tags: [KaTeX, LaTeX, Markdown]
 categories: [Documentation]
 series: [Markdown]
 ---
