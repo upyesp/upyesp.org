@@ -6,14 +6,14 @@
     <description>Recent content in Posts on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Apr 2022 10:08:01 +0000</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Apr 2022 17:13:00 +0100</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Install Manim On Windows 10 &amp; Windows 11</title>
-      <link>/posts/manim-install/</link>
-      <pubDate>Tue, 05 Apr 2022 10:08:01 +0000</pubDate>
+      <title>Bash, Productivity Shortcuts</title>
+      <link>/posts/bash-shortcuts/</link>
+      <pubDate>Wed, 06 Apr 2022 17:13:00 +0100</pubDate>
       
-      <guid>/posts/manim-install/</guid>
-      <description>&lt;p&gt;Manim is a Python based tool that creates animations of math and technical concepts.&lt;/p&gt;</description>
+      <guid>/posts/bash-shortcuts/</guid>
+      <description>&lt;p&gt;Working in a command line environment, like a Bash session, can be far more productive that using a graphical user interface.  Here&amp;rsquo;s a collection of keyboard shortcuts.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -86,6 +86,15 @@
       
       <guid>/posts/makrdown-latex-katex-doublebackslash/</guid>
       <description>&lt;p&gt;The double backslash, &amp;lsquo;\\&amp;rsquo;, when specified in math formula in LaTeX and KaTeX might not render correctly. Here&amp;rsquo;s how to avoid that.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Install Manim On Windows 10 &amp; Windows 11</title>
+      <link>/posts/manim-install/</link>
+      <pubDate>Sun, 05 Sep 2021 10:08:01 +0000</pubDate>
+      
+      <guid>/posts/manim-install/</guid>
+      <description>&lt;p&gt;Manim is a Python based tool that creates animations of math and technical concepts.&lt;/p&gt;</description>
     </item>
     
     <item>

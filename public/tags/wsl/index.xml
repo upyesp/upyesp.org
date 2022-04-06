@@ -6,7 +6,16 @@
     <description>Recent content in WSL on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 01 Oct 2021 11:37:01 +0100</lastBuildDate><atom:link href="/tags/wsl/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Apr 2022 17:13:00 +0100</lastBuildDate><atom:link href="/tags/wsl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bash, Productivity Shortcuts</title>
+      <link>/posts/bash-shortcuts/</link>
+      <pubDate>Wed, 06 Apr 2022 17:13:00 +0100</pubDate>
+      
+      <guid>/posts/bash-shortcuts/</guid>
+      <description>&lt;p&gt;Working in a command line environment, like a Bash session, can be far more productive that using a graphical user interface.  Here&amp;rsquo;s a collection of keyboard shortcuts.&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Browsing A WSL Distro In Explorer</title>
       <link>/posts/wsl-distro-explorer/</link>

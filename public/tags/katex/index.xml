@@ -6,16 +6,7 @@
     <description>Recent content in KaTeX on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Apr 2022 10:08:01 +0000</lastBuildDate><atom:link href="/tags/katex/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Install Manim On Windows 10 &amp; Windows 11</title>
-      <link>/posts/manim-install/</link>
-      <pubDate>Tue, 05 Apr 2022 10:08:01 +0000</pubDate>
-      
-      <guid>/posts/manim-install/</guid>
-      <description>&lt;p&gt;Manim is a Python based tool that creates animations of math and technical concepts.&lt;/p&gt;</description>
-    </item>
-    
+    <lastBuildDate>Thu, 16 Sep 2021 08:00:00 +0100</lastBuildDate><atom:link href="/tags/katex/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LaTeX &amp; KaTeX Math Rendering: The Double Backslash \\ in Markdown</title>
       <link>/posts/makrdown-latex-katex-doublebackslash/</link>
@@ -23,6 +14,15 @@
       
       <guid>/posts/makrdown-latex-katex-doublebackslash/</guid>
       <description>&lt;p&gt;The double backslash, &amp;lsquo;\\&amp;rsquo;, when specified in math formula in LaTeX and KaTeX might not render correctly. Here&amp;rsquo;s how to avoid that.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Install Manim On Windows 10 &amp; Windows 11</title>
+      <link>/posts/manim-install/</link>
+      <pubDate>Sun, 05 Sep 2021 10:08:01 +0000</pubDate>
+      
+      <guid>/posts/manim-install/</guid>
+      <description>&lt;p&gt;Manim is a Python based tool that creates animations of math and technical concepts.&lt;/p&gt;</description>
     </item>
     
     <item>

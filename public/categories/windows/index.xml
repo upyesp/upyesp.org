@@ -6,16 +6,7 @@
     <description>Recent content in Windows on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 05 Apr 2022 10:08:01 +0000</lastBuildDate><atom:link href="/categories/windows/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Install Manim On Windows 10 &amp; Windows 11</title>
-      <link>/posts/manim-install/</link>
-      <pubDate>Tue, 05 Apr 2022 10:08:01 +0000</pubDate>
-      
-      <guid>/posts/manim-install/</guid>
-      <description>&lt;p&gt;Manim is a Python based tool that creates animations of math and technical concepts.&lt;/p&gt;</description>
-    </item>
-    
+    <lastBuildDate>Thu, 31 Mar 2022 11:37:01 +0000</lastBuildDate><atom:link href="/categories/windows/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Use An Alias To Quickly Find Your IP Address - Windows &amp; Linux</title>
       <link>/posts/alias-ipaddress/</link>
@@ -50,6 +41,15 @@
       
       <guid>/posts/mysql-windows-terminal/</guid>
       <description>&lt;p&gt;MySQL has it&amp;rsquo;s own terminal emulator, providing a command-line interface (CLI) for the direct input and execution of SQL commands and scripts.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Install Manim On Windows 10 &amp; Windows 11</title>
+      <link>/posts/manim-install/</link>
+      <pubDate>Sun, 05 Sep 2021 10:08:01 +0000</pubDate>
+      
+      <guid>/posts/manim-install/</guid>
+      <description>&lt;p&gt;Manim is a Python based tool that creates animations of math and technical concepts.&lt;/p&gt;</description>
     </item>
     
     <item>
