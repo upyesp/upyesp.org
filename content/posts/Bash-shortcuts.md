@@ -43,8 +43,8 @@ Working in a command line environment, like a Bash session, can be far more prod
 
 | Shortcut  | Function                                      |
 |-----------|-----------------------------------------------|
-| ```cd``` | go to *home* folder (same as ```cd ~```) |
-| ```cd -``` | go to previous working folder |
+| ```cd``` | go to *home* directory (same as ```cd ~```) |
+| ```cd -``` | go to previous working directory |
 | ```pushd /etc``` | push the current directory to the *directory stack*, then `cd` to `/etc` |
 | ```pushd /var``` | push the current directory to the *directory stack*, then `cd` to `/var` |
 | ```popd``` | remove the top directory from the *directory stack*, then `cd` to it |
