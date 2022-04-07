@@ -1,5 +1,5 @@
 ---
-title: "Bash, Productivity Shortcuts"
+title: "Bash: Productivity Shortcuts"
 description: A collection of keyboard shortcuts that improve productivity in Bash.
 date: 2022-04-06T17:13:00+01:00
 draft: false
