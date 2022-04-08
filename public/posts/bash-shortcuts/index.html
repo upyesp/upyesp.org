@@ -110,9 +110,9 @@
         "@type": "WebPage",
         "@id": "/posts/bash-shortcuts/"
     },
-    "headline": "Bash: Productivity Shortcuts | upyesp","datePublished": "2022-04-06T17:13:00+01:00",
-    "dateModified": "2022-04-06T17:13:00+01:00",
-    "wordCount":  261 ,
+    "headline": "Bash: Productivity Shortcuts | upyesp","datePublished": "2022-04-08T20:13:00+01:00",
+    "dateModified": "2022-04-08T20:13:00+01:00",
+    "wordCount":  308 ,
     "publisher": {
         "@type": "Person",
         "name": "upyesp",
@@ -144,10 +144,10 @@
 
 
 
-<meta property="article:published_time" content="2022-04-06T17:13:00&#43;01:00" />
+<meta property="article:published_time" content="2022-04-08T20:13:00&#43;01:00" />
 
 
-<meta property="article:modified_time" content="2022-04-06T17:13:00&#43;01:00" />
+<meta property="article:modified_time" content="2022-04-08T20:13:00&#43;01:00" />
 
 
 
@@ -249,7 +249,7 @@
         <div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
     <div class="mr-6 my-2">
         <i class="fas fa-calendar mr-1"></i>
-        <span>Wednesday, April 6, 2022</span>
+        <span>Friday, April 8, 2022</span>
     </div>
     <div class="mr-6 my-2">
         <i class="fas fa-clock mr-1"></i>
@@ -351,7 +351,7 @@
 </tr>
 <tr>
 <td><kbd>Ctrl</kbd> + <kbd>r</kbd></td>
-<td>begin <em>search history mode</em>, type a few characters, repeat press <kbd>Ctrl</kbd> + <kbd>r</kbd> for next match</td>
+<td>begin <em>search history mode</em>, type a few characters, <br /> repeat press <kbd>Ctrl</kbd> + <kbd>r</kbd> for next match</td>
 </tr>
 <tr>
 <td><kbd>Ctrl</kbd> + <kbd>g</kbd></td>
@@ -359,7 +359,12 @@
 </tr>
 </tbody>
 </table>
-<h2 id="navigating-directories">Navigating Directories</h2>
+<h3 id="managing-command-line-history">Managing Command Line History</h3>
+<p>Prevent a command from being written to history&hellip; precede the command with a space, like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span> cat ~/.bashrc
+</span></span></code></pre></div><p>Reliably delete all history, clear the <em>history buffer</em> and prevent history from being re-written on exit:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>cat /dev/null &gt; ~/.bash_history <span style="color:#719e07">&amp;&amp;</span> <span style="color:#b58900">history</span> -c <span style="color:#719e07">&amp;&amp;</span> <span style="color:#b58900">exit</span>
+</span></span></code></pre></div><h2 id="navigating-directories">Navigating Directories</h2>
 <table>
 <thead>
 <tr>
@@ -377,12 +382,8 @@
 <td>go to previous working directory</td>
 </tr>
 <tr>
-<td><code>pushd /etc</code></td>
-<td>push the current directory to the <em>directory stack</em>, then <code>cd</code> to the <code>/etc</code> directory</td>
-</tr>
-<tr>
-<td><code>pushd /var</code></td>
-<td>push the current directory to the <em>directory stack</em>, then <code>cd</code> to the <code>/var</code> directory</td>
+<td><code>pushd /foo</code> <br /> <br /> <code>pushd /bar</code></td>
+<td>push the current directory to the <em>directory stack</em>, <br /> then <code>cd</code> to the <code>/foo</code> directory <br /> push the current directory to the <em>directory stack</em>, <br /> then <code>cd</code> to the <code>/bar</code> directory</td>
 </tr>
 <tr>
 <td><code>popd</code></td>
@@ -436,7 +437,11 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#moving-around-the-command-line">Moving Around The Command Line</a></li>
-    <li><a href="#using-command-line-history">Using Command Line History</a></li>
+    <li><a href="#using-command-line-history">Using Command Line History</a>
+      <ul>
+        <li><a href="#managing-command-line-history">Managing Command Line History</a></li>
+      </ul>
+    </li>
     <li><a href="#navigating-directories">Navigating Directories</a></li>
   </ul>
 </nav>

@@ -1,7 +1,7 @@
 ---
 title: "Bash: Productivity Shortcuts"
 description: A collection of keyboard shortcuts that improve productivity in Bash.
-date: 2022-04-06T17:13:00+01:00
+date: 2022-04-08T20:13:00+01:00
 draft: false
 toc: true
 featuredImage: ''
@@ -36,8 +36,22 @@ Working in a command line environment, like a Bash session, can be far more prod
 | ```history``` | view command history, with line numbers |
 | ```!n``` | retrieve the command at line number *n* |
 | ```sudo !!``` | re-execute the last command, but with *sudo* |
-|<kbd>Ctrl</kbd> + <kbd>r</kbd> | begin *search history mode*, type a few characters, repeat press <kbd>Ctrl</kbd> + <kbd>r</kbd> for next match |
+|<kbd>Ctrl</kbd> + <kbd>r</kbd> | begin *search history mode*, type a few characters, <br /> repeat press <kbd>Ctrl</kbd> + <kbd>r</kbd> for next match |
 |<kbd>Ctrl</kbd> + <kbd>g</kbd> | escape *search history mode* |
+
+### Managing Command Line History
+
+Prevent a command from being written to history... precede the command with a space, like this:
+
+```zsh
+ cat ~/.bashrc
+```
+
+Reliably delete all history, clear the *history buffer* and prevent history from being re-written on exit:
+
+```zsh
+cat /dev/null > ~/.bash_history && history -c && exit
+```
 
 ## Navigating Directories
 
@@ -45,6 +59,5 @@ Working in a command line environment, like a Bash session, can be far more prod
 |-----------|-----------------------------------------------|
 | ```cd``` | go to *home* directory (same as ```cd ~```) |
 | ```cd -``` | go to previous working directory |
-| ```pushd /etc``` | push the current directory to the *directory stack*, then `cd` to the `/etc` directory|
-| ```pushd /var``` | push the current directory to the *directory stack*, then `cd` to the `/var` directory |
+| ```pushd /foo``` <br /> <br /> ```pushd /bar``` | push the current directory to the *directory stack*, <br /> then `cd` to the `/foo` directory <br /> push the current directory to the *directory stack*, <br /> then `cd` to the `/bar` directory |
 | ```popd``` | remove the top directory from the *directory stack*, then `cd` to it |
