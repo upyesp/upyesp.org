@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang='en' class="dark" ><meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+
+
+<title>Raspberry Pi Pretty Shell, Using &#34;Oh My Posh&#34;, &#34;Neofetch&#34; &amp; &#34;LSD&#34; | upyesp</title>
+
+<meta name="generator" content="Hugo Eureka 0.8.2" />
+<link rel="stylesheet" href="/css/eureka.min.css">
+<script defer src="/js/eureka.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+  href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Noto+Serif+SC:wght@400;600;700&display=swap"
+  as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/styles/monokai.min.css"
+   media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/highlight.min.js"
+   crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/bash.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/dos.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/java.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/javascript.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/latex.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/powershell.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/python.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/rust.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/sql.min.js"
+     crossorigin></script>
+
+  <script defer src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.1.0/build/languages/typescript.min.js"
+     crossorigin></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14.0/js/all.min.js"
+   integrity="sha256-uNYoXefWRqv&#43;PsIF/OflNmwtKM4lStn9yrz2gVl6ymo="  crossorigin></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
+   integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3&#43;Aro6EYUG4&#43;cU&#43;KJWu/X"  media="print"
+  onload="this.media='all';this.onload=null" crossorigin>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js" 
+  integrity="sha384-g7c&#43;Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI&#43;sEnkvrMWph2EDg4"  crossorigin></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js"
+   integrity="sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC&#43;Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa"  crossorigin></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [
+        { left: "$$", right: "$$", display: true },
+        { left: "$", right: "$", display: false },
+        { left: "\\(", right: "\\)", display: false },
+        { left: "\\[", right: "\\]", display: true }
+      ],
+    });
+  });
+</script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js" 
+  integrity="sha256-Zmpaaj&#43;GXFsPF5WdPArSrnW3b30dovldeKsW00xBVwE="  crossorigin></script>
+
+
+
+<meta name="description"
+  content="Give your Raspberry Pi&#39;s command-line a boost by adding Oh My Posh and and a few other neat utilities.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1 ,
+      "name":"Posts",
+      "item":"/posts/"},{
+      "@type": "ListItem",
+      "position": 2 ,
+      "name":"Raspberry Pi Pretty Shell, Using \"Oh My Posh\", \"Neofetch\" \u0026 \"LSD\"",
+      "item":"/posts/pi-prompt/"}]
+}
+</script>
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/posts/pi-prompt/"
+    },
+    "headline": "Raspberry Pi Pretty Shell, Using \u0022Oh My Posh\u0022, \u0022Neofetch\u0022 \u0026 \u0022LSD\u0022 | upyesp","datePublished": "2022-04-15T15:00:00+01:00",
+    "dateModified": "2022-04-15T15:00:00+01:00",
+    "wordCount":  795 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "upyesp",
+        },
+    "description": "Give your Raspberry Pi\u0027s command-line a boost by adding Oh My Posh and and a few other neat utilities."
+}
+</script><meta property="og:title" content="Raspberry Pi Pretty Shell, Using &#34;Oh My Posh&#34;, &#34;Neofetch&#34; &amp; &#34;LSD&#34; | upyesp" />
+<meta property="og:type" content="article" />
+
+
+
+<meta property="og:url" content="/posts/pi-prompt/" />
+
+
+
+<meta property="og:description" content="Give your Raspberry Pi&#39;s command-line a boost by adding Oh My Posh and and a few other neat utilities." />
+
+
+
+<meta property="og:locale" content="en" />
+
+
+
+
+<meta property="og:site_name" content="upyesp" />
+
+
+
+
+
+
+<meta property="article:published_time" content="2022-04-15T15:00:00&#43;01:00" />
+
+
+<meta property="article:modified_time" content="2022-04-15T15:00:00&#43;01:00" />
+
+
+
+<meta property="article:section" content="posts" />
+
+
+<meta property="article:tag" content="RaspberryPi" />
+
+<meta property="article:tag" content="Terminal" />
+
+<meta property="article:tag" content="Bash" />
+
+<meta property="article:tag" content="WSL" />
+
+
+
+
+
+<meta property="og:see_also" content="/posts/bash-shortcuts/" />
+
+<meta property="og:see_also" content="/posts/alias-ipaddress/" />
+
+<meta property="og:see_also" content="/posts/wsl-distro-explorer/" />
+
+<meta property="og:see_also" content="/posts/wsl-launching-windows-apps/" />
+
+
+
+<body class="flex flex-col min-h-screen">
+  <header class="fixed flex items-center w-full min-h-16 pl-scrollbar z-50 bg-secondary-bg shadow-sm">
+    <div class="w-full max-w-screen-xl mx-auto"><script>
+    let storageColorScheme = localStorage.getItem("lightDarkMode")
+    if ((storageColorScheme == 'Auto' && window.matchMedia("(prefers-color-scheme: light)").matches) || storageColorScheme == "Light") {
+        document.getElementsByTagName('html')[0].classList.remove('dark')
+    }
+</script>
+<nav class="flex items-center justify-between flex-wrap px-4 py-4 md:py-0">
+    <a href="/" class="mr-6 text-primary-text text-xl font-bold">upyesp</a>
+    <button id="navbar-btn" class="md:hidden flex items-center px-3 py-2" aria-label="Open Navbar">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div id="target"
+        class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
+        <div class="md:flex md:h-16 text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0">
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  mr-4">Posts</a>
+            <a href="/categories/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">Categories</a>
+            <a href="/series/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">Series</a>
+            <a href="/authors/upyesp" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">About</a>
+        </div>
+
+        <div class="flex">
+            <div class="relative pt-4 md:pt-0">
+                <div class="cursor-pointer hover:text-eureka" id="lightDarkMode">
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-30" id="is-open">
+                </div>
+                <div class="absolute flex flex-col left-0 md:left-auto right-auto md:right-0 hidden bg-secondary-bg w-48 rounded py-2 border border-tertiary-bg cursor-pointer z-40"
+                    id='lightDarkOptions'>
+                    <span class="px-4 py-1 hover:text-eureka" name="Light">Light</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Dark">Dark</span>
+                    <span class="px-4 py-1 hover:text-eureka" name="Auto">Auto</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed hidden inset-0 opacity-0 h-full w-full cursor-default z-0" id="is-open-mobile">
+    </div>
+
+</nav>
+<script>
+    
+    let element = document.getElementById('lightDarkMode')
+    if (storageColorScheme == 'Auto') {
+        element.firstElementChild.classList.remove('fa-moon')
+        element.firstElementChild.setAttribute("data-icon", 'adjust')
+        element.firstElementChild.classList.add('fa-adjust')
+        document.addEventListener('DOMContentLoaded', () => {
+            window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', switchDarkMode)
+        })
+    } else if (storageColorScheme == "Light") {
+        element.firstElementChild.classList.remove('fa-moon')
+        element.firstElementChild.setAttribute("data-icon", 'sun')
+        element.firstElementChild.classList.add('fa-sun')
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        getcolorscheme();
+        switchBurger();
+    });
+</script>
+</div>
+  </header>
+  <main class="flex-grow pt-16">
+    <div class="pl-scrollbar">
+      <div class="w-full max-w-screen-xl lg:px-4 xl:px-8 mx-auto">
+
+
+<div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
+    <div
+        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
+        <h1 class="font-bold text-3xl text-primary-text">Raspberry Pi Pretty Shell, Using &#34;Oh My Posh&#34;, &#34;Neofetch&#34; &amp; &#34;LSD&#34;</h1>
+        <div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
+    <div class="mr-6 my-2">
+        <i class="fas fa-calendar mr-1"></i>
+        <span>Friday, April 15, 2022</span>
+    </div>
+    <div class="mr-6 my-2">
+        <i class="fas fa-clock mr-1"></i>
+        <span>4 min read</span>
+    </div>
+    
+    
+    <div class="mr-6 my-2">
+        <i class="fas fa-folder mr-1"></i>
+        
+        <a href="/categories/linux/" class="hover:text-eureka">Linux</a>
+        
+    </div>
+    
+
+    
+</div>
+        
+        
+        
+
+        <div class="content">
+            <p>Give your Raspberry Pi&rsquo;s command-line a boost by adding <a href="https://ohmyposh.dev/">Oh My Posh</a> and add a few other neat utilities.  Before starting, make sure your Pi is running a 64bit operating system, such as <a href="https://www.raspberrypi.com/software/">Raspberry Pi OS</a>.</p>
+<p><img src="/images/pipromptpretty.png" alt="Screenshot of a terminal running on a Raspberry Pi. The content is enhanced from that of a standard Raspberry Pi terminal, with added information and colour." title="Oh My Posh on a Raspberry Pi"></p>
+<h2 id="first-set-your-terminal-emulator-to-use-a-suitable-font">First, Set Your Terminal Emulator To Use A Suitable Font</h2>
+<p>For these enhancements to display correctly you&rsquo;ll need to install a font that includes graphical characters, known as &ldquo;glyphs&rdquo;. An excellent source of such fonts is <a href="https://www.nerdfonts.com/">https://www.nerdfonts.com/</a>.  Have a browse of the fonts available and decide which you want to use, hold off installing one just now.</p>
+<h3 id="where-to-install-the-font">Where To Install The Font</h3>
+<p>When using the Pi&rsquo;s command-line, you&rsquo;re working in a terminal emulator.  It is the terminal emulator that will need to use the new font.</p>
+<h4 id="using-ssh-to-connect-to-a-headless-raspberry-pi">Using SSH To Connect To A Headless Raspberry Pi?</h4>
+<p>If you&rsquo;re connecting to your Pi via <code>SSH</code>, then the terminal emulator is running on the device you are connecting from, such as a desktop or laptop.</p>
+<p>So if you&rsquo;re using <code>SSH</code>, this is where you&rsquo;ll need to install the font, not on the Pi itself.  You won&rsquo;t need to install a new font on the Pi.  Just install it on your desktop/laptop.  If you already have a suitable font installed (maybe you&rsquo;re already using <em>Oh My Posh</em> on that device), jump to <a href="#pisetup">Setting Up The Pi</a>.</p>
+<p>The device you are connecting from could be running Windows, MacOS or Linux, refer to instructions for that OS.</p>
+<ol>
+<li>Download your preferred font from <a href="https://www.nerdfonts.com/">https://www.nerdfonts.com/</a>.</li>
+<li>Install the font on the desktop/laptop your are connecting from.
+<blockquote>
+<p>Tip: When installing the font, follow the method to install the font <em>system-wide / for all users</em>, not just a single user.</p>
+</blockquote>
+</li>
+<li>Change the settings in your terminal emulator to use the font you just installed.</li>
+</ol>
+<h4 id="standalone-raspberry-pi-with-keyboardmousemonitor-attached">Standalone Raspberry Pi (With Keyboard/Mouse/Monitor Attached)</h4>
+<p>If you are working with your Pi directly, install the new font on the Pi.  In the future, if you also <code>SSH</code> to the Pi from another device, also install the new font on that device, as per above.</p>
+<p>Example, installing the font called &ldquo;Hack&rdquo;, using the Pi&rsquo;s command-line:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>cd
+</span></span><span style="display:flex;"><span>wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Hack.zip
+</span></span><span style="display:flex;"><span>mkdir -p .local/share/fonts
+</span></span><span style="display:flex;"><span>unzip Hack.zip -d .local/share/fonts
+</span></span><span style="display:flex;"><span>cd .local/share/fonts
+</span></span><span style="display:flex;"><span>rm *Windows*
+</span></span><span style="display:flex;"><span>fc-cache -fv
+</span></span></code></pre></div><ol>
+<li>From the Raspberry Pi, download your preferred font from <a href="https://www.nerdfonts.com/">https://www.nerdfonts.com/</a>.</li>
+<li>Install the font on the Pi.
+<blockquote>
+<p>Tip: When installing the font, install the font system-wide, for all users (not just a single user).</p>
+</blockquote>
+</li>
+<li>Change the settings in the terminal emulator to use the font you just installed.</li>
+</ol>
+<h2 id="pisetup">Setting Up The Pi </h2>
+<p>Log in to your Raspberry Pi to install the software below.</p>
+<h3 id="oh-my-posh">Oh My Posh</h3>
+<blockquote>
+<p>For the latest documentation, refer to the Oh My Posh <a href="https://ohmyposh.dev/docs/linux">website</a>. Remember to change name of the binary being downloaded to that for ARM 64.</p>
+</blockquote>
+<p>Example, download <em>Oh My Posh</em>, choosing the binary for ARM based linux devices:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>sudo wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-arm64 -O /usr/local/bin/oh-my-posh
+</span></span><span style="display:flex;"><span>sudo chmod +x /usr/local/bin/oh-my-posh
+</span></span></code></pre></div><p>Download the latest collection of prompt themes:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>mkdir ~/.poshthemes
+</span></span><span style="display:flex;"><span>wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/themes.zip -O ~/.poshthemes/themes.zip
+</span></span><span style="display:flex;"><span>unzip ~/.poshthemes/themes.zip -d ~/.poshthemes
+</span></span><span style="display:flex;"><span>chmod u+rw ~/.poshthemes/*.json
+</span></span><span style="display:flex;"><span>rm ~/.poshthemes/themes.zip
+</span></span></code></pre></div><blockquote>
+<p>Tip: If you have previously made your own custom theme, copy it to your Pi using <code>scp</code>. Here&rsquo;s an example command, run from a Windows machine: <code>scp 'C:\Users\fred\Desktop\Oh My Posh custom theme\upyesp.omp.json' fred@192.168.10.174:~/.poshthemes/</code> (you&rsquo;ll need to change the Windows folder to yours, along with the Pi&rsquo;s user name and IP address).</p>
+</blockquote>
+<p>Change the Pi&rsquo;s <code>.bashrc</code> to invoke Oh My Posh and select the theme you want to use:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>sudo nano ~/.bashrc
+</span></span></code></pre></div><p>Add this line to the end of <code>.bashrc</code> (change the theme to the one you want to use):</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>eval &#34;$(oh-my-posh init bash --config ~/.poshthemes/powerlevel10k_modern.omp.json)&#34;
+</span></span></code></pre></div><p>Exit <code>nano</code> by pressing <kbd>Ctrl</kbd> + <kbd>x</kbd> and press <kbd>y</kbd> to save changes.</p>
+<p>Restart <code>Bash</code> to see the new prompt, with <code>exec bash</code>.</p>
+<h3 id="lsd-lsdeluxe">LSD (LSDeluxe)</h3>
+<blockquote>
+<p>For the latest documentation, refer to the LSD <a href="https://github.com/Peltoche/lsd">project repository</a>. Remember to change name of the binary being downloaded to that for ARM 64.</p>
+</blockquote>
+<p>Example, download and install <em>LSD (LSDeluxe)</em>, choosing the binary for ARM based linux devices:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>wget https://github.com/Peltoche/lsd/releases/latest/download/lsd_0.21.0_arm64.deb
+</span></span><span style="display:flex;"><span>sudo dpkg -i lsd_0.21.0_arm64.deb
+</span></span><span style="display:flex;"><span>rm lsd_0.21.0_arm64.deb
+</span></span></code></pre></div><p>Change the Pi&rsquo;s <code>.bashrc</code>, set an Alias to use LSD in place of <code>ls</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>sudo nano ~/.bashrc
+</span></span></code></pre></div><p>Add this line to the end of <code>.bashrc</code> to set up the Alias:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>alias ls=&#39;lsd&#39;
+</span></span></code></pre></div><p>Exit <code>nano</code> by pressing <kbd>Ctrl</kbd> + <kbd>x</kbd> and press <kbd>y</kbd> to save changes.</p>
+<p>Restart <code>Bash</code>, with <code>exec bash</code>. Then use <code>ls</code> as normal, for example <code>ls -al</code>.</p>
+<h3 id="neofetch-command-line-system-information">Neofetch, Command-line System Information</h3>
+<blockquote>
+<p>For the latest documentation, refer to Neofetch <a href="https://github.com/dylanaraps/neofetch">project repository</a>.  Neofetch is highly configurable, for more information visit the <a href="https://github.com/dylanaraps/neofetch/wiki/Customizing-Info">wiki</a>.</p>
+</blockquote>
+<p>To install Neofetch:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>sudo apt update
+</span></span><span style="display:flex;"><span>sudo apt install neofetch
+</span></span></code></pre></div><p>Change the Pi&rsquo;s <code>.bashrc</code>, add a line to call Neofetch:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>sudo nano ~/.bashrc
+</span></span></code></pre></div><p>Add this line to the end of <code>.bashrc</code> to call Neofetch:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>neofetch
+</span></span></code></pre></div><p>Exit <code>nano</code> by pressing <kbd>Ctrl</kbd> + <kbd>x</kbd> and press <kbd>y</kbd> to save changes.</p>
+<p>Restart <code>Bash</code>, with <code>exec bash</code>.</p>
+        </div>
+        
+        <div class="my-4">
+    
+    <a href="/tags/raspberrypi/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#RaspberryPi</a>
+    
+    <a href="/tags/terminal/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#Terminal</a>
+    
+    <a href="/tags/bash/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#Bash</a>
+    
+    <a href="/tags/wsl/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#WSL</a>
+    
+</div>
+        
+        
+        
+
+
+        
+        
+        
+        
+<div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
+    <div>
+        
+    </div>
+    <div class="md:text-right mt-4 md:mt-0">
+        
+        <span class="block font-bold">Next</span>
+        <a href="/posts/bash-shortcuts/" class="block">Bash: Productivity Shortcuts</a>
+        
+    </div>
+</div>
+
+        
+
+
+
+    </div>
+    
+    <div class="col-span-2">
+        
+        
+        <div class="sticky top-16 z-10 hidden lg:block px-6 py-4  bg-primary-bg ">
+    <span class="text-lg font-semibold">On This Page</span>
+</div>
+<div class="sticky-toc hidden lg:block px-6 pb-6 ">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#first-set-your-terminal-emulator-to-use-a-suitable-font">First, Set Your Terminal Emulator To Use A Suitable Font</a>
+      <ul>
+        <li><a href="#where-to-install-the-font">Where To Install The Font</a>
+          <ul>
+            <li><a href="#using-ssh-to-connect-to-a-headless-raspberry-pi">Using SSH To Connect To A Headless Raspberry Pi?</a></li>
+            <li><a href="#standalone-raspberry-pi-with-keyboardmousemonitor-attached">Standalone Raspberry Pi (With Keyboard/Mouse/Monitor Attached)</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#pisetup">Setting Up The Pi </a>
+      <ul>
+        <li><a href="#oh-my-posh">Oh My Posh</a></li>
+        <li><a href="#lsd-lsdeluxe">LSD (LSDeluxe)</a></li>
+        <li><a href="#neofetch-command-line-system-information">Neofetch, Command-line System Information</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        enableStickyToc();
+    });
+</script>
+        
+    </div>
+    
+
+    
+    
+    <div
+        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded p-6">
+        <h2 class="text-lg font-semibold mb-4">See Also</h2>
+        <div class="content">
+            
+            <a href="/posts/bash-shortcuts/">Bash: Productivity Shortcuts</a>
+            <br />
+            
+            <a href="/posts/alias-ipaddress/">Use An Alias To Quickly Find Your IP Address - Windows &amp; Linux</a>
+            <br />
+            
+            <a href="/posts/wsl-distro-explorer/">Browsing A WSL Distro In Explorer</a>
+            <br />
+            
+            <a href="/posts/wsl-launching-windows-apps/">Launching Windows Apps From Within WSL</a>
+            <br />
+            
+        </div>
+    </div>
+    
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+        hljs.initHighlightingOnLoad();
+    })
+</script>
+
+      </div>
+    </div>
+    
+  </main>
+  <footer class="pl-scrollbar">
+    <div class="w-full max-w-screen-xl mx-auto"><div class="text-center p-6 pin-b">
+    <p class="text-sm text-tertiary-text"> Powered by the <a href="https://github.com/wangchucheng/hugo-eureka" class="hover:text-eureka">Eureka</a> theme for <a href="https://gohugo.io" class="hover:text-eureka">Hugo</a></p>
+</div></div>
+  </footer>
+</body>
+
+</html>

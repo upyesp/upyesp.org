@@ -99,8 +99,6 @@ Then restart Bash with `exec bash`.
 
 That's it, done.  Use the newly created aliases `ipint` and `ipext` to return IP addresses.
 
-
-
 ## Windows: Creating Aliases In PowerShell To Return The Internal & External IP Address  {#windows}
 
 > TL;DR
