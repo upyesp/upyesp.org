@@ -1,7 +1,7 @@
 ---
-title: "Raspberry Pi Pretty Shell, Using \"Oh My Posh\", \"Neofetch\" & \"LSD\""
+title: "Raspberry Pi Pretty Shell, With... Oh My Posh, Neofetch & LSD"
 description: Give your Raspberry Pi's command-line a boost by adding Oh My Posh and and a few other neat utilities.
-date: 2022-04-15T15:00:00+01:00
+date: 2022-04-16T15:00:00+01:00
 draft: false
 toc: true
 featuredImage: ''
@@ -15,7 +15,7 @@ Give your Raspberry Pi's command-line a boost by adding [Oh My Posh](https://ohm
 
 ![Screenshot of a terminal running on a Raspberry Pi. The content is enhanced from that of a standard Raspberry Pi terminal, with added information and colour.](/images/pipromptpretty.png "Oh My Posh on a Raspberry Pi")
 
-## First, Set Your Terminal Emulator To Use A Suitable Font 
+## First, Set The Terminal Emulator To Use A Suitable Font 
 
 For these enhancements to display correctly you'll need to install a font that includes graphical characters, known as "glyphs". An excellent source of such fonts is https://www.nerdfonts.com/.  Have a browse of the fonts available and decide which you want to use, hold off installing one just now.
 
@@ -30,6 +30,8 @@ So if you're using `SSH`, this is where you'll need to install the font, not on 
 
 The device you are connecting from could be running Windows, MacOS or Linux, refer to instructions for that OS. 
 
+![Screenshot of Windows Terminal, showing the settings screen. The setting for Font is displayed and has been highlighted. It is set to font "Hack NF"](/images/windows-terminal-font.png "Windows Terminal Font Setting")
+
 1. Download your preferred font from https://www.nerdfonts.com/.
 1. Install the font on the desktop/laptop your are connecting from.
     > Tip: When installing the font, follow the method to install the font *system-wide / for all users*, not just a single user.
@@ -37,9 +39,9 @@ The device you are connecting from could be running Windows, MacOS or Linux, ref
 
 #### Standalone Raspberry Pi (With Keyboard/Mouse/Monitor Attached)
 
-If you are working with your Pi directly, install the new font on the Pi.  In the future, if you also `SSH` to the Pi from another device, also install the new font on that device, as per above.
+If you are working with your Pi directly, install the new font on the Pi.  In the future, if you also `SSH` to the Pi from another device,  install the new font on that device, as per above.
 
-Example, installing the font called "Hack", using the Pi's command-line:
+Example, installing the font called "Hack Nerd Font", using the Pi's command-line:
 
 ```text
 cd
@@ -51,10 +53,14 @@ rm *Windows*
 fc-cache -fv
 ```
 
+![Screenshot of LXTerminal, showing the settings screen. The setting for Font is displayed and has been highlighted. It is set to font "Hack Mono Regular"](/images/Raspberry-Pi-Desktop-LXTerminal-Font.png "Raspberry Pi LXTerminal Font Setting")
+
 1. From the Raspberry Pi, download your preferred font from https://www.nerdfonts.com/.
 1. Install the font on the Pi.
     > Tip: When installing the font, install the font system-wide, for all users (not just a single user).
-1. Change the settings in the terminal emulator to use the font you just installed.
+1. Change the settings in LXTerminal to use the font you just installed.
+
+
 
 ## Setting Up The Pi  {#pisetup}
 

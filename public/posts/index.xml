@@ -6,11 +6,11 @@
     <description>Recent content in Posts on upyesp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 15 Apr 2022 15:00:00 +0100</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 Apr 2022 15:00:00 +0100</lastBuildDate><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Raspberry Pi Pretty Shell, Using &#34;Oh My Posh&#34;, &#34;Neofetch&#34; &amp; &#34;LSD&#34;</title>
+      <title>Raspberry Pi Pretty Shell, With... Oh My Posh, Neofetch &amp; LSD</title>
       <link>/posts/pi-prompt/</link>
-      <pubDate>Fri, 15 Apr 2022 15:00:00 +0100</pubDate>
+      <pubDate>Sat, 16 Apr 2022 15:00:00 +0100</pubDate>
       
       <guid>/posts/pi-prompt/</guid>
       <description>&lt;p&gt;Give your Raspberry Pi&amp;rsquo;s command-line a boost by adding &lt;a href=&#34;https://ohmyposh.dev/&#34;&gt;Oh My Posh&lt;/a&gt; and add a few other neat utilities.  Before starting, make sure your Pi is running a 64bit operating system, such as &lt;a href=&#34;https://www.raspberrypi.com/software/&#34;&gt;Raspberry Pi OS&lt;/a&gt;.&lt;/p&gt;</description>
