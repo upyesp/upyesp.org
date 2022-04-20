@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width">
 
 
-<title>WSL | upyesp</title>
+<title>Working With Python Virtual Environments | upyesp</title>
 
 <meta name="generator" content="Hugo Eureka 0.8.2" />
 <link rel="stylesheet" href="/css/eureka.min.css">
@@ -83,7 +83,7 @@
 
 
 <meta name="description"
-  content="Some tech info and tips I find handy to know.">
+  content="How to work with Python virtual Environments.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -91,63 +91,44 @@
   "itemListElement": [{
       "@type": "ListItem",
       "position": 1 ,
-      "name":"Tags",
-      "item":"/tags/"},{
+      "name":"Posts",
+      "item":"/posts/"},{
       "@type": "ListItem",
       "position": 2 ,
-      "name":"WSL",
-      "item":"/tags/wsl/"}]
+      "name":"Working With Python Virtual Environments",
+      "item":"/posts/python-virtual_environments/"}]
 }
 </script>
 
 
 
-
 <script type="application/ld+json">
 {
-    "@context":"https://schema.org",
-    "@type":"ItemList",
-    "itemListElement":[{
-            "@type":"ListItem",
-            "position":  1 ,
-            "name": "Raspberry Pi Pretty Prompt, With... Oh My Posh, Neofetch \u0026 LSD",
-            "description": "Give your Raspberry Pi's command-line a boost by adding Oh My Posh and and a few other neat utilities.",
-            "url": "/posts/pi-prompt/"
-        },{
-            "@type":"ListItem",
-            "position":  2 ,
-            "name": "Bash: Productivity Shortcuts",
-            "description": "A collection of keyboard shortcuts that improve productivity in Bash.",
-            "url": "/posts/bash-shortcuts/"
-        },{
-            "@type":"ListItem",
-            "position":  3 ,
-            "name": "Browsing A WSL Distro In Explorer",
-            "description": "How to use Explorer to work with files contained in a WSL distro.",
-            "url": "/posts/wsl-distro-explorer/"
-        },{
-            "@type":"ListItem",
-            "position":  4 ,
-            "name": "Launching Windows Apps From Within WSL",
-            "description": "While using a Linux in Windows it is possible to run Windows applications.",
-            "url": "/posts/wsl-launching-windows-apps/"
-        }
-    ]
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "/posts/python-virtual_environments/"
+    },
+    "headline": "Working With Python Virtual Environments | upyesp","datePublished": "2022-04-20T12:01:01+00:00",
+    "dateModified": "2022-04-20T12:01:01+00:00",
+    "wordCount":  270 ,
+    "publisher": {
+        "@type": "Person",
+        "name": "upyesp",
+        },
+    "description": "How to work with Python virtual Environments."
 }
-</script><meta property="og:title" content="WSL | upyesp" />
-<meta property="og:type" content="website" />
+</script><meta property="og:title" content="Working With Python Virtual Environments | upyesp" />
+<meta property="og:type" content="article" />
 
 
 
-<meta property="og:url" content="/tags/wsl/" />
+<meta property="og:url" content="/posts/python-virtual_environments/" />
 
 
 
-
-
-<meta property="og:description" content="Some tech info and tips I find handy to know." />
-
-
+<meta property="og:description" content="How to work with Python virtual Environments." />
 
 
 
@@ -163,14 +144,21 @@
 
 
 
-<meta property="og:updated_time" content="2022-04-16T15:00:00&#43;01:00" />
+<meta property="article:published_time" content="2022-04-20T12:01:01&#43;00:00" />
+
+
+<meta property="article:modified_time" content="2022-04-20T12:01:01&#43;00:00" />
 
 
 
-<meta property="article:section" content="tags" />
+<meta property="article:section" content="posts" />
 
 
-<link rel="alternate" type="application/rss+xml" href="/tags/wsl/index.xml" title="upyesp" />
+<meta property="article:tag" content="Python" />
+
+
+
+
 
 <body class="flex flex-col min-h-screen">
   <header class="fixed flex items-center w-full min-h-16 pl-scrollbar z-50 bg-secondary-bg shadow-sm">
@@ -189,7 +177,7 @@
     <div id="target"
         class="hidden block md:flex md:flex-grow md:justify-between md:items-center w-full md:w-auto text-primary-text z-20">
         <div class="md:flex md:h-16 text-sm md:flex-grow pb-4 md:pb-0 border-b md:border-b-0">
-            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">Posts</a>
+            <a href="/posts/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  selected-menu-item  mr-4">Posts</a>
             <a href="/categories/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">Categories</a>
             <a href="/series/" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">Series</a>
             <a href="/authors/upyesp" class="block mt-4 md:inline-block md:mt-0 md:h-(16-4px) md:leading-(16-4px) box-border md:border-t-2 md:border-b-2  border-transparent  mr-4">About</a>
@@ -242,69 +230,16 @@
   <main class="flex-grow pt-16">
     <div class="pl-scrollbar">
       <div class="w-full max-w-screen-xl lg:px-4 xl:px-8 mx-auto">
-<article class="mx-6 my-8">
-    <h1 class="font-bold text-3xl text-primary-text">WSL</h1>
-    
-</article>
-<div class="bg-secondary-bg rounded px-6">
-    <div class="overflow-hidden divide-y">
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="mb-4">
-  <a href="/posts/pi-prompt/" class="font-bold text-xl hover:text-eureka">Raspberry Pi Pretty Prompt, With... Oh My Posh, Neofetch &amp; LSD</a>
-</div>
-<div class="content">
-  Give your Raspberry Pi’s command-line a boost by adding Oh My Posh and add a few other neat utilities. Before starting, make sure your Pi is running a 64bit operating system, such as Raspberry Pi OS.
 
-</div>
 
-<div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
+<div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
+    <div
+        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
+        <h1 class="font-bold text-3xl text-primary-text">Working With Python Virtual Environments</h1>
+        <div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
     <div class="mr-6 my-2">
         <i class="fas fa-calendar mr-1"></i>
-        <span>Saturday, April 16, 2022</span>
-    </div>
-    <div class="mr-6 my-2">
-        <i class="fas fa-clock mr-1"></i>
-        <span>4 min read</span>
-    </div>
-    
-    
-    <div class="mr-6 my-2">
-        <i class="fas fa-folder mr-1"></i>
-        
-        <a href="/categories/linux/" class="hover:text-eureka">Linux</a>
-        
-    </div>
-    
-
-    
-</div>
-
-  </div>
-
-  
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="mb-4">
-  <a href="/posts/bash-shortcuts/" class="font-bold text-xl hover:text-eureka">Bash: Productivity Shortcuts</a>
-</div>
-<div class="content">
-  Working in a command line environment, like a Bash session, can be far more productive that using a graphical user interface. Here’s a collection of shortcuts.
-
-</div>
-
-<div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
-    <div class="mr-6 my-2">
-        <i class="fas fa-calendar mr-1"></i>
-        <span>Friday, April 8, 2022</span>
+        <span>Wednesday, April 20, 2022</span>
     </div>
     <div class="mr-6 my-2">
         <i class="fas fa-clock mr-1"></i>
@@ -315,127 +250,125 @@
     <div class="mr-6 my-2">
         <i class="fas fa-folder mr-1"></i>
         
-        <a href="/categories/linux/" class="hover:text-eureka">Linux</a>
-        
-    </div>
-    
-
-    
-</div>
-
-  </div>
-
-  
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="mb-4">
-  <a href="/posts/wsl-distro-explorer/" class="font-bold text-xl hover:text-eureka">Browsing A WSL Distro In Explorer</a>
-</div>
-<div class="content">
-  If you have installed WSL and one or more linux distributions, it is possible to work with the contents of their file systems from within Windows Explorer.
-
-</div>
-
-<div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
-    <div class="mr-6 my-2">
-        <i class="fas fa-calendar mr-1"></i>
-        <span>Friday, October 1, 2021</span>
-    </div>
-    <div class="mr-6 my-2">
-        <i class="fas fa-clock mr-1"></i>
-        <span>1 min read</span>
-    </div>
-    
-    
-    <div class="mr-6 my-2">
-        <i class="fas fa-folder mr-1"></i>
-        
         <a href="/categories/windows/" class="hover:text-eureka">Windows</a>
         
         
         <span>, </span>
-        <a href="/categories/linux/" class="hover:text-eureka">Linux</a>
+        <a href="/categories/documentation/" class="hover:text-eureka">Documentation</a>
         
     </div>
     
 
     
-    <div class="mr-6 my-2">
-        <i class="fas fa-th-list mr-1"></i>
+</div>
         
-        <a href="/series/windows-subsystem-for-linux/" class="hover:text-eureka">Windows Subsystem for Linux</a>
+        
+        
+
+        <div class="content">
+            <p>Here&rsquo;s how to use virtual environments within Python projects to reduce the risk of version conflicts across Python projects.</p>
+<p>Python projects often require the installation of packages or modules that extend the functionality of the standard Python language.  They are typically installed using Python&rsquo;s <code>pip</code> package manager. Extensions have versions.  Conflicts can arise when multiple Python projects require different versions of the same package.  So rather than installing Python packages system-wide, affecting all Python projects on a PC system, each project can have it&rsquo;s own virtual environment in which packages can be installed.  This means that the the Python package is installed local to that project, rather than for the whole PC system.</p>
+<h2 id="python-virtual-environments">Python Virtual Environments</h2>
+<blockquote>
+<p>For detailed information, visit the official Python documentation, section <a href="https://docs.python.org/3/tutorial/venv.html">Virtual Environments and Packages</a>.</p>
+</blockquote>
+<ol>
+<li>Create a new directory, to contain your Python project, for example <code>HelloWorld</code>.</li>
+<li>Within <code>HelloWorld</code>, open a terminal, create a new Python virtual environment, called &ldquo;.venv&rdquo;
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>python -m venv .venv
+</span></span></code></pre></div></li>
+<li>Start <em>.venv</em>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>.venv\scripts\activate
+</span></span></code></pre></div></li>
+<li>Install the Python packages your project requires
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>pip install SciPy
+</span></span><span style="display:flex;"><span>pip install Pandas
+</span></span></code></pre></div></li>
+<li>Develop your Python project</li>
+</ol>
+<h3 id="stopping--restarting-the-python-virtual-environment">Stopping &amp; Restarting The Python Virtual Environment</h3>
+<p>To stop the <em>.venv</em> virtual environment</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>deactivate
+</span></span></code></pre></div><p>To restart <em>.venv</em>, navigate to the directory containing the Python project and from the command line, use&hellip;</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>.venv\scripts\activate
+</span></span></code></pre></div><h3 id="distributing-the-python-project-to-users">Distributing The Python Project To Users</h3>
+<p>To produce a file defining all the packages installed for the project, along with their version, use:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>pip freeze &gt; requirements.txt
+</span></span></code></pre></div><p>The <code>requirements.txt</code> file can then be committed to version control and shipped as part of the Python project. Users can then install all the necessary packages with:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>python -m pip install -r requirements.txt
+</span></span></code></pre></div>
+        </div>
+        
+        <div class="my-4">
+    
+    <a href="/tags/python/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#Python</a>
+    
+</div>
+        
+        
+        
+
+
+        
+        
+        
+        
+<div class="flex flex-col md:flex-row md:justify-between -mx-2 mt-4 px-2 pt-4 border-t">
+    <div>
+        
+        <span class="block font-bold">Previous</span>
+        <a href="/posts/manim-install/" class="block">Install Manim On Windows 10 &amp; Windows 11</a>
+        
+    </div>
+    <div class="md:text-right mt-4 md:mt-0">
+        
+        <span class="block font-bold">Next</span>
+        <a href="/posts/pi-prompt/" class="block">Raspberry Pi Pretty Prompt, With... Oh My Posh, Neofetch &amp; LSD</a>
+        
+    </div>
+</div>
+
+        
+
+
+
+    </div>
+    
+    <div class="col-span-2">
+        
+        
+        <div class="sticky top-16 z-10 hidden lg:block px-6 py-4  bg-primary-bg ">
+    <span class="text-lg font-semibold">On This Page</span>
+</div>
+<div class="sticky-toc hidden lg:block px-6 pb-6 ">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#python-virtual-environments">Python Virtual Environments</a>
+      <ul>
+        <li><a href="#stopping--restarting-the-python-virtual-environment">Stopping &amp; Restarting The Python Virtual Environment</a></li>
+        <li><a href="#distributing-the-python-project-to-users">Distributing The Python Project To Users</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        enableStickyToc();
+    });
+</script>
         
     </div>
     
-</div>
-
-  </div>
-
-  
-</div>
-  </div>
-  
-  <div class="py-6">
-    <div class="flex flex-col-reverse lg:flex-row justify-between">
-  
-  <div class="w-full ">
-    <div class="mb-4">
-  <a href="/posts/wsl-launching-windows-apps/" class="font-bold text-xl hover:text-eureka">Launching Windows Apps From Within WSL</a>
-</div>
-<div class="content">
-  The interoperability provided by WSL enables calling or running Windows applications directly from within the Linux command line.
-
-</div>
-
-<div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
-    <div class="mr-6 my-2">
-        <i class="fas fa-calendar mr-1"></i>
-        <span>Wednesday, July 21, 2021</span>
-    </div>
-    <div class="mr-6 my-2">
-        <i class="fas fa-clock mr-1"></i>
-        <span>1 min read</span>
-    </div>
-    
-    
-    <div class="mr-6 my-2">
-        <i class="fas fa-folder mr-1"></i>
-        
-        <a href="/categories/windows/" class="hover:text-eureka">Windows</a>
-        
-        
-        <span>, </span>
-        <a href="/categories/linux/" class="hover:text-eureka">Linux</a>
-        
-    </div>
-    
 
     
-    <div class="mr-6 my-2">
-        <i class="fas fa-th-list mr-1"></i>
-        
-        <a href="/series/windows-subsystem-for-linux/" class="hover:text-eureka">Windows Subsystem for Linux</a>
-        
-    </div>
     
 </div>
-
-  </div>
-
-  
-</div>
-  </div>
-  
-</div>
-
-
-</div>
-
+<script>
+    document.addEventListener('DOMContentLoaded', ()=>{
+        hljs.initHighlightingOnLoad();
+    })
+</script>
 
       </div>
     </div>

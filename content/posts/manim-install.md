@@ -1,7 +1,7 @@
 ---
 title: "Install Manim On Windows 10 & Windows 11"
-description: How to install the animation generation tool, Manim Community, on Windows.
-date: 2021-09-05T10:08:01+00:00
+description: How to install the animation generation tool, Manim Community Edition, on Windows.
+date: 2022-04-20T13:20:01+00:00
 draft: false
 toc: true
 featuredImage: ''
@@ -13,13 +13,13 @@ Manim is a Python based tool that creates animations of math and technical conce
 
 <!--more-->
 
-> This blog post covers how to install Manim Community on Windows 10 & 11. For a more detailed description of the installation method, inclduing for other OSs, Docker and web, visit the official [Manim Community installation pages](https://docs.manim.community/en/stable/installation.html).
+> This blog post covers how to install Manim Community Edition on Windows 10 & 11. For a more detailed description of the installation method, including for other OSs, Docker and web, visit the official [Manim Community Edition installation pages](https://docs.manim.community/en/stable/installation.html).
 
-## Getting Your System Ready For Manim
+## Getting Your System Ready For Manim Community Edition
 
 ### Python
 
-Manim requires Python.  If your Windows 11 device has [winget](https://docs.microsoft.com/en-us/windows/package-manager/winget/), install Python with:
+Manim requires Python.  If your Windows device has [winget](https://docs.microsoft.com/en-us/windows/package-manager/winget/), install Python with:
 
 ```powershell
 winget install Python.Python.3

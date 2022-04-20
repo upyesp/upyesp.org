@@ -9,7 +9,7 @@ tags: [Bash, WSL]
 categories: [Linux]
 ---
 
-Working in a command line environment, like a Bash session, can be far more productive that using a graphical user interface.  Here's a collection of keyboard shortcuts.
+Working in a command line environment, like a Bash session, can be far more productive that using a graphical user interface.  Here's a collection of shortcuts.
 
 <!--more-->
 
@@ -23,7 +23,7 @@ Working in a command line environment, like a Bash session, can be far more prod
 |<kbd>Ctrl</kbd> + <kbd>w</kbd> | cut backwards a word |
 |<kbd>Ctrl</kbd> + <kbd>u</kbd> | cut backwards from the cursor to start of line |
 |<kbd>Ctrl</kbd> + <kbd>k</kbd> | cut forwards from the cursor to end of line |
-|<kbd>Ctrl</kbd> + <kbd>y</kbd> | paste the contents of the *cut buffer* |
+|<kbd>Ctrl</kbd> + <kbd>y</kbd> | paste the contents of the *paste buffer* |
 |<kbd>Esc</kbd> + <kbd>.</kbd> | paste the the last typed argument |
 |<kbd>Ctrl</kbd> + <kbd>_</kbd> | undo |
 |<kbd>Ctrl</kbd> + <kbd>l</kbd> | clear the screen |

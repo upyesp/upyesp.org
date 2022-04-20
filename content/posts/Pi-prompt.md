@@ -1,5 +1,5 @@
 ---
-title: "Raspberry Pi Pretty Shell, With... Oh My Posh, Neofetch & LSD"
+title: "Raspberry Pi Pretty Prompt, With... Oh My Posh, Neofetch & LSD"
 description: Give your Raspberry Pi's command-line a boost by adding Oh My Posh and and a few other neat utilities.
 date: 2022-04-16T15:00:00+01:00
 draft: false

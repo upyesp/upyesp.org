@@ -2,16 +2,43 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>/categories/</loc>
+    <lastmod>2022-04-20T13:20:01+00:00</lastmod>
+  </url><url>
+    <loc>/categories/documentation/</loc>
+    <lastmod>2022-04-20T13:20:01+00:00</lastmod>
+  </url><url>
+    <loc>/posts/manim-install/</loc>
+    <lastmod>2022-04-20T13:20:01+00:00</lastmod>
+  </url><url>
+    <loc>/tags/katex/</loc>
+    <lastmod>2022-04-20T13:20:01+00:00</lastmod>
+  </url><url>
+    <loc>/tags/latex/</loc>
+    <lastmod>2022-04-20T13:20:01+00:00</lastmod>
+  </url><url>
+    <loc>/posts/</loc>
+    <lastmod>2022-04-20T13:20:01+00:00</lastmod>
+  </url><url>
+    <loc>/tags/python/</loc>
+    <lastmod>2022-04-20T13:20:01+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2022-04-20T13:20:01+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2022-04-20T13:20:01+00:00</lastmod>
+  </url><url>
+    <loc>/categories/windows/</loc>
+    <lastmod>2022-04-20T13:20:01+00:00</lastmod>
+  </url><url>
+    <loc>/posts/python-virtual_environments/</loc>
+    <lastmod>2022-04-20T12:01:01+00:00</lastmod>
+  </url><url>
     <loc>/tags/bash/</loc>
     <lastmod>2022-04-16T15:00:00+01:00</lastmod>
   </url><url>
-    <loc>/categories/</loc>
-    <lastmod>2022-04-16T15:00:00+01:00</lastmod>
-  </url><url>
     <loc>/categories/linux/</loc>
-    <lastmod>2022-04-16T15:00:00+01:00</lastmod>
-  </url><url>
-    <loc>/posts/</loc>
     <lastmod>2022-04-16T15:00:00+01:00</lastmod>
   </url><url>
     <loc>/posts/pi-prompt/</loc>
@@ -20,13 +47,7 @@
     <loc>/tags/raspberrypi/</loc>
     <lastmod>2022-04-16T15:00:00+01:00</lastmod>
   </url><url>
-    <loc>/tags/</loc>
-    <lastmod>2022-04-16T15:00:00+01:00</lastmod>
-  </url><url>
     <loc>/tags/terminal/</loc>
-    <lastmod>2022-04-16T15:00:00+01:00</lastmod>
-  </url><url>
-    <loc>/</loc>
     <lastmod>2022-04-16T15:00:00+01:00</lastmod>
   </url><url>
     <loc>/tags/wsl/</loc>
@@ -39,9 +60,6 @@
     <lastmod>2022-03-31T11:37:01+00:00</lastmod>
   </url><url>
     <loc>/posts/alias-ipaddress/</loc>
-    <lastmod>2022-03-31T11:37:01+00:00</lastmod>
-  </url><url>
-    <loc>/categories/windows/</loc>
     <lastmod>2022-03-31T11:37:01+00:00</lastmod>
   </url><url>
     <loc>/tags/csv/</loc>
@@ -60,9 +78,6 @@
     <lastmod>2021-11-02T08:00:00+00:00</lastmod>
   </url><url>
     <loc>/tags/diagrams/</loc>
-    <lastmod>2021-10-18T07:00:00+01:00</lastmod>
-  </url><url>
-    <loc>/categories/documentation/</loc>
     <lastmod>2021-10-18T07:00:00+01:00</lastmod>
   </url><url>
     <loc>/posts/make-a-plan/</loc>
@@ -98,12 +113,6 @@
     <loc>/series/windows-terminal/</loc>
     <lastmod>2021-09-20T14:00:00+01:00</lastmod>
   </url><url>
-    <loc>/tags/katex/</loc>
-    <lastmod>2021-09-16T08:00:00+01:00</lastmod>
-  </url><url>
-    <loc>/tags/latex/</loc>
-    <lastmod>2021-09-16T08:00:00+01:00</lastmod>
-  </url><url>
     <loc>/posts/makrdown-latex-katex-doublebackslash/</loc>
     <lastmod>2021-09-16T08:00:00+01:00</lastmod>
   </url><url>
@@ -112,12 +121,6 @@
   </url><url>
     <loc>/series/markdown/</loc>
     <lastmod>2021-09-16T08:00:00+01:00</lastmod>
-  </url><url>
-    <loc>/posts/manim-install/</loc>
-    <lastmod>2021-09-05T10:08:01+00:00</lastmod>
-  </url><url>
-    <loc>/tags/python/</loc>
-    <lastmod>2021-09-05T10:08:01+00:00</lastmod>
   </url><url>
     <loc>/posts/makrdown-diagrams-plantuml/</loc>
     <lastmod>2021-08-11T10:00:00+01:00</lastmod>
