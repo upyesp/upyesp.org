@@ -3,7 +3,7 @@
 <meta name="viewport" content="width=device-width">
 
 
-<title>Working With Python Virtual Environments | upyesp</title>
+<title>Bash: Productivity Shortcuts | upyesp</title>
 
 <meta name="generator" content="Hugo Eureka 0.8.2" />
 <link rel="stylesheet" href="/css/eureka.min.css">
@@ -83,7 +83,7 @@
 
 
 <meta name="description"
-  content="How to work with Python virtual Environments.">
+  content="A collection of keyboard shortcuts that improve productivity in Bash.">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -95,8 +95,8 @@
       "item":"/posts/"},{
       "@type": "ListItem",
       "position": 2 ,
-      "name":"Working With Python Virtual Environments",
-      "item":"/posts/python-virtual_environments/"}]
+      "name":"Bash: Productivity Shortcuts",
+      "item":"/posts/linux-bash-shortcuts/"}]
 }
 </script>
 
@@ -108,27 +108,27 @@
     "@type": "Article",
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "/posts/python-virtual_environments/"
+        "@id": "/posts/linux-bash-shortcuts/"
     },
-    "headline": "Working With Python Virtual Environments | upyesp","datePublished": "2022-04-20T12:01:01+00:00",
-    "dateModified": "2022-04-20T12:01:01+00:00",
-    "wordCount":  361 ,
+    "headline": "Bash: Productivity Shortcuts | upyesp","datePublished": "2022-04-08T20:13:00+01:00",
+    "dateModified": "2022-04-08T20:13:00+01:00",
+    "wordCount":  307 ,
     "publisher": {
         "@type": "Person",
         "name": "upyesp",
         },
-    "description": "How to work with Python virtual Environments."
+    "description": "A collection of keyboard shortcuts that improve productivity in Bash."
 }
-</script><meta property="og:title" content="Working With Python Virtual Environments | upyesp" />
+</script><meta property="og:title" content="Bash: Productivity Shortcuts | upyesp" />
 <meta property="og:type" content="article" />
 
 
 
-<meta property="og:url" content="/posts/python-virtual_environments/" />
+<meta property="og:url" content="/posts/linux-bash-shortcuts/" />
 
 
 
-<meta property="og:description" content="How to work with Python virtual Environments." />
+<meta property="og:description" content="A collection of keyboard shortcuts that improve productivity in Bash." />
 
 
 
@@ -144,19 +144,29 @@
 
 
 
-<meta property="article:published_time" content="2022-04-20T12:01:01&#43;00:00" />
+<meta property="article:published_time" content="2022-04-08T20:13:00&#43;01:00" />
 
 
-<meta property="article:modified_time" content="2022-04-20T12:01:01&#43;00:00" />
+<meta property="article:modified_time" content="2022-04-08T20:13:00&#43;01:00" />
 
 
 
 <meta property="article:section" content="posts" />
 
 
-<meta property="article:tag" content="Python" />
+<meta property="article:tag" content="Bash" />
+
+<meta property="article:tag" content="WSL" />
 
 
+
+
+
+<meta property="og:see_also" content="/posts/alias-ipaddress/" />
+
+<meta property="og:see_also" content="/posts/wsl-distro-explorer/" />
+
+<meta property="og:see_also" content="/posts/wsl-launching-windows-apps/" />
 
 
 
@@ -235,11 +245,11 @@
 <div class="grid grid-cols-2 lg:grid-cols-8 gap-4 lg:pt-12">
     <div
         class="col-span-2  lg:col-span-6 bg-secondary-bg rounded px-6 py-8">
-        <h1 class="font-bold text-3xl text-primary-text">Working With Python Virtual Environments</h1>
+        <h1 class="font-bold text-3xl text-primary-text">Bash: Productivity Shortcuts</h1>
         <div class="flex flex-wrap flex-row items-center mt-2 text-tertiary-text">
     <div class="mr-6 my-2">
         <i class="fas fa-calendar mr-1"></i>
-        <span>Wednesday, April 20, 2022</span>
+        <span>Friday, April 8, 2022</span>
     </div>
     <div class="mr-6 my-2">
         <i class="fas fa-clock mr-1"></i>
@@ -250,11 +260,7 @@
     <div class="mr-6 my-2">
         <i class="fas fa-folder mr-1"></i>
         
-        <a href="/categories/windows/" class="hover:text-eureka">Windows</a>
-        
-        
-        <span>, </span>
-        <a href="/categories/documentation/" class="hover:text-eureka">Documentation</a>
+        <a href="/categories/linux/" class="hover:text-eureka">Linux</a>
         
     </div>
     
@@ -266,53 +272,132 @@
         
 
         <div class="content">
-            <p>Here&rsquo;s how to use virtual environments within Python projects to reduce the risk of version conflicts across Python projects.</p>
-<p>Python projects often require the installation of packages or modules that extend the functionality of the standard Python language.  They are typically installed using Python&rsquo;s <code>pip</code> package manager. Extensions have versions.  Conflicts can arise when multiple Python projects require different versions of the same package.  So rather than installing Python packages system-wide, affecting all Python projects on a PC system, each project can have it&rsquo;s own virtual environment in which packages can be installed.  This means that the the Python package is installed local to that project, rather than for the whole PC system.</p>
-<h2 id="python-virtual-environments">Python Virtual Environments</h2>
-<blockquote>
-<p>For detailed information, visit the official Python documentation, section <a href="https://docs.python.org/3/tutorial/venv.html">Virtual Environments and Packages</a>.</p>
-</blockquote>
-<ol>
-<li>Create a new directory, to contain your Python project, for example <code>HelloWorld</code>.</li>
-<li>Optional&hellip; it is good practice to use source control, like <code>Git</code>, to do that, open a terminal and enter
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>git init
-</span></span></code></pre></div></li>
-<li>Within <code>HelloWorld</code>, open a terminal, create a new Python virtual environment, called &ldquo;.venv&rdquo;
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>python -m venv .venv
-</span></span></code></pre></div></li>
-<li>If you created a git repository (with <code>git init</code>, mentioned above), you&rsquo;ll want to exclude the <code>.venv</code> virtual environment from git
-<ol>
-<li>in the project directory, create a file called <code>.gitignore</code></li>
-<li>edit <code>.gitignore</code> and add <code>.venv</code>, save <code>.gitignore</code></li>
-<li>if you want, you can add other directories or files to <code>.gitignore</code></li>
-<li>for more information, see <a href="https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository">2.2 Git Basics - Recording Changes to the Repository</a></li>
-</ol>
-</li>
-<li>Start <em>.venv</em>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>.venv\scripts\activate
-</span></span></code></pre></div></li>
-<li>Install the Python packages your project requires
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>pip install SciPy
-</span></span><span style="display:flex;"><span>pip install Pandas
-</span></span></code></pre></div></li>
-<li>Develop your Python project</li>
-</ol>
-<h3 id="stopping--restarting-the-python-virtual-environment">Stopping &amp; Restarting The Python Virtual Environment</h3>
-<p>To stop the <em>.venv</em> virtual environment, enter</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>deactivate
-</span></span></code></pre></div><p>To restart <em>.venv</em>, navigate to the directory containing the Python project and from the command line, use&hellip;</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>.venv\scripts\activate
-</span></span></code></pre></div><h3 id="distributing-the-python-project-to-users">Distributing The Python Project To Users</h3>
-<p>To produce a file defining all the packages installed for the project, along with their version, use:</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>pip freeze &gt; requirements.txt
-</span></span></code></pre></div><p>The <code>requirements.txt</code> file can then be committed to version control and shipped as part of the Python project. Users can install on their system all required packages &amp; the specific versions you used, with:</p>
-<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-text" data-lang="text"><span style="display:flex;"><span>python -m pip install -r requirements.txt
-</span></span></code></pre></div>
+            <p>Working in a command line environment, like a Bash session, can be far more productive that using a graphical user interface.  Here&rsquo;s a collection of shortcuts.</p>
+<h2 id="moving-around-the-command-line">Moving Around The Command Line</h2>
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><kbd>Ctrl</kbd> + <kbd>a</kbd></td>
+<td>position the cursor at the start of the line</td>
+</tr>
+<tr>
+<td><kbd>Ctrl</kbd> + <kbd>e</kbd></td>
+<td>position the cursor at the end of the line</td>
+</tr>
+<tr>
+<td><kbd>Ctrl</kbd> + <kbd>xx</kbd></td>
+<td>alternate the cursor position between start of line and current position</td>
+</tr>
+<tr>
+<td><kbd>Ctrl</kbd> + <kbd>w</kbd></td>
+<td>cut backwards a word</td>
+</tr>
+<tr>
+<td><kbd>Ctrl</kbd> + <kbd>u</kbd></td>
+<td>cut backwards from the cursor to start of line</td>
+</tr>
+<tr>
+<td><kbd>Ctrl</kbd> + <kbd>k</kbd></td>
+<td>cut forwards from the cursor to end of line</td>
+</tr>
+<tr>
+<td><kbd>Ctrl</kbd> + <kbd>y</kbd></td>
+<td>paste the contents of the <em>paste buffer</em></td>
+</tr>
+<tr>
+<td><kbd>Esc</kbd> + <kbd>.</kbd></td>
+<td>paste the the last typed argument</td>
+</tr>
+<tr>
+<td><kbd>Ctrl</kbd> + <kbd>_</kbd></td>
+<td>undo</td>
+</tr>
+<tr>
+<td><kbd>Ctrl</kbd> + <kbd>l</kbd></td>
+<td>clear the screen</td>
+</tr>
+<tr>
+<td><kbd>Ctrl</kbd> + <kbd>d</kbd></td>
+<td>disconnect (exit) the current session</td>
+</tr>
+</tbody>
+</table>
+<h2 id="using-command-line-history">Using Command Line History</h2>
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>history</code></td>
+<td>view command history, with line numbers</td>
+</tr>
+<tr>
+<td><code>!n</code></td>
+<td>retrieve the command at line number <em>n</em></td>
+</tr>
+<tr>
+<td><code>sudo !!</code></td>
+<td>re-execute the last command, but with <em>sudo</em></td>
+</tr>
+<tr>
+<td><kbd>Ctrl</kbd> + <kbd>r</kbd></td>
+<td>begin <em>search history mode</em>, type a few characters, <br /> repeat press <kbd>Ctrl</kbd> + <kbd>r</kbd> for next match</td>
+</tr>
+<tr>
+<td><kbd>Ctrl</kbd> + <kbd>g</kbd></td>
+<td>escape <em>search history mode</em></td>
+</tr>
+</tbody>
+</table>
+<h3 id="managing-command-line-history">Managing Command Line History</h3>
+<p>Prevent a command from being written to history&hellip; precede the command with a space, like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span> cat ~/.bashrc
+</span></span></code></pre></div><p>Reliably delete all history, clear the <em>history buffer</em> and prevent history from being re-written on exit:</p>
+<div class="highlight"><pre tabindex="0" style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-zsh" data-lang="zsh"><span style="display:flex;"><span>cat /dev/null &gt; ~/.bash_history <span style="color:#719e07">&amp;&amp;</span> <span style="color:#b58900">history</span> -c <span style="color:#719e07">&amp;&amp;</span> <span style="color:#b58900">exit</span>
+</span></span></code></pre></div><h2 id="navigating-directories">Navigating Directories</h2>
+<table>
+<thead>
+<tr>
+<th>Shortcut</th>
+<th>Function</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>cd</code></td>
+<td>go to <em>home</em> directory (same as <code>cd ~</code>)</td>
+</tr>
+<tr>
+<td><code>cd -</code></td>
+<td>go to previous working directory</td>
+</tr>
+<tr>
+<td><code>pushd /foo</code> <br /> <br /> <code>pushd /bar</code></td>
+<td>push the current directory to the <em>directory stack</em>, <br /> then <code>cd</code> to the <code>/foo</code> directory <br /> push the current directory to the <em>directory stack</em>, <br /> then <code>cd</code> to the <code>/bar</code> directory</td>
+</tr>
+<tr>
+<td><code>popd</code></td>
+<td>remove the top directory from the <em>directory stack</em>, then <code>cd</code> to it</td>
+</tr>
+</tbody>
+</table>
         </div>
         
         <div class="my-4">
     
-    <a href="/tags/python/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#Python</a>
+    <a href="/tags/bash/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#Bash</a>
+    
+    <a href="/tags/wsl/" class="inline-block bg-tertiary-bg text-sm rounded px-3 py-1 my-1 mr-2 hover:text-eureka">#WSL</a>
     
 </div>
         
@@ -328,13 +413,13 @@
     <div>
         
         <span class="block font-bold">Previous</span>
-        <a href="/posts/manim-install/" class="block">Install Manim On Windows 10 &amp; Windows 11</a>
+        <a href="/posts/pi-prompt/" class="block">Raspberry Pi Pretty Prompt, With... Oh My Posh, Neofetch &amp; LSD</a>
         
     </div>
     <div class="md:text-right mt-4 md:mt-0">
         
         <span class="block font-bold">Next</span>
-        <a href="/posts/pi-prompt/" class="block">Raspberry Pi Pretty Prompt, With... Oh My Posh, Neofetch &amp; LSD</a>
+        <a href="/posts/alias-ipaddress/" class="block">Use An Alias To Quickly Find Your IP Address - Windows &amp; Linux</a>
         
     </div>
 </div>
@@ -354,12 +439,13 @@
 <div class="sticky-toc hidden lg:block px-6 pb-6 ">
     <nav id="TableOfContents">
   <ul>
-    <li><a href="#python-virtual-environments">Python Virtual Environments</a>
+    <li><a href="#moving-around-the-command-line">Moving Around The Command Line</a></li>
+    <li><a href="#using-command-line-history">Using Command Line History</a>
       <ul>
-        <li><a href="#stopping--restarting-the-python-virtual-environment">Stopping &amp; Restarting The Python Virtual Environment</a></li>
-        <li><a href="#distributing-the-python-project-to-users">Distributing The Python Project To Users</a></li>
+        <li><a href="#managing-command-line-history">Managing Command Line History</a></li>
       </ul>
     </li>
+    <li><a href="#navigating-directories">Navigating Directories</a></li>
   </ul>
 </nav>
 </div>
@@ -373,6 +459,23 @@
     
 
     
+    
+    <div
+        class="col-span-2  lg:col-span-6 bg-secondary-bg rounded p-6">
+        <h2 class="text-lg font-semibold mb-4">See Also</h2>
+        <div class="content">
+            
+            <a href="/posts/alias-ipaddress/">Use An Alias To Quickly Find Your IP Address - Windows &amp; Linux</a>
+            <br />
+            
+            <a href="/posts/wsl-distro-explorer/">Browsing A WSL Distro In Explorer</a>
+            <br />
+            
+            <a href="/posts/wsl-launching-windows-apps/">Launching Windows Apps From Within WSL</a>
+            <br />
+            
+        </div>
+    </div>
     
 </div>
 <script>
