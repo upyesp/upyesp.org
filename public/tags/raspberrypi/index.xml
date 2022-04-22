@@ -13,7 +13,7 @@
       <pubDate>Sat, 16 Apr 2022 15:00:00 +0100</pubDate>
       
       <guid>/posts/pi-prompt/</guid>
-      <description>&lt;p&gt;Give your Raspberry Pi&amp;rsquo;s command-line a boost by adding &lt;a href=&#34;https://ohmyposh.dev/&#34;&gt;Oh My Posh&lt;/a&gt; and add a few other neat utilities.  Before starting, make sure your Pi is running a 64bit operating system, such as &lt;a href=&#34;https://www.raspberrypi.com/software/&#34;&gt;Raspberry Pi OS&lt;/a&gt;.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Give your Raspberry Pi&amp;rsquo;s command-line a boost by adding &lt;a href=&#34;https://ohmyposh.dev/&#34;&gt;Oh My Posh&lt;/a&gt; and add a few other neat utilities.  Before starting, make sure your Pi is running a &lt;strong&gt;64bit operating system&lt;/strong&gt;, such as &lt;a href=&#34;https://www.raspberrypi.com/software/&#34;&gt;Raspberry Pi OS&lt;/a&gt;, &lt;a href=&#34;https://ubuntu.com/download/raspberry-pi&#34;&gt;Ubuntu 22.04 LTS Desktop or Server&lt;/a&gt; and &lt;a href=&#34;https://manjaro.org/download/#ARM&#34;&gt;Manjaro 22.04&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
   </channel>

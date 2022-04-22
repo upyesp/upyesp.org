@@ -9,7 +9,7 @@ tags: [RaspberryPi, Terminal, Bash, WSL]
 categories: [Linux]
 ---
 
-Give your Raspberry Pi's command-line a boost by adding [Oh My Posh](https://ohmyposh.dev/) and add a few other neat utilities.  Before starting, make sure your Pi is running a 64bit operating system, such as [Raspberry Pi OS](https://www.raspberrypi.com/software/).
+Give your Raspberry Pi's command-line a boost by adding [Oh My Posh](https://ohmyposh.dev/) and add a few other neat utilities.  Before starting, make sure your Pi is running a **64bit operating system**, such as [Raspberry Pi OS](https://www.raspberrypi.com/software/), [Ubuntu 22.04 LTS Desktop or Server](https://ubuntu.com/download/raspberry-pi) and [Manjaro 22.04](https://manjaro.org/download/#ARM).
 
 <!--more-->
 
