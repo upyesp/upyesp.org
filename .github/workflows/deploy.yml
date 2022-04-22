@@ -23,4 +23,13 @@ jobs:
     - name: Build Site
       run: hugo --minify
     
+    - name: FTP Site
+      uses: SamKirkland/FTP-Deploy-Action@3.0.0
+      with:
+        ftp-server: ftp.upyesp.org
+        ftp-username: ftp-password: ${{ secrets.FTP_USER }}
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: public/
+        git-ftp-args: --insecure --all
+    
 
