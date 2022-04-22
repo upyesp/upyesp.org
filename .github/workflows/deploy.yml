@@ -26,7 +26,6 @@ jobs:
     - name: Git Reset
       run: git reset --hard
       
-
     
     - name: FTP Site
       uses: SamKirkland/FTP-Deploy-Action@3.0.0
