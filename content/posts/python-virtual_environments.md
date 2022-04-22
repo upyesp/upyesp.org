@@ -6,7 +6,7 @@ draft: false
 toc: true
 featuredImage: ''
 tags: [Python]
-categories: [Windows, Documentation]
+categories: [Windows, Linux, Mac]
 ---
 
 Here's how to use virtual environments within Python projects to reduce the risk of version conflicts across Python projects.
