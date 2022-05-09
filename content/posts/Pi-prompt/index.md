@@ -166,7 +166,7 @@ Restart `Bash`, with `exec bash`.
 
 > For the latest documentation, refer to CPUfetch [project repository](https://github.com/Dr-Noob/cpufetch).  CPUfetch is similar to Neofetch, but is focused on providing detailed information about the system's CPU(s).
 
-To install CPUfetch:
+To install cpufetch:
 
 ```Bash
 # for ARM - Raspberry Pi
@@ -176,15 +176,15 @@ sudo wget -O /usr/local/bin/cpufetch https://github.com/Dr-Noob/cpufetch/release
 sudo chmod a+x /usr/local/bin/cpufetch
 ```
 
-> Note, change your .bashrc to call cpufetch as an alternative to Neofetch, you wouldn't normally call both Neofetch and CPUfetch.
+> Note, change your .bashrc to call cpufetch as an alternative to Neofetch, you wouldn't normally call both Neofetch and cpufetch.
 
-Change the Pi's `.bashrc`, add a line to call CPUfetch:
+Change the Pi's `.bashrc`, add a line to call cpufetch:
 
 ```Bash
 sudo nano ~/.bashrc
 ```
 
-Add this line to the end of `.bashrc` to call Neofetch:
+Add this line to the end of `.bashrc` to call cpufetch:
 
 ```Bash
 cpufetch
