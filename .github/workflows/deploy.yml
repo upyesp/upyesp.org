@@ -26,9 +26,8 @@ jobs:
       with:
         node-version: 'latest'
 
-    - name: Build Site
-      run: npm ci
-      run: hugo --minify
+    - run: npm ci
+    - run: hugo --minify
 
     - name: Git Reset
       run: git reset --hard
