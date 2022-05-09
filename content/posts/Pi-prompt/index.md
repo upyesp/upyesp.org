@@ -177,7 +177,7 @@ sudo chmod a+x /usr/local/bin/cpufetch
 ```
 
 > Note, change your .bashrc to call cpufetch as an alternative to Neofetch, you wouldn't normally call both Neofetch and cpufetch.
-
+ 
 Change the Pi's `.bashrc`, add a line to call cpufetch:
 
 ```Bash
