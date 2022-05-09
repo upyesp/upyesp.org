@@ -1,0 +1,28 @@
+@startuml example_gantt_chart
+' set the theme
+
+hide footbox
+saturday are closed
+sunday are closed
+project starts on 1 october 2021
+printscale daily zoom 2
+
+title New Idea Development
+
+[workshop ideas] as [task01] lasts 3 days
+[feasibility testing] as [task02] lasts 2 days
+[review for approval] as [task03] lasts 5 days
+[task01]->[task02]
+[task02]->[task03]
+-- finance --
+[estimate costs] as [task10] lasts 1 days
+[task01]->[task10]
+[task10]->[task03]
+-- mission, vision & values --
+[assess corporate compliance] as [task20] lasts 4 days and ends at [task03]'s start
+
+
+
+[approved] happens at [task03]'s end
+
+@enduml

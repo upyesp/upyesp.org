@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="341px" preserveAspectRatio="none" style="width:769px;height:341px;background:#D9D3D0;" version="1.1" viewBox="0 0 769 341" width="769px" zoomAndPan="magnify"><defs/><g><rect fill="#D9D3D0" height="37.0146" rx="12.5" ry="12.5" style="stroke:#9275B6;stroke-width:1.0;" width="144" x="253" y="151.0439"/><text fill="#9275B6" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="124" x="263" y="175.1191">Summer Learning</text><rect fill="#D9D3D0" height="37.0146" rx="12.5" ry="12.5" style="stroke:#9275B6;stroke-width:1.0;" width="91" x="437" y="80.522"/><text fill="#9275B6" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="71" x="447" y="104.5972">Markdown</text><rect fill="#D9D3D0" height="37.0146" rx="12.5" ry="12.5" style="stroke:#9275B6;stroke-width:1.0;" width="116" x="568" y="10"/><text fill="#9275B6" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="96" x="578" y="34.0752">CommonMark</text><path d="M528,99.0293 L538,99.0293 C553,99.0293 543,28.5073 558,28.5073 L568,28.5073 " fill="none" style="stroke:#9275B6;stroke-width:1.0;"/><rect fill="#D9D3D0" height="37.0146" rx="12.5" ry="12.5" style="stroke:#9275B6;stroke-width:1.0;" width="65" x="568" y="57.0146"/><text fill="#9275B6" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="45" x="578" y="81.0898">KaTeX</text><path d="M528,99.0293 L538,99.0293 C553,99.0293 543,75.522 558,75.522 L568,75.522 " fill="none" style="stroke:#9275B6;stroke-width:1.0;"/><rect fill="#D9D3D0" height="37.0146" rx="12.5" ry="12.5" style="stroke:#9275B6;stroke-width:1.0;" width="78" x="568" y="104.0293"/><text fill="#9275B6" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="58" x="578" y="128.1045">Mermaid</text><path d="M528,99.0293 L538,99.0293 C553,99.0293 543,122.5366 558,122.5366 L568,122.5366 " fill="none" style="stroke:#9275B6;stroke-width:1.0;"/><rect fill="#D9D3D0" height="37.0146" rx="12.5" ry="12.5" style="stroke:#9275B6;stroke-width:1.0;" width="83" x="568" y="151.0439"/><text fill="#9275B6" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="63" x="578" y="175.1191">PlantUML</text><path d="M528,99.0293 L538,99.0293 C553,99.0293 543,169.5513 558,169.5513 L568,169.5513 " fill="none" style="stroke:#9275B6;stroke-width:1.0;"/><path d="M397,169.5513 L407,169.5513 C422,169.5513 412,99.0293 427,99.0293 L437,99.0293 " fill="none" style="stroke:#9275B6;stroke-width:1.0;"/><rect fill="#D9D3D0" height="37.0146" rx="12.5" ry="12.5" style="stroke:#9275B6;stroke-width:1.0;" width="139" x="437" y="245.0732"/><text fill="#9275B6" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="119" x="447" y="269.1484">Hugo Framework</text><rect fill="#D9D3D0" height="37.0146" rx="12.5" ry="12.5" style="stroke:#9275B6;stroke-width:1.0;" width="62" x="616" y="198.0586"/><text fill="#9275B6" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="42" x="626" y="222.1338">CI/CD</text><path d="M576,263.5806 L586,263.5806 C601,263.5806 591,216.5659 606,216.5659 L616,216.5659 " fill="none" style="stroke:#9275B6;stroke-width:1.0;"/><rect fill="#D9D3D0" height="37.0146" rx="12.5" ry="12.5" style="stroke:#9275B6;stroke-width:1.0;" width="114" x="616" y="245.0732"/><text fill="#9275B6" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="94" x="626" y="269.1484">GitHub Tasks</text><path d="M576,263.5806 L586,263.5806 C601,263.5806 591,263.5806 606,263.5806 L616,263.5806 " fill="none" style="stroke:#9275B6;stroke-width:1.0;"/><rect fill="#D9D3D0" height="37.0146" rx="12.5" ry="12.5" style="stroke:#9275B6;stroke-width:1.0;" width="146" x="616" y="292.0879"/><text fill="#9275B6" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="126" x="626" y="316.1631">Azure Static Sites</text><path d="M576,263.5806 L586,263.5806 C601,263.5806 591,310.5952 606,310.5952 L616,310.5952 " fill="none" style="stroke:#9275B6;stroke-width:1.0;"/><path d="M397,169.5513 L407,169.5513 C422,169.5513 412,263.5806 427,263.5806 L437,263.5806 " fill="none" style="stroke:#9275B6;stroke-width:1.0;"/><rect fill="#D9D3D0" height="37.0146" rx="12.5" ry="12.5" style="stroke:#9275B6;stroke-width:1.0;" width="53" x="160" y="33.5073"/><text fill="#9275B6" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="33" x="170" y="57.5825">Rust</text><path d="M253,169.5513 L243,169.5513 C228,169.5513 238,52.0146 223,52.0146 L213,52.0146 " fill="none" style="stroke:#9275B6;stroke-width:1.0;"/><rect fill="#D9D3D0" height="37.0146" rx="12.5" ry="12.5" style="stroke:#9275B6;stroke-width:1.0;" width="67" x="146" y="80.522"/><text fill="#9275B6" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="47" x="156" y="104.5972">HTML5</text><path d="M253,169.5513 L243,169.5513 C228,169.5513 238,99.0293 223,99.0293 L213,99.0293 " fill="none" style="stroke:#9275B6;stroke-width:1.0;"/><rect fill="#D9D3D0" height="37.0146" rx="12.5" ry="12.5" style="stroke:#9275B6;stroke-width:1.0;" width="50" x="163" y="127.5366"/><text fill="#9275B6" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="30" x="173" y="151.6118">CSS</text><path d="M253,169.5513 L243,169.5513 C228,169.5513 238,146.0439 223,146.0439 L213,146.0439 " fill="none" style="stroke:#9275B6;stroke-width:1.0;"/><rect fill="#D9D3D0" height="37.0146" rx="12.5" ry="12.5" style="stroke:#9275B6;stroke-width:1.0;" width="91" x="122" y="174.5513"/><text fill="#9275B6" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="71" x="132" y="198.6265">JavaScript</text><rect fill="#D9D3D0" height="37.0146" rx="12.5" ry="12.5" style="stroke:#9275B6;stroke-width:1.0;" width="56" x="26" y="151.0439"/><text fill="#9275B6" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="36" x="36" y="175.1191">Node</text><path d="M122,193.0586 L112,193.0586 C97,193.0586 107,169.5513 92,169.5513 L82,169.5513 " fill="none" style="stroke:#9275B6;stroke-width:1.0;"/><rect fill="#D9D3D0" height="37.0146" rx="12.5" ry="12.5" style="stroke:#9275B6;stroke-width:1.0;" width="77" x="5" y="198.0586"/><text fill="#9275B6" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="57" x="15" y="222.1338">Electron</text><path d="M122,193.0586 L112,193.0586 C97,193.0586 107,216.5659 92,216.5659 L82,216.5659 " fill="none" style="stroke:#9275B6;stroke-width:1.0;"/><path d="M253,169.5513 L243,169.5513 C228,169.5513 238,193.0586 223,193.0586 L213,193.0586 " fill="none" style="stroke:#9275B6;stroke-width:1.0;"/><rect fill="#D9D3D0" height="37.0146" rx="12.5" ry="12.5" style="stroke:#9275B6;stroke-width:1.0;" width="74" x="139" y="221.5659"/><text fill="#9275B6" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="54" x="149" y="245.6411">Angular</text><path d="M253,169.5513 L243,169.5513 C228,169.5513 238,240.0732 223,240.0732 L213,240.0732 " fill="none" style="stroke:#9275B6;stroke-width:1.0;"/><rect fill="#D9D3D0" height="37.0146" rx="12.5" ry="12.5" style="stroke:#9275B6;stroke-width:1.0;" width="59" x="154" y="268.5806"/><text fill="#9275B6" font-family="Verdana" font-size="14" lengthAdjust="spacing" textLength="39" x="164" y="292.6558">React</text><path d="M253,169.5513 L243,169.5513 C228,169.5513 238,287.0879 223,287.0879 L213,287.0879 " fill="none" style="stroke:#9275B6;stroke-width:1.0;"/><!--MD5=[63d01b7dd21179b9632ae973580daa10]
+@startmindmap example_mindmap
+' set the theme
+!theme mimeograph
+
+* Summer Learning
+  ** Markdown
+    *** CommonMark
+    *** KaTeX
+    *** Mermaid
+    *** PlantUML
+  ** Hugo Framework
+    *** CI/CD
+    *** GitHub Tasks
+    *** Azure Static Sites
+
+left side
+
+** Rust
+** HTML5
+** CSS
+** JavaScript
+  *** Node
+  *** Electron
+** Angular
+** React
+
+@endmindmap
+
+@startmindmap example_mindmap
+
+
+
+
+
+<style>
+  root {
+    BackgroundColor #D9D3D0
+    FontColor #9275B6
+    FontName Verdana
+    HyperLinkColor #9275B6
+    LineColor #9275B6
+    LineThickness 1
+    Margin 5
+  }
+  caption {
+    LineThickness 0
+  }
+  footer {
+    LineThickness 0
+  }
+  header {
+    LineThickness 0
+  }
+  node {
+    MaximumWidth 300
+  }
+  title {
+    FontSize 22
+    LineThickness 0
+  }
+</style>
+
+skinparam ArrowLollipopColor #9275B6
+skinparam BackgroundColor #D9D3D0
+skinparam DefaultFontName Verdana
+skinparam DefaultMonospacedFontName Courier
+skinparam LifelineStrategy nosolid
+skinparam ParticipantPadding 10
+skinparam SequenceLifeLineBorderColor #9275B6
+skinparam Shadowing false
+skinparam UseBetaStyle true
+
+skinparam Activity {
+  BackgroundColor #D9D3D0
+  BarColor #9275B6
+  BorderColor #9275B6
+  FontColor #9275B6
+  FontName Verdana
+}
+skinparam Boundary {
+  FontColor #9275B6
+}
+skinparam Box {
+  Padding 5
+}
+skinparam CircledCharacter {
+  FontColor #9275B6
+  FontName Courier
+  Radius 9
+}
+skinparam Class {
+  BackgroundColor #D9D3D0
+  BorderColor #9275B6
+  FontColor #9275B6
+  FontName Verdana
+}
+skinparam ClassAttribute {
+  FontColor #9275B6
+  FontName Verdana
+}
+skinparam ClassStereotype {
+  FontColor #9275B6
+  FontName Verdana
+}
+skinparam Footer {
+  FontColor #9275B6
+  FontName Verdana
+}
+skinparam Header {
+  FontColor #9275B6
+  FontName Verdana
+}
+skinparam Hyperlink {
+  Color #9275B6
+}
+skinparam IconPackage {
+  Color #9275B6
+  BackgroundColor #D9D3D0
+}
+skinparam IconPrivate {
+  Color #9275B6
+  BackgroundColor #D9D3D0
+}
+skinparam IconProtected {
+  Color #9275B6
+  BackgroundColor #D9D3D0
+}
+skinparam IconPublic {
+  Color #9275B6
+  BackgroundColor #D9D3D0
+}
+skinparam Note {
+  FontColor #9275B6
+  FontName Verdana
+}
+skinparam Package {
+  BorderColor #9275B6
+  FontColor #9275B6
+  FontName Verdana
+}
+skinparam State {
+  BackgroundColor #D9D3D0
+  BorderColor #9275B6
+}
+skinparam StereotypeA {
+  BackgroundColor #D9D3D0
+  BorderColor #9275B6
+}
+skinparam StereotypeC {
+  BackgroundColor #D9D3D0
+  BorderColor #9275B6
+}
+skinparam StereotypeE {
+  BackgroundColor #D9D3D0
+  BorderColor #9275B6
+}
+skinparam StereotypeI {
+  BackgroundColor #D9D3D0
+  BorderColor #9275B6
+}
+skinparam StereotypeN {
+  BackgroundColor #D9D3D0
+  BorderColor #9275B6
+}
+skinparam UseCaseStereoType {
+  FontColor #9275B6
+  FontName Verdana
+}
+
+* Summer Learning
+  ** Markdown
+    *** CommonMark
+    *** KaTeX
+    *** Mermaid
+    *** PlantUML
+  ** Hugo Framework
+    *** CI/CD
+    *** GitHub Tasks
+    *** Azure Static Sites
+
+left side
+
+** Rust
+** HTML5
+** CSS
+** JavaScript
+  *** Node
+  *** Electron
+** Angular
+** React
+
+@endmindmap
+
+PlantUML version 1.2021.7(Sun May 23 13:40:07 BST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: GB
+--></g></svg>

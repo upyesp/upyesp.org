@@ -1,0 +1,39 @@
+name: deploy to host
+
+on:
+  push:
+    branches:
+      - main  # Set a branch to deploy
+  
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+
+    - uses: actions/checkout@v2
+      with:
+        submodules: true
+        fetch-depth: 0
+
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: 'latest'
+
+    - name: Build Site
+      run: hugo --minify
+
+    - name: Git Reset
+      run: git reset --hard
+      
+    
+    - name: FTP Site
+      uses: SamKirkland/FTP-Deploy-Action@3.0.0
+      with:
+        ftp-server: ${{ secrets.FTP_HOST }}
+        ftp-username: ${{ secrets.FTP_USER }}
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: public/
+        git-ftp-args: --insecure --all
+    
+

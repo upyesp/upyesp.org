@@ -1,0 +1,23 @@
+@startuml
+title Uni Dissertation
+projectscale weekly 
+project starts 2021/10/01
+saturdays are closed
+sundays are closed
+2021/10/25 to 2021/10/29 is closed
+2021/12/24 to 2022/01/01 is closed
+2022/04/15 to 2022/04/18 is closed
+
+[consider idea] lasts 5 days
+then [meet supervisor] lasts 1 day
+then [rework idea & draft proposal] lasts 10 days
+then [read & feedback on draft] lasts 5 days
+then [final work on Proposal] lasts 5 days
+[Submit Proposal] happens 2021/10/22
+
+[Submit Interim] happens 2022/01/14
+
+[Ethics Deadline] happens 2022/01/21
+
+[Submit Dissertation] happens 2022/04/29
+@enduml
