@@ -1,7 +1,7 @@
 ---
 title: "Raspberry Pi Pretty Prompt, With... Oh My Posh, LSD & CPUfetch / Neofetch"
 description: Give your Raspberry Pi's command-line a boost by adding Oh My Posh and and a few other neat utilities.
-date: 2022-05-08T15:00:00+01:00
+date: 2022-05-09T15:00:00+01:00
 draft: false
 toc: true
 pinned: false
