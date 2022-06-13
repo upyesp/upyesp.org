@@ -94,7 +94,7 @@ ssh-keygen -t ecdsa-sk
 
 You might want to add to this and use the following optional parameters:
 
-- use `-O` to specify the application (SHH) and remote server name (in this example, "server21"), *example:* `-O application=ssh:server21`
+- use `-O` to specify the application (SSH) and remote server name (in this example, "server21"), *example:* `-O application=ssh:server21`
 - use `-C` to specify a comment, *example:* `-C "Host:ThinkPadX1 Security Key:yubikeyusb"`
 
 For example:
@@ -140,7 +140,7 @@ type $env:USERPROFILE\.ssh\id_ecdsa_sk.pub
 ```
 
 
-or even this Linux style command will be accepted by PowerShell:
+or even this Linux Bash style command will be accepted by PowerShell:
 
 ```Bash
 cat ~/.ssh/id_ecdsa_sk.pub
@@ -162,7 +162,7 @@ or, in a CMD prompt:
 type $env:USERPROFILE\.ssh\id_ecdsa_sk.pub | ssh sam@server21 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'
 ```
 
-or even this Linux style command will be accepted by PowerShell:
+or this Nash style command will also be accepted by PowerShell:
 
 ```Bash
 cat ~/.ssh/id_ecdsa_sk.pub | ssh sam@server21 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'

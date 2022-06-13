@@ -39,7 +39,10 @@ Working in a command line environment, like a Bash session, can be far more prod
 |-----------|-----------------------------------------------|
 | ```history``` | view command history, with line numbers |
 | ```!n``` | retrieve the command at line number *n* |
+| ```!-n``` | retrieve the *nth* last command |
+| ```!string``` | retrieve the command that starts with *string* |
 | ```sudo !!``` | re-execute the last command, but with *sudo* |
+| ```^string^newstring^``` | re-execute the last command, replacing *string* with *newstring* |
 |<kbd>Ctrl</kbd> + <kbd>r</kbd> | begin *search history mode*, type a few characters, <br /> repeat press <kbd>Ctrl</kbd> + <kbd>r</kbd> for next match |
 |<kbd>Ctrl</kbd> + <kbd>g</kbd> | escape *search history mode* |
 
