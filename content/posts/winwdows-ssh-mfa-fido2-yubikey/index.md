@@ -162,7 +162,7 @@ or, in a CMD prompt:
 type $env:USERPROFILE\.ssh\id_ecdsa_sk.pub | ssh sam@server21 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'
 ```
 
-or this Nash style command will also be accepted by PowerShell:
+or this Bash style command will also be accepted by PowerShell:
 
 ```Bash
 cat ~/.ssh/id_ecdsa_sk.pub | ssh sam@server21 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'
