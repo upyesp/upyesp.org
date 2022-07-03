@@ -37,8 +37,6 @@ jobs:
     - run: npm ci
     - run: hugo --minify
 
-    - name: Git Reset
-      run: git reset --hard
       
     
     - name: FTP Site
