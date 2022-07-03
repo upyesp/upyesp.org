@@ -1,7 +1,7 @@
 ---
 title: "Windows SSH To Remote Server With FIDO2 + Hardware Key (YubiKey) Multi Factor Authentication MFA / 2FA "
 description: Use the latest version of OpenSSH in Windows for more secure authentication. 
-date: 2022-05-30T08:34:00+01:00
+date: 2022-07-03T08:34:00+01:00
 draft: false
 toc: true
 pinned: false
