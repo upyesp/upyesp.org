@@ -21,8 +21,8 @@ SSH is a core element of the [OpenSSH](https://www.openssh.com/) project.  Sever
 > 1. Open a PowerShell console as Admin.
 > 1. Install the latest version of [OpenSSH for Windows](https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH-Using-MSI).
 > 1. Generate a new key pair, with: `ssh-keygen -t ecdsa-sk`.
-> 1. Copy the new .pub key to the remote server, with: `Get-Content $env:USERPROFILE\.ssh\id_ecdsa_sk.pub | ssh sam@server21 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'` (change sam@server21 to your user/server).
-> 1. SSH to the server, with: `ssh sam@server21` (change sam@server21 to your user/server).
+> 1. Copy the new .pub key to the remote server, with: `Get-Content $env:USERPROFILE\.ssh\id_ecdsa_sk.pub | ssh alice@example.com 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'` (change alice@example.com to your user/server).
+> 1. SSH to the server, with: `ssh alice@example.com` (change alice@example.com to your user/server).
 
 ## Install The Latest Version of OpenSSH for Windows
 
