@@ -53,8 +53,8 @@ You're done, you can now close the cmd terminal and use *uni*, or whatever name 
 
 **Tip:** add it to you Quick access shortcuts in Explorer, so in Explorer navigate to your new folder, for example, C: > Users > fred > uni, right-click on *uni* and select "Pin to Quick access".
 
-## Method 2, for More Experienced Windows Users
-- open a PowerShell terminal as an administrator and enter the following command, remembering to use the 3 values you noted above:
+## Method 2, using PowerShell
+- open a PowerShell prompt as an administrator, enter the following command, remembering to use the 3 values you noted above:
 
 ```Powershell
 New-Item -ItemType Junction -Path 'C:\Users\fred\' -Name 'uni' -Target 'C:\Users\fred\OneDrive - The University of Quahog'
