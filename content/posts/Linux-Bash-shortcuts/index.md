@@ -27,7 +27,8 @@ Working in a command line environment, like a Bash session, can be far more prod
 |<kbd>Ctrl</kbd> + <kbd>u</kbd> | cut backwards from the cursor to start of line |
 |<kbd>Ctrl</kbd> + <kbd>k</kbd> | cut forwards from the cursor to end of line |
 |<kbd>Ctrl</kbd> + <kbd>y</kbd> | paste the contents of the *paste buffer* |
-|<kbd>Esc</kbd> + <kbd>.</kbd> | paste the the last typed argument |
+|<kbd>Esc</kbd> + <kbd>.</kbd> | paste the last typed argument |
+|<kbd>Esc</kbd> + <kbd>n</kbd> + <kbd>Esc</kbd> + <kbd>.</kbd> | paste the *nth* argument from the previous command |
 |<kbd>Ctrl</kbd> + <kbd>_</kbd> | undo |
 |<kbd>Ctrl</kbd> + <kbd>l</kbd> | clear the screen |
 |<kbd>Ctrl</kbd> + <kbd>c</kbd> | cancel the current running command |
@@ -45,6 +46,18 @@ Working in a command line environment, like a Bash session, can be far more prod
 | ```^string^newstring^``` | re-execute the last command, replacing *string* with *newstring* |
 |<kbd>Ctrl</kbd> + <kbd>r</kbd> | begin *search history mode*, type a few characters, <br /> repeat press <kbd>Ctrl</kbd> + <kbd>r</kbd> for next match |
 |<kbd>Ctrl</kbd> + <kbd>g</kbd> | escape *search history mode* |
+
+### Using Arguments From Command Line History
+
+| Shortcut  | Function                                      |
+|-----------|-----------------------------------------------|
+| ```command !$``` | execute *command* and use the last argument of the previous command |
+| ```command !*``` | execute *command* and use all arguments of the previous command |
+| ```command !:n``` | execute *command* and use the *nth* argument of the previous command |
+| ```command !m:$``` | execute *command* and use the last argument of the command at line number *m* |
+| ```command !m:*``` | execute *command* and use the all arguments of of the command at line number *m* |
+| ```command !m:n``` | execute *command* and use the *nth* argument of the command at line number *m* |
+| ```command !-m:n``` | execute *command* and use the *nth* argument of the the *mth* last command |
 
 ### Managing Command Line History
 
