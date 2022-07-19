@@ -1,7 +1,7 @@
 ---
 title: "Bash: Productivity Shortcuts"
 description: A collection of keyboard shortcuts that improve productivity in Bash.
-date: 2022-04-08T20:13:00+01:00
+date: 2022-07-19T09:00:00+01:00
 draft: false
 toc: true
 pinned: false
