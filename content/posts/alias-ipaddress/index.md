@@ -77,6 +77,8 @@ curl https://ipinfo.io
 Also, using the Linux DNS util command, `dig`:
 
 ```Bash
+dig whoami.akamai.net @ns1-1.akamaitech.net +short
+dig myip.opendns.com @resolver1.opendns.com +short
 dig TXT o-o.myaddr.l.google.com @ns1.google.com +short
 dig TXT ch whoami.cloudflare @1.0.0.1
 ```
