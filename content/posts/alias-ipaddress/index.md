@@ -43,7 +43,7 @@ alias ipint="ip addr | awk '\$1==\"inet\" && \$3!=\"scope\" {print \$2}' "
 
 # Alias for device's IP address externally, from the internet.
 # An external service is required to return the external IP address
-alias ipext="curl icanhazip.com"
+alias ipext="curl https://icanhazip.com"
 ```
 
 ### How To Retrieve IP Addresses Using Bash
@@ -96,7 +96,7 @@ alias ipint="ip addr | awk '\$1==\"inet\" && \$3!=\"scope\" {print \$2}' "
 
 # Alias for device's IP address as seen externally, from the internet.
 # An external service is required to return the external IP address
-alias ipext="curl icanhazip.com"
+alias ipext="curl https://icanhazip.com"
 ```
 
 ### Adding Aliases To The .bashrc File
@@ -181,10 +181,19 @@ Set-Alias -Name ipint -Value Get-IPInternal
 
 As with Linux, in order to find the external IP address, a service beyond the LAN needs to be called, such as a server on the internet. Many services exist, this example uses `icanhazip.com`.  This can be changed to your own preferred service.
 
+The Linux section above mentions use of the command, `dig`.  In PowerShell, a similar commandlet is availble, `Resolve-DnsName`. This could be used with a number of DNS providers, for example:
+
+```Powershell
+Resolve-DnsName -Name myip.opendns.com -NoHostsFile -DnsOnly -Server resolver1.opendns.com | Select -ExpandProperty IPAddress
+Resolve-DnsName -Name whoami.akamai.net -NoHostsFile -DnsOnly -Server ns1-1.akamaitech.net | Select -ExpandProperty IPAddress
+Resolve-DnsName -Name o-o.myaddr.l.google.com -Type TXT -NoHostsFile -DnsOnly -Server ns1.google.com | Select -ExpandProperty Strings
+```
+
+Below, I have used the following function for $PROFILE:
+
 ```Powershell
 function Get-IPExternal {
-    $Response = Invoke-WebRequest -URI icanhazip.com
-    $Response.content
+    Resolve-DnsName -Name myip.opendns.com -NoHostsFile -DnsOnly -Server resolver1.opendns.com | Select -ExpandProperty IPAddress
 }
 Set-Alias -Name ipext -Value Get-IPExternal
 ```
