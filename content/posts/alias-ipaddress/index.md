@@ -1,7 +1,7 @@
 ---
 title: "Use An Alias To Quickly Find Your IP Address - Windows & Linux"
 description: How to create an Alias as a quick & easy way to retrieve your IP address, in Linux and Windows.
-date: 2022-03-31T11:37:01+00:00
+date: 2022-08-21T11:37:01+00:00
 draft: false
 toc: true
 pinned: false
@@ -65,7 +65,20 @@ ip addr | awk -F' |/' '$5=="inet" && $8!="scope" {print $6}'
 In order to find the external IP address, a service beyond the LAN needs to be called, such as a server on the internet. Many services exist, this example uses `icanhazip.com`.  This can be changed to your own preferred service.
 
 ```Bash
-curl icanhazip.com
+curl https://icanhazip.com
+```
+
+Note that other external services are available, for example:
+
+```Bash
+curl https://ipinfo.io
+```
+
+Also, using the Linux DNS util command, `dig`:
+
+```Bash
+dig TXT o-o.myaddr.l.google.com @ns1.google.com +short
+dig TXT ch whoami.cloudflare @1.0.0.1
 ```
 
 ### Creating Aliases For The Bash Commands
