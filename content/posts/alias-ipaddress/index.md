@@ -62,7 +62,7 @@ ip addr | awk -F' |/' '$5=="inet" && $8!="scope" {print $6}'
 
 #### External Address
 
-In order to find the external IP address, a service beyond the LAN needs to be called, such as a server on the internet. Many services exist, this example uses `icanhazip.com`.  This can be changed to your own preferred service.
+In order to find the external IP address, a service beyond the LAN needs to be called, such as a server on the internet. Many services exist, this example uses `https://icanhazip.com`.  This can be changed to your own preferred service.
 
 ```Bash
 curl https://icanhazip.com
@@ -71,7 +71,7 @@ curl https://icanhazip.com
 Note that other external services are available, for example:
 
 ```Bash
-curl https://ipinfo.io
+curl https://ipinfo.io/ip
 ```
 
 Also, using the Linux DNS util command, `dig`:
@@ -181,6 +181,21 @@ Set-Alias -Name ipint -Value Get-IPInternal
 
 As with Linux, in order to find the external IP address, a service beyond the LAN needs to be called, such as a server on the internet. Many services exist, this example uses `icanhazip.com`.  This can be changed to your own preferred service.
 
+```Powershell
+curl https://icanhazip.com
+```
+PowerShell has `Invoke-WebRequest`, used like this:
+
+```Powershell
+(Invoke-WebRequest https://icanhazip.com).content
+```
+
+or, using a different external site:
+
+```Powershell
+(Invoke-WebRequest https://ipinfo.io/ip).content
+```
+
 The Linux section above mentions use of the command, `dig`.  In PowerShell, a similar commandlet is availble, `Resolve-DnsName`. This could be used with a number of DNS providers, for example:
 
 ```Powershell
@@ -189,11 +204,17 @@ Resolve-DnsName -Name whoami.akamai.net -NoHostsFile -DnsOnly -Server ns1-1.akam
 Resolve-DnsName -Name o-o.myaddr.l.google.com -Type TXT -NoHostsFile -DnsOnly -Server ns1.google.com | Select -ExpandProperty Strings
 ```
 
+This can be simplified, to:
+
+```Powershell
+(Resolve-DnsName myip.opendns.com -Server resolver1.opendns.com).IPAddress
+```
+
 Below, I have used the following function for $PROFILE:
 
 ```Powershell
 function Get-IPExternal {
-    Resolve-DnsName -Name myip.opendns.com -NoHostsFile -DnsOnly -Server resolver1.opendns.com | Select -ExpandProperty IPAddress
+    (Resolve-DnsName myip.opendns.com -Server resolver1.opendns.com).IPAddress
 }
 Set-Alias -Name ipext -Value Get-IPExternal
 ```
