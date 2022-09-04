@@ -16,11 +16,11 @@ If your employer or university provides you with Microsoft OneDrive, you'll know
 
 It is possible to rename the OneDrive folder, but the renaming method is very hacky, **high risk** and involves numerous changes within the Windows registry.  It is not recommended.
 
-![screenshot of Quick access in Explorer](/images/mklinkqa2.png "Quick access to your handy new shortname for OneDrive")
-
 An alternative is to keep the long folder name unchanged and to simply avoid using it by creating a symbolic link ("symlink", for short) to it and using the symlink instead.  The specific type of symlink being used here is a [Junction Point](https://docs.microsoft.com/en-gb/windows/win32/fileio/symbolic-links).
 
 > The symlink looks and behaves similar to a folder. You can give it a simple & short name, for example, "uni".
+
+![screenshot of Quick access in Explorer](/images/mklinkqa2.png "Quick access to your handy new shortname for OneDrive")
 
 For example, the paths below point to the *same location*:
 
