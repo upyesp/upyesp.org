@@ -1,7 +1,7 @@
 ---
 title: "How To Avoid Long OneDrive Folder Names"
 description: OneDrive from Microsoft is excellent, but those long folder names get in the way.  
-date: 2021-09-30T14:13:00+01:00
+date: 2022-09-04T14:13:00+01:00
 draft: false
 toc: false
 pinned: false
@@ -15,6 +15,8 @@ If your employer or university provides you with Microsoft OneDrive, you'll know
 <!--more-->
 
 It is possible to rename the OneDrive folder, but the renaming method is very hacky, **high risk** and involves numerous changes within the Windows registry.  It is not recommended.
+
+![screenshot of Quick access in Explorer](/images/mklinkqa2.png "Quick access to your handy new shortname for OneDrive")
 
 An alternative is to keep the long folder name unchanged and to simply avoid using it by creating a symbolic link ("symlink", for short) to it and using the symlink instead.  The specific type of symlink being used here is a [Junction Point](https://docs.microsoft.com/en-gb/windows/win32/fileio/symbolic-links).
 
@@ -36,7 +38,7 @@ Firstly, make a note of the following 3 things:
 1. The name of the symlink you want to use, for example something short like, "uni".
 
 ## Method 1, Using a Command/CMD Prompt
-- open a CMD prompt as an Administrator, so press <kbd>Windows</kbd> and type `cmd`, right-click on the top search result (Command Prompt App) and select "Run as administrator"
+- open a CMD prompt, so press <kbd>Windows</kbd> and type `cmd`, click on the top search result (Command Prompt App)
 - navigate to the parent folder you noted above and create your new symlink with a short name, using the `mklink` command with the `/J` parameter, for example:
 
 ```Batchfile
@@ -49,12 +51,16 @@ then:
 mklink /J uni "OneDrive - The University of Quahog"
 ```
 
+![screenshot of CMD prompt with example command for mklink](/images/mklinkhi.png "using mklink to create a symlink")
+
 You're done, you can now close the cmd terminal and use *uni*, or whatever name you created, as an alternative folder to your long OneDrive folder.
 
 **Tip:** add it to you Quick access shortcuts in Explorer, so in Explorer navigate to your new folder, for example, C: > Users > fred > uni, right-click on *uni* and select "Pin to Quick access".
 
+![screenshot of right-click context menu with Pin to Quick access selected](/images/mklinkqa.png "right-click to enable Pin to Quick access")
+
 ## Method 2, using PowerShell
-- open a PowerShell prompt as an administrator, enter the following command, remembering to use the 3 values you noted above:
+- open a PowerShell prompt, enter the following command, remembering to use the 3 values you noted above:
 
 ```Powershell
 New-Item -ItemType Junction -Path 'C:\Users\fred\' -Name 'uni' -Target 'C:\Users\fred\OneDrive - The University of Quahog'
