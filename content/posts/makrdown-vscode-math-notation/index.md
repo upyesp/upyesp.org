@@ -1,7 +1,7 @@
 ---
 title: "Cheat Sheet: Math Notation In Markdown"
 description: Cheat Sheet of common mMath notation in Markdown documents. 
-date: 2022-09-95T10:00:00+01:00
+date: 2022-09-05T10:00:00+01:00
 draft: false
 toc: false
 pinned: false
