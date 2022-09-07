@@ -54,7 +54,6 @@ $$
 | Squared, Cubed, nth-Power        | $a^2$<br>$a^3$<br>$a^n$                                | `$a^2$`<br>`$a^3$`<br>`$a^n$`                            | `$$`<br>`a^3`<br>`$$`         |
 | Square Root, Cube Root, nth-Root | $\sqrt{a}$<br>$\sqrt[3]{a}$<br>$\sqrt[n]{a}$           | `$\sqrt{a}$`<br>`$\sqrt[3]{a}$`<br>`$\sqrt[n]{a}$`       | `$$`<br>`\sqrt[3]{a}`<br>`$$` |
 
-
 ## Equality Symbols
 
 | Notation                  |           Example          |           Inline          | Block                                   |
@@ -65,3 +64,10 @@ $$
 | Proportional To           |        $a \propto b$       |       `$a\proptob$`       | `$$`<br>`a\proptob`<br>`$$`             |
 | Approximately Equal To    | $\sin(0.01) \approx 0.01$  | `$\sin(0.01)\approx0.01$` | `$$`<br>`\sin(0.01)\approx0.01`<br>`$$` |
 
+## Comparison
+
+| Notation                                                  |          Example         |          Inline          | Block                    |
+|-----------------------------------------------------------|:------------------------:|:------------------------:|--------------------------|
+| a Less Than b<br>a Greater Than b                         |    $a < b$<br>$a > b$    |    `$a<b$`<br>`$a>b$`    | `$$`<br>`a<b`<br>`$$`    |
+| a Less Than or Equal To b<br>a Greater Than or Equal To b | $a \leq b$<br>$a \geq b$ | `$a\leqb$`<br>`$a\geqb$` | `$$`<br>`a\leqb`<br>`$$` |
+| a Much Smaller Than b<br>a Much Larger Than b             |  $a \ll b$<br>$a \gg b$  |  `$a\llb$`<br>`$a\ggb$`  | `$$`<br>`a\llb`<br>`$$`  |
