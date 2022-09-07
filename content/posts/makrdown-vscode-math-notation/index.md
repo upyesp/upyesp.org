@@ -54,7 +54,7 @@ $$
 | Squared, Cubed, nth-Power        | $a^2$<br>$a^3$<br>$a^n$                                | `$a^2$`<br>`$a^3$`<br>`$a^n$`                            | `$$`<br>`a^3`<br>`$$`         |
 | Square Root, Cube Root, nth-Root | $\sqrt{a}$<br>$\sqrt[3]{a}$<br>$\sqrt[n]{a}$           | `$\sqrt{a}$`<br>`$\sqrt[3]{a}$`<br>`$\sqrt[n]{a}$`       | `$$`<br>`\sqrt[3]{a}`<br>`$$` |
 
-## Equality Symbols
+## Equality
 
 | Notation                  |           Example          |           Inline          | Block                                   |
 |---------------------------|:--------------------------:|:-------------------------:|-----------------------------------------|
@@ -71,3 +71,11 @@ $$
 | a Less Than b<br>a Greater Than b                         |    $a < b$<br>$a > b$    |    `$a<b$`<br>`$a>b$`    | `$$`<br>`a<b`<br>`$$`    |
 | a Less Than or Equal To b<br>a Greater Than or Equal To b | $a \leq b$<br>$a \geq b$ | `$a\leqb$`<br>`$a\geqb$` | `$$`<br>`a\leqb`<br>`$$` |
 | a Much Smaller Than b<br>a Much Larger Than b             |  $a \ll b$<br>$a \gg b$  |  `$a\llb$`<br>`$a\ggb$`  | `$$`<br>`a\llb`<br>`$$`  |
+
+## Algebra
+
+| Notation       |                    Example                    |               Inline               | Block                                              |
+|----------------|:---------------------------------------------:|:----------------------------------:|----------------------------------------------------|
+| Factorial      | $5 ! = 5 \times 4 \times 3 \times 2 \times 1$ | $5!=5\times4\times3\times2\times1$ | `$$`<br>`5!=5\times4\times3\times2\times1`<br>`$$` |
+| Absolute Value |                 $\| -5 \| = 5$                |            `$\|-5\|=5$`            | `$$`<br>`\|-5\|=5`<br>`$$`                         |
+| Function Of    |                 $f(x) = 2x^2$                 |            `$f(x)=2x^2$`           | `$$`<br>`f(x)=2x^2`<br>`$$`                        |
