@@ -11,7 +11,7 @@ categories: [Documentation, Windows, Mac, Linux]
 series: [Markdown]
 ---
 
-A quick reference cheat sheet, on how to write math notation in Markdown documents, as supported in native VSCode.  Note that editor VSCode supports math notation based on TeX, LaTex, and KaTeX, without having to install  further libraries or applications that are sometimes required when using other editors and authoring tools.
+A quick reference cheat sheet, on how to write math notation in Markdown documents, as supported in native VSCode.  Note that editor VSCode supports math notation based on LaTex, by way of implementing KaTeX, without having to install further libraries or applications that are sometimes required when using other editors and authoring tools.
 
 <!--more-->
 
@@ -39,6 +39,10 @@ $$
    0<j<n
 \end{subarray}}
 $$
+
+The full list of supported $\KaTeX$ commands is available [here](https://katex.org/docs/supported.html).
+
+The following tables provide a quick reference for common math notation, specifically those included in the poster created by [Dominic Walliman](https://dominicwalliman.com/), available [here](https://www.flickr.com/photos/95869671@N08/40544016221/in/dateposted-public/).  See the associated YouTube, [The Map of Mathematics](https://youtu.be/OmJ-4B-mS-Y).
 
 ## Arithmetic
 
@@ -74,17 +78,17 @@ $$
 
 ## Algebra
 
-| Notation               |                               Example                              |                                Inline                                | Block                                              |
-|------------------------|:------------------------------------------------------------------:|:--------------------------------------------------------------------:|----------------------------------------------------|
-| Factorial              |            $5 ! = 5 \times 4 \times 3 \times 2 \times 1$           |                  $5!=5\times4\times3\times2\times1$                  | `$$`<br>`5!=5\times4\times3\times2\times1`<br>`$$` |
-| Absolute Value         |                           $\| -5 \| = 5$                           |                             `$\|-5\|=5$`                             | `$$`<br>`\|-5\|=5`<br>`$$`                         |
-| Function Of            |                            $f(x) = 2x^2$                           |                             `$f(x)=2x^2$`                            |             `$$`<br>`f(x)=2x^2`<br>`$$`            |
-| Change or Difference   |                       $\Delta x = x_1 - x_0$                       |                          `$\Deltax=x_1-x_0$`                         | `$$`<br>`\Deltax=x_1-x_0`<br>`$$`                  |
-| Pi                     |                         $\pi = 3.14159...$                         |                          `$\pi=3.14159...$`                          | `$$`<br>`\pi`<br>`$$1                              |
-| Euler's Constant       |                          $e = 2.71828...$                          |                           `$e=2.71828...$`                           | `$$`<br>`e = 2.71828...`<br>`$$`                   |
-| Sum                    |       $\displaystyle\sum_{k=3}^5 k^2 = 3^2 + 4^2 + 5^2 = 50$       |         `$\displaystyle\sum_{k=3}^5 k^2=2^2+3^2+4^2+5^2=50$`         | `$$`                                               |
-| Series Product         | $\displaystyle\prod_{x=2}^4 x^2 = 2^2 \times 3^2 \times 4^2 = 576$ | `$\displaystyle\prod_{x=2}^4 x^2 = 2^2 \times 3^2 \times 4^2 = 576$` | `\displaystyle\sum_{k=3}^5 k^2=3^2+4^2+5^2=50`     |
-| Brackets & Parentheses |                         $[...]$    $(...)$                         |                           `$[...]   (...)$`                          | `$$`                                               |
+| Notation               |                               Example                              |                                Inline                                | Block                                                              |
+|------------------------|:------------------------------------------------------------------:|:--------------------------------------------------------------------:|--------------------------------------------------------------------|
+| Factorial              |            $5 ! = 5 \times 4 \times 3 \times 2 \times 1$           |                  $5!=5\times4\times3\times2\times1$                  | `$$`<br>`5!=5\times4\times3\times2\times1`<br>`$$`                 |
+| Absolute Value         |                           $\| -5 \| = 5$                           |                             `$\|-5\|=5$`                             | `$$`<br>`\|-5\|=5`<br>`$$`                                         |
+| Function Of            |                            $f(x) = 2x^2$                           |                             `$f(x)=2x^2$`                            | `$$`<br>`f(x)=2x^2`<br>`$$`                                        |
+| Change or Difference   |                       $\Delta x = x_1 - x_0$                       |                          `$\Deltax=x_1-x_0$`                         | `$$`<br>`\Deltax=x_1-x_0`<br>`$$`                                  |
+| Pi                     |                         $\pi = 3.14159...$                         |                          `$\pi=3.14159...$`                          | `$$`<br>`\pi`<br>`$$`                                              |
+| Euler's Constant       |                          $e = 2.71828...$                          |                           `$e=2.71828...$`                           | `$$`<br>`e = 2.71828...`<br>`$$`                                   |
+| Sum                    |       $\displaystyle\sum_{k=3}^5 k^2 = 3^2 + 4^2 + 5^2 = 50$       |         `$\displaystyle\sum_{k=3}^5 k^2=2^2+3^2+4^2+5^2=50$`         | `$$`<br>`\displaystyle\sum_{k=3}^5 k^2=2^2+3^2+4^2+5^2=50`<br>`$$` |
+| Series Product         | $\displaystyle\prod_{x=2}^4 x^2 = 2^2 \times 3^2 \times 4^2 = 576$ | `$\displaystyle\prod_{x=2}^4 x^2 = 2^2 \times 3^2 \times 4^2 = 576$` | `$$`<br>`\displaystyle\sum_{k=3}^5 k^2=3^2+4^2+5^2=50`<br>`$$`     |
+| Brackets & Parentheses |                         $[...]$    $(...)$                         |                           `$[...]   (...)$`                          | `$$`<br>`[...]   (...)`<br>`$$`                                    |
 
 ## Angles
 
@@ -96,4 +100,14 @@ $$
 
 ## Probability & Statistics
 
-
+| Notation                                                                                                         |                               Example                               |                                 Inline                                | Block                                                                              |
+|------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------:|:---------------------------------------------------------------------:|------------------------------------------------------------------------------------|
+| Probability of Event A<br>Intersection Prob. of A & B<br>Union Prob. of A or B<br>Conditional Prob. of A Given B | $P(A)$ or $\Pr(A)$<br>$P(A \cap B)$<br>$P(A \cup B)$<br>$P(A \| B)$ | `$P(A)$ or $\Pr(A)$`<br>`$P(A\capB)$`<br>`$P(A\cupB)$`<br>`$P(A\|B)$` | `$$`<br>`P(A \cup B)`<br>`$$`                                                      |
+| Absolute Value                                                                                                   |                            $\| -5 \| = 5$                           |                             $P(A \cap B)$                             | `$$`<br>`\|-5\|=5`<br>`$$`                                                         |
+| Function Of                                                                                                      |                            $f(x) = 2x^2$                            |                             $P(A \cup B)$                             |                             `$$`<br>`f(x)=2x^2`<br>`$$`                            |
+| Change or Difference                                                                                             |                        $\Delta x = x_1 - x_0$                       |                              $P(A \| B)$                              | `$$`<br>`\Deltax=x_1-x_0`<br>`$$`                                                  |
+| Sum                                                                                                              |        $\displaystyle\sum_{k=3}^5 k^2 = 3^2 + 4^2 + 5^2 = 50$       |          `$\displaystyle\sum_{k=3}^5 k^2=2^2+3^2+4^2+5^2=50$`         | `$$`<br>`\displaystyle\sum_{k=3}^5 k^2=3^2+4^2+5^2=50`<br>`$$`                     |
+| Pi                                                                                                               |                          $\Pi = 3.14159...$                         |                           `$\Pi=3.14159...$`                          | `$$`<br>`\Pi`<br>`$$1                                                              |
+| Euler's Constant                                                                                                 |                           $e = 2.71828...$                          |                            `$e=2.71828...$`                           | `$$`<br>`e = 2.71828...`<br>`$$`                                                   |
+| Series Product                                                                                                   |  $\displaystyle\prod_{x=2}^4 x^2 = 2^2 \times 3^2 \times 4^2 = 576$ |  `$\displaystyle\prod_{x=2}^4 x^2 = 2^2 \times 3^2 \times 4^2 = 576$` | `$$`<br>`\displaystyle\prod_{x=2}^4 x^2 = 2^2 \times 3^2 \times 4^2 = 576`<br>`$$` |
+| Brackets & Parentheses                                                                                           |                          $[...]$    $(...)$                         |                           `$[...]   (...)$`                           | `$$`<br>`[...]`<br>`(...)`<br>`$$`                                                 |
