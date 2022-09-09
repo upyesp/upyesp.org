@@ -74,18 +74,17 @@ $$
 
 ## Algebra
 
-| Notation               |                               Example                              |                                Inline                                | Block                                                                              |
-|------------------------|:------------------------------------------------------------------:|:--------------------------------------------------------------------:|------------------------------------------------------------------------------------|
-| Factorial              |            $5 ! = 5 \times 4 \times 3 \times 2 \times 1$           |                  $5!=5\times4\times3\times2\times1$                  | `$$`<br>`5!=5\times4\times3\times2\times1`<br>`$$`                                 |
-| Absolute Value         |                           $\| -5 \| = 5$                           |                             `$\|-5\|=5$`                             | `$$`<br>`\|-5\|=5`<br>`$$`                                                         |
-| Function Of            |                            $f(x) = 2x^2$                           |                             `$f(x)=2x^2$`                            |                             `$$`<br>`f(x)=2x^2`<br>`$$`                            |
-| Change or Difference   |                       $\Delta x = x_1 - x_0$                       |                          `$\Deltax=x_1-x_0$`                         | `$$`<br>`\Deltax=x_1-x_0`<br>`$$`                                                  |
-| Sum                    |       $\displaystyle\sum_{k=3}^5 k^2 = 3^2 + 4^2 + 5^2 = 50$       |         `$\displaystyle\sum_{k=3}^5 k^2=2^2+3^2+4^2+5^2=50$`         | `$$`<br>`\displaystyle\sum_{k=3}^5 k^2=3^2+4^2+5^2=50`<br>`$$`                     |
-| Pi                     |                         $\Pi = 3.14159...$                         |                          `$\Pi=3.14159...$`                          | `$$`<br>`\Pi`<br>`$$1                                                              |
-| Euler's Constant       |                          $e = 2.71828...$                          |                           `$e=2.71828...$`                           | `$$`<br>`e = 2.71828...`<br>`$$`                                                   |
-| Series Product         | $\displaystyle\prod_{x=2}^4 x^2 = 2^2 \times 3^2 \times 4^2 = 576$ | `$\displaystyle\prod_{x=2}^4 x^2 = 2^2 \times 3^2 \times 4^2 = 576$` | `$$`<br>`\displaystyle\prod_{x=2}^4 x^2 = 2^2 \times 3^2 \times 4^2 = 576`<br>`$$` |
-| Brackets & Parentheses |                         $[...]$    $(...)$                         |                           `$[...]   (...)$`                          | `$$`<br>`[...]`<br>`(...)`<br>`$$`                                                 |
-
+| Notation               |                               Example                              |                                Inline                                | Block                                              |
+|------------------------|:------------------------------------------------------------------:|:--------------------------------------------------------------------:|----------------------------------------------------|
+| Factorial              |            $5 ! = 5 \times 4 \times 3 \times 2 \times 1$           |                  $5!=5\times4\times3\times2\times1$                  | `$$`<br>`5!=5\times4\times3\times2\times1`<br>`$$` |
+| Absolute Value         |                           $\| -5 \| = 5$                           |                             `$\|-5\|=5$`                             | `$$`<br>`\|-5\|=5`<br>`$$`                         |
+| Function Of            |                            $f(x) = 2x^2$                           |                             `$f(x)=2x^2$`                            |             `$$`<br>`f(x)=2x^2`<br>`$$`            |
+| Change or Difference   |                       $\Delta x = x_1 - x_0$                       |                          `$\Deltax=x_1-x_0$`                         | `$$`<br>`\Deltax=x_1-x_0`<br>`$$`                  |
+| Pi                     |                         $\pi = 3.14159...$                         |                          `$\pi=3.14159...$`                          | `$$`<br>`\pi`<br>`$$1                              |
+| Euler's Constant       |                          $e = 2.71828...$                          |                           `$e=2.71828...$`                           | `$$`<br>`e = 2.71828...`<br>`$$`                   |
+| Sum                    |       $\displaystyle\sum_{k=3}^5 k^2 = 3^2 + 4^2 + 5^2 = 50$       |         `$\displaystyle\sum_{k=3}^5 k^2=2^2+3^2+4^2+5^2=50$`         | `$$`                                               |
+| Series Product         | $\displaystyle\prod_{x=2}^4 x^2 = 2^2 \times 3^2 \times 4^2 = 576$ | `$\displaystyle\prod_{x=2}^4 x^2 = 2^2 \times 3^2 \times 4^2 = 576$` | `\displaystyle\sum_{k=3}^5 k^2=3^2+4^2+5^2=50`     |
+| Brackets & Parentheses |                         $[...]$    $(...)$                         |                           `$[...]   (...)$`                          | `$$`                                               |
 
 ## Angles
 
@@ -93,5 +92,8 @@ $$
 |--------------------------|:-----------------------:|:-------------------------:|-----------------------------------------|
 | Angle                    |         $\angle$        |         `$\angle$`        | `$$`<br>`\angle`<br>`$$`                |
 | Degree, Arc Min, Arc Sec |    $30\degree45'30''$   |    `$30\degree45'30''$`   | `$$`<br>`30\degree45'30''`<br>`$$`      |
-| Radians                  | $360\degree = 2\Pi rad$ | `$360\degree = 2\Pi rad$` | `$$`<br>`360\degree = 2\Pi rad`<br>`$$` |
+| Radians                  | $360\degree = 2\pi rad$ | `$360\degree = 2\pi rad$` | `$$`<br>`360\degree = 2\pi rad`<br>`$$` |
+
+## Probability & Statistics
+
 
