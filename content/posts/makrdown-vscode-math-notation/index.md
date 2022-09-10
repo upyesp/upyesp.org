@@ -127,28 +127,14 @@ The following tables provide a quick reference for common math notation, specifi
 
 ### Linear Algebra: Matrices
 
-$A=\begin{bmatrix}1&2&3\cr4&5&6\end{bmatrix}$
-
-
-
-```LaTeX
-$$
-A =
-\begin{bmatrix}
-1 & 2 & 3 \cr
-4 & 5 & 6
-\end{bmatrix}
-$$
-```
-
-| Notation                                   |                          Example                          |                      Inline                     | Block                                                                           |
-|--------------------------------------------|:---------------------------------------------------------:|:-----------------------------------------------:|---------------------------------------------------------------------------------|
-| Matrix, 2 By 3                             | $A=\begin{bmatrix} 1 & 2 & 3 \cr 4 & 5 & 6 \end{bmatrix}$ | `$A=\begin{bmatrix}1&2&3\cr4&5&6\end{bmatrix}$` | `$$`<br>`A=\begin{bmatrix}`<br>`1&2&3\cr`<br>`4&5&6`<br>`\end{bmatrix}`<br>`$$` |
-| Product                                    |                        $A \cdot B$                        |                  `$A \cdot B$`                  | `$$`<br>`A \cdot B`<br>`$$`                                                     |
-| Hadamard Product                           |                                                           |                                                 |                                                                                 |
-| Kronecker Product                          |                                                           |                                                 |                                                                                 |
-| Transposed Matrix                          |                                                           |                                                 |                                                                                 |
-| Hermitian Matrix or<br>Conjugate Transpose |                                                           |                                                 |                                                                                 |
-| Inverse Matrix                             |                                                           |                                                 |                                                                                 |
-| Determinant                                |                                                           |                                                 |                                                                                 |
-| Norm                                       |                                                           |                                                 |                                                                                 |
+| Notation                                   |                          Example                          |                      Inline                     | Block                                                                                          |
+|--------------------------------------------|:---------------------------------------------------------:|:-----------------------------------------------:|------------------------------------------------------------------------------------------------|
+| Matrix, 2 By 3                             | $A=\begin{bmatrix} 1 & 2 & 3 \cr 4 & 5 & 6 \end{bmatrix}$ | `$A=\begin{bmatrix}1&2&3\cr4&5&6\end{bmatrix}$` | `$$`<br>`A=`<br>`\begin{bmatrix}`<br>`1 & 2 & 3 \cr`<br>`4 & 5 & 6`<br>`\end{bmatrix}`<br>`$$` |
+| Product                                    |                        $A \cdot B$                        |                  `$A \cdot B$`                  | `$$`<br>`A \cdot B`<br>`$$`                                                                    |
+| Hadamard Product                           |                        $A \circ B$                        |                  `$A \circ B$`                  | `$$`<br>`A \circ B`<br>`$$`                                                                    |
+| Kronecker Product                          |                       $A \otimes B$                       |                 `$A \otimes B$`                 | `$$`<br>`A \otimes B`<br>`$$`                                                                  |
+| Transposed Matrix                          |                           $A^T$                           |                     `$A^T$`                     | `$$`<br>`A^T`<br>`$$`                                                                          |
+| Hermitian Matrix or<br>Conjugate Transpose |                    $A^\dag$<br>$A^\ast$                   |             `$A^\dag$`<br>`$A^\ast$`            | `$$`<br>`A^\dag`<br>`A^\ast`<br>`$$`                                                           |
+| Inverse Matrix                             |                          $A^{-1}$                         |                    `$A^{-1}$`                   | `$$`<br>`A^{-1}`<br>`$$`                                                                       |
+| Determinant                                |                          $\|A\|$                          |                    `$\|A\|$`                    | `$$`<br>`\|A\|`<br>`$$`                                                                        |
+| Norm                                       |                        $\|\|A\|\|$                        |                  `$\|\|A\|\|$`                  | `$$`<br>`\|\|A\|\|`<br>`$$`                                                                    |
