@@ -111,15 +111,17 @@ The following tables provide a quick reference for common math notation, specifi
 | Standard Deviation             |                 $\sigma$                 |                 '$\sigma$'                 | `$$`<br>`\sigma`<br>`$$`                                 |
 | Varience                       |                $\sigma^2$                |                `$\sigma^2$`                | `$$`<br>`\sigma^2`<br>`$$`                               |
 
-## Linear Algebra
+## Linear Algebra: Vectors
 
-| Notation      |                      Example                      |                    Inline                    | Block                                                                                          |
-|---------------|:-------------------------------------------------:|:--------------------------------------------:|------------------------------------------------------------------------------------------------|
-| Vectors       |         $\mathbf{V} \overline{V} \vec{V}$         |       `$\mathbf{V}\overline{V}\vec{V}$`      | `$$`<br>`\mathbf{V} \overline{V} \vec{V}`<br>`$$`                                              |
-| Row Vector    |     $\begin{pmatrix} 1 & 2 & 3 \end{pmatrix}$     |     `$\begin{pmatrix}1&2&3\end{pmatrix}$`    | `$$`<br>`\begin{pmatrix}`<br>`   1 & 2 & 3`<br>`\end{pmatrix}`<br>`$$`                         |
-| Column Vector | $\begin{pmatrix} 4 \cr 5 \cr 6 \cr \end{pmatrix}$ | `$\begin{pmatrix}4\cr5\cr6\cr\end{pmatrix}$` | `$$`<br>`\begin{pmatrix}`<br>`   4 \cr`<br>`   5 \cr`<br>`   6 \cr`<br>`\end{pmatrix}`<br>`$$` |
-| Dot Product   |                                                   |                                              |                                                                                                |
-| Cross Product |                                                   |                                              |                                                                                                |
-| Length of V   |                                                   |                                              |                                                                                                |
-| Norm of V     |                                                   |                                              |                                                                                                |
-|               |                                                   |                                              |                                                                                                |
+| Notation      |                               Example                              |                                Inline                               | Block                                                                                            |
+|---------------|:------------------------------------------------------------------:|:-------------------------------------------------------------------:|--------------------------------------------------------------------------------------------------|
+| Vectors       |                  $\mathbf{v} \overline{v} \vec{v}$                 |                  `$\mathbf{v}\overline{v}\vec{v}$`                  | `$$`<br>`\mathbf{v} \overline{v} \vec{v}`<br>`$$`                                                |
+| Row Vector    |            $v = \begin{pmatrix} 1 & 2 & 3 \end{pmatrix}$           |               `$v=\begin{pmatrix}1&2&3\end{pmatrix}$`               | `$$`<br>`v = \begin{pmatrix}`<br>`   1 & 2 & 3`<br>`\end{pmatrix}`<br>`$$`                       |
+| Column Vector |        $w = \begin{pmatrix} 4 \cr 5 \cr 6 \cr \end{pmatrix}$       |            `$w=\begin{pmatrix}4\cr5\cr6\cr\end{pmatrix}$`           | `$$`<br>`w=\begin{pmatrix}`<br>`   4 \cr`<br>`   5 \cr`<br>`   6 \cr`<br>`\end{pmatrix}`<br>`$$` |
+| Dot Product   | $\mathbf{v} \cdot \mathbf{w}$<br>$(w,w)$<br>$\left< v\| w \right>$ | `$\mathbf{v}\cdot\mathbf{w}$`<br>`$(w,w)$`<br>`$\left<v\|w right>$` | `$$`<br>`\mathbf{v}\cdot\mathbf{w}`<br>`(w,w)`<br>`\left<v\|w right>`<br>`$$`                    |
+| Cross Product |                            $v \times w$                            |                             `$v\timesw$`                            | `$$`<br>`v\timesw`<br>`$$`                                                                       |
+| Length of v   |                               $\|v\|$                              |                              `$\|v\|$`                              | `$$`<br>`\|v\|`<br>`$$`                                                                          |
+| Norm of v     |                             $\|\|v\|\|$                            |                            `$\|\|v\|\|$`                            | `$$`<br>`\|\|v\|\|`<br>`$$`                                                                      |
+
+## Linear Algebra: Matrices
+
