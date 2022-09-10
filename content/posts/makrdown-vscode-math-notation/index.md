@@ -129,11 +129,11 @@ The following tables provide a quick reference for common math notation, specifi
 
 $A=\begin{bmatrix}1&2&3\cr4&5&6\end{bmatrix}$
 
-```
+```Latex
 $$
-A=\begin{bmatrix}
-1&2&3\cr
-4&5&6
+A = \begin{bmatrix}
+  1 & 2 & 3 \cr
+  4 & 5 & 6
 \end{bmatrix}
 $$
 ```
