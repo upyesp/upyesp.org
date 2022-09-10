@@ -115,7 +115,7 @@ The following tables provide a quick reference for common math notation, specifi
 
 | Notation      |                      Example                      |                    Inline                    | Block                                                                                          |
 |---------------|:-------------------------------------------------:|:--------------------------------------------:|------------------------------------------------------------------------------------------------|
-| Vectors       |         $\mathbf{V} \overline{V} \vec{V}$         |        $\mathbf{V}\overline{V}\vec{V}$       | `$$`<br>`\mathbf{V} \overline{V} \vec{V}`<br>`$$`                                              |
+| Vectors       |         $\mathbf{V} \overline{V} \vec{V}$         |       `$\mathbf{V}\overline{V}\vec{V}$`      | `$$`<br>`\mathbf{V} \overline{V} \vec{V}`<br>`$$`                                              |
 | Row Vector    |     $\begin{pmatrix} 1 & 2 & 3 \end{pmatrix}$     |     `$\begin{pmatrix}1&2&3\end{pmatrix}$`    | `$$`<br>`\begin{pmatrix}`<br>`   1 & 2 & 3`<br>`\end{pmatrix}`<br>`$$`                         |
 | Column Vector | $\begin{pmatrix} 4 \cr 5 \cr 6 \cr \end{pmatrix}$ | `$\begin{pmatrix}4\cr5\cr6\cr\end{pmatrix}$` | `$$`<br>`\begin{pmatrix}`<br>`   4 \cr`<br>`   5 \cr`<br>`   6 \cr`<br>`\end{pmatrix}`<br>`$$` |
 | Dot Product   |                                                   |                                              |                                                                                                |
