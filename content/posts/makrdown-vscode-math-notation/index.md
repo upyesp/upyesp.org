@@ -129,13 +129,26 @@ The following tables provide a quick reference for common math notation, specifi
 
 $A=\begin{bmatrix}1&2&3\cr4&5&6\end{bmatrix}$
 
-```Latex
+
+
+```LaTeX
 $$
-A = \begin{bmatrix}
-  1 & 2 & 3 \cr
-  4 & 5 & 6
+A =
+\begin{bmatrix}
+1 & 2 & 3 \cr
+4 & 5 & 6
 \end{bmatrix}
 $$
 ```
 
-
+| Notation                                   |                          Example                          |                      Inline                     | Block                                                                           |
+|--------------------------------------------|:---------------------------------------------------------:|:-----------------------------------------------:|---------------------------------------------------------------------------------|
+| Matrix, 2 By 3                             | $A=\begin{bmatrix} 1 & 2 & 3 \cr 4 & 5 & 6 \end{bmatrix}$ | `$A=\begin{bmatrix}1&2&3\cr4&5&6\end{bmatrix}$` | `$$`<br>`A=\begin{bmatrix}`<br>`1&2&3\cr`<br>`4&5&6`<br>`\end{bmatrix}`<br>`$$` |
+| Product                                    |                        $A \cdot B$                        |                  `$A \cdot B$`                  | `$$`<br>`A \cdot B`<br>`$$`                                                     |
+| Hadamard Product                           |                                                           |                                                 |                                                                                 |
+| Kronecker Product                          |                                                           |                                                 |                                                                                 |
+| Transposed Matrix                          |                                                           |                                                 |                                                                                 |
+| Hermitian Matrix or<br>Conjugate Transpose |                                                           |                                                 |                                                                                 |
+| Inverse Matrix                             |                                                           |                                                 |                                                                                 |
+| Determinant                                |                                                           |                                                 |                                                                                 |
+| Norm                                       |                                                           |                                                 |                                                                                 |
