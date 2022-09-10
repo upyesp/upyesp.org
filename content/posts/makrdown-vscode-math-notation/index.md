@@ -42,7 +42,7 @@ $$
 
 The full list of supported $\KaTeX$ commands is available [here](https://katex.org/docs/supported.html).
 
-The following tables provide a quick reference for common math notation, specifically those included in the poster created by [Dominic Walliman](https://dominicwalliman.com/), available [here](https://www.flickr.com/photos/95869671@N08/40544016221/in/dateposted-public/).  See the associated YouTube, [The Map of Mathematics](https://youtu.be/OmJ-4B-mS-Y).
+The following tables provide a quick reference for common math notation, specifically those included in the [poster](https://www.flickr.com/photos/95869671@N08/40544016221/in/dateposted-public/) created by [Dominic Walliman](https://dominicwalliman.com/).  See the associated YouTube, [The Map of Mathematics](https://youtu.be/OmJ-4B-mS-Y).
 
 ## Arithmetic
 
@@ -100,14 +100,9 @@ The following tables provide a quick reference for common math notation, specifi
 
 ## Probability & Statistics
 
-| Notation                                                                                                         |                               Example                               |                                 Inline                                | Block                                                                              |
-|------------------------------------------------------------------------------------------------------------------|:-------------------------------------------------------------------:|:---------------------------------------------------------------------:|------------------------------------------------------------------------------------|
-| Probability of Event A<br>Intersection Prob. of A & B<br>Union Prob. of A or B<br>Conditional Prob. of A Given B | $P(A)$ or $\Pr(A)$<br>$P(A \cap B)$<br>$P(A \cup B)$<br>$P(A \| B)$ | `$P(A)$ or $\Pr(A)$`<br>`$P(A\capB)$`<br>`$P(A\cupB)$`<br>`$P(A\|B)$` | `$$`<br>`P(A \cup B)`<br>`$$`                                                      |
-| Absolute Value                                                                                                   |                            $\| -5 \| = 5$                           |                             $P(A \cap B)$                             | `$$`<br>`\|-5\|=5`<br>`$$`                                                         |
-| Function Of                                                                                                      |                            $f(x) = 2x^2$                            |                             $P(A \cup B)$                             |                             `$$`<br>`f(x)=2x^2`<br>`$$`                            |
-| Change or Difference                                                                                             |                        $\Delta x = x_1 - x_0$                       |                              $P(A \| B)$                              | `$$`<br>`\Deltax=x_1-x_0`<br>`$$`                                                  |
-| Sum                                                                                                              |        $\displaystyle\sum_{k=3}^5 k^2 = 3^2 + 4^2 + 5^2 = 50$       |          `$\displaystyle\sum_{k=3}^5 k^2=2^2+3^2+4^2+5^2=50$`         | `$$`<br>`\displaystyle\sum_{k=3}^5 k^2=3^2+4^2+5^2=50`<br>`$$`                     |
-| Pi                                                                                                               |                          $\Pi = 3.14159...$                         |                           `$\Pi=3.14159...$`                          | `$$`<br>`\Pi`<br>`$$1                                                              |
-| Euler's Constant                                                                                                 |                           $e = 2.71828...$                          |                            `$e=2.71828...$`                           | `$$`<br>`e = 2.71828...`<br>`$$`                                                   |
-| Series Product                                                                                                   |  $\displaystyle\prod_{x=2}^4 x^2 = 2^2 \times 3^2 \times 4^2 = 576$ |  `$\displaystyle\prod_{x=2}^4 x^2 = 2^2 \times 3^2 \times 4^2 = 576$` | `$$`<br>`\displaystyle\prod_{x=2}^4 x^2 = 2^2 \times 3^2 \times 4^2 = 576`<br>`$$` |
-| Brackets & Parentheses                                                                                           |                          $[...]$    $(...)$                         |                           `$[...]   (...)$`                           | `$$`<br>`[...]`<br>`(...)`<br>`$$`                                                 |
+| Notation                       |       Example      |        Inline        | Block                       |
+|--------------------------------|:------------------:|:--------------------:|-----------------------------|
+| Probability of Event A         | $P(A)$ or $\Pr(A)$ | `$P(A)$ or $\Pr(A)$` | `$$`<br>`P(A)`<br>`$$`      |
+| Intersection Prob. of A & B    |    $P(A \cap B)$   |     `$P(A\capB)$`    | `$$`<br>`P(A\capB)`<br>`$$` |
+| Union Prob. of A or B          |    $P(A \cup B)$   |     `$P(A\cupB)$`    | `$$`<br>`P(A\cupB)`<br>`$$` |
+| Conditional Prob. of A Given B |     $P(A \| B)$    |      `$P(A\|B)$`     | `$$`<br>`P(A\|B)`<br>`$$`   |
