@@ -100,9 +100,13 @@ The following tables provide a quick reference for common math notation, specifi
 
 ## Probability & Statistics
 
-| Notation                       |       Example      |        Inline        | Block                       |
-|--------------------------------|:------------------:|:--------------------:|-----------------------------|
-| Probability of Event A         | $P(A)$ or $\Pr(A)$ | `$P(A)$ or $\Pr(A)$` | `$$`<br>`P(A)`<br>`$$`      |
-| Intersection Prob. of A & B    |    $P(A \cap B)$   |     `$P(A\capB)$`    | `$$`<br>`P(A\capB)`<br>`$$` |
-| Union Prob. of A or B          |    $P(A \cup B)$   |     `$P(A\cupB)$`    | `$$`<br>`P(A\cupB)`<br>`$$` |
-| Conditional Prob. of A Given B |     $P(A \| B)$    |      `$P(A\|B)$`     | `$$`<br>`P(A\|B)`<br>`$$`   |
+| Notation                       |                  Example                 |                   Inline                   | Block                                                    |
+|--------------------------------|:----------------------------------------:|:------------------------------------------:|----------------------------------------------------------|
+| Probability of Event A         |            $P(A)$ or $\Pr(A)$            |            `$P(A)$ or $\Pr(A)$`            | `$$`<br>`P(A)`<br>`$$`                                   |
+| Intersection Prob. of A & B    |               $P(A \cap B)$              |                `$P(A\capB)$`               | `$$`<br>`P(A\capB)`<br>`$$`                              |
+| Union Prob. of A or B          |               $P(A \cup B)$              |                `$P(A\cupB)$`               | `$$`<br>`P(A\cupB)`<br>`$$`                              |
+| Conditional Prob. of A Given B |                $P(A \| B)$               |                 `$P(A\|B)$`                | `$$`<br>`P(A\|B)`<br>`$$`                                |
+| Median                         |                $\tilde{x}$               |                `$\tilde{x}$`               | `$$`<br>`\tilde{x}`<br>`$$`                              |
+| Population Mean                | $\mu , \overline{x} , \langle x \rangle$ | `$\mu , \overline{x} , \langle x \rangle$` | `$$`<br>`\mu , \overline{x} , \langle x \rangle`<br>`$$` |
+| Standard Deviation             |                 $\sigma$                 |                 '$\sigma$'                 | `$$`<br>`\sigma`<br>`$$`                                 |
+| Varience                       |                $\sigma^2$                |                `$\sigma^2$`                | `$$`<br>`\sigma^2`<br>`$$`                               |
