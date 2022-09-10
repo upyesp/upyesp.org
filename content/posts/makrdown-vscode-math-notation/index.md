@@ -111,7 +111,9 @@ The following tables provide a quick reference for common math notation, specifi
 | Standard Deviation             |                 $\sigma$                 |                 '$\sigma$'                 | `$$`<br>`\sigma`<br>`$$`                                 |
 | Varience                       |                $\sigma^2$                |                `$\sigma^2$`                | `$$`<br>`\sigma^2`<br>`$$`                               |
 
-## Linear Algebra: Vectors
+## Linear Algebra
+
+### Linear Algebra: Vectors
 
 | Notation      |                               Example                              |                                Inline                               | Block                                                                                            |
 |---------------|:------------------------------------------------------------------:|:-------------------------------------------------------------------:|--------------------------------------------------------------------------------------------------|
@@ -123,5 +125,17 @@ The following tables provide a quick reference for common math notation, specifi
 | Length of v   |                               $\|v\|$                              |                              `$\|v\|$`                              | `$$`<br>`\|v\|`<br>`$$`                                                                          |
 | Norm of v     |                             $\|\|v\|\|$                            |                            `$\|\|v\|\|$`                            | `$$`<br>`\|\|v\|\|`<br>`$$`                                                                      |
 
-## Linear Algebra: Matrices
+### Linear Algebra: Matrices
+
+$A=\begin{bmatrix}1&2&3\cr4&5&6\end{bmatrix}$
+
+```
+$$
+A=\begin{bmatrix}
+1&2&3\cr
+4&5&6
+\end{bmatrix}
+$$
+```
+
 
