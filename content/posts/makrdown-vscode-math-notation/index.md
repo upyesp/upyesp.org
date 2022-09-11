@@ -80,14 +80,14 @@ The following tables provide a quick reference for common math notation, specifi
 | Euler's Constant       |                          $e = 2.71828...$                          |                           `$e = 2.71828...$`                           | `$$`<br>`e = 2.71828...`<br>`$$`                                   |
 | Sum                    |       $\displaystyle\sum_{k=3}^5 k^2 = 3^2 + 4^2 + 5^2 = 50$       |         `$\displaystyle\sum_{k=3}^5 k^2=3^2 + 4^2 + 5^2 =50$`         | `$$`<br>`\displaystyle\sum_{k=3}^5 k^2=3^2 + 4^2 + 5^2 =50`<br>`$$` |
 | Series Product         | $\displaystyle\prod_{x=2}^4 x^2 = 2^2 \times 3^2 \times 4^2 = 576$ | `$\displaystyle\prod_{x=2}^4 x^2 = 2^2 \times 3^2 \times 4^2 = 576$` | `$$`<br>`\displaystyle\sum_{k=2}^4 k^2=2^2 \times 3^2 \times 4^2 = 576`<br>`$$`     |
-| Brackets & Parentheses |                         $[...]$    $(...)$                         |                           `$[...]   (...)$`                          | `$$`<br>`[...]   (...)`<br>`$$`                                    |
+| Brackets & Parentheses |                         $[\ldots]$    $(\ldots)$                         |                           `$[\ldots]   (\ldots)$`                          | `$$`<br>`[\ldots]   (\ldots)`<br>`$$`                                    |
 
 ## Angles
 
 | Notation                 |         Example         |           Inline          | Block                                   |
 |--------------------------|:-----------------------:|:-------------------------:|-----------------------------------------|
 | Angle                    |         $\angle$        |         `$\angle$`        | `$$`<br>`\angle`<br>`$$`                |
-| Degree, Arc Min, Arc Sec |    $30\degree45'30''$   |    `$30\degree45'30''$`   | `$$`<br>`30\degree45'30''`<br>`$$`      |
+| Degree, Arc Min, Arc Sec |    $30\degree45\rq30\rq\rq$   |    `$30\degree45\rq30\rq\rq$`   | `$$`<br>`30\degree45\rq30\rq\rq`<br>`$$`      |
 | Radians                  | $360\degree = 2\pi rad$ | `$360\degree = 2\pi rad$` | `$$`<br>`360\degree = 2\pi rad`<br>`$$` |
 
 ## Probability & Statistics
@@ -95,12 +95,12 @@ The following tables provide a quick reference for common math notation, specifi
 | Notation                       |                  Example                 |                   Inline                   | Block                                                    |
 |--------------------------------|:----------------------------------------:|:------------------------------------------:|----------------------------------------------------------|
 | Probability of Event A         |            $P(A)$ or $\Pr(A)$            |            `$P(A)$ or $\Pr(A)$`            | `$$`<br>`P(A)`<br>`$$`                                   |
-| Intersection Prob. of A & B    |               $P(A \cap B)$              |                `$P(A\capB)$`               | `$$`<br>`P(A\capB)`<br>`$$`                              |
-| Union Prob. of A or B          |               $P(A \cup B)$              |                `$P(A\cupB)$`               | `$$`<br>`P(A\cupB)`<br>`$$`                              |
+| Intersection Prob. of A & B    |               $P(A \cap B)$              |                `$P(A \cap B)$`               | `$$`<br>`P(A \ca pB)`<br>`$$`                              |
+| Union Prob. of A or B          |               $P(A \cup B)$              |                `$P(A \cup B)$`               | `$$`<br>`P(A \cup B)`<br>`$$`                              |
 | Conditional Prob. of A Given B |                $P(A \| B)$               |                 `$P(A\|B)$`                | `$$`<br>`P(A\|B)`<br>`$$`                                |
 | Median                         |                $\tilde{x}$               |                `$\tilde{x}$`               | `$$`<br>`\tilde{x}`<br>`$$`                              |
 | Population Mean                | $\mu , \overline{x} , \langle x \rangle$ | `$\mu , \overline{x} , \langle x \rangle$` | `$$`<br>`\mu , \overline{x} , \langle x \rangle`<br>`$$` |
-| Standard Deviation             |                 $\sigma$                 |                 '$\sigma$'                 | `$$`<br>`\sigma`<br>`$$`                                 |
+| Standard Deviation             |                 $\sigma$                 |                 `$\sigma$`                 | `$$`<br>`\sigma`<br>`$$`                                 |
 | Varience                       |                $\sigma^2$                |                `$\sigma^2$`                | `$$`<br>`\sigma^2`<br>`$$`                               |
 
 ## Linear Algebra
@@ -112,8 +112,8 @@ The following tables provide a quick reference for common math notation, specifi
 | Vectors       |                  $\mathbf{v} \overline{v} \vec{v}$                 |                  `$\mathbf{v}\overline{v}\vec{v}$`                  | `$$`<br>`\mathbf{v} \overline{v} \vec{v}`<br>`$$`                                                |
 | Row Vector    |            $v = \begin{pmatrix} 1 & 2 & 3 \end{pmatrix}$           |               `$v=\begin{pmatrix}1&2&3\end{pmatrix}$`               | `$$`<br>`v = \begin{pmatrix}`<br>`   1 & 2 & 3`<br>`\end{pmatrix}`<br>`$$`                       |
 | Column Vector |        $w = \begin{pmatrix} 4 \cr 5 \cr 6 \cr \end{pmatrix}$       |            `$w=\begin{pmatrix}4\cr5\cr6\cr\end{pmatrix}$`           | `$$`<br>`w=\begin{pmatrix}`<br>`   4 \cr`<br>`   5 \cr`<br>`   6 \cr`<br>`\end{pmatrix}`<br>`$$` |
-| Dot Product   | $\mathbf{v} \cdot \mathbf{w}$<br>$(w,w)$<br>$\left< v\| w \right>$ | `$\mathbf{v}\cdot\mathbf{w}$`<br>`$(w,w)$`<br>`$\left<v\|w right>$` | `$$`<br>`\mathbf{v}\cdot\mathbf{w}`<br>`(w,w)`<br>`\left<v\|w right>`<br>`$$`                    |
-| Cross Product |                            $v \times w$                            |                             `$v\timesw$`                            | `$$`<br>`v\timesw`<br>`$$`                                                                       |
+| Dot Product   | $\mathbf{v} \cdot \mathbf{w}$<br>$(v,w)$<br>$\left< v\|w \right>$ | `$\mathbf{v} \cdot \mathbf{w}$<br>$(v,w)$<br>$\left<v \| w\right>$` | `$$`<br>`\mathbf{v}\cdot\mathbf{w}`<br>`(v,w)`<br>`\left<v\|w \right>`<br>`$$`                    |
+| Cross Product |                            $v \times w$                            |                             `$v \times w$`                            | `$$`<br>`v \times w`<br>`$$`                                                                       |
 | Length of v   |                               $\|v\|$                              |                              `$\|v\|$`                              | `$$`<br>`\|v\|`<br>`$$`                                                                          |
 | Norm of v     |                             $\|\|v\|\|$                            |                            `$\|\|v\|\|$`                            | `$$`<br>`\|\|v\|\|`<br>`$$`                                                                      |
 
@@ -136,8 +136,8 @@ The following tables provide a quick reference for common math notation, specifi
 
 | Notation                                                   |             Example             |               Inline              | Block                                           |
 |------------------------------------------------------------|:-------------------------------:|:---------------------------------:|-------------------------------------------------|
-| Example Function:<br>$y = \frac{x^2}{4}$<br>Limits: 1 to 4 |       $y = \frac{x^2}{4}$       |       `$y = \frac{x^2}{4}$`       | `$$`<br>`y = \frac{x^2}{4}`<br>`$$`             |
-| Integration                                                | $A = \int_1^4 \frac{x^2}{x} dx$ | `$A = \int_1^4 \frac{x^2}{x} dx$` | `$$`<br>`A = \int_1^4 \frac{x^2}{x} dx`<br>`$$` |
+| Example Function:<br>$y = \frac{x^2}{4}$ |       $y = \frac{x^2}{4}$       |       `$y = \frac{x^2}{4}$`       | `$$`<br>`y = \frac{x^2}{4}`<br>`$$`             |
+| Integration <br>(Limits: 1 to 4)   | $A = \int_1^4 \frac{x^2}{x} dx$ | `$A = \int_1^4 \frac{x^2}{x} dx$` | `$$`<br>`A = \int_1^4 \frac{x^2}{x} dx`<br>`$$` |
 | Differentiation                                            |                                 |                                   |                                                 |
 | First Derivative<br>With Respect To $x$                    |         $\frac{df}{dx}$         |         `$\frac{df}{dx}$`         | `$$`<br>`\frac{df}{dx}`<br>`$$`                 |
 | Partial Derivative<br>With Respect To $x$                  | $\frac{\partial f}{\partial x}$ | `$\frac{\partial f}{\partial x}$` | `$$`<br>`\frac{\partial f}{\partial x}`<br>`$$` |
