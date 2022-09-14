@@ -1,6 +1,6 @@
 ---
 title: "Cheat Sheet: Math Notation In Markdown With VSCode"
-description: Cheat Sheet of common mMath notation in Markdown documents. 
+description: Cheat Sheet of common math notation in Markdown documents. 
 date: 2022-09-05T10:00:00+01:00
 draft: false
 toc: true
@@ -11,21 +11,24 @@ categories: [Documentation, Windows, Mac, Linux]
 series: [Markdown]
 ---
 
-A quick reference cheat sheet, on how to write math notation in Markdown documents, as supported in native VSCode.  Note that editor VSCode supports math notation based on LaTex, by way of implementing KaTeX.  Using VSCode to write or edit Markdown documents including math notation using LaTeX, there is nothing further to install; no libraries, extensions or applications.
+A quick-reference cheat sheet, on how to write mathematics notation in Markdown documents.  Note that editor, VSCode, supports math notation based on LaTeX.  By using VSCode to write or edit Markdown documents including LaTeX, there is nothing further to install; no libraries, extensions or applications.
 
 <!--more-->
 
-VSCode supports $\KaTeX$ in Markdown. Layout, as with $\LaTeX$, is based on $\TeX$, created by [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth). Equations are rendered in the VSCode live preview pane, enabled with <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>.
+VSCode supports $\LaTeX$ in Markdown. Typesetting is based on $\TeX$, created by [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth). Equations are rendered in the VSCode live preview pane, enabled with <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>.
 
-Inline math notation is wrapped in single-dollar signs. For example, `$x^2$` becomes $x^2$.
+Inline LaTeX mathematical notation is wrapped in single-dollar signs. For example, `$x^2$` becomes $x^2$.
 
-Alternatively, math notation blocks begin and end with two dollar signs. For example...
+Alternatively, `code blocks` of LaTeX are also supported. They begin and end with two dollar signs, wrapped inside triple backticks. For example...
 
-```Latex
+~~~Latex
+```
 $$
 \displaystyle\sum_{k=3}^5 k^2=3^2 + 4^2 + 5^2 =50
 $$
 ```
+~~~
+
 produces:
 
 $$
@@ -34,7 +37,7 @@ $$
 
 The full list of supported commands is available [here](https://katex.org/docs/supported.html).
 
-The following tables provide a quick reference for common math notation, specifically those included in the [poster](https://www.flickr.com/photos/95869671@N08/40544016221/in/dateposted-public/) created by [Dominic Walliman](https://dominicwalliman.com/).  See the associated YouTube, [The Map of Mathematics](https://youtu.be/OmJ-4B-mS-Y).
+The following tables provide a quick-reference of common mathematical notation in LaTeX, specifically the symbols included in this [poster](https://www.flickr.com/photos/95869671@N08/40544016221/in/dateposted-public/) created by [Dominic Walliman](https://dominicwalliman.com/).  Here's the associated YouTube, which is excellent, [The Map of Mathematics](https://youtu.be/OmJ-4B-mS-Y).
 
 ## Arithmetic
 
