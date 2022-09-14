@@ -11,7 +11,7 @@ categories: [Documentation, Windows, Mac, Linux]
 series: [Markdown]
 ---
 
-A quick-reference guide, on how to write mathematical notation in Markdown documents.  This is achieved by use of a formatting markup language called, `LaTeX`. Note that editor, VSCode, supports math typesetting based on LaTeX.  By using VSCode to write or edit Markdown documents which include LaTeX, no further apps are required; no other libraries, extensions or packages.
+A quick-reference guide, on how to write mathematical notation in Markdown documents.  This is achieved by use of a formatting markup language called, `LaTeX`. Note that open source editor, VSCode, comes with support for LaTeX as standard, no other libraries, extensions or apps are required.
 
 LaTeX is sometimes stylised as $\LaTeX$.
 
@@ -45,7 +45,7 @@ $$
 
 ## Cheat Sheet
 
-The following tables provide a quick-reference of common mathematical notation, defined in LaTeX.  The scope of symbols included is drawn from the [Map of Mathematicsr](https://www.flickr.com/photos/95869671@N08/40544016221/in/dateposted-public/) poster, created by [Dominic Walliman](https://dominicwalliman.com/).  The associated YouTube video, which is excellent, is [The Map of Mathematics](https://youtu.be/OmJ-4B-mS-Y).
+The following tables provide a quick-reference of common mathematical notation, defined in LaTeX.  The scope of symbols included is drawn from the [Map of Mathematics](https://www.flickr.com/photos/95869671@N08/40544016221/in/dateposted-public/) poster, created by [Dominic Walliman](https://dominicwalliman.com/).  The associated YouTube video, which is excellent, is [The Map of Mathematics](https://youtu.be/OmJ-4B-mS-Y).
 
 ### Arithmetic
 
