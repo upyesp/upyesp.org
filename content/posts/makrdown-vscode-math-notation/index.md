@@ -152,5 +152,5 @@ The following tables provide a quick-reference of common mathematical notation, 
 | Differentiation                                            |                                 |                                   |                                                 |
 | First Derivative<br>With Respect To $x$                    |         $\frac{df}{dx}$         |         `$\frac{df}{dx}$`         | `$$`<br>`\frac{df}{dx}`<br>`$$`                 |
 | Partial Derivative<br>With Respect To $x$                  | $\frac{\partial f}{\partial x}$ | `$\frac{\partial f}{\partial x}$` | `$$`<br>`\frac{\partial f}{\partial x}`<br>`$$` |
-| First and Second Derivative<br>of Function                 |          $f'$<br>$f''$          |         `$f'$`<br>`$f''$`         | `$$`<br>`f'`<br>`f''`<br>`$$`                   |
+| First and Second Derivative<br>of Function                 |          $f\rq$<br>$f\rq\rq$          |         `$f'$`<br>`$f''$`         | `$$`<br>`f\rq`<br>`f\rq\rq`<br>`$$`                   |
 | First and Second Derivative<br>With Respect To Time        |      $\dot f$<br>$\ddot f$      |     `$\dot f$`<br>`$\ddot f$`     | `$$`<br>`\dot f`<br>`\ddot f`<br>`$$`           |
