@@ -1,7 +1,7 @@
 ---
-title: "Cheat Sheet: Math Notation In Markdown With VSCode"
-description: Cheat Sheet of common math notation in Markdown documents. 
-date: 2022-09-05T10:00:00+01:00
+title: "Cheat Sheet: Mathematical Notation In Markdown With VSCode"
+description: Examples of how to write math notation in Markdown documents. 
+date: 2022-09-12T10:00:00+01:00
 draft: false
 toc: true
 pinned: false
@@ -11,15 +11,23 @@ categories: [Documentation, Windows, Mac, Linux]
 series: [Markdown]
 ---
 
-A quick-reference cheat sheet, on how to write mathematics notation in Markdown documents.  Note that editor, VSCode, supports math notation based on LaTeX.  By using VSCode to write or edit Markdown documents including LaTeX, there is nothing further to install; no libraries, extensions or applications.
+A quick-reference guide, on how to write mathematical notation in Markdown documents.  This is achieved by use of a formatting markup language called, `LaTeX`. Note that editor, VSCode, supports math typesetting based on LaTeX.  By using VSCode to write or edit Markdown documents which include LaTeX, no further apps are required; no other libraries, extensions or packages.
+
+LaTeX is sometimes stylised as $\LaTeX$.
 
 <!--more-->
 
 VSCode supports $\LaTeX$ in Markdown. Typesetting is based on $\TeX$, created by [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth). Equations are rendered in the VSCode live preview pane, enabled with <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>.
 
+## Including LaTeX in Markdown
+
+There are two ways to include $\LaTeX$ in Markdown documents.  The first is `inline`, which means that mathematical notation is included in the paragraph or sentence, with the flow of text.
+
+The second method is as separate `code blocks`, so that mathematical notation is shown as a separate paragraph.
+
 Inline LaTeX mathematical notation is wrapped in single-dollar signs. For example, `$x^2$` becomes $x^2$.
 
-Alternatively, `code blocks` of LaTeX are also supported. They begin and end with two dollar signs, wrapped inside triple backticks. For example...
+Alternatively, `code blocks` of LaTeX begin and end with two dollar signs, wrapped inside triple backticks. For example...
 
 ~~~Latex
 ```
@@ -35,11 +43,11 @@ $$
 \displaystyle\sum_{k=3}^5 k^2=3^2 + 4^2 + 5^2=50
 $$
 
-The full list of supported commands is available [here](https://katex.org/docs/supported.html).
+## Cheat Sheet
 
-The following tables provide a quick-reference of common mathematical notation in LaTeX, specifically the symbols included in this [poster](https://www.flickr.com/photos/95869671@N08/40544016221/in/dateposted-public/) created by [Dominic Walliman](https://dominicwalliman.com/).  Here's the associated YouTube, which is excellent, [The Map of Mathematics](https://youtu.be/OmJ-4B-mS-Y).
+The following tables provide a quick-reference of common mathematical notation, defined in LaTeX.  The scope of symbols included is drawn from the [Map of Mathematicsr](https://www.flickr.com/photos/95869671@N08/40544016221/in/dateposted-public/) poster, created by [Dominic Walliman](https://dominicwalliman.com/).  The associated YouTube video, which is excellent, is [The Map of Mathematics](https://youtu.be/OmJ-4B-mS-Y).
 
-## Arithmetic
+### Arithmetic
 
 | Notation                         |                         Example                        |                          Inline                          | Block                         |
 |----------------------------------|:------------------------------------------------------:|:--------------------------------------------------------:|-------------------------------|
@@ -53,7 +61,7 @@ The following tables provide a quick-reference of common mathematical notation i
 | Squared, Cubed, nth-Power        | $a^2$<br>$a^3$<br>$a^n$                                | `$a^2$`<br>`$a^3$`<br>`$a^n$`                            | `$$`<br>`a^3`<br>`$$`         |
 | Square Root, Cube Root, nth-Root | $\sqrt{a}$<br>$\sqrt[3]{a}$<br>$\sqrt[n]{a}$           | `$\sqrt{a}$`<br>`$\sqrt[3]{a}$`<br>`$\sqrt[n]{a}$`       | `$$`<br>`\sqrt[3]{a}`<br>`$$` |
 
-## Equality
+### Equality
 
 | Notation                  |           Example          |           Inline          | Block                                   |
 |---------------------------|:--------------------------:|:-------------------------:|-----------------------------------------|
@@ -63,7 +71,7 @@ The following tables provide a quick-reference of common mathematical notation i
 | Proportional To           |        $a \propto b$       |       `$a \propto b$`       | `$$`<br>`a \propto b`<br>`$$`             |
 | Approximately Equal To    | $\sin(0.01) \approx 0.01$  | `$\sin(0.01) \approx 0.01$` | `$$`<br>`\sin(0.01) \approx 0.01`<br>`$$` |
 
-## Comparison
+### Comparison
 
 | Notation                                                  |          Example         |          Inline          | Block                    |
 |-----------------------------------------------------------|:------------------------:|:------------------------:|--------------------------|
@@ -71,7 +79,7 @@ The following tables provide a quick-reference of common mathematical notation i
 | a Less Than or Equal To b<br>a Greater Than or Equal To b | $a \leq b$<br>$a \geq b$ | `$a \leq b$`<br>`$a \geq b$` | `$$`<br>`a \leq b`<br>`$$` |
 | a Much Smaller Than b<br>a Much Larger Than b             |  $a \ll b$<br>$a \gg b$  |  `$a \ll b$`<br>`$a \gg b$`  | `$$`<br>`a \ll b`<br>`$$`  |
 
-## Algebra
+### Algebra
 
 | Notation               |                               Example                              |                                Inline                                | Block                                                              |
 |------------------------|:------------------------------------------------------------------:|:--------------------------------------------------------------------:|--------------------------------------------------------------------|
@@ -85,7 +93,7 @@ The following tables provide a quick-reference of common mathematical notation i
 | Series Product         | $\displaystyle\prod_{x=2}^4 x^2 = 2^2 \times 3^2 \times 4^2 = 576$ | `$\displaystyle\prod_{x=2}^4 x^2 = 2^2 \times 3^2 \times 4^2 = 576$` | `$$`<br>`\displaystyle\sum_{k=2}^4 k^2=2^2 \times 3^2 \times 4^2 = 576`<br>`$$`     |
 | Brackets & Parentheses |                         $[\ldots]$    $(\ldots)$                         |                           `$[\ldots]   (\ldots)$`                          | `$$`<br>`[\ldots]   (\ldots)`<br>`$$`                                    |
 
-## Angles
+### Angles
 
 | Notation                 |         Example         |           Inline          | Block                                   |
 |--------------------------|:-----------------------:|:-------------------------:|-----------------------------------------|
@@ -93,7 +101,7 @@ The following tables provide a quick-reference of common mathematical notation i
 | Degree, Arc Min, Arc Sec |    $30\degree45\rq30\rq\rq$   |    `$30\degree45\rq30\rq\rq$`   | `$$`<br>`30\degree45\rq30\rq\rq`<br>`$$`      |
 | Radians                  | $360\degree = 2\pi rad$ | `$360\degree = 2\pi rad$` | `$$`<br>`360\degree = 2\pi rad`<br>`$$` |
 
-## Probability & Statistics
+### Probability & Statistics
 
 | Notation                       |                  Example                 |                   Inline                   | Block                                                    |
 |--------------------------------|:----------------------------------------:|:------------------------------------------:|----------------------------------------------------------|
@@ -106,9 +114,9 @@ The following tables provide a quick-reference of common mathematical notation i
 | Standard Deviation             |                 $\sigma$                 |                 `$\sigma$`                 | `$$`<br>`\sigma`<br>`$$`                                 |
 | Varience                       |                $\sigma^2$                |                `$\sigma^2$`                | `$$`<br>`\sigma^2`<br>`$$`                               |
 
-## Linear Algebra
+### Linear Algebra
 
-### Linear Algebra: Vectors
+#### Linear Algebra: Vectors
 
 | Notation      |                               Example                              |                                Inline                               | Block                                                                                            |
 |---------------|:------------------------------------------------------------------:|:-------------------------------------------------------------------:|--------------------------------------------------------------------------------------------------|
@@ -120,7 +128,7 @@ The following tables provide a quick-reference of common mathematical notation i
 | Length of v   |                               $\|v\|$                              |                              `$\|v\|$`                              | `$$`<br>`\|v\|`<br>`$$`                                                                          |
 | Norm of v     |                             $\|\|v\|\|$                            |                            `$\|\|v\|\|$`                            | `$$`<br>`\|\|v\|\|`<br>`$$`                                                                      |
 
-### Linear Algebra: Matrices
+#### Linear Algebra: Matrices
 
 | Notation                                   |                          Example                          |                      Inline                     | Block                                                                                          |
 |--------------------------------------------|:---------------------------------------------------------:|:-----------------------------------------------:|------------------------------------------------------------------------------------------------|
@@ -135,7 +143,7 @@ The following tables provide a quick-reference of common mathematical notation i
 | Norm                                       |                        $\|\|A\|\|$                        |                  `$\|\|A\|\|$`                  | `$$`<br>`\|\|A\|\|`<br>`$$`                                                                    |
 
 
-## Calculus
+### Calculus
 
 | Notation                                                   |             Example             |               Inline              | Block                                           |
 |------------------------------------------------------------|:-------------------------------:|:---------------------------------:|-------------------------------------------------|
