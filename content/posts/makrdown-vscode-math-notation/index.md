@@ -1,5 +1,5 @@
 ---
-title: "Cheat Sheet: Mathematical Notation In Markdown With VSCode"
+title: "Cheat Sheet: Mathematical Notation In Markdown"
 description: Examples of how to write math notation in Markdown documents. 
 date: 2022-09-12T10:00:00+01:00
 draft: false
@@ -11,13 +11,21 @@ categories: [Documentation, Windows, Mac, Linux]
 series: [Markdown]
 ---
 
-A quick-reference guide, on how to write mathematical notation in Markdown documents.  This is achieved by use of a formatting markup language called, `LaTeX`. Note that open source editor, VSCode, comes with support for LaTeX mathematical typesetting as standard, no other libraries, extensions or apps are required.
-
-LaTeX is sometimes stylised as $\LaTeX$.
+A quick-reference guide, on how to write mathematical notation in Markdown documents.  This is achieved by use of a formatting markup language called, `LaTeX`. 
 
 <!--more-->
 
-VSCode supports mathematical typesetting with $\LaTeX$ in Markdown documents. Typesetting is based on $\TeX$, created by [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth). Equations are rendered in the VSCode live preview pane, enabled with <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>. Rendering is performed by [KaTeX](https://katex.org/), a fast, easy-to-use JavaScript library for $\TeX$ math rendering on the web.
+The scope of mathematical notation included in this cheat sheet is drawn from the [Map of Mathematics](https://www.flickr.com/photos/95869671@N08/40544016221/in/dateposted-public/) poster, created by [Dominic Walliman](https://dominicwalliman.com/).  The associated YouTube video, which is excellent, is [The Map of Mathematics](https://youtu.be/OmJ-4B-mS-Y).
+
+![Map of Mathematics, © Dominic Walliman, 2018](Map of Mathematics.jpg)
+
+## Adding Math Notation To Markdown Documents
+
+LaTeX is sometimes stylised as $\LaTeX$.
+
+Typesetting is based on $\TeX$, created by [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth).
+
+Open Source editor, VSCode, supports mathematical typesetting with $\LaTeX$ in Markdown documents.  Equations are rendered in the Live Preview Pane, enabled with <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>.  No other libraries, extensions or apps need to be installed.  Rendering in Live Preview is performed by [KaTeX](https://katex.org/), a fast, easy-to-use JavaScript library for $\TeX$ math rendering on the web.
 
 ## Including LaTeX in Markdown
 
@@ -44,8 +52,6 @@ $$
 $$
 
 ## Cheat Sheet
-
-The following tables provide a quick-reference of common mathematical notation, defined with LaTeX.  The scope of symbols included is drawn from the [Map of Mathematics](https://www.flickr.com/photos/95869671@N08/40544016221/in/dateposted-public/) poster, created by [Dominic Walliman](https://dominicwalliman.com/).  The associated YouTube video, which is excellent, is [The Map of Mathematics](https://youtu.be/OmJ-4B-mS-Y).
 
 ### Arithmetic
 
