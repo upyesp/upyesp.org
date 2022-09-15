@@ -11,17 +11,17 @@ categories: [Documentation, Windows, Mac, Linux]
 series: [Markdown]
 ---
 
-A quick-reference guide, on how to write mathematical notation in Markdown documents.  This is achieved by use of a formatting markup language called, `LaTeX`. Note that open source editor, VSCode, comes with support for LaTeX as standard, no other libraries, extensions or apps are required.
+A quick-reference guide, on how to write mathematical notation in Markdown documents.  This is achieved by use of a formatting markup language called, `LaTeX`. Note that open source editor, VSCode, comes with support for LaTeX mathematical typesetting as standard, no other libraries, extensions or apps are required.
 
 LaTeX is sometimes stylised as $\LaTeX$.
 
 <!--more-->
 
-VSCode supports $\LaTeX$ in Markdown. Typesetting is based on $\TeX$, created by [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth). Equations are rendered in the VSCode live preview pane, enabled with <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>.
+VSCode supports mathematical typesetting with $\LaTeX$ in Markdown documents. Typesetting is based on $\TeX$, created by [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth). Equations are rendered in the VSCode live preview pane, enabled with <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>. Rendering is performed by [KaTeX](https://katex.org/), a fast, easy-to-use JavaScript library for $\TeX$ math rendering on the web.
 
 ## Including LaTeX in Markdown
 
-There are two ways to include $\LaTeX$ in Markdown documents.  The first is `inline`, which means that mathematical notation is included in the paragraph or sentence, with the flow of text.
+There are two ways to include $\LaTeX$ mathematical typesetting in Markdown documents.  The first is `inline`, which means that mathematical notation is included in the paragraph or sentence, with the flow of text.
 
 The second method is as separate `code blocks`, so that mathematical notation is shown as a separate paragraph.
 
@@ -45,11 +45,11 @@ $$
 
 ## Cheat Sheet
 
-The following tables provide a quick-reference of common mathematical notation, defined in LaTeX.  The scope of symbols included is drawn from the [Map of Mathematics](https://www.flickr.com/photos/95869671@N08/40544016221/in/dateposted-public/) poster, created by [Dominic Walliman](https://dominicwalliman.com/).  The associated YouTube video, which is excellent, is [The Map of Mathematics](https://youtu.be/OmJ-4B-mS-Y).
+The following tables provide a quick-reference of common mathematical notation, defined with LaTeX.  The scope of symbols included is drawn from the [Map of Mathematics](https://www.flickr.com/photos/95869671@N08/40544016221/in/dateposted-public/) poster, created by [Dominic Walliman](https://dominicwalliman.com/).  The associated YouTube video, which is excellent, is [The Map of Mathematics](https://youtu.be/OmJ-4B-mS-Y).
 
 ### Arithmetic
 
-| Notation                         |                         Example                        |                          Inline                          | Block                         |
+| Notation                         |                         Example                        |                          Inline                          | Code Block                    |
 |----------------------------------|:------------------------------------------------------:|:--------------------------------------------------------:|-------------------------------|
 | Addition                         |                          $a+b$                         |                          `$a+b$`                         | `$$`<br>`a+b`<br>`$$`         |
 | Subtraction                      |                          $a-b$                         |                          `$a-b$`                         | `$$`<br>`a-b`<br>`$$`         |
@@ -63,7 +63,7 @@ The following tables provide a quick-reference of common mathematical notation, 
 
 ### Equality
 
-| Notation                  |           Example          |           Inline          | Block                                   |
+| Notation                  |           Example          |           Inline          | Code Block                              |
 |---------------------------|:--------------------------:|:-------------------------:|-----------------------------------------|
 | Equals                    |           $3=1+2$          |         `$3=1+2$`         | `$$`<br>`3=1+2`<br>`$$`                 |
 | Not Equals                |         $3 \neq 4$         |         `$3\neq4$`        | `$$`<br>`3\neq4`<br>`$$`                |
@@ -73,7 +73,7 @@ The following tables provide a quick-reference of common mathematical notation, 
 
 ### Comparison
 
-| Notation                                                  |          Example         |          Inline          | Block                    |
+| Notation                                                  |          Example         |          Inline          | Code Block               |
 |-----------------------------------------------------------|:------------------------:|:------------------------:|--------------------------|
 | a Less Than b<br>a Greater Than b                         |    $a < b$<br>$a > b$    |    `$a<b$`<br>`$a>b$`    | `$$`<br>`a<b`<br>`$$`    |
 | a Less Than or Equal To b<br>a Greater Than or Equal To b | $a \leq b$<br>$a \geq b$ | `$a \leq b$`<br>`$a \geq b$` | `$$`<br>`a \leq b`<br>`$$` |
@@ -81,7 +81,7 @@ The following tables provide a quick-reference of common mathematical notation, 
 
 ### Algebra
 
-| Notation               |                               Example                              |                                Inline                                | Block                                                              |
+| Notation               |                               Example                              |                                Inline                                | Code Block                                                         |
 |------------------------|:------------------------------------------------------------------:|:--------------------------------------------------------------------:|--------------------------------------------------------------------|
 | Factorial              |            $5 ! = 5 \times 4 \times 3 \times 2 \times 1$           |                  `$5!=5 \times 4 \times 3 \times 2 \times 1$`                  | `$$`<br>`5!=5 \times 4 \times 3 \times 2 \times 1`<br>`$$`                 |
 | Absolute Value         |                           $\| -5 \| = 5$                           |                             `$\|-5\|=5$`                             | `$$`<br>`\|-5\|=5`<br>`$$`                                         |
@@ -95,7 +95,7 @@ The following tables provide a quick-reference of common mathematical notation, 
 
 ### Angles
 
-| Notation                 |         Example         |           Inline          | Block                                   |
+| Notation                 |         Example         |           Inline          | Code Block                              |
 |--------------------------|:-----------------------:|:-------------------------:|-----------------------------------------|
 | Angle                    |         $\angle$        |         `$\angle$`        | `$$`<br>`\angle`<br>`$$`                |
 | Degree, Arc Min, Arc Sec |    $30\degree45\rq30\rq\rq$   |    `$30\degree45\rq30\rq\rq$`   | `$$`<br>`30\degree45\rq30\rq\rq`<br>`$$`      |
@@ -103,7 +103,7 @@ The following tables provide a quick-reference of common mathematical notation, 
 
 ### Probability & Statistics
 
-| Notation                       |                  Example                 |                   Inline                   | Block                                                    |
+| Notation                       |                  Example                 |                   Inline                   | Code Block                                               |
 |--------------------------------|:----------------------------------------:|:------------------------------------------:|----------------------------------------------------------|
 | Probability of Event A         |            $P(A)$ or $\Pr(A)$            |            `$P(A)$ or $\Pr(A)$`            | `$$`<br>`P(A)`<br>`$$`                                   |
 | Intersection Prob. of A & B    |               $P(A \cap B)$              |                `$P(A \cap B)$`               | `$$`<br>`P(A \ca pB)`<br>`$$`                              |
@@ -118,7 +118,7 @@ The following tables provide a quick-reference of common mathematical notation, 
 
 #### Linear Algebra: Vectors
 
-| Notation      |                               Example                              |                                Inline                               | Block                                                                                            |
+| Notation      |                               Example                              |                                Inline                               | Code Block                                                                                       |
 |---------------|:------------------------------------------------------------------:|:-------------------------------------------------------------------:|--------------------------------------------------------------------------------------------------|
 | Vectors       |                  $\mathbf{v} \overline{v} \vec{v}$                 |                  `$\mathbf{v}\overline{v}\vec{v}$`                  | `$$`<br>`\mathbf{v} \overline{v} \vec{v}`<br>`$$`                                                |
 | Row Vector    |            $v = \begin{pmatrix} 1 & 2 & 3 \end{pmatrix}$           |               `$v=\begin{pmatrix}1&2&3\end{pmatrix}$`               | `$$`<br>`v = \begin{pmatrix}`<br>`   1 & 2 & 3`<br>`\end{pmatrix}`<br>`$$`                       |
@@ -130,7 +130,7 @@ The following tables provide a quick-reference of common mathematical notation, 
 
 #### Linear Algebra: Matrices
 
-| Notation                                   |                          Example                          |                      Inline                     | Block                                                                                          |
+| Notation                                   |                          Example                          |                      Inline                     | Code Block                                                                                     |
 |--------------------------------------------|:---------------------------------------------------------:|:-----------------------------------------------:|------------------------------------------------------------------------------------------------|
 | Matrix, 2 By 3                             | $A=\begin{bmatrix} 1 & 2 & 3 \cr 4 & 5 & 6 \end{bmatrix}$ | `$A=\begin{bmatrix}1&2&3\cr4&5&6\end{bmatrix}$` | `$$`<br>`A=`<br>`\begin{bmatrix}`<br>`1 & 2 & 3 \cr`<br>`4 & 5 & 6`<br>`\end{bmatrix}`<br>`$$` |
 | Product                                    |                        $A \cdot B$                        |                  `$A \cdot B$`                  | `$$`<br>`A \cdot B`<br>`$$`                                                                    |
@@ -145,7 +145,7 @@ The following tables provide a quick-reference of common mathematical notation, 
 
 ### Calculus
 
-| Notation                                                   |             Example             |               Inline              | Block                                           |
+| Notation                                                   |             Example             |               Inline              | Code Block                                      |
 |------------------------------------------------------------|:-------------------------------:|:---------------------------------:|-------------------------------------------------|
 | Example Function:<br>$y = \frac{x^2}{4}$ |       $y = \frac{x^2}{4}$       |       `$y = \frac{x^2}{4}$`       | `$$`<br>`y = \frac{x^2}{4}`<br>`$$`             |
 | Integration <br>(Limits: 1 to 4)   | $A = \int_1^4 \frac{x^2}{x} dx$ | `$A = \int_1^4 \frac{x^2}{x} dx$` | `$$`<br>`A = \int_1^4 \frac{x^2}{x} dx`<br>`$$` |
