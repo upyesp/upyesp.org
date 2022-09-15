@@ -15,9 +15,9 @@ A quick-reference guide, on how to write mathematical notation in Markdown docum
 
 <!--more-->
 
-The scope of mathematical notation included in this cheat sheet is drawn from the [Map of Mathematics](https://www.flickr.com/photos/95869671@N08/40544016221/in/dateposted-public/) poster, created by [Dominic Walliman](https://dominicwalliman.com/).  The associated YouTube video, which is excellent, is [The Map of Mathematics](https://youtu.be/OmJ-4B-mS-Y).
+The scope of mathematical notation included in this cheat sheet is drawn from the [Math Notation Cheat Sheet](https://www.flickr.com/photos/95869671@N08/40544016221/in/dateposted-public/) poster, created by [Dominic Walliman](https://dominicwalliman.com/), included below with permission.  The associated YouTube video, which is excellent, is [The Map of Mathematics](https://youtu.be/OmJ-4B-mS-Y).
 
-![Map of Mathematics, © Dominic Walliman, 2018](/images/Map_of_Mathematics.jpg)
+![Math Notation Cheat Sheet, © Dominic Walliman, 2018](/images/Map_of_Mathematics.jpg)
 
 ## Adding Math Notation To Markdown Documents
 
