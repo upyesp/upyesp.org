@@ -1,7 +1,7 @@
 ---
 title: "Use An Alias To Quickly Find Your IP Address - Windows & Linux"
 description: How to create an Alias as a quick & easy way to retrieve your IP address, in Linux and Windows.
-date: 2022-08-21T11:37:01+00:00
+date: 2022-09-05T11:37:01+00:00
 draft: false
 toc: true
 pinned: false
