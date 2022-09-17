@@ -29,11 +29,11 @@ Open Source editor, VSCode, supports mathematical typesetting with $\LaTeX$ in M
 
 ## Including LaTeX in Markdown
 
-There are two ways to include $\LaTeX$ mathematical typesetting in Markdown documents.  The first is `inline`, which means that mathematical notation is included in the paragraph or sentence, with the flow of text.
+There are two ways to include $\LaTeX$ mathematical typesetting in Markdown documents.  The first is `inline`, which means that the notation is included in the paragraph or sentence, with the flow of text.
 
-The second method is as separate `code blocks`, so that mathematical notation is shown as a separate paragraph.
+The second method is as separate `code blocks`, so that the notation is shown in it's own paragraph.
 
-Inline LaTeX mathematical notation is wrapped in single-dollar signs. For example, `$x^2$` becomes $x^2$.
+Inline LaTeX mathematical notation is wrapped in single-dollar signs. For example, for `the square of "x"`, just type `$x^2$`, which is then formatted as $x^2$.
 
 Alternatively, `code blocks` of LaTeX begin and end with two dollar signs, wrapped inside triple backticks. For example...
 
@@ -45,7 +45,7 @@ $$
 ```
 ~~~
 
-produces:
+The above is rendered as:
 
 $$
 \displaystyle\sum_{k=3}^5 k^2=3^2 + 4^2 + 5^2=50
@@ -160,3 +160,12 @@ $$
 | Partial Derivative<br>With Respect To $x$                  | $\frac{\partial f}{\partial x}$ | `$\frac{\partial f}{\partial x}$` | `$$`<br>`\frac{\partial f}{\partial x}`<br>`$$` |
 | First and Second Derivative<br>of Function                 |          $f\rq$<br>$f\rq\rq$          |         `$f\rq$`<br>`$f\rq\rq$`         | `$$`<br>`f\rq`<br>`f\rq\rq`<br>`$$`                   |
 | First and Second Derivative<br>With Respect To Time        |      $\dot f$<br>$\ddot f$      |     `$\dot f$`<br>`$\ddot f$`     | `$$`<br>`\dot f`<br>`\ddot f`<br>`$$`           |
+
+### Complex Numbers
+
+| Notation                         |                 Example                |                   Inline                   | Block                                                  |
+|----------------------------------|:--------------------------------------:|:------------------------------------------:|--------------------------------------------------------|
+| Imaginary Unit $i$               |                $z=3+2i$                |                 `$z=3+2i$`                 | `$$`<br>`z=3+2i`<br>`$$`                               |
+| Real Part Of Complex Number      | $\Re(z)=3$<br>$\operatorname{Re}(z)=3$ | `$\Re(z)=3$`<br>`$\operatorname{Re}(z)=3$` | `$$`<br>`\Re(z)=3`<br>`\operatorname{Re}(z)=3`<br>`$$` |
+| Imaginary Part Of Complex Number | $\Im(z)=2$<br>$\operatorname{Im}(z)=2$ | `$\Im(z)=2$`<br>`$\operatorname{Im}(z)=2$` | `$$`<br>`\Im(z)=2`<br>`\operatorname{Im}(z)=2`<br>`$$` |
+| Complex Conjugate                |             $\bar{z}=z^*=3-2i$             |              `$\bar{z}=z^*=3-2i$`              | `$$`<br>`\bar{z}=z^*=3-2i`<br>`$$`                         |
