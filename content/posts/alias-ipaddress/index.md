@@ -1,7 +1,7 @@
 ---
 title: "Use An Alias To Quickly Find Your IP Address - Windows & Linux"
 description: How to create an Alias as a quick & easy way to retrieve your IP address, in Linux and Windows.
-date: 2022-09-05T11:37:01+00:00
+date: 2022-10-07T05:37:01+00:00
 draft: false
 toc: true
 pinned: false
@@ -55,8 +55,12 @@ Linux provides several methods to retrieve IP addresses.  The examples below use
 The following two commands return the internal IP address. The first example returns the IP with the CIDR suffix (subnet range), the second without.
 
 ```Bash
+# include the CIDR suffix (subnet range)
 ip addr | awk '$1=="inet" && $3!="scope" {print $2}'
+```
 
+```Bash
+# without CIDR suffix
 ip addr | awk -F' |/' '$5=="inet" && $8!="scope" {print $6}'
 ```
 
@@ -71,15 +75,30 @@ curl https://icanhazip.com
 Note that other external services are available, for example:
 
 ```Bash
+curl https://api.ipify.org
+curl https://checkip.amazonaws.com
+curl https://icanhazip.com
+curl https://ident.me
+curl https://ifconfig.io
+curl https://ifconfig.me
+curl https://ipecho.net/plain
 curl https://ipinfo.io/ip
+curl https://myexternalip.com/raw
+curl https://wtfismyip.com/text
 ```
 
 Also, using the Linux DNS util command, `dig`:
 
 ```Bash
 dig whoami.akamai.net @ns1-1.akamaitech.net +short
+```
+```Bash
 dig myip.opendns.com @resolver1.opendns.com +short
+```
+```Bash
 dig TXT o-o.myaddr.l.google.com @ns1.google.com +short
+```
+```Bash
 dig TXT ch whoami.cloudflare @1.0.0.1
 ```
 
@@ -200,7 +219,11 @@ The Linux section above mentions use of the command, `dig`.  In PowerShell, a si
 
 ```Powershell
 Resolve-DnsName -Name myip.opendns.com -NoHostsFile -DnsOnly -Server resolver1.opendns.com | Select -ExpandProperty IPAddress
+```
+```Powershell
 Resolve-DnsName -Name whoami.akamai.net -NoHostsFile -DnsOnly -Server ns1-1.akamaitech.net | Select -ExpandProperty IPAddress
+```
+```Powershell
 Resolve-DnsName -Name o-o.myaddr.l.google.com -Type TXT -NoHostsFile -DnsOnly -Server ns1.google.com | Select -ExpandProperty Strings
 ```
 
@@ -225,7 +248,9 @@ As with Linux, Aliases in PowerShell typically only exist in the session in whic
 
 ```Powershell
 notepad $PROFILE
-
+```
+or
+```Powershell
 code $PROFILE
 ```
 
