@@ -1,7 +1,7 @@
 ---
 title: "MySQL: Running SQL Scripts From the Command Line"
 description: How to run .sql scripts from the command line. 
-date: 2021-09-22T08:00:00+01:00
+date: 2022-10-08T08:00:00+01:00
 draft: false
 toc: true
 pinned: false
@@ -14,11 +14,42 @@ MySQL can be accessed from the command line interface (CLI).  Here's how to run 
 
 <!--more-->
 
-When the server for MySQL is installed on a system, a client application program is also installed. On Windows this is mysql.exe. 
+When the server for MySQL is installed on a system, a command line client application program is also installed [mysql](https://dev.mysql.com/doc/refman/8.0/en/mysql.html). On Windows systems this is mysql.exe.  The client app, mysql.exe, provides a terminal emulator function, enabling interactive input of SQL statements.  For more information on the MySQL terminal emulator and use with Windows Terminal, see [MySQL and Windows Terminal](https://upyesp.org/posts/mysql-windows-terminal/).
 
-The client app, mysql.exe, is a terminal emulator, enabling interactive input of SQL statements [MySQL and Windows Terminal](https://upyesp.org/posts/mysql-windows-terminal/).
+The same app also provides the capability for it to be called and execute a SQL script, straight from the command line or in a script. 
 
-The same app also provides the ability for it to be called and execute a SQL script, straight from the command line or in a script. 
+## Starting and Stopping MySQL
+
+The MySQL server program, [mysqld](https://dev.mysql.com/doc/refman/8.0/en/mysqld.html), must first be active and running before SQL scripts can be executed. 
+
+The MySQL server can be run as a service, or started manually from the command line.  To start, stop or restart the MySQL server as a service, use the Windows Services app, `services.msc`. This can be run with <kbd>Windows</kbd> + <kbd>r</kbd> and typing `services.msc` into the Run dialog box.
+
+To start MySQL from the command line, use the following:
+
+PowerShell:
+
+```Powershell
+& 'C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld'
+```
+CMD:
+
+```batchfile
+"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqld"
+```
+
+The MySQL server can be stopped with:
+
+PowerShell:
+
+```Powershell
+& 'C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqladmin' -u root -p shutdown
+```
+CMD:
+
+```batchfile
+"C:\Program Files\MySQL\MySQL Server 8.0\bin\mysqladmin" -u root -p shutdown
+```
+
 
 ## Executing SQL Scripts from the Command Line
 
