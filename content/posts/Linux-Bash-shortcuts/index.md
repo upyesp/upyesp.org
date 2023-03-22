@@ -10,7 +10,7 @@ tags: [Bash, WSL]
 categories: [Linux]
 ---
 
-Working in a command line environment, like a Bash session, can be far more productive that using a graphical user interface.  Here's a collection of shortcuts.
+Working within a command line environment, like a Bash session, can be far more productive that using a graphical user interface.  Here's a collection of shortcuts.
 
 <!--more-->
 
