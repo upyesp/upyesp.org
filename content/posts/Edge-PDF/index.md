@@ -1,7 +1,7 @@
 ---
 title: "Edge Browser as a PDF Viewer & Markup"
 description: Edge makes for a great PDF experience.  
-date: 2022-05-05T12:03:00+01:00
+date: 2023-05-29T07:03:00+01:00
 draft: false
 toc: true
 pinned: false
@@ -43,14 +43,16 @@ Some other functions I use are detailed in the list of shortcuts below.
 | Shortcut  | Function                                      |
 |:-----------:|-----------------------------------------------|
 |<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>U</kbd>| Read Aloud: text selection or entire PDF |
-|<kbd>F7</kbd>| Toggle between caret browsing (cursor keyboard navigation) on / off |
 |<kbd>Ctrl</kbd> + <kbd>\\</kbd>| Toggle PDF between "fit to page" / "fit to width" |
+|<kbd>Ctrl</kbd> + <kbd>F</kbd>| Find |
+|<kbd>Ctrl</kbd> + <kbd>G</kbd>| Find Next Result |
+|<kbd>Ctrl</kbd>+ <kbd>Shift</kbd> + <kbd>G</kbd>| Find Previous Result |
+|<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd>| Skip to page number |
+|<kbd>F7</kbd>| Toggle between caret browsing (cursor keyboard navigation) on / off |
 |<kbd>Ctrl</kbd> + <kbd>=</kbd>| Zoom in |
 |<kbd>Ctrl</kbd> + <kbd>-</kbd>| Zoom out |
 |<kbd>Ctrl</kbd> + <kbd>\]</kbd>| Rotate PDF clockwise 90° |
 |<kbd>Ctrl</kbd> + <kbd>\[</kbd>| Rotate PDF counter-clockwise 90° |
-|<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>g</kbd>| Skip to page number |
-|<kbd>Ctrl</kbd> + <kbd>F</kbd>| Find |
 |<kbd>Ctrl</kbd> + <kbd>S</kbd>| Save |
 |<kbd>Ctrl</kbd> + <kbd>O</kbd>| Print |
 |<kbd>Ctrl</kbd> + <kbd>W</kbd>| Close |
