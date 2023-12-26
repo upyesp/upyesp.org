@@ -1,3 +1,4 @@
-baseURL = 'https://upyesp.github.io/upyesp.org/'
+baseURL = '/'
 languageCode = 'en-us'
 title = 'upyesp'
+googleAnalytics = ""
