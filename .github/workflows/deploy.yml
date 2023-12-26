@@ -1,4 +1,4 @@
-name: deploy to host
+name: Publish to GH Pages
 
 on:
   push:
@@ -14,38 +14,29 @@ jobs:
       with:
         submodules: recursive
         fetch-depth: 0
-
+    
+  
+    - name: Checkout destination
+      uses: actions/checkout@v3
+      if: github.ref == 'refs/heads/main'
+      with:
+        ref: gh-pages
+        path: built-site
+    
     - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v2
-      with:
-        hugo-version: 'latest'
-        extended: true
+      run: |
+        curl -L -o /tmp/hugo.tar.gz 'https://github.com/gohugoio/hugo/releases/download/v0.110.0/hugo_extended_0.110.0_linux-amd64.tar.gz'
+        tar -C ${RUNNER_TEMP} -zxvf /tmp/hugo.tar.gz hugo          
+    - name: Build
+      run: ${RUNNER_TEMP}/hugo
 
-    - name: Cache dependencies
-      uses: actions/cache@v2
-      with:
-        path: ~/.npm
-        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.os }}-node-
-
-    - name: Setup Node
-      uses: actions/setup-node@v3
-      with:
-        node-version: '14'
-
-    - run: npm ci
-    - run: hugo --minify
-
-      
-    
-    - name: FTP Site
-      uses: SamKirkland/FTP-Deploy-Action@4.3.0
-      with:
-        server: ${{ secrets.FTP_HOST }}
-        username: ${{ secrets.FTP_USER }}
-        password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: public/
-        
-    
-
+    - name: Deploy
+      if: github.ref == 'refs/heads/main'
+      run: |
+        cp -R public/* ${GITHUB_WORKSPACE}/built-site/
+        cd ${GITHUB_WORKSPACE}/built-site
+        git add .
+        git config user.name 'upyesp'
+        git config user.email 'upyesp@gmail.com'
+        git commit -m 'Updated site'
+        git push          
