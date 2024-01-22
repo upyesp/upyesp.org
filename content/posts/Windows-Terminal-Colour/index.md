@@ -1,7 +1,7 @@
 ---
 title: "Adding Colour & Icons to File Listings in a Terminal"
 description: Add colour to file listings in PowerShell. 
-date: 2021-07-22T08:34:00+01:00
+date: 2023-12-28T11:34:00+01:00
 draft: false
 toc: true
 pinned: false
@@ -48,3 +48,11 @@ To see the change, restart PowerShell or reload the profile, with:
 ```Powershell
 . $PROFILE
 ```
+
+If at some point you want to remove the module, enter:
+
+```Powershell
+Uninstall-Module -Name Terminal-Icons
+```
+
+And remove the import from your profile.
