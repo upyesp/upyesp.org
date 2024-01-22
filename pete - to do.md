@@ -117,17 +117,3 @@ While in tmux
 # VSCode.dev
 Here's an example of how to open vscode.dev on a specific GitHub page: https://vscode.dev/github.com/aymericdamien/TensorFlow-Examples
 
-
-# Twitter Video Format
-
-## Dimensions
-landscape 1280x720
-portyrait 720x1280
-square 720x720
-
-## File Properties
-60 fps 
-212Mb
-mp4
-140 seconds
-
