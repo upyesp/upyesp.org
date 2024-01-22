@@ -1,7 +1,7 @@
 ---
 title: "Launching Windows Apps From Within WSL"
 description: While using a Linux in Windows it is possible to run Windows applications. 
-date: 2021-07-21T10:29:00+01:00
+date: 2024-01-22T10:29:00+01:00
 draft: false
 toc: true
 pinned: false
@@ -21,7 +21,7 @@ From within the WSL shell (typically Bash), type the name of the Windows executa
 
 Some examples:
 
-## NotePad
+## Notepad
 
 ```BASH
 notepad.exe .bashrc
@@ -34,7 +34,7 @@ Will launch the Windows program, `Notepad`.  A file name can be included as a pa
 explorer.exe .
 ```
 
-Launches the Windows Explorer. The "." parameter specifies Explorer to open with the current location in the Linux file system. So Explorer launches in Windows, browsing Linux files.
+Launches the Windows Explorer. The "." parameter specifies Explorer to open with the current location in the Linux file system. So Explorer launches in Windows, browsing Linux files.  By specifying a path to a folder, Explorer will open in Windows, browsing the contents of that folder.  
 
 ## VSCode
 
