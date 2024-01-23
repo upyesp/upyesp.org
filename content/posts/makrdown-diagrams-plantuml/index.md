@@ -2,7 +2,7 @@
 title: Add UML & Other Diagrams To Markdown With PlantUML
 description: PlantUML enables you to create diagrams using text descriptions.
 images: 
-date: 2021-08-11T10:00:00+01:00
+date: 2023-10-11T10:00:00+01:00
 draft: false
 toc: true
 pinned: false
@@ -23,9 +23,9 @@ PlantUML provides an extensive markup language to describe diagrams. The resulti
 
 The [CommonMark](https://commonmark.org/) specification of Markdown does not include PlantUML within it's scope.  So PlantUML is an extension to the standard.  This means that you are likely to have to install add-on extensions to your Markdown tools.
 
-If your are using VSCode to author Markdown documents, extension [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf) is a great place to start. This extension converts Markdown files to .pdf and .html formats and supports embedded PlantUML, as well as Mermaid and KaTeX.
+If your are using VSCode to edit and create Markdown documents, extension [Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf) is a great place to start. This extension converts Markdown files to .pdf and .html formats and supports embedded PlantUML, as well as Mermaid and LaTeX.
 
-Simply wrap your PlantUML code to begin with ```@startuml``` and end with ```@enduml```, like this:
+To add a diagram to a Markdown document, simply wrap the PlantUML code to begin with ```@startuml``` and end with ```@enduml```, like this:
 
 ```Text
 @startuml
@@ -33,7 +33,7 @@ Simply wrap your PlantUML code to begin with ```@startuml``` and end with ```@en
 @enduml
 ```
 
-## PlantUML Diagrams, going beyond Markdown
+## PlantUML Diagrams: Going Beyond Markdown
 
 You can use PlantUML to create complex diagrams as part of a larger documentation project.
 
@@ -43,9 +43,11 @@ VSCode extension [PlantUML](https://marketplace.visualstudio.com/items?itemName=
 
 ## Themes
 
-The look and style of digrams is flexible, you have control over how diagrams are rendered.  Each element in a diagram can have its own colour, specified in the PlantUML text. Also, an overall theme can be applied to a diagram, selecting a [prebuilt theme](https://github.com/plantuml/plantuml/tree/master/themes) or making your own.
+The look and style of diagrams is flexible.  You have control over how diagrams are rendered.  Each element in a diagram can have its own colour, specified in the PlantUML script. Also, an overall theme can be applied to a diagram.
 
-There is also a [gallery](https://bschwarz.github.io/puml-themes/gallery.html) of prebuilt themes.
+Selecting a [prebuilt theme](https://github.com/plantuml/plantuml/tree/master/themes) or making your own.
+
+There is a [gallery](https://bschwarz.github.io/puml-themes/gallery.html) of prebuilt themes.
 
 ## Example: Class Diagram
 
