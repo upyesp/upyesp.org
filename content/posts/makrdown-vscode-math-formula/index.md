@@ -33,7 +33,9 @@ $$
 x^2
 $$
 
-### Pythagorean Theorem
+Here are a few more examples:
+
+Pythagorean Theorem
 
 ```latex
 $$
@@ -45,7 +47,7 @@ $$
 a^2 + b^2 = c^2
 $$
 
-### Einstein's Theory of Special Relativity
+Einstein's Theory of Special Relativity
 
 ```latex
 $$
@@ -57,7 +59,7 @@ $$
 e=mc^2
 $$
 
-### Matrices
+Matrices
 
 ```latex
 $$
@@ -85,7 +87,7 @@ g & h
 \end{pmatrix}
 $$
 
-### Special Cases
+Special Cases
 
 ```latex
 $$
@@ -102,3 +104,5 @@ $$
    c &\text{if } d
 \end{dcases}
 $$
+
+See many more examples at [Cheat Sheet: Mathematical Notation in Markdown](https://www.upyesp.org/posts/makrdown-vscode-math-notation/).
