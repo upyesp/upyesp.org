@@ -2,7 +2,7 @@
 title: Add Diagrams To Markdown Using Mermaid
 description: Mermaid enables you to create diagrams and visualizations using text descriptions.
 images: [/images/mermaid-flowchart.png]
-date: 2021-08-01T16:00:00+01:00
+date: 2024-01-23T15:00:00+01:00
 draft: false
 toc: true
 pinned: false
@@ -18,7 +18,7 @@ Mermaid provides a markup language to describe diagrams. Describing diagrams in 
 
 In the same way that LaTeX and KaTeX provides a text-based language to enable elegant math expressions to be drawn in documents, Mermaid provides a language to describe the layout of diagrams.
 
-The [Mermaid](https://mermaid-js.github.io/mermaid/#/) project is open source, hosted on GitHub. 
+The [Mermaid](https://github.com/mermaid-js/mermaid) project is open source, hosted on GitHub. 
 
 ## Example Flowchart
 
@@ -65,19 +65,18 @@ Where-as there are other tools that require the Mermaid code block to simply beg
 
 ## Diagram Types Supported
 
-- [flowchart](https://mermaid-js.github.io/mermaid/#/flowchart)
-- [sequence](https://mermaid-js.github.io/mermaid/#/sequenceDiagram)
-- [class](https://mermaid-js.github.io/mermaid/#/classDiagram)
-- [state](https://mermaid-js.github.io/mermaid/#/stateDiagram)
-- [entity relationship](https://mermaid-js.github.io/mermaid/#/entityRelationshipDiagram)
-- [user journey](https://mermaid-js.github.io/mermaid/#/user-journey)
-- [requirement](https://mermaid-js.github.io/mermaid/#/requirementDiagram)
-- [gantt chart](https://mermaid-js.github.io/mermaid/#/gantt)
-- [pie chart](https://mermaid-js.github.io/mermaid/#/pie)
-- [git graph (experimental)](https://mermaid-js.github.io/mermaid/#/?id=git-graph-exclamation-experimental)
+- [flowchart](https://mermaid.js.org/syntax/flowchart.html)
+- [sequence](https://mermaid.js.org/syntax/sequenceDiagram.html)
+- [class](https://mermaid.js.org/syntax/classDiagram.html)
+- [state](https://mermaid.js.org/syntax/stateDiagram.html)
+- [entity relationship](https://mermaid.js.org/syntax/entityRelationshipDiagram.html)
+- [user journey](https://mermaid.js.org/syntax/userJourney.html)
+- [gantt chart](https://mermaid.js.org/syntax/gantt.html)
+- [pie chart](https://mermaid.js.org/syntax/pie.html)
+- [git graph](https://mermaid.js.org/syntax/gitgraph.html)
 
 ## Resources
 - [VSCode Extension: Markdown Preview Mermaid Support](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-mermaid)
 - [VSCode Extension: Markdown PDF](https://marketplace.visualstudio.com/items?itemName=yzane.markdown-pdf)
-- [Live Editor](https://mermaid-js.github.io/mermaid-live-editor/)
-- [plus many, many others](https://mermaid-js.github.io/mermaid/#/./integrations)
+- [Live Editor](https://mermaid.live/)
+- [plus many, many others](https://mermaid.js.org/ecosystem/integrations-community.html)
