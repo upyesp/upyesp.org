@@ -1,7 +1,7 @@
 ---
 title: "Getting Started With Markdown"
 description: Markdown is a plain text format for writing structured documents. 
-date: 2021-07-24T10:00:00+01:00
+date: 2024-01-23T12:16:00
 draft: false
 toc: true
 pinned: false
@@ -73,7 +73,7 @@ The [60 Second Tutorial](https://commonmark.org/help/) is a great place to start
 
 ## Resources of Interest
 
-1. [highlight.js](https://highlightjs.org/static/demo/) for a list of languages available to add to code blocks.
+1. [highlight.js](https://highlightjs.org/demo) for a list of languages available to add to code blocks.
 1. [Tables Generator](https://www.tablesgenerator.com/markdown_tables) is a fast way of creating tables and supports pasting data copied from spreadsheets, docs and other sources.
 1. [VSCode](https://code.visualstudio.com/) is free, open source and widely used.  Great for editing Markdown, also languages such as Python, Rust, C++. The [preview pane](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview) provides instant feedback on how your document looks. Shortcut to enable preview: <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>.
 1. [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker), extension for VSCode, is a general spell checker. Great for spell checking source code comments and Markdown documents.

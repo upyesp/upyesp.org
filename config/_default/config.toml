@@ -1,4 +1,4 @@
-baseURL = "https://upyesp.org/"
+baseURL = "https://www.upyesp.org/"
 title = "upyesp"
 theme = "hugo-theme-bootstrap" # install via git submodule
 # theme = "github.com/razonyang/hugo-theme-bootstrap" # install via hugo module
