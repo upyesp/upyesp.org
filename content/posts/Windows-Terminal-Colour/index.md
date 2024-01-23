@@ -1,5 +1,5 @@
 ---
-title: "Adding Colour & Icons to File Listings in a Terminal"
+title: "PowerShell: Adding Colour & Icons to File Listings"
 description: Add colour to file listings in PowerShell. 
 date: 2023-12-28T11:34:00+01:00
 draft: false
@@ -25,7 +25,7 @@ For the PowerShell terminal session to include icons with filenames, the session
 
 The [Nerd Fonts](https://www.nerdfonts.com/) project is an excellent source for such fonts.  There are many, for example "Caskaydia Cove Nerd Font". 
 
-Download a font, install it - choosing "INSTALL FOR ALL USERS" and configure PowerShell to use it.
+Download a font, install it - choosing "INSTALL FOR ALL USERS" and configure the terminal app to use the new font.
 
 ## Install Terminal-Icons
 
@@ -55,4 +55,4 @@ If at some point you want to remove the module, enter:
 Uninstall-Module -Name Terminal-Icons
 ```
 
-And remove the import from your profile.
+... and remove the import from your profile.
