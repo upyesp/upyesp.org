@@ -1,6 +1,6 @@
 ---
 title: "Cheat Sheet: Math Notation In Markdown"
-description: Examples of how to write math notation in Markdown.
+description: Examples of math notation, inline & code blocks.
 date: 2022-09-12T10:00:00+01:00
 draft: false
 toc: true
@@ -11,7 +11,7 @@ categories: [Documentation, Windows, Mac, Linux]
 series: [Markdown]
 ---
 
-A quick-reference guide, on how to add math notation in Markdown documents.
+A quick-reference guide, how to add math notation in Markdown documents.
 
 <!--more-->
 
