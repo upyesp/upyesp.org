@@ -1,7 +1,6 @@
 ---
 title: "Cheat Sheet: Math Notation In Markdown"
 description: Examples of how to write math notation in Markdown.
-images: [/images/math.png] 
 date: 2022-09-12T10:00:00+01:00
 draft: false
 toc: true
