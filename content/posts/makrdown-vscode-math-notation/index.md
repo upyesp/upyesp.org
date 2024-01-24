@@ -1,6 +1,7 @@
 ---
-title: "Cheat Sheet: Mathematical Notation In Markdown"
-description: Examples of how to write math notation in Markdown documents. 
+title: "Cheat Sheet: Math Notation In Markdown"
+description: Examples of how to write math notation in Markdown.
+images: [/images/math.png] 
 date: 2022-09-12T10:00:00+01:00
 draft: false
 toc: true
@@ -11,7 +12,7 @@ categories: [Documentation, Windows, Mac, Linux]
 series: [Markdown]
 ---
 
-A quick-reference guide, on how to write mathematical notation in Markdown documents.  This is achieved by use of a formatting markup language called, `LaTeX`. 
+A quick-reference guide, on how to add math notation in Markdown documents.
 
 <!--more-->
 
@@ -21,19 +22,17 @@ The scope of mathematical notation included in this cheat sheet is drawn from th
 
 ## Adding Math Notation To Markdown Documents
 
-LaTeX is sometimes stylised as $\LaTeX$.
+LaTeX is sometimes stylised as $\LaTeX$.  Typesetting is based on $\TeX$, created by [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth).
 
-Typesetting is based on $\TeX$, created by [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth).
-
-Open Source editor, VSCode, supports mathematical typesetting with $\LaTeX$ in Markdown documents.  Equations are rendered in the Live Preview Pane, enabled with <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>.  No other libraries, extensions or apps need to be installed.  Rendering in Live Preview is performed by [KaTeX](https://katex.org/), a fast, easy-to-use JavaScript library for $\TeX$ math rendering on the web.
+Open source editor, VSCode, supports math typesetting with $\LaTeX$, showing the notation as you type.  The Live Preview Pane is enabled with <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>.  No other libraries, extensions or apps need to be installed.  Rendering in Live Preview is performed by [KaTeX](https://katex.org/), a fast, easy-to-use JavaScript library for $\TeX$ math rendering on the web.
 
 ## Including LaTeX in Markdown
 
-There are two ways to include $\LaTeX$ mathematical typesetting in Markdown documents.  The first is `inline`, which means that the notation is included in the paragraph or sentence, with the flow of text.
+There are two ways to include $\LaTeX$ math typesetting in Markdown.  The first is `inline`, which means that the notation is included in the paragraph or sentence, with the flow of text.
 
 The second method is as separate `code blocks`, so that the notation is shown in it's own paragraph.
 
-Inline LaTeX mathematical notation is wrapped in single-dollar signs. For example, for `the square of "x"`, just type `$x^2$`, which is then formatted as $x^2$.
+Inline LaTeX math notation is wrapped in single-dollar signs. For example, for `the square of "x"`, just type `$x^2$`, which is then formatted as $x^2$.
 
 Alternatively, `code blocks` of LaTeX begin and end with two dollar signs, wrapped inside triple backticks. For example...
 
