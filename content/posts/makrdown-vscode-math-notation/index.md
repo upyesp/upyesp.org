@@ -46,10 +46,12 @@ $$
 The above is rendered as:
 
 $$
-\displaystyle\sum_{k=3}^5 k^2=3^2 + 4^2 + 5^2=50
+\displaystyle\sum_{k=3}^5 k^2=3^2 + 4^2 + 5^2=50 
 $$
 
 ## Cheat Sheet
+
+> Tip: These tables are wide, so you may need to scroll horizontally to see all the columns, or rotate your phone to landscape.
 
 ### Arithmetic
 
