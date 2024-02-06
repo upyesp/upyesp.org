@@ -15,13 +15,11 @@ The result being you may end up carrying two chargers around with you... a hefty
 
 Recent advances in the [USB-C specification](https://www.usb.org/sites/default/files/2021-05/USB%20PG%20USB%20PD%203.1%20DevUpdate%20Announcement_FINAL.pdf) allow for higher power USB-C charging.
 
-This means you can replace the bulky ThinkPad charger with a more versatile USB-C one.
+This means you can replace the bulky ThinkPad charger with a more versatile USB-C one and embrace a lighter charging solution.
 
 <!--more-->
 
-## Embrace a Lighter Charging Solution
-
-### The Charger
+## Charger
 
 ![USB-C 240W PD Charger](chargerPD240W.jpg)
 
@@ -29,7 +27,7 @@ Choose a high-quality GaN USB-C charger, capable of delivering the power your Th
 
 > Tip: For multi-port chargers, check that at least one of the ports supports the required power output.
 
-### The USB-C Cable
+## USB-C Cable
 
 ![USB-C 240W Cable](USBCCable240W.jpg)
 
@@ -39,7 +37,7 @@ The chances are that those old USB-C cables languishing in the back of a drawer 
 
 The higher-spec cable is backwards compatible, so can be used with your other USB-C devices.
 
-### The Slim Tip to USB-C Adapter
+## Slim Tip to USB-C Adapter
 
 ![Slim Tp To USB-C Adapter](ThinkPadSlimTipAdapter.jpg)
 
