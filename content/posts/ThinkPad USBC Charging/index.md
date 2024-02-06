@@ -25,9 +25,11 @@ Choose a high-quality GaN USB-C charger, capable of delivering the power your Th
 
 ### The USB-C Cable
 
-![USB-C 240W Cable](USB-CCable240W.jpg)
+![USB-C 240W Cable](USBCCable240W.jpg)
 
-The chances are that those old USB-C cables languishing in the back of a drawer won't do the job.  Standard USB-C cables won't suffice, as they can't handle higher power.  Buy a USB-C cable rated for 240W, or at least for the power your ThinkPad requires.  These cables are typically thicker and more costly, but necessary. Unless the GaN charger detects the cable is capable of higher power, the charger will limit itself to only 60W and the ThinkPad will not charge.
+The chances are that those old USB-C cables languishing in the back of a drawer won't do the job.  Standard USB-C cables won't suffice, as they can't handle higher power.  Buy a USB-C cable rated for 240W, or at least for the power your ThinkPad requires.  These cables are typically thicker and more costly, but necessary.
+
+> Unless the GaN charger detects the cable is capable of higher power, the charger will limit itself to only 60W and the ThinkPad will not charge, see [USB Promoter Group Announces USB Power Delivery Specification Revision 3.1](https://www.usb.org/sites/default/files/2021-05/USB%20PG%20USB%20PD%203.1%20DevUpdate%20Announcement_FINAL.pdf).
 
 ### The Slim Tip to USB-C Adapter
 
