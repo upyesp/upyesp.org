@@ -1,39 +1,31 @@
 ---
 title: "Cheat Sheet: Math Notation In Markdown"
 description: Examples of math notation, inline & code blocks.
-date: 2022-09-12T10:00:00+01:00
+date: 2024-02-19T08:00:00+01:00
 draft: false
 toc: true
 pinned: false
-featuredImage: ''
-tags: [Markdown, VSCode, KaTeX]
+images: [/images/Map_of_Mathematics.jpg]
+tags: [Markdown, VSCode, LaTeX]
 categories: [Documentation, Windows, Mac, Linux]
 series: [Markdown]
 ---
 
-A quick-reference guide, how to add math notation in Markdown documents.
+A quick-reference guide, with examples, on how to add math notation to Markdown documents.
 
 <!--more-->
 
-The scope of mathematical notation included in this cheat sheet is drawn from the [Math Notation Cheat Sheet](https://www.flickr.com/photos/95869671@N08/40544016221/in/dateposted-public/) poster, created by [Dominic Walliman](https://dominicwalliman.com/), included below with permission.  The associated YouTube video, which is excellent, is [The Map of Mathematics](https://youtu.be/OmJ-4B-mS-Y).
+The scope of mathematical notation included in this cheat sheet is drawn from the [Math Notation Cheat Sheet](https://www.flickr.com/photos/95869671@N08/40544016221/in/dateposted-public/) poster, created by [Dominic Walliman](https://dominicwalliman.com/), included here with permission.  The associated YouTube video, which is excellent, is [The Map of Mathematics](https://youtu.be/OmJ-4B-mS-Y).
 
-![Math Notation Cheat Sheet, © Dominic Walliman, 2018](/images/Map_of_Mathematics.jpg)
+## Including Math Notation in Markdown
 
-## Adding Math Notation To Markdown Documents
+There are two ways to include math notation in Markdown.  First, `inline`, which means that the notation is included in the paragraph or sentence, with the flow of text.
 
-LaTeX is sometimes stylised as $\LaTeX$.  Typesetting is based on $\TeX$, created by [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth).
+The second is as separate `code blocks`, so that the notation is shown in it's own paragraph.
 
-Open source editor, VSCode, supports math typesetting with $\LaTeX$, showing the notation as you type.  The Live Preview Pane is enabled with <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>.  No other libraries, extensions or apps need to be installed.  Rendering in Live Preview is performed by [KaTeX](https://katex.org/), a fast, easy-to-use JavaScript library for $\TeX$ math rendering on the web.
+Inline math notation is wrapped in single-dollar signs. For example, for `the square of "x"`, just type `$x^2$`, which is then formatted as $x^2$.  This is $\LaTeX$ notation.
 
-## Including LaTeX in Markdown
-
-There are two ways to include $\LaTeX$ math typesetting in Markdown.  The first is `inline`, which means that the notation is included in the paragraph or sentence, with the flow of text.
-
-The second method is as separate `code blocks`, so that the notation is shown in it's own paragraph.
-
-Inline LaTeX math notation is wrapped in single-dollar signs. For example, for `the square of "x"`, just type `$x^2$`, which is then formatted as $x^2$.
-
-Alternatively, `code blocks` of LaTeX begin and end with two dollar signs, wrapped inside triple backticks. For example...
+Alternatively, `code blocks` of $\LaTeX$ begin and end with two dollar signs, wrapped inside triple backticks. For example...
 
 ~~~Latex
 ```
@@ -49,7 +41,7 @@ $$
 \displaystyle\sum_{k=3}^5 k^2=3^2 + 4^2 + 5^2=50 
 $$
 
-## Cheat Sheet
+## LaTeX Cheat Sheet
 
 > Tip: These tables are wide, so you may need to scroll horizontally to see all the columns, or rotate your phone to landscape.
 
@@ -198,3 +190,9 @@ $$
 | Chi     | $\chi$     | `$\chi$`     | $\Chi$     | `$\Chi$`     |
 | Psi     | $\psi$     | `$\psi$`     | $\Psi$     | `$\Psi$`     |
 | Omega   | $\omega$   | `$\omega$`   | $\Omega$   | `$\Omega$`   |
+
+## History Of Adding Math Notation To Markdown Documents
+
+LaTeX is sometimes stylised as $\LaTeX$.  Typesetting is based on $\TeX$, created by [Donald Knuth](https://en.wikipedia.org/wiki/Donald_Knuth).
+
+Open source editor, VSCode, supports math typesetting with $\LaTeX$, showing the notation as you type.  The Live Preview Pane is enabled with <kbd>Ctrl</kbd> + <kbd>K</kbd> <kbd>V</kbd>.  No other libraries, extensions or apps need to be installed.  Rendering in Live Preview is performed by [KaTeX](https://katex.org/), a fast, easy-to-use JavaScript library for $\TeX$ math rendering on the web.
