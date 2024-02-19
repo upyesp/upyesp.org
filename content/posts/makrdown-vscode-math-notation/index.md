@@ -5,7 +5,7 @@ date: 2024-02-19T08:00:00+01:00
 draft: false
 toc: true
 pinned: false
-featuredImage: '/images/Map_of_Mathematics.jpg'
+images: [/images/Map_of_Mathematics.jpg]
 tags: [Markdown, VSCode, LaTeX]
 categories: [Documentation, Windows, Mac, Linux]
 series: [Markdown]
