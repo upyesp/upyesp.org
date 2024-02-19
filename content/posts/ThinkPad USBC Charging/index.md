@@ -5,7 +5,7 @@ date: 2024-02-06T14:13:00+01:00
 draft: false
 toc: false
 pinned: false
-featuredImage: ''
+images: [chargerPD240W.jpgg]
 tags: [USB-C, ThinkPad]
 ---
 
@@ -21,11 +21,7 @@ This means you can replace the bulky ThinkPad charger with a more versatile USB-
 
 ## Charger
 
-![USB-C 240W PD Charger](chargerPD240W.jpg)
-
-Choose a high-quality GaN USB-C charger, capable of delivering the power your ThinkPad needs (for example, 135W, or more).  Ensure the charger's output matches or exceeds your laptop's power requirement.
-
-> Tip: For multi-port chargers, check that at least one of the ports supports the required power output.
+Choose a high-quality GaN USB-C charger, which has at least 1 port capable of delivering the power your ThinkPad needs (for example, 135W, or more).  Ensure the charger's output matches or exceeds your laptop's power requirement.
 
 ## USB-C Cable
 
