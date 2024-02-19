@@ -5,7 +5,7 @@ date: 2024-02-06T14:13:00+01:00
 draft: false
 toc: false
 pinned: false
-images: [chargerPD240W.jpgg]
+images: [/images/chargerPD240W.jpgg]
 tags: [USB-C, ThinkPad]
 ---
 
