@@ -1,11 +1,11 @@
 ---
 title: "Switch to USB-C for ThinkPad Charging"
 description: Ditch the bulky ThinkPad charger, consolidate on USB-C.
-date: 2024-02-06T14:13:00+01:00
+date: 2023-07-06T14:13:00+01:00
 draft: false
 toc: false
 pinned: false
-images: [/images/chargerPD240W.jpgg]
+images: [/images/chargerPD240W.jpg]
 tags: [USB-C, ThinkPad]
 ---
 
