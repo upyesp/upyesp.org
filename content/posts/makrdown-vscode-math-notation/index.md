@@ -1,7 +1,7 @@
 ---
 title: "Cheat Sheet: Adding Math Notation To Markdown"
 description: Examples of math notation, inline & code blocks.
-date: 2024-02-19T08:00:00+01:00
+date: 2024-02-24T15:00:00+01:00
 draft: false
 toc: true
 pinned: false
