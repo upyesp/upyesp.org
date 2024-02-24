@@ -1,5 +1,5 @@
 ---
-title: "Install Manim On Windows 10 & Windows 11"
+title: "Install Manim On Windows 11 & Windows 10"
 description: How to install the animation generation tool, Manim Community Edition, on Windows.
 date: 2022-03-02T13:20:01+00:00
 draft: false
