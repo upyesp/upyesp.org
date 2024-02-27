@@ -1,5 +1,5 @@
 ---
-title: "Windows 11, 2024 Snipping Tool FIX Save Location"
+title: "Windows 11, 2024 Snipping Tool Fix Save Location"
 description: This change in Settings fixes the save location problem. 
 date: 2024-02-24T13:34:00+01:00
 draft: false
@@ -13,7 +13,7 @@ tags: [Windows 11]
 
 The Snipping Tool in Windows 11, 2024, has a problem with the save location.  The default location is the `Pictures > Screenshots` folder.  Also the tool does not remember the last location used, unlike older versions of the Snipping Tool.
 
-This is cumbersome if you want to save to a different location, such as `Desktop`.  Here is how to fix it.
+Here is how to fix it.
 
 <!--more-->
 
