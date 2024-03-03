@@ -20,7 +20,7 @@ Here's how to create Alias commands to simplify tasks on the command line.  The 
 
 Your computer has an IP address on the LAN it is connected to. This blog post will refer to that address as the _internal IP address_, typical examples being... `192.168.1.12/24` at home or `10.23.8.7/20` on a corporate network.
 
-Your computer also has an IP address as seen by devices from external to the LAN, for example by servers on the internet.  This blog post will refer to that address as the _external IP address_, for example `123.44.23.87`. If you open a browser and Google "whats my ip", you will find yours.
+Your computer also has an IP address as seen by devices from external to the LAN, for example by servers on the internet.  This tutorial will refer to that address as the _external IP address_, for example `123.44.23.87`. If you open a browser and Google "whats my ip", you will find yours.
 
 [Jump to Windows Method](#windows)
 
