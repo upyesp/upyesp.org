@@ -6,7 +6,6 @@
   lineAnchors = ""
   lineNoStart = 1
   lineNos = true
-  maxShownLines = -1
   lineNumbersInTable = false
   noClasses = false
   # style = "monokai" # This parameter affects nothing, see https://github.com/razonyang/hugo-theme-bootstrap#syntax-highlighting.
