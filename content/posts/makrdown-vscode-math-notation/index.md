@@ -4,7 +4,7 @@ description: Examples of math notation, inline & code blocks.
 date: 2024-02-24T15:00:00+01:00
 draft: false
 toc: true
-pinned: false
+pinned: true
 images: [/images/Map_of_Mathematics.jpg]
 tags: [Markdown, VSCode, LaTeX]
 categories: [Documentation, Windows, Mac, Linux]
