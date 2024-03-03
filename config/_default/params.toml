@@ -75,7 +75,7 @@ viewer = true # Image Viewer
   # fixed = true
 
 [codeBlock]
-  maxLines = -1 # -1 = expanded, or set to an integer for the number of lines
+  maxLines = 0 # 0 = expanded, or set to an integer for the number of lines
   lineNos = false # true/false represents that show/hide the line numbers by default.
 
 [post]
