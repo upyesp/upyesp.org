@@ -39,9 +39,9 @@ Working within a command line environment, like a Bash session, can be far more 
 | Shortcut  | Function                                      |
 |-----------|-----------------------------------------------|
 | ```history``` | view command history, with line numbers |
-| ```!n``` | retrieve the command at line number *n* |
-| ```!-n``` | retrieve the *nth* last command |
-| ```!string``` | retrieve the command that starts with *string* |
+| ```!n``` | retrieve the command at line number *n*, like ```!7``` |
+| ```!-n``` | retrieve the *nth* last command, like ```!-2``` |
+| ```!string``` | retrieve the command that starts with *string*, like ```!curl``` |
 | ```sudo !!``` | re-execute the last command, but with *sudo* |
 | ```^string^newstring^``` | re-execute the last command, replacing *string* with *newstring* |
 |<kbd>Ctrl</kbd> + <kbd>r</kbd> | begin *search history mode*, type a few characters, <br /> repeat press <kbd>Ctrl</kbd> + <kbd>r</kbd> for next match |
@@ -61,7 +61,7 @@ Working within a command line environment, like a Bash session, can be far more 
 
 ### Managing Command Line History
 
-Prevent a command from being written to history... precede the command with a space, like this:
+Prevent a command from being written to history... precede the command with a `space`, like this:
 
 ```Bash
  cat ~/.bashrc
