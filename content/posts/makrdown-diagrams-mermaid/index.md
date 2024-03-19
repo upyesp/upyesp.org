@@ -1,7 +1,7 @@
 ---
 title: Add Diagrams To Markdown Using Mermaid
 description: Mermaid enables you to create diagrams and visualizations using text descriptions.
-images: [/images/mermaid-flowchart.png]
+images: 
 date: 2024-01-23T15:00:00+01:00
 draft: false
 toc: true
