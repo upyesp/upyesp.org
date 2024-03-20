@@ -1,6 +1,6 @@
 ---
-title: "Windows SSH To Remote Server With FIDO2 + Hardware Key (YubiKey) Multi Factor Authentication MFA / 2FA "
-description: Use the latest version of OpenSSH in Windows for more secure authentication. 
+title: "Windows SSH To Remote Server With FIDO2 + Hardware Key (YubiKey) Multi Factor Authentication MFA / 2FA"
+description: Use the latest version of OpenSSH in Windows with a YubiKey for more secure authentication. 
 date: 2022-07-03T08:34:00+01:00
 draft: false
 toc: true
@@ -11,7 +11,7 @@ categories: [Windows, Linux]
 series: [Windows SSH]
 ---
 
-Windows ships with OpenSSH.  Here's how to update the version then use it with MFA option FIDO2 + hardware security keys such as YubiKey.
+Windows ships with OpenSSH.  Here's how to update the version then use it with MFA option FIDO2 + a hardware security key, such as a YubiKey.
 
 <!--more-->
 
@@ -26,7 +26,7 @@ SSH is a core element of the [OpenSSH](https://www.openssh.com/) project.  Sever
 
 ## Install The Latest Version of OpenSSH for Windows
 
-SSH is included in Windows as a `Windows Optional Feature`, see the [Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) page for more information.  As such it is updated as part of Windows Feature Updates.  Currently such updates are released infrequently, only once or twice per year. The result being the version of SSH typically available in Windows is potentially several versions behind the latest available.
+SSH is included in Windows as a `Windows Optional Feature`, see the [Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) page for more information.  As such it is updated as part of Windows Feature Updates. 
 
 To find the version currently installed, use:
 
@@ -34,17 +34,15 @@ To find the version currently installed, use:
 ssh -V
 ```
 
-At the time of writing, this returns: "OpenSSH_for_Windows_8.1p1, LibreSSL 3.0.2".
+At the time of writing, this returns: "OpenSSH_for_Windows_8.6p1, LibreSSL 3.4.3".  This version does not support FIDO2 hardware security keys (YubiKeys), so it needs to be updated to a newer version.
 
 > Ok, funny story... according [Microsoft's development repo](https://github.com/PowerShell/openssh-portable#readme), the latest *stable* release of OpenSSH for Windows, which they recommend, appears to be available as __source code only, no installer__, hosted (along with the source code for other platforms), at [OpenSSH](https://www.openssh.com/portable.html). No installer for the latest stable release, how weird is that? The [Microsoft Wiki](https://github.com/PowerShell/openssh-portable/wiki) points to the most recent installation package as being for the latest __beta version__ only. It appears the latest stable version is not available to install, only to build/compile yourself.
 
-So, to install latest version available (the latest beta version):
+So, to install latest version available to the public, the latest *beta* version:
 
 1. Uninstall the version of OpenSSH that was delivered with Windows, using [this method](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse#uninstall-openssh-using-windows-settings).
-1. Download the latest 64bit MSI installer from [here](https://github.com/PowerShell/Win32-OpenSSH/releases/latest).
-1. Open a PowerShell prompt as an administrator.
-1. Follow [these instructions](https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH-Using-MSI) to install the MSI and update the System Path.
-1. Restart Windows.
+1. Open a PowerShell terminal and install the latest beta version, by either of 2 methods... using winget, ```winget install Microsoft.OpenSSH.Beta```, or follow [these instructions](https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH-Using-MSI) to install the MSI and update the System Path.
+1. Close and re-open the PowerShell terminal.
 
 The SSH version should now have changed, so check it again, with:
 
@@ -52,7 +50,7 @@ The SSH version should now have changed, so check it again, with:
 ssh -V
 ```
 
-At the time of writing, this is now: "OpenSSH_for_Windows_8.9p1, LibreSSL 3.4.3".
+At the time of writing, this is now: "OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2", which supports FIDO2 hardware security keys.
 
 ## Install Or Update OpenSSH On The Remote Linux Server
 
