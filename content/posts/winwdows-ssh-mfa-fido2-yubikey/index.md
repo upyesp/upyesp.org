@@ -36,15 +36,15 @@ ssh -V
 
 At the time of writing, this returns: "OpenSSH_for_Windows_8.6p1, LibreSSL 3.4.3".  This version does not support FIDO2 hardware security keys (YubiKeys), so it needs to be updated to a newer version.
 
-> Ok, funny story... according [Microsoft's development repo](https://github.com/PowerShell/openssh-portable#readme), the latest *stable* release of OpenSSH for Windows, which they recommend, appears to be available as __source code only, no installer__, hosted (along with the source code for other platforms), at [OpenSSH](https://www.openssh.com/portable.html). No installer for the latest stable release, how weird is that? The [Microsoft Wiki](https://github.com/PowerShell/openssh-portable/wiki) points to the most recent installation package as being for the latest __beta version__ only. It appears the latest stable version is not available to install, only to build/compile yourself.
+> Ok, funny story... according to [Microsoft's development repo](https://github.com/PowerShell/openssh-portable#readme), the latest *stable* release of OpenSSH for Windows, which they recommend, appears to be available as __source code only, no installer__, hosted (along with the source code for other platforms), at [OpenSSH](https://www.openssh.com/portable.html). No installer for the latest stable release, how weird is that? The [Microsoft Wiki](https://github.com/PowerShell/openssh-portable/wiki) points to the most recent installation package as being for the latest __beta version__ only. It appears the latest stable version is not available to install, only to build/compile yourself.
 
-So, to install latest version available to the public, the latest *beta* version:
+So, to install the latest version available to the public, the latest *beta* version:
 
 1. Uninstall the version of OpenSSH that was delivered with Windows, using [this method](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse#uninstall-openssh-using-windows-settings).
 1. Open a PowerShell terminal and install the latest beta version, by either of 2 methods... using winget, ```winget install Microsoft.OpenSSH.Beta```, or follow [these instructions](https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH-Using-MSI) to install the MSI and update the System Path.
 1. Close and re-open the PowerShell terminal.
 
-The SSH version should now have changed, so check it again, with:
+The SSH version should now have changed, check it again, with:
 
 ```PowerShell
 ssh -V
@@ -76,7 +76,7 @@ sudo systemctl restart ssh.service
 
 If you have already set a FIDO2 PIN on your hardware security key, for example if you have used the security key with other FIDO2 services, then you can skip this step.
 
-To set a FIDO2 PIN on your hardware security key, follow the instructions provided by the manufacturer.  For example, if you are using a YubiKey, then use their Windows App, [YubiKey Manager](https://www.yubico.com/support/download/yubikey-manager/) and follow the instaructions [here](https://support.yubico.com/hc/en-us/articles/4402836718866-Understanding-YubiKey-PINs#:~:text=PIN%20Management,FIDO2%20and%20clicking%20Set%20PIN.).
+To set a FIDO2 PIN on your hardware security key, follow the instructions provided by the manufacturer.  For example, if you are using a YubiKey, then use their Windows App, [YubiKey Manager](https://www.yubico.com/support/download/yubikey-manager/) and follow the instructions [here](https://support.yubico.com/hc/en-us/articles/4402836718866-Understanding-YubiKey-PINs#:~:text=PIN%20Management,FIDO2%20and%20clicking%20Set%20PIN.).
 
 ### Create An SSH Key Pair
 
@@ -125,7 +125,7 @@ Touch the key to, prove you are physically present:
 
 The `ssh-keygen` command will generate a public/private key pair.  The public key will be stored in the `.ssh/id_ecdsa.pub` file, and the private key will be stored in the `.ssh/id_ecdsa` file.
 
-To view the public key, use on eof these commands:
+To view the public key, use one of these commands:
 
 ```PowerShell
 Get-Content $env:USERPROFILE\.ssh\id_ecdsa_sk.pub
@@ -137,8 +137,7 @@ or, in a CMD prompt:
 type $env:USERPROFILE\.ssh\id_ecdsa_sk.pub
 ```
 
-
-or even this Linux Bash style command will be accepted by PowerShell:
+or, this Linux style command will be accepted by PowerShell:
 
 ```Bash
 cat ~/.ssh/id_ecdsa_sk.pub
@@ -160,7 +159,7 @@ or, in a CMD prompt:
 type $env:USERPROFILE\.ssh\id_ecdsa_sk.pub | ssh sam@server21 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'
 ```
 
-or this Bash style command will also be accepted by PowerShell:
+or, this Linux style command will be accepted by PowerShell:
 
 ```Bash
 cat ~/.ssh/id_ecdsa_sk.pub | ssh sam@server21 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'
