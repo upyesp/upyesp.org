@@ -16,13 +16,13 @@ Passkeys provide secure, passwordless authentication for websites and apps.  Her
 
 <!--more-->
 
-[Passkeys](https://fidoalliance.org/passkeys/) enable authentication using methods such as fingerprint scan or PIN entry.  As well as providing a method to log in to websites such as Apple, Microsoft and Google, they can also be used to authenticate applications, including SSH connections.
+[Passkeys](https://fidoalliance.org/passkeys/) provide user authentication using methods such as fingerprint, face ID or PIN entry.  As well as providing a method to log in to websites such as Apple, Microsoft and Google, they can also be used by applications requiring user authentication, including SSH.
 
-SSH is a core element of the [OpenSSH](https://www.openssh.com/) project.  Several Unix-like operating systems are supported. Microsoft Windows is also supported.  This blog details using SSH on the Windows command-line, secured with multi factor authentication (MFA / 2FA). 
+SSH is a core element of the [OpenSSH](https://www.openssh.com/) project.  Several Unix-like operating systems are supported. Microsoft Windows is also fully supported.
 
 > TL;DR
 > 1. Open a PowerShell console as Admin.
-> 1. Install the latest version of [OpenSSH for Windows](https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH-Using-MSI), with `winget remove Microsoft.OpenSSH.Beta`.
+> 1. Install the latest version of [OpenSSH for Windows](https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH-Using-MSI), with `winget install Microsoft.OpenSSH.Beta`.
 > 1. Generate a new key pair, with: `ssh-keygen -t ecdsa-sk`.
 > 1. Copy the new .pub key to the remote server, with: `Get-Content $env:USERPROFILE\.ssh\id_ecdsa_sk.pub | ssh alice@example.com 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'` (change alice@example.com to your user/server).
 > 1. SSH to the server, with: `ssh alice@example.com` (change alice@example.com to your user/server).
@@ -80,6 +80,7 @@ Follow the on-screen instructions. As you are using a hardware security key, you
 
 ![dialog box asking for a PIN or fingerprint](passkeycreation.png "Making sure it's you")
 
+Confirmation that the passkey was saved is shown in the dialog box.
 
 ![dialog box confirm the passkey was saved](passkeysaved.png "confirmation message")
 
@@ -136,5 +137,7 @@ Now you can SSH to the remote server, and you should be able to use Passkey to a
 ```PowerShell
 ssh sam@server21
 ```
+
+Confirm it is you:
 
 ![screen shot of an SSH connection authenticating with a passkey](passkeyauthentication.png "Making sure it's you")
