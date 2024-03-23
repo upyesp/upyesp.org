@@ -24,7 +24,7 @@ SSH is a core element of the [OpenSSH](https://www.openssh.com/) project.  Sever
 > 1. Open a PowerShell console as Admin.
 > 1. Install the latest version of [OpenSSH for Windows](https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH-Using-MSI), with `winget install Microsoft.OpenSSH.Beta`.
 > 1. Generate a new key pair, with: `ssh-keygen -t ecdsa-sk`.
-> 1. Copy the new .pub key to the remote server, with: `Get-Content $env:USERPROFILE\.ssh\id_ecdsa_sk.pub | ssh alice@example.com 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'` (change alice@example.com to your user/server).
+> 1. Copy the new .pub key to the remote server, with: `cat ~/.ssh/id_ecdsa_sk.pub | ssh alice@example.com 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'`  (change alice@example.com to your user/server).
 > 1. SSH to the server, with: `ssh alice@example.com` (change alice@example.com to your user/server).
 
 ## Install The Latest Beta Version of OpenSSH for Windows
@@ -45,7 +45,7 @@ To install the latest version available to the public, the latest *beta* version
 winget install Microsoft.OpenSSH.Beta
 ```
 
-The exit PowerShell and re-open it. The SSH version should now have changed, check it again, with:
+Then exit PowerShell and re-open it. The SSH version should now have changed, check it again, with:
 
 ```PowerShell
 ssh -V
