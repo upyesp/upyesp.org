@@ -1,6 +1,6 @@
 ---
-title: "Using A Passkey with SSH"
-description: Authenticate SSH connections with Passkeys. 
+title: "How To Use A Passkey with SSH"
+description: SSH now supports Passkeys.
 date: 2024-03-23T08:34:00+01:00
 draft: false
 toc: true
@@ -12,26 +12,26 @@ categories: [Windows]
 series: [Windows SSH]
 ---
 
-Passkeys provide secure, passwordless authentication for websites and apps.  Here's how to use passkeys with SSH.
+Passkeys provide secure, passwordless authentication for websites and apps.  Here's how to use them with SSH.
 
 <!--more-->
 
-[Passkeys](https://fidoalliance.org/passkeys/) provide user authentication using methods such as fingerprint, face ID or PIN entry.  As well as providing a method to log in to websites such as Apple, Microsoft and Google, they can also be used by applications requiring user authentication, including SSH.
+[Passkeys](https://fidoalliance.org/passkeys/) enable user authentication using methods such as fingerprint, face ID or PIN entry.  They providing a method to log in to online accounts (including Microsoft, Google, Apple and Amazon).  Passkeys can also be used by applications that require user authentication, including SSH.
 
 SSH is a core element of the [OpenSSH](https://www.openssh.com/) project.  Several Unix-like operating systems are supported. Microsoft Windows is also fully supported.
 
 > TL;DR
-> 1. Open a PowerShell console as Admin.
+> 1. Open a PowerShell terminal.
 > 1. Install the latest version of [OpenSSH for Windows](https://github.com/PowerShell/Win32-OpenSSH/wiki/Install-Win32-OpenSSH-Using-MSI), with `winget install Microsoft.OpenSSH.Beta`.
-> 1. Generate a new key pair, with: `ssh-keygen -t ecdsa-sk`.
-> 1. Copy the new .pub key to the remote server, with: `cat ~/.ssh/id_ecdsa_sk.pub | ssh alice@example.com 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'`  (change alice@example.com to your user/server).
-> 1. SSH to the server, with: `ssh alice@example.com` (change alice@example.com to your user/server).
+> 1. Close and re-open PowerShell, then generate a new SSH key pair, with: `ssh-keygen -t ecdsa-sk`.
+> 1. Copy the new public key (.pub file) to the remote server, with: `cat ~/.ssh/id_ecdsa_sk.pub | ssh alice@example.com 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'`  (change alice@example.com to your user/server).
+> 1. SSH to the server, for example with: `ssh alice@example.com` (change alice@example.com to your user/server).
 
 ## Install The Latest Beta Version of OpenSSH for Windows
 
 SSH is included in Windows as a `Windows Optional Feature`, see the [Microsoft Docs](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) page for more information.  As such it is updated as part of Windows Feature Updates. 
 
-To find the version currently installed, use:
+Find the version currently installed:
 
 ```PowerShell
 ssh -V
@@ -45,7 +45,7 @@ To install the latest version available to the public, the latest *beta* version
 winget install Microsoft.OpenSSH.Beta
 ```
 
-Then exit PowerShell and re-open it. The SSH version should now have changed, check it again, with:
+Then exit PowerShell and re-open it. The SSH version should now have changed:
 
 ```PowerShell
 ssh -V
@@ -65,7 +65,7 @@ A simple example would be:
 ssh-keygen -t ecdsa-sk
 ```
 
-You might want to add to this and use the following optional parameters:
+You might want to add to this and use the following optional parameters, to make it easier to identify the key pair later on:
 
 - use `-O` to specify the application (SSH) and remote server name (in this example, "server21"), *example:* `-O application=ssh:server21`
 - use `-C` to specify a comment, *example:* `-C "Host:ThinkPadX1"`
@@ -92,6 +92,14 @@ The `ssh-keygen` command will generate a public/private key pair.  The public ke
 
 To view the public key, use one of these commands:
 
+This Linux command will be accepted by PowerShell as well as Linux:
+
+```Bash
+cat ~/.ssh/id_ecdsa_sk.pub
+```
+
+or
+
 ```PowerShell
 Get-Content $env:USERPROFILE\.ssh\id_ecdsa_sk.pub
 ```
@@ -102,18 +110,20 @@ or, in a CMD prompt:
 type $env:USERPROFILE\.ssh\id_ecdsa_sk.pub
 ```
 
-or, this Linux style command will be accepted by PowerShell:
-
-```Bash
-cat ~/.ssh/id_ecdsa_sk.pub
-```
-
 ### Copy The Public Key To The Remote Server
 
 The public key you just created, ~/.ssh/id_ecdsa_sk.pub, must be copied to the remote server. The current version of OpenSSH for Windows does not support the `ssh-copy-id` command. To copy the .pub key to the remote server, use:
 
 > Note, before using one of the examples below, replace `same@server21` to the actual user and remote server you are using, *for example* `betty@108.23.54.237`.
-    
+
+This Linux command will be accepted by both Linux and PowerShell:
+
+```Bash
+cat ~/.ssh/id_ecdsa_sk.pub | ssh sam@server21 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'
+```
+
+or
+
 ```PowerShell
 Get-Content $env:USERPROFILE\.ssh\id_ecdsa_sk.pub | ssh sam@server21 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'
 ```
@@ -122,12 +132,6 @@ or, in a CMD prompt:
 
 ```Batchfile
 type $env:USERPROFILE\.ssh\id_ecdsa_sk.pub | ssh sam@server21 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'
-```
-
-or, this Linux style command will be accepted by PowerShell:
-
-```Bash
-cat ~/.ssh/id_ecdsa_sk.pub | ssh sam@server21 'mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys'
 ```
 
 ### Test The Connection
