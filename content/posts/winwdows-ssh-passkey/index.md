@@ -12,13 +12,17 @@ categories: [Windows]
 series: [Windows SSH]
 ---
 
-Passkeys provide secure, passwordless authentication for websites and apps.  Here's how to use them with SSH.
+Here's how to use Passkeys to authenticate SSH connections.
 
 <!--more-->
 
-[Passkeys](https://fidoalliance.org/passkeys/) enable user authentication using methods such as fingerprint, face ID or PIN entry.  They providing a method to log in to online accounts (including Microsoft, Google, Apple and Amazon).  Passkeys can also be used by applications that require user authentication, including SSH.
+[Passkeys](https://fidoalliance.org/passkeys/) provide secure user authentication, using asynchronous key exchange.  When combined with device-hosted services like `Windows Hello`, users can confirm their identity using face ID, fingerprint or PIN. Created by the [FIDO Alliance](https://fidoalliance.org/), they say:
 
-SSH is a core element of the [OpenSSH](https://www.openssh.com/) project.  Several Unix-like operating systems are supported. Microsoft Windows is also fully supported.
+> Based on FIDO standards, passkeys are a replacement for passwords that provide faster, easier, and more secure sign-ins to websites and apps across a user’s devices. Unlike passwords, passkeys are always strong and phishing-resistant.​
+
+Passkeys can be used to log in to apps on the web, also apps installed locally on a device, including SSH.
+
+SSH is a core element of the [OpenSSH](https://www.openssh.com/) project.  Several Unix-like operating systems are supported. Microsoft Windows is also fully supported. Newer versions of OpenSSH support FIDO based authentication, such as Passkeys.
 
 > TL;DR
 > 1. Open a PowerShell terminal.
@@ -37,7 +41,7 @@ Find the version currently installed:
 ssh -V
 ```
 
-At the time of writing, this returns: "OpenSSH_for_Windows_8.6p1, LibreSSL 3.4.3".  This version does not support Passkeys or FIDO2 hardware security keys (YubiKeys), so it needs to be updated to a newer version.
+At the time of writing, this returns: "OpenSSH_for_Windows_8.6p1, LibreSSL 3.4.3".  This version does not support Passkeys or FIDO2 hardware security keys, such as YubiKeys. A newer version of OpenSSH must be installed.  This will be pushed out by Microsoft as part of a Windows Feature Update, but you can install the latest beta version..
 
 To install the latest version available to the public, the latest *beta* version:
 
@@ -55,7 +59,7 @@ At the time of writing, this is now: "OpenSSH_for_Windows_9.5p1, LibreSSL 3.8.2"
 
 ### Create An SSH Key Pair
 
-Use the `ssh-keygen` command to create a public/private key pair. 
+Use the [ssh-keygen](https://man.openbsd.org/ssh-keygen.1) command to create a public/private key pair. 
 
 The type of key used in this example is "ecdsa-sk". 
 
