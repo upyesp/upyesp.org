@@ -5,7 +5,7 @@ date: 2024-03-23T08:34:00+01:00
 draft: false
 toc: true
 pinned: false
-images: [/images/passkeyauthentication.png]
+images: [/images/FIDO_Passkey.png]
 featuredImage: ''
 tags: [PowerShell]
 categories: [Windows]
