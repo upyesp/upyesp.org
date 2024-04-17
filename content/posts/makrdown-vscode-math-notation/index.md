@@ -1,10 +1,10 @@
 ---
 title: "Cheat Sheet: Adding Math Notation To Markdown"
 description: Examples of math notation, inline & code blocks.
-date: 2024-02-24T15:00:00+01:00
+date: 2024-04-02T15:00:00+01:00
 draft: false
 toc: true
-pinned: true
+pinned: false
 images: [/images/Map_of_Mathematics.jpg]
 tags: [Markdown, VSCode, LaTeX]
 categories: [Documentation, Windows, Mac, Linux]
