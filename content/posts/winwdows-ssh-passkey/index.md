@@ -1,7 +1,7 @@
 ---
 title: "How To Use A Passkey with SSH"
 description: SSH now supports Passkeys.
-date: 2024-04-13T08:34:00+01:00
+date: 2024-02-13T08:34:00+01:00
 draft: false
 toc: true
 pinned: false
