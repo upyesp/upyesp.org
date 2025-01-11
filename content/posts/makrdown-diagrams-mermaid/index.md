@@ -61,7 +61,7 @@ Some tools ([VSCode Extension: Markdown Preview Mermaid Support](https://marketp
 ```text
 <div class="mermaid">
     Mermaid code here
-<\div>
+</div>
 ```
 
 Where-as there are other tools that require the Mermaid code block to simply begin with 'Mermaid' added as the language of the block, like this:
