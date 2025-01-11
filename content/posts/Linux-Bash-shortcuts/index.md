@@ -1,7 +1,7 @@
 ---
 title: "Bash: Productivity Shortcuts"
 description: Bash keyboard shortcuts you may not know.
-date: 2024-03-18T08:00:00+01:00
+date: 2024-03-20T08:00:00+01:00
 draft: false
 toc: true
 pinned: false
