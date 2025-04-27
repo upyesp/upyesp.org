@@ -1,7 +1,7 @@
 ---
 title: "Edge Browser as a PDF Viewer & Markup"
 description: Edge makes for a great PDF experience.  
-date: 2023-05-29T07:03:00+01:00
+date: 2025-04-27T11:42+01:00
 draft: false
 toc: true
 pinned: false
