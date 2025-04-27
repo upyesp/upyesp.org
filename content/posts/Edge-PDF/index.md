@@ -18,7 +18,7 @@ Microsoft's Edge browser supports viewing PDF files.  It enables marking up PDFs
 
 ## Edge's PDF Toolbar
 
-![screenshot of Edge browser's PDF toolbar](/images/edge-pdf-toolbar.png "Edge's PDF Toolbar")
+![screenshot of Edge browser's PDF toolbar](/images/edge-pdf-toolbar.png "The PDF Toolbar in Edge")
 
 While Edge displays a PDF, a toolbar is available across the top of the pane. Functions include:
 
