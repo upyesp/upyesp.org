@@ -1,5 +1,5 @@
 ---
-title: "Edge Browser as a PDF Viewer & Markup"
+title: "Microsoft Edge Browser as a PDF Viewer & Markup"
 description: Edge makes for a great PDF experience.  
 date: 2025-04-27T11:07:00+01:00
 draft: false
