@@ -12,7 +12,7 @@ tags: [Edge, PDF]
 categories: [Windows]
 ---
 
-Microsoft's Edge browser supports viewing PDF files.  It enables marking up PDFs with your own comments, highlights and drawings. Several keyboard shortcuts make for efficient navigation through a PDF.
+Microsoft's Edge browser supports viewing PDF files.  It enables marking up PDFs with your own comments, highlights and drawings.
 
 <!--more-->
 
