@@ -12,3 +12,11 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+
+  # Enable version + security updates for npm dependencies
+  # (prevents alerts like the nanoid/dompurify ones from piling up)
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
