@@ -1,18 +1,18 @@
-# To get started with Dependabot version updates, you'll need to specify which
-# package ecosystems to update and where the package manifests are located.
-# Please see the documentation for all configuration options:
-# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+# Dependabot is configured in SECURITY-ONLY mode.
+#
+# Dependabot SECURITY updates (enabled in repo Settings → Code security)
+# automatically opens pull requests to fix *known vulnerabilities* in both
+# GitHub Actions and npm dependencies. Those are the only PRs Dependabot
+# will open — you'll only hear from it for real security issues.
+#
+# Dependabot VERSION updates (routine version bumps) are intentionally
+# disabled by leaving `updates` empty, so there is no weekly PR noise.
+#
+# To re-enable routine version updates later, add an ecosystem block, e.g.:
+#   - package-ecosystem: "github-actions"
+#     directory: "/"
+#     schedule:
+#       interval: "weekly"
 
 version: 2
-updates:
-  # Enable version updates for GitHub Actions
-  - package-ecosystem: "github-actions"
-    # Workflow files stored in the default location of `.github/workflows`
-    # You don't need to specify `/.github/workflows` for `directory`. You can use `directory: "/"`.
-    directory: "/"
-    schedule:
-      interval: "weekly"
-
-# Note: npm is intentionally NOT listed for version updates.
-# Dependabot SECURITY updates (enabled at the repo level) still auto-fixes npm
-# vulnerabilities without opening routine major-bump PRs.
+updates: []
