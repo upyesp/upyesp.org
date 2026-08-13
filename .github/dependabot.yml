@@ -13,10 +13,6 @@ updates:
     schedule:
       interval: "weekly"
 
-  # Enable version + security updates for npm dependencies
-  # (prevents alerts like the nanoid/dompurify ones from piling up)
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-    open-pull-requests-limit: 10
+# Note: npm is intentionally NOT listed for version updates.
+# Dependabot SECURITY updates (enabled at the repo level) still auto-fixes npm
+# vulnerabilities without opening routine major-bump PRs.
