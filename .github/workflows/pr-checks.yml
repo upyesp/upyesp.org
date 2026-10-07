@@ -1,18 +1,22 @@
-# Runs the site build as a gate on every pull request, and enables
-# GitHub-native auto-merge for Dependabot PRs once the build is green.
-# Branch protection on `main` requires the "build" check to pass.
+# - 'build': gate on every PR (branch protection on `main` requires it).
+# - 'auto-merge': enables native auto-merge for Dependabot PRs.
+# - 'redeploy': when a PR merges, dispatches the Pages deploy — merges made
+#   via GITHUB_TOKEN-enabled auto-merge do NOT fire the push-based deploy.
 name: PR checks
 
 on:
   pull_request:
+    types: [opened, synchronize, reopened, closed]
 
 permissions:
   contents: write
   pull-requests: write
+  actions: write
 
 jobs:
   build:
     name: build
+    if: github.event.action != 'closed'
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: "0.121.1"
@@ -37,11 +41,21 @@ jobs:
   auto-merge:
     name: auto-merge
     needs: build
-    if: github.actor == 'dependabot[bot]'
+    if: github.actor == 'dependabot[bot]' && github.event.action != 'closed'
     runs-on: ubuntu-latest
     steps:
       - name: Enable auto-merge (squash) for Dependabot PR
         run: gh pr merge "$PR_URL" --squash --auto --delete-branch
         env:
           PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  redeploy:
+    name: redeploy
+    if: github.event.action == 'closed' && github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch Pages deploy for the merged PR
+        run: gh workflow run deploy.yml --repo upyesp/upyesp.org --ref main
+        env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
